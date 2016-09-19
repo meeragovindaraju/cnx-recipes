@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Openstax HTML Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="./guide.css">
+
+
+  <style>
+  .-hidden-checkbox-for-choosing-output-type { display: none; }
+  .-toggle-hidden { display: none; }
+  .kss-markup .-kss-autogen-guide-markup::before { font-size: 150%; font-weight: bold; }
+  .kss-markup .-kss-autogen-guide-markup[data-kss-format="html-raw"]::before { content: 'Raw HTML:'; }
+  .kss-markup .-kss-autogen-guide-markup[data-kss-format="html-cooked"]::before { content: 'Cooked HTML:'; }
+
+  /* Only show the rendered "cooked" HTML */
+  .kss-modifier__example > .-kss-autogen-guide-markup:not([data-kss-format="html-cooked"]) { display: none; }
+  </style>
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">Openstax HTML Guide</h1>
+  </header>
+
+  <select id="choose-which-format-to-look-at">
+    <option value="html-cooked">Show Cooked HTML</option>
+    <option value="html-raw">Show Raw HTML</option>
+    <option value="-all">Show All Formats</option>
+    <option value="-none">Show No Formats</option>
+  </select>
+
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-book.html">
+          <span class="kss-nav__ref">1</span
+          ><span class="kss-nav__name">book</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-page.html">
+          <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Page Elements</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+  <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
+     <h1 id="output-html-conventions">Output HTML conventions</h1>
+<p>The purpose of this part is to document and centralize the output HTML decisions and conventions. These are the cooked formats that are delivered to the cnx.org website, the PDF generation system, and external consumers like TEA.</p>
+<ul>
+<li>Use <code>data-*</code> whenever possible. This applies to anything we use internally.</li>
+<li>Classes are used when several attributes are needed on one element: <code>class=&quot;eoc practice-container&quot;</code> <code>data-type=&quot;composite-page&quot;</code>.</li>
+<li>No numbering or titling should be accomplished via display css, it needs to be present in the unstyled cooked HTML</li>
+<li>All book specific strings are handled via the ruleset, this includes titles for notes/features and “generic” strings like “Chapter” or “Figure”. Instead of using labels in the content, we create all the titles via the ruleset, this provides one location to look for errors if titles are incorrect and prevents localised error when creating content. This is needed for internationalization. The ruleset handles them via variables, none of those should be hard coded.</li>
+<li>Prefix classes that are created in the ruleset and preserve the classes in the Raw HTML intact.</li>
+<li>If it’s not needed for styling, it shouldn’t be in the dom.</li>
+<li>If it’s empty, it should not be included in the HTML</li>
+</ul>
+<pre><code class="lang-html">&lt;title&gt;
+  &lt;span class=”divider”&gt;&lt;/span&gt;
+  &lt;span class=”title-text”&gt;My title&lt;/span&gt;
+&lt;/title&gt;
+</code></pre>
+<p>should be</p>
+<pre><code class="lang-html">&lt;title&gt;
+  &lt;span class=”title-text”&gt;My title&lt;/span&gt;
+&lt;/title&gt;
+</code></pre>
+
+  </div>
+</article>
+
+<!-- SCRIPTS -->
+<script src="public/prettify.js"></script>
+<script src="public/kss.js"></script>
+
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>
