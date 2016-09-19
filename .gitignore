@@ -27,8 +27,8 @@
 /rulesets/output/*.css.map
 /rulesets/books/mixins/styleguide/*-baked.html
 /rulesets/books/styleguide/*-baked.html
-/sassdoc/
-/styleguide/
+# /sassdoc/ commented for gh-pages
+# /styleguide/ commented for gh-pages
 
 # CSS coverage report (as a clickable HTML)
-/coverage/
+# /coverage/ commented for gh-pages
