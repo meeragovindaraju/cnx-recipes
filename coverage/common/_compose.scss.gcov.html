@@ -1,0 +1,372 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - unnamed - common/_compose.scss</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">common</a> - _compose.scss<span style="font-size: 80%;"> (source / <a href="_compose.scss.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">unnamed</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">15</td>
+            <td class="headerCovTableEntry">19</td>
+            <td class="headerCovTableEntryMed">78.9 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2016-09-21 20:04:32</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntryHi">-</td>
+          </tr>
+          <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : @import &quot;./utils&quot;;</a>
+<span class="lineNum">       2 </span>            : 
+<span class="lineNum">       3 </span>            : @mixin compose_titleEOCComposites($compositePages) {
+<span class="lineNum">       4 </span>            :   @each $page in $compositePages {
+<span class="lineNum">       5 </span>            :     $name: map-get($page, name);
+<span class="lineNum">       6 </span>            :     $source: map-get($page, source);
+<span class="lineNum">       7 </span>            :     [data-type=&quot;composite-page&quot;].eoc.#{$source}-container {
+<span class="lineNum">       8 </span>            :       $titleContent: (
+<span class="lineNum">       9 </span>            :         text: $name
+<span class="lineNum">      10 </span>            :         );
+<span class="lineNum">      11 </span>            :       @include utils_title($titleContent, null, h1, &quot;document-title&quot;);
+<span class="lineNum">      12 </span>            :     }
+<span class="lineNum">      13 </span>            :   }
+<span class="lineNum">      14 </span>            : }
+<span class="lineNum">      15 </span>            : 
+<span class="lineNum">      16 </span>            : @mixin compose_titleEOBComposites($compositePages) {
+<span class="lineNum">      17 </span>            :   @each $page in $compositePages {
+<span class="lineNum">      18 </span>            :     $name: map-get($page, name);
+<span class="lineNum">      19 </span>            :     $source: map-get($page, source);
+<span class="lineNum">      20 </span>            :     [data-type=&quot;composite-page&quot;].eob.#{$source}-container {
+<span class="lineNum">      21 </span>            :       $titleContent: (
+<span class="lineNum">      22 </span>            :         text: $name
+<span class="lineNum">      23 </span>            :         );
+<span class="lineNum">      24 </span>            :       @include utils_title($titleContent, null, h1, &quot;document-title&quot;);
+<span class="lineNum">      25 </span>            :     }
+<span class="lineNum">      26 </span>            :   }
+<span class="lineNum">      27 </span>            : }
+<span class="lineNum">      28 </span>            : @mixin compose_createChapterComposites($compositePages, $sectionHeaderNode) {
+<span class="lineNum">      29 </span>            :   @each $page in $compositePages {
+<span class="lineNum">      30 </span>            :     @include createChapterComposite($page, $sectionHeaderNode);
+<span class="lineNum">      31 </span>            :   }
+<span class="lineNum">      32 </span>            : }
+<span class="lineNum">      33 </span>            : 
+<span class="lineNum">      34 </span>            : @mixin createChapterComposite($page, $sectionHeaderNode) {
+<span class="lineNum">      35 </span>            :   div[data-type=&quot;chapter&quot;] {
+<span class="lineNum">      36 </span>            :     $name: map-get($page, name);
+<span class="lineNum">      37 </span>            :     $source: map-get($page, source);
+<span class="lineNum">      38 </span>            :     $sortBy: map-get($page, sortBy);
+<span class="lineNum">      39 </span>            :     $compoundComposite: map-get($page, compoundComposite);
+<span class="lineNum">      40 </span>            :     @if (not $compoundComposite) {
+<span class="lineNum">      41 </span>            :       $sectionSeparated: map-get($page, sectionSeparated);
+<span class="lineNum">      42 </span>            :       $isGlossary: map-get($page, isGlossary);
+<span class="lineNum">      43 </span>            :       $sourceSelector: if($isGlossary, 'div[data-type=&quot;#{$source}&quot;] dl', 'section.#{$source}');
+<span class="lineNum">      44 </span>            :       @if ($isGlossary) {
+<span class="lineNum">      45 </span>            :         div[data-type=&quot;#{$source}&quot;] {
+<span class="lineNum">      46 </span><span class="lineCov">        160 :           &gt; h3[data-type=&quot;glossary-title&quot;] {</span>
+<span class="lineNum">      47 </span>            :             move-to: trash;
+<span class="lineNum">      48 </span>            :           }
+<span class="lineNum">      49 </span>            :         }
+<span class="lineNum">      50 </span>            :       }
+<span class="lineNum">      51 </span><span class="lineCov">       1557 :       #{$sourceSelector} {</span>
+<span class="lineNum">      52 </span><span class="lineCov">        836 :         &gt; h3[data-type=&quot;title&quot;] {</span>
+<span class="lineNum">      53 </span>            :           move-to: trash;
+<span class="lineNum">      54 </span>            :         }
+<span class="lineNum">      55 </span>            :         @if ($sectionSeparated) {
+<span class="lineNum">      56 </span>            :           content: nodes(sectionHeaderNode) content();
+<span class="lineNum">      57 </span>            :         }
+<span class="lineNum">      58 </span>            :         move-to: #{$source}-TOCOMPOSITE;
+<span class="lineNum">      59 </span>            :       }
+<span class="lineNum">      60 </span><span class="lineCov">        308 :       &amp;::after {</span>
+<span class="lineNum">      61 </span>            :         container: div;
+<span class="lineNum">      62 </span>            :         content: pending(#{$source}-TOCOMPOSITE);
+<span class="lineNum">      63 </span>            :         class: &quot;eoc #{$source}-container&quot;;
+<span class="lineNum">      64 </span>            :         data-type: &quot;composite-page&quot;;
+<span class="lineNum">      65 </span>            :         @if ($sortBy != null) {
+<span class="lineNum">      66 </span>            :           sort-by: #{$sortBy}, nocase;
+<span class="lineNum">      67 </span>            :         }
+<span class="lineNum">      68 </span>            :       }
+<span class="lineNum">      69 </span>            :     }
+<span class="lineNum">      70 </span>            :   }
+<span class="lineNum">      71 </span>            : }
+<span class="lineNum">      72 </span>            : 
+<span class="lineNum">      73 </span>            : @mixin compose_prepBookComposites($compositePages, $sectionHeaderNode, $sectionHeaderString) {
+<span class="lineNum">      74 </span>            :   @each $page in $compositePages {
+<span class="lineNum">      75 </span>            :     @include prepBookComposite($page, $sectionHeaderNode, $sectionHeaderString);
+<span class="lineNum">      76 </span>            :   }
+<span class="lineNum">      77 </span>            : }
+<span class="lineNum">      78 </span>            : 
+<span class="lineNum">      79 </span>            : @mixin prepBookComposite($page, $sectionHeaderNode, $sectionHeaderString) {
+<span class="lineNum">      80 </span>            :   $name: map-get($page, name);
+<span class="lineNum">      81 </span>            :   $source: map-get($page, source);
+<span class="lineNum">      82 </span>            :   $compoundComposite: map-get($page, compoundComposite);
+<span class="lineNum">      83 </span>            :   $isIndex: map-get($page, isIndex);
+<span class="lineNum">      84 </span>            :   @if (not $compoundComposite) {
+<span class="lineNum">      85 </span>            :     $sourceSelector: if($isIndex, 'div[data-type=&quot;page&quot;] span[data-type=&quot;term&quot;], div[data-type=&quot;composite-page&quot;] span[data-type=&quot;term&quot;]', 'section.#{$source}');
+<span class="lineNum">      86 </span>            :     @if ($isIndex) {
+<span class="lineNum">      87 </span>            :       #{$sourceSelector} {
+<span class="lineNum">      88 </span><span class="lineCov">       1364 :         &amp;::after {</span>
+<span class="lineNum">      89 </span>            :           content: content();
+<span class="lineNum">      90 </span>            :           attr-group-by: attr(group-by);
+<span class="lineNum">      91 </span>            :           container: span;
+<span class="lineNum">      92 </span>            :           class: &quot;term&quot;;
+<span class="lineNum">      93 </span>            :           move-to: index-term;
+<span class="lineNum">      94 </span>            :         }
+<span class="lineNum">      95 </span><span class="lineCov">       1364 :         &amp;::after {</span>
+<span class="lineNum">      96 </span>            :           content: string($sectionHeaderString);
+<span class="lineNum">      97 </span>            :           container: span;
+<span class="lineNum">      98 </span>            :           class: &quot;term-section&quot;;
+<span class="lineNum">      99 </span>            :           move-to: index-section;
+<span class="lineNum">     100 </span>            :         }
+<span class="lineNum">     101 </span><span class="lineCov">       1364 :         &amp;::after {</span>
+<span class="lineNum">     102 </span>            :           container: a;
+<span class="lineNum">     103 </span>            :           content: pending(index-section);
+<span class="lineNum">     104 </span>            :           attr-href: &quot;#&quot; attr(id);
+<span class="lineNum">     105 </span>            :           class: &quot;term-section-link&quot;;
+<span class="lineNum">     106 </span>            :           move-to: index-section-link
+<span class="lineNum">     107 </span>            :         }
+<span class="lineNum">     108 </span><span class="lineCov">       1364 :         &amp;::after {</span>
+<span class="lineNum">     109 </span>            :           content: pending(index-term) pending(index-section-link);
+<span class="lineNum">     110 </span>            :           class: index-item;
+<span class="lineNum">     111 </span>            :           move-to: #{$source}-TOCOMPOSITE;
+<span class="lineNum">     112 </span>            :         }
+<span class="lineNum">     113 </span>            :       }
+<span class="lineNum">     114 </span>            :     } @else {
+<span class="lineNum">     115 </span>            :       [data-type=&quot;chapter&quot;] {
+<span class="lineNum">     116 </span>            :         $chapterSeparated: map-get($page, chapterSeparated);
+<span class="lineNum">     117 </span>            :         $sectionSeparated: map-get($page, sectionSeparated);
+<span class="lineNum">     118 </span>            :         $chapterPages: map-get($page, chapterPages);
+<span class="lineNum">     119 </span><span class="lineCov">         90 :         #{$sourceSelector} {</span>
+<span class="lineNum">     120 </span><span class="lineCov">         89 :           &gt; h3[data-type=&quot;title&quot;] {</span>
+<span class="lineNum">     121 </span>            :             move-to: trash;
+<span class="lineNum">     122 </span>            :           }
+<span class="lineNum">     123 </span>            :           @if ($sectionSeparated) {
+<span class="lineNum">     124 </span>            :             content: nodes(sectionHeaderNode) content();
+<span class="lineNum">     125 </span>            :             @if ($chapterSeparated) {
+<span class="lineNum">     126 </span>            :               move-to: #{$source}-GETCHAPTER;
+<span class="lineNum">     127 </span>            :             } @else {
+<span class="lineNum">     128 </span>            :               move-to: #{$source}-TOCOMPOSITE;
+<span class="lineNum">     129 </span>            :             }
+<span class="lineNum">     130 </span>            :           }
+<span class="lineNum">     131 </span>            :         }
+<span class="lineNum">     132 </span>            :         @if ($chapterSeparated) {
+<span class="lineNum">     133 </span>            :           &amp;::after {
+<span class="lineNum">     134 </span>            :             class: &quot;#{$source}-chapter-area&quot;;
+<span class="lineNum">     135 </span>            :             content: pending(#{$source}-GETCHAPTER);
+<span class="lineNum">     136 </span>            :             @if ($chapterPages) {
+<span class="lineNum">     137 </span>            :               data-type: &quot;composite-page&quot;;
+<span class="lineNum">     138 </span>            :             }
+<span class="lineNum">     139 </span>            :           }
+<span class="lineNum">     140 </span>            :         }
+<span class="lineNum">     141 </span>            :       }
+<span class="lineNum">     142 </span>            :     }
+<span class="lineNum">     143 </span>            :   }
+<span class="lineNum">     144 </span>            : }
+<span class="lineNum">     145 </span>            : 
+<span class="lineNum">     146 </span>            : @mixin compose_createBookComposites($compositePages) {
+<span class="lineNum">     147 </span>            :   @each $page in $compositePages {
+<span class="lineNum">     148 </span>            :     @include createBookComposite($page);
+<span class="lineNum">     149 </span>            :   }
+<span class="lineNum">     150 </span>            : }
+<span class="lineNum">     151 </span>            : 
+<span class="lineNum">     152 </span>            : @mixin createBookComposite($page) {
+<span class="lineNum">     153 </span>            :   body {
+<span class="lineNum">     154 </span>            :     $source: map-get($page, source);
+<span class="lineNum">     155 </span>            :     $isIndex: map-get($page, isIndex);
+<span class="lineNum">     156 </span><span class="lineCov">          4 :     &amp;::after {</span>
+<span class="lineNum">     157 </span>            :       container: div;
+<span class="lineNum">     158 </span>            :       content: pending(#{$source}-TOCOMPOSITE);
+<span class="lineNum">     159 </span>            :       class: &quot;eob #{$source}-container&quot;;
+<span class="lineNum">     160 </span>            :       data-type: &quot;composite-page&quot;;
+<span class="lineNum">     161 </span>            :       @if ($isIndex) {
+<span class="lineNum">     162 </span>            :         group-by: span, &quot;span::attr(group-by)&quot;, nocase;
+<span class="lineNum">     163 </span>            :       }
+<span class="lineNum">     164 </span>            :     }
+<span class="lineNum">     165 </span>            :   }
+<span class="lineNum">     166 </span>            : }
+<span class="lineNum">     167 </span>            : 
+<span class="lineNum">     168 </span>            : //ChapterHeaderNode may be causing some weird issues? and may be copying the entire chapter?
+<span class="lineNum">     169 </span>            : //See if this node needs to become a string, or if chapterHeaderNode is copying more than expected
+<span class="lineNum">     170 </span>            : @mixin compose_prepChapterAreas($compositePages, $chapterHeaderNode) {
+<span class="lineNum">     171 </span>            :   @each $page in $compositePages {
+<span class="lineNum">     172 </span>            :     $source: map-get($page, source);
+<span class="lineNum">     173 </span>            :     [data-type=&quot;chapter&quot;] {
+<span class="lineNum">     174 </span><span class="lineNoCov">          0 :       .#{$source}-chapter-area {</span>
+<span class="lineNum">     175 </span>            :         content: nodes($chapterHeaderNode) content();
+<span class="lineNum">     176 </span>            :         move-to: #{$source}-TOCOMPOSITE;
+<span class="lineNum">     177 </span>            :       }
+<span class="lineNum">     178 </span>            :     }
+<span class="lineNum">     179 </span>            :   }
+<span class="lineNum">     180 </span>            : }
+<span class="lineNum">     181 </span>            : 
+<span class="lineNum">     182 </span>            : @mixin compose_createEOCSolutions($compositePages, $solutionPage, $sectionHeaderNode) {
+<span class="lineNum">     183 </span>            :   $solutionSource: map-get($solutionPage, source);
+<span class="lineNum">     184 </span>            :   $sectionSeparated: map-get($solutionPage, sectionSeparated);
+<span class="lineNum">     185 </span>            :   @each $page in $compositePages {
+<span class="lineNum">     186 </span>            :     $hasSolutions: map-get($page, hasSolutions);
+<span class="lineNum">     187 </span>            :     $source: map-get($page, source);
+<span class="lineNum">     188 </span>            :     @if ($hasSolutions) {
+<span class="lineNum">     189 </span>            :       [data-type=&quot;chapter&quot;] {
+<span class="lineNum">     190 </span>            :         .eoc.#{$source}-container {
+<span class="lineNum">     191 </span><span class="lineNoCov">          0 :           [data-type=&quot;solution&quot;] {</span>
+<span class="lineNum">     192 </span>            :             @if ($sectionSeparated) {
+<span class="lineNum">     193 </span>            :               move-to: #{$solutionSource}-GETSECTION;
+<span class="lineNum">     194 </span>            :             } @else {
+<span class="lineNum">     195 </span>            :               move-to: #{$solutionSource}-TOCOMPOSITE;;
+<span class="lineNum">     196 </span>            :             }
+<span class="lineNum">     197 </span>            :           }
+<span class="lineNum">     198 </span>            :           @if ($sectionSeparated) {
+<span class="lineNum">     199 </span>            :             &amp;::after {
+<span class="lineNum">     200 </span>            :               container: section;
+<span class="lineNum">     201 </span>            :               class: #{$solutionSource};
+<span class="lineNum">     202 </span>            :               content: nodes($sectionHeaderNode) pending(#{$solutionSource}-GETSECTION);
+<span class="lineNum">     203 </span>            :               move-to: #{$solutionSource}-TOCOMPOSITE;
+<span class="lineNum">     204 </span>            :             }
+<span class="lineNum">     205 </span>            :           }
+<span class="lineNum">     206 </span>            :         }
+<span class="lineNum">     207 </span>            :       }
+<span class="lineNum">     208 </span>            :     }
+<span class="lineNum">     209 </span>            :   }
+<span class="lineNum">     210 </span>            :   [data-type=&quot;chapter&quot;] {
+<span class="lineNum">     211 </span><span class="lineCov">         13 :     &amp;::after {</span>
+<span class="lineNum">     212 </span>            :       container: div;
+<span class="lineNum">     213 </span>            :       content: pending(#{$solutionSource}-TOCOMPOSITE);
+<span class="lineNum">     214 </span>            :       class: &quot;eoc #{$solutionSource}-container&quot;;
+<span class="lineNum">     215 </span>            :       data-type: &quot;composite-page&quot;;
+<span class="lineNum">     216 </span>            :     }
+<span class="lineNum">     217 </span>            :   }
+<span class="lineNum">     218 </span>            : }
+<span class="lineNum">     219 </span>            : 
+<span class="lineNum">     220 </span>            : 
+<span class="lineNum">     221 </span>            : @mixin compose_createEOBSolutions($compositePages, $solutionPage, $sectionHeaderNode) {
+<span class="lineNum">     222 </span>            :   $solutionSource: map-get($solutionPage, source);
+<span class="lineNum">     223 </span>            :   $sectionSeparated: map-get($solutionPage, sectionSeparated);
+<span class="lineNum">     224 </span>            :   $chapterSeparated: map-get($solutionPage,chapterSeparated);
+<span class="lineNum">     225 </span>            :   @each $page in $compositePages {
+<span class="lineNum">     226 </span>            :     $hasSolutions: map-get($page, hasSolutions);
+<span class="lineNum">     227 </span>            :     $source: map-get($page, source);
+<span class="lineNum">     228 </span>            :     @if ($hasSolutions) {
+<span class="lineNum">     229 </span>            :       [data-type=&quot;chapter&quot;] {
+<span class="lineNum">     230 </span>            :         .eoc.#{$source}-container {
+<span class="lineNum">     231 </span><span class="lineNoCov">          0 :           [data-type=&quot;solution&quot;] {</span>
+<span class="lineNum">     232 </span>            :             @if ($sectionSeparated) {
+<span class="lineNum">     233 </span>            :               move-to: #{$solutionSource}-GETSECTION;
+<span class="lineNum">     234 </span>            :             }
+<span class="lineNum">     235 </span>            :             @else if ($chapterSeparated) {
+<span class="lineNum">     236 </span>            :               move-to: #{$solutionSource}-GETCHAPTER;
+<span class="lineNum">     237 </span>            :             }
+<span class="lineNum">     238 </span>            :             @else {
+<span class="lineNum">     239 </span>            :               move-to: #{$solutionSource}-TOCOMPOSITE;
+<span class="lineNum">     240 </span>            :             }
+<span class="lineNum">     241 </span>            :           }
+<span class="lineNum">     242 </span>            :           @if ($sectionSeparated) {
+<span class="lineNum">     243 </span>            :             .#{$source} {
+<span class="lineNum">     244 </span>            :               &gt; h2[data-type=&quot;document-title&quot;] {
+<span class="lineNum">     245 </span>            :                 @if ($chapterSeparated) {
+<span class="lineNum">     246 </span>            :                   container: h3;
+<span class="lineNum">     247 </span>            :                 }
+<span class="lineNum">     248 </span>            :                 node-set: eobsectionHeader;
+<span class="lineNum">     249 </span>            :                 move-to: EOBsectionHeader;
+<span class="lineNum">     250 </span>            :               }
+<span class="lineNum">     251 </span>            :               &amp;::after {
+<span class="lineNum">     252 </span>            :                 container: section;
+<span class="lineNum">     253 </span>            :                 class: #{$solutionSource};
+<span class="lineNum">     254 </span>            :                 content: pending(EOBsectionHeader) pending(#{$solutionSource}-GETSECTION);
+<span class="lineNum">     255 </span>            :                 @if ($chapterSeparated) {
+<span class="lineNum">     256 </span>            :                   move-to: #{$solutionSource}-GETCHAPTER;
+<span class="lineNum">     257 </span>            :                 }
+<span class="lineNum">     258 </span>            :                 @else {
+<span class="lineNum">     259 </span>            :                   move-to: #{$solutionSource}-TOCOMPOSITE;
+<span class="lineNum">     260 </span>            :                 }
+<span class="lineNum">     261 </span>            :               }
+<span class="lineNum">     262 </span>            :             }
+<span class="lineNum">     263 </span>            :           }
+<span class="lineNum">     264 </span>            :         }
+<span class="lineNum">     265 </span>            :       }
+<span class="lineNum">     266 </span>            :     }
+<span class="lineNum">     267 </span>            :   }
+<span class="lineNum">     268 </span>            : 
+<span class="lineNum">     269 </span>            :   @if ($chapterSeparated) {
+<span class="lineNum">     270 </span>            :     [data-type=&quot;chapter&quot;] {
+<span class="lineNum">     271 </span><span class="lineNoCov">          0 :       &gt; h1[data-type=&quot;document-title&quot;] .number {</span>
+<span class="lineNum">     272 </span>            :         string-set: ChapNum content();
+<span class="lineNum">     273 </span>            :       }
+<span class="lineNum">     274 </span><span class="lineCov">         34 :       &amp;::after {</span>
+<span class="lineNum">     275 </span>            :         //FIXME wrap the in spans
+<span class="lineNum">     276 </span>            :         container: h2;
+<span class="lineNum">     277 </span>            :         class: &quot;title&quot;;
+<span class="lineNum">     278 </span>            :         content: &quot;Chapter &quot; string(ChapNum);
+<span class="lineNum">     279 </span>            :         move-to: chaptTitleEOB;
+<span class="lineNum">     280 </span>            :       }
+<span class="lineNum">     281 </span><span class="lineCov">         34 :       &amp;::after {</span>
+<span class="lineNum">     282 </span>            :         class: #{$solutionSource}-chapter-area;
+<span class="lineNum">     283 </span>            :         content: pending(chaptTitleEOB) pending(#{$solutionSource}-GETCHAPTER);
+<span class="lineNum">     284 </span>            :         move-to: #{$solutionSource}-TOCOMPOSITE;
+<span class="lineNum">     285 </span>            :       }
+<span class="lineNum">     286 </span>            :     }
+<span class="lineNum">     287 </span>            :   }
+<span class="lineNum">     288 </span>            :   body {
+<span class="lineNum">     289 </span><span class="lineCov">          1 :     &amp;::after {</span>
+<span class="lineNum">     290 </span>            :       container: div;
+<span class="lineNum">     291 </span>            :       content: pending(#{$solutionSource}-TOCOMPOSITE);
+<span class="lineNum">     292 </span>            :       class: &quot;eob #{$solutionSource}-container&quot;;
+<span class="lineNum">     293 </span>            :       data-type: &quot;composite-page&quot;;
+<span class="lineNum">     294 </span>            :     }
+<span class="lineNum">     295 </span>            :   }
+<span class="lineNum">     296 </span>            : }
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.12</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>
