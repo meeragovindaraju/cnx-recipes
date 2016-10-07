@@ -1,0 +1,205 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - unnamed - rulesets/common/_utils.scss</title>
+  <link rel="stylesheet" type="text/css" href="../../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../../index.html">top level</a> - <a href="index.html">rulesets/common</a> - _utils.scss<span style="font-size: 80%;"> (source / <a href="_utils.scss.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">unnamed</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">25</td>
+            <td class="headerCovTableEntry">36</td>
+            <td class="headerCovTableEntryLo">69.4 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2016-10-05 12:55:00</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntryHi">-</td>
+          </tr>
+          <tr><td><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : /// Base counting mixin - creates a counter with the given name, increment location, and reset location</a>
+<span class="lineNum">       2 </span>            : /// @arg {Text} $name - The unquoted name of the counter that will be created
+<span class="lineNum">       3 </span>            : /// @arg {String} $selector - A string of the selector at which the counter will increment
+<span class="lineNum">       4 </span>            : /// @arg {String} $resetSelector - A string of the selector at which the counter will reset
+<span class="lineNum">       5 </span>            : @mixin utils_count($name, $selector, $resetSelector) {
+<span class="lineNum">       6 </span>            :   //Improvement: Resetting isn't dry, recreates selector if more than one counter resets on one element
+<span class="lineNum">       7 </span><span class="lineCov">      55806 :   #{$resetSelector} {</span>
+<span class="lineNum">       8 </span><span class="lineCov">      16828 :     counter-reset: $name;</span>
+<span class="lineNum">       9 </span>            :   }
+<span class="lineNum">      10 </span><span class="lineCov">     868752 :   #{$selector} {</span>
+<span class="lineNum">      11 </span><span class="lineCov">     220842 :     counter-increment: $name;</span>
+<span class="lineNum">      12 </span>            :   }
+<span class="lineNum">      13 </span>            : }
+<span class="lineNum">      14 </span>            : 
+<span class="lineNum">      15 </span>            : 
+<span class="lineNum">      16 </span>            : /// Base titling and numbering mixin - Creates &lt;span&gt; elements before an element defined by the content passed. These &lt;span&gt; elements can be automatically wrapped and/or sent to a specified bucket
+<span class="lineNum">      17 </span>            : /// @arg {Map} $content - A content map containing key and value pairs. Each key, value pair creates a &lt;span&gt; of class=&quot;key&quot; with a text node of &quot;value&quot;
+<span class="lineNum">      18 </span>            : /// @arg {Text} $bucket [null] - The unquoted name of the bucket to send the resulting object(s) to. If null, resulting object(s) will remain in place, before the element the mixin was called within
+<span class="lineNum">      19 </span>            : /// @arg {Text} $container [null] - The unquoted type of container element to send the titling spans to (e.g. h1, h2, div). If null, resulting spans will not be wrapped
+<span class="lineNum">      20 </span>            : /// @arg {String} $containerType [null] - The data-type to give to the created container element. If null, resulting spans will not be wrapped
+<span class="lineNum">      21 </span>            : @mixin utils_title($content, $bucket: null, $container: null, $containerType: null) {
+<span class="lineNum">      22 </span>            :   //TODO: Restrict what things titlePart can be. Currently any key will work.
+<span class="lineNum">      23 </span>            :   @each $titlePart in map-keys($content) {
+<span class="lineNum">      24 </span><span class="lineCov">     725740 :     &amp;::before {</span>
+<span class="lineNum">      25 </span><span class="lineCov">     201870 :       container: span;</span>
+<span class="lineNum">      26 </span><span class="lineCov">     111573 :       content: map-get($content, $titlePart);</span>
+<span class="lineNum">      27 </span><span class="lineCov">     245568 :       class: os-#{$titlePart};</span>
+<span class="lineNum">      28 </span>            :       @if ($container != null and $containerType != null) {
+<span class="lineNum">      29 </span><span class="lineCov">      28652 :         move-to: #{$container}-TITLECONTAINER</span>
+<span class="lineNum">      30 </span><span class="lineCov">       2204 :       } @else if ($bucket != null) {</span>
+<span class="lineNum">      31 </span><span class="lineCov">      98848 :         move-to: $bucket;</span>
+<span class="lineNum">      32 </span>            :       }
+<span class="lineNum">      33 </span>            :     }
+<span class="lineNum">      34 </span>            :   }
+<span class="lineNum">      35 </span>            :   @if ($container != null and $containerType != null) {
+<span class="lineNum">      36 </span><span class="lineCov">      25897 :     &amp;::before {</span>
+<span class="lineNum">      37 </span><span class="lineCov">       5510 :       container: $container;</span>
+<span class="lineNum">      38 </span><span class="lineCov">       5510 :       data-type: $containerType;</span>
+<span class="lineNum">      39 </span><span class="lineCov">      20387 :       content: pending(#{$container}-TITLECONTAINER);</span>
+<span class="lineNum">      40 </span>            :       @if ($bucket != null) {
+<span class="lineNum">      41 </span>            :         move-to: $bucket;
+<span class="lineNum">      42 </span>            :       }
+<span class="lineNum">      43 </span>            :     }
+<span class="lineNum">      44 </span>            :   }
+<span class="lineNum">      45 </span>            : }
+<span class="lineNum">      46 </span>            : 
+<span class="lineNum">      47 </span>            : //Relies on hitting To Selector then From Selector without anything in between repeatedly
+<span class="lineNum">      48 </span>            : //:'( this is less robust and useful than originally envisioned, still works great for solutions -&gt; exercises though
+<span class="lineNum">      49 </span>            : //Additionally a counter may not need to be passed, and a new method could rely on an internal counter
+<span class="lineNum">      50 </span>            : //Stronger linking idea:
+<span class="lineNum">      51 </span>            : //pass1: create objects
+<span class="lineNum">      52 </span>            : //pass2: give similar ids to objects to be linked (e.g. #problem-3, #solution-3)
+<span class="lineNum">      53 </span>            : //pass3: link the objects in any order because you know both ids
+<span class="lineNum">      54 </span>            : 
+<span class="lineNum">      55 </span>            : /// Links pairs of elements that occur in the tree in order: To, From, To, From, ... with no exceptions
+<span class="lineNum">      56 </span>            : /// @arg {String} $toSelector - The selector of the element in the pair that will be linked to
+<span class="lineNum">      57 </span>            : /// @arg {String} $fromSelector - The selector of the element in the pair that will be the link
+<span class="lineNum">      58 </span>            : /// @arg {Text} $toCounter [null] - The counter object used to automatically ID the element to be linked to if it doesn't already have an id. If null, the link href will be to an already existing id of the linked-to element
+<span class="lineNum">      59 </span>            : @mixin utils_hasSolution() {
+<span class="lineNum">      60 </span><span class="lineCov">     174708 :   .exercise {</span>
+<span class="lineNum">      61 </span><span class="lineCov">     108567 :     .solution {</span>
+<span class="lineNum">      62 </span><span class="lineCov">     156819 :       string-set: isSolution &quot; os-hasSolution &quot;;</span>
+<span class="lineNum">      63 </span>            :     }
+<span class="lineNum">      64 </span><span class="lineCov">     242650 :     string-set: isSolution &quot;&quot;;</span>
+<span class="lineNum">      65 </span><span class="lineCov">     271768 :     &amp;::deferred {</span>
+<span class="lineNum">      66 </span><span class="lineCov">     388240 :       class: attr(class) string(isSolution, &quot; &quot;) ;</span>
+<span class="lineNum">      67 </span>            :     }
+<span class="lineNum">      68 </span>            :   }
+<span class="lineNum">      69 </span>            : }
+<span class="lineNum">      70 </span>            : @mixin utils_linkToFromForward($toSelector, $fromSelector, $toName, $fromName, $toCounter: null) {
+<span class="lineNum">      71 </span><span class="lineNoCov">          0 :   #{$toSelector} {</span>
+<span class="lineNum">      72 </span>            :     @if ($toCounter != null) {
+<span class="lineNum">      73 </span><span class="lineNoCov">          0 :       $toID: &quot;#{$toName}-&quot;counter($toCounter);</span>
+<span class="lineNum">      74 </span>            :       $fromID: &quot;#{$fromName}-&quot;counter($toCounter);
+<span class="lineNum">      75 </span><span class="lineNoCov">          0 :       container: a;</span>
+<span class="lineNum">      76 </span><span class="lineNoCov">          0 :       attr-id: $toID;</span>
+<span class="lineNum">      77 </span><span class="lineNoCov">          0 :       attr-href: &quot;#&quot; #{$fromID};</span>
+<span class="lineNum">      78 </span><span class="lineNoCov">          0 :       string-set: #{$toName}-ID $toID;</span>
+<span class="lineNum">      79 </span><span class="lineNoCov">          0 :       string-set: #{$fromName}-ID $fromID;</span>
+<span class="lineNum">      80 </span>            :     } @else {
+<span class="lineNum">      81 </span>            :       //FIXME forward links with existing ID Todo
+<span class="lineNum">      82 </span>            :       string-set: #{$toName}-ID attr(id);
+<span class="lineNum">      83 </span>            :     }
+<span class="lineNum">      84 </span>            :   }
+<span class="lineNum">      85 </span>            :   #{$fromSelector} {
+<span class="lineNum">      86 </span><span class="lineNoCov">          0 :     &amp;::outside {</span>
+<span class="lineNum">      87 </span><span class="lineNoCov">          0 :       container: a;</span>
+<span class="lineNum">      88 </span><span class="lineNoCov">          0 :       attr-id: string(#{$fromName}-ID);</span>
+<span class="lineNum">      89 </span><span class="lineNoCov">          0 :       attr-href: &quot;#&quot; string(#{$toName}-ID);</span>
+<span class="lineNum">      90 </span>            :     }
+<span class="lineNum">      91 </span>            :   }
+<span class="lineNum">      92 </span>            : }
+<span class="lineNum">      93 </span>            : 
+<span class="lineNum">      94 </span>            : /// Simply base mixin to reference a node
+<span class="lineNum">      95 </span>            : /// @arg {Text} $name - The unquoted name of the node that will be referenced
+<span class="lineNum">      96 </span>            : @mixin utils_refNodeAs($name) {
+<span class="lineNum">      97 </span><span class="lineCov">      28296 :   node-set: $name;</span>
+<span class="lineNum">      98 </span>            : }
+<span class="lineNum">      99 </span>            : 
+<span class="lineNum">     100 </span>            : /// Simply base mixin to reference a string
+<span class="lineNum">     101 </span>            : /// @arg {Text} $name - The unquoted name of the string that will be referenced
+<span class="lineNum">     102 </span>            : /// @arg {String} $string - The referenced string. Often, this will be to an element's content() or an attr()
+<span class="lineNum">     103 </span>            : @mixin utils_refStringAs($name, $string) {
+<span class="lineNum">     104 </span><span class="lineCov">      67048 :   string-set: $name $string;</span>
+<span class="lineNum">     105 </span>            : }
+<span class="lineNum">     106 </span>            : 
+<span class="lineNum">     107 </span>            : /// A simple call to clear the trash at the end of a pass/step
+<span class="lineNum">     108 </span>            : @mixin utils_clearTrash() {
+<span class="lineNum">     109 </span><span class="lineCov">        279 :   body:deferred::after {</span>
+<span class="lineNum">     110 </span><span class="lineCov">        198 :     content: clear(trash);</span>
+<span class="lineNum">     111 </span>            :   }
+<span class="lineNum">     112 </span>            : }
+<span class="lineNum">     113 </span>            : 
+<span class="lineNum">     114 </span>            : /// Utility mixin that validates the type of a variable.
+<span class="lineNum">     115 </span>            : /// useful for erroring early. For example, If the developer was expecting an
+<span class="lineNum">     116 </span>            : /// argument to a mixin to be a `list` but the mixin that uses it several levels
+<span class="lineNum">     117 </span>            : /// deep actually expected it to be a `bool`
+<span class="lineNum">     118 </span>            : @mixin utils_checkType($var, $expectedType) {
+<span class="lineNum">     119 </span>            :   @if (type-of($var) != $expectedType) {
+<span class="lineNum">     120 </span>            :     @error &quot;The argument is of the wrong type. Expected: #{$expectedType} but got #{type-of($var)}&quot;;
+<span class="lineNum">     121 </span>            :   }
+<span class="lineNum">     122 </span>            : }
+<span class="lineNum">     123 </span>            : 
+<span class="lineNum">     124 </span>            : /// @see {mixin} utils_checkTypeOptional
+<span class="lineNum">     125 </span>            : @mixin utils_checkTypeOptional($var, $expectedType) {
+<span class="lineNum">     126 </span>            :   @if ($var and type-of($var) != $expectedType) {
+<span class="lineNum">     127 </span>            :     @error &quot;The optional argument is of the wrong type. Expected: #{$expectedType} but got #{type-of($var)}&quot;;
+<span class="lineNum">     128 </span>            :   }
+<span class="lineNum">     129 </span>            : }
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.12</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

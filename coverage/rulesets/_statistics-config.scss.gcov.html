@@ -1,0 +1,306 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - unnamed - rulesets/_statistics-config.scss</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">rulesets</a> - _statistics-config.scss<span style="font-size: 80%;"> (source / <a href="_statistics-config.scss.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">unnamed</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">28</td>
+            <td class="headerCovTableEntry">29</td>
+            <td class="headerCovTableEntryHi">96.6 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2016-10-05 12:55:00</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntryHi">-</td>
+          </tr>
+          <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : /*==========================================================</a>
+<span class="lineNum">       2 </span>            :   STATISTICS PAGES
+<span class="lineNum">       3 </span>            : ==========================================================*/
+<span class="lineNum">       4 </span>            : 
+<span class="lineNum">       5 </span>            : //Make pages
+<span class="lineNum">       6 </span>            : $pageKeyTerms: (
+<span class="lineNum">       7 </span>            :   name: &quot;Key Terms&quot;,
+<span class="lineNum">       8 </span>            :   source: &quot;glossary&quot;,
+<span class="lineNum">       9 </span>            :   isGlossary: true,
+<span class="lineNum">      10 </span>            :   sortBy: &quot;dl &gt; dt&quot;
+<span class="lineNum">      11 </span>            : );
+<span class="lineNum">      12 </span>            : 
+<span class="lineNum">      13 </span>            : $pageChapterReview: (
+<span class="lineNum">      14 </span>            :   name: &quot;Chapter Review&quot;,
+<span class="lineNum">      15 </span>            :   source: &quot;summary&quot;,
+<span class="lineNum">      16 </span>            :   sectionSeparated: true
+<span class="lineNum">      17 </span>            : );
+<span class="lineNum">      18 </span>            : 
+<span class="lineNum">      19 </span>            : $pageFormulaReview: (
+<span class="lineNum">      20 </span>            :   name: &quot;Formula Review&quot;,
+<span class="lineNum">      21 </span>            :   source: &quot;formula-review&quot;,
+<span class="lineNum">      22 </span>            :   sectionSeparated: true
+<span class="lineNum">      23 </span>            : );
+<span class="lineNum">      24 </span>            : 
+<span class="lineNum">      25 </span>            : /*
+<span class="lineNum">      26 </span>            :   Practice Problems
+<span class="lineNum">      27 </span>            : 
+<span class="lineNum">      28 </span>            :   These should be collated at the end of a chapter.
+<span class="lineNum">      29 </span>            : 
+<span class="lineNum">      30 </span>            :   Markup: ./examples/book.composite.practice.html-cooked.html
+<span class="lineNum">      31 </span>            : 
+<span class="lineNum">      32 </span>            :   Style guide: book.composite.practice
+<span class="lineNum">      33 </span>            : */
+<span class="lineNum">      34 </span>            : $pagePractice: (
+<span class="lineNum">      35 </span>            :   name: &quot;Practice&quot;,
+<span class="lineNum">      36 </span>            :   source: &quot;practice&quot;,
+<span class="lineNum">      37 </span>            :   sectionSeparated: true,
+<span class="lineNum">      38 </span>            :   hasSolutions: true
+<span class="lineNum">      39 </span>            : );
+<span class="lineNum">      40 </span>            : 
+<span class="lineNum">      41 </span>            : $pageBITExercises: (
+<span class="lineNum">      42 </span>            :   name: &quot;Bringing It Together: Exercises&quot;,
+<span class="lineNum">      43 </span>            :   source: &quot;bring-together-exercises&quot;,
+<span class="lineNum">      44 </span>            :   hasSolutions: true
+<span class="lineNum">      45 </span>            : );
+<span class="lineNum">      46 </span>            : 
+<span class="lineNum">      47 </span>            : $pageHomework: (
+<span class="lineNum">      48 </span>            :   name: &quot;Homework&quot;,
+<span class="lineNum">      49 </span>            :   source: &quot;free-response&quot;,
+<span class="lineNum">      50 </span>            :   sectionSeparated: true,
+<span class="lineNum">      51 </span>            :   hasSolutions: true
+<span class="lineNum">      52 </span>            : );
+<span class="lineNum">      53 </span>            : 
+<span class="lineNum">      54 </span>            : $pageBITHomework: (
+<span class="lineNum">      55 </span>            :   name: &quot;Bringing It Together: Homework&quot;,
+<span class="lineNum">      56 </span>            :   source: &quot;bring-together-homework&quot;,
+<span class="lineNum">      57 </span>            :   hasSolutions: true
+<span class="lineNum">      58 </span>            : );
+<span class="lineNum">      59 </span>            : 
+<span class="lineNum">      60 </span>            : $pageReferences: (
+<span class="lineNum">      61 </span>            :   name: &quot;References&quot;,
+<span class="lineNum">      62 </span>            :   source: &quot;references&quot;,
+<span class="lineNum">      63 </span>            :   sectionSeparated: true
+<span class="lineNum">      64 </span>            : );
+<span class="lineNum">      65 </span>            : 
+<span class="lineNum">      66 </span>            : $pageSolutions: (
+<span class="lineNum">      67 </span>            :   name: &quot;Solutions&quot;,
+<span class="lineNum">      68 </span>            :   source: &quot;solutions&quot;,
+<span class="lineNum">      69 </span>            :   compoundComposite: true,
+<span class="lineNum">      70 </span>            : );
+<span class="lineNum">      71 </span>            : 
+<span class="lineNum">      72 </span>            : $pageIndex: (
+<span class="lineNum">      73 </span>            :   name: &quot;Index&quot;,
+<span class="lineNum">      74 </span>            :   source: &quot;index&quot;,
+<span class="lineNum">      75 </span>            :   isIndex: true
+<span class="lineNum">      76 </span>            : );
+<span class="lineNum">      77 </span>            : 
+<span class="lineNum">      78 </span>            : $chapterCompositePages: (
+<span class="lineNum">      79 </span>            :   $pageKeyTerms,
+<span class="lineNum">      80 </span>            :   $pageChapterReview,
+<span class="lineNum">      81 </span>            :   $pageFormulaReview,
+<span class="lineNum">      82 </span>            :   $pagePractice,
+<span class="lineNum">      83 </span>            :   $pageBITExercises,
+<span class="lineNum">      84 </span>            :   $pageHomework,
+<span class="lineNum">      85 </span>            :   $pageBITHomework,
+<span class="lineNum">      86 </span>            :   $pageReferences,
+<span class="lineNum">      87 </span>            :   $pageSolutions
+<span class="lineNum">      88 </span>            : );
+<span class="lineNum">      89 </span>            : 
+<span class="lineNum">      90 </span>            : $bookCompositePages: (
+<span class="lineNum">      91 </span>            :   //This doesn't get parsed as a list without a comma at the end
+<span class="lineNum">      92 </span>            :   //the composite builder should account for this rather than using hacky syntax
+<span class="lineNum">      93 </span>            :   $pageIndex,
+<span class="lineNum">      94 </span>            : );
+<span class="lineNum">      95 </span>            : 
+<span class="lineNum">      96 </span>            : /*==========================================================
+<span class="lineNum">      97 </span>            :   STATISTICS TITLING CONTENT
+<span class="lineNum">      98 </span>            : ==========================================================*/
+<span class="lineNum">      99 </span>            : 
+<span class="lineNum">     100 </span>            : //unfortunately a base obj cannot be created for all Content because it would make the order of the keys static
+<span class="lineNum">     101 </span>            : //when they need to be able to be in any order because of possible changes in titling order between books
+<span class="lineNum">     102 </span>            : //Usage Note: key: class of the containing span, value: text that will go inside span
+<span class="lineNum">     103 </span>            : $chapterTitleContent: (
+<span class="lineNum">     104 </span><span class="lineCov">        260 :   title-label: &quot;Chapter &quot;,</span>
+<span class="lineNum">     105 </span>            :   number: counter(chapter),
+<span class="lineNum">     106 </span><span class="lineCov">        104 :   divider: &quot; | &quot;</span>
+<span class="lineNum">     107 </span>            : );
+<span class="lineNum">     108 </span>            : 
+<span class="lineNum">     109 </span>            : $appendixTitleContent: (
+<span class="lineNum">     110 </span><span class="lineCov">        165 :   title-label: &quot;Appendix &quot;,</span>
+<span class="lineNum">     111 </span>            :   number: counter(appendix, upper-alpha),
+<span class="lineNum">     112 </span><span class="lineCov">         60 :   divider: &quot; : &quot;</span>
+<span class="lineNum">     113 </span>            : );
+<span class="lineNum">     114 </span>            : 
+<span class="lineNum">     115 </span>            : $sectionTitleContent: (
+<span class="lineNum">     116 </span><span class="lineCov">       5760 :   number: counter(chapter) &quot;.&quot; counter(section),</span>
+<span class="lineNum">     117 </span><span class="lineCov">        640 :   divider: &quot; | &quot;</span>
+<span class="lineNum">     118 </span>            : );
+<span class="lineNum">     119 </span>            : 
+<span class="lineNum">     120 </span>            : $exerciseTitleContent: (
+<span class="lineNum">     121 </span>            :   number: counter(exercise)
+<span class="lineNum">     122 </span>            : );
+<span class="lineNum">     123 </span>            : 
+<span class="lineNum">     124 </span>            : $exampleTitleContent: (
+<span class="lineNum">     125 </span><span class="lineCov">       4710 :   title-label: &quot;Example &quot;,</span>
+<span class="lineNum">     126 </span><span class="lineCov">      16485 :   number: counter(chapter) &quot;.&quot; counter(example)</span>
+<span class="lineNum">     127 </span><span class="lineCov">        471 : );</span>
+<span class="lineNum">     128 </span>            : 
+<span class="lineNum">     129 </span>            : $exampleSolutionTitleContent: (
+<span class="lineNum">     130 </span><span class="lineCov">       6061 :   title-label: &quot;Solution &quot;,</span>
+<span class="lineNum">     131 </span><span class="lineCov">      19285 :   number: counter(chapter) &quot;.&quot; counter(example)</span>
+<span class="lineNum">     132 </span><span class="lineCov">        551 : );</span>
+<span class="lineNum">     133 </span>            : 
+<span class="lineNum">     134 </span>            : $tryTitleContent: (
+<span class="lineNum">     135 </span><span class="lineCov">       3392 :   title-label: &quot;Try It &quot;,</span>
+<span class="lineNum">     136 </span><span class="lineCov">      14840 :   number: counter(chapter) &quot;.&quot; counter(example)</span>
+<span class="lineNum">     137 </span><span class="lineCov">        424 : );</span>
+<span class="lineNum">     138 </span>            : 
+<span class="lineNum">     139 </span>            : $calcTitleContent: (
+<span class="lineNum">     140 </span><span class="lineCov">       5846 :   title-label: &quot;Using the TI-83, 83+, 84, 84+ Calculator&quot;</span>
+<span class="lineNum">     141 </span>            : );
+<span class="lineNum">     142 </span>            : 
+<span class="lineNum">     143 </span>            : $captionTableNumber: (
+<span class="lineNum">     144 </span><span class="lineCov">       6896 :   title-label: &quot;Table &quot;,</span>
+<span class="lineNum">     145 </span><span class="lineCov">      28446 :   number: counter(chapter) &quot;.&quot; counter(table)</span>
+<span class="lineNum">     146 </span><span class="lineCov">        862 : );</span>
+<span class="lineNum">     147 </span>            : 
+<span class="lineNum">     148 </span>            : //TODO: Make a counter for both chapter and appendix, and automate the switch between standard and upper alpha counting?
+<span class="lineNum">     149 </span>            : $captionTableNumberAp: (
+<span class="lineNum">     150 </span><span class="lineCov">        480 :   title-label: &quot;Table &quot;,</span>
+<span class="lineNum">     151 </span><span class="lineCov">       2760 :   number: counter(appendix, upper-alpha) &quot;.&quot; counter(table)</span>
+<span class="lineNum">     152 </span><span class="lineCov">         60 : );</span>
+<span class="lineNum">     153 </span>            : 
+<span class="lineNum">     154 </span>            : $captionFigNumber: (
+<span class="lineNum">     155 </span><span class="lineCov">       6453 :   title-label: &quot;Figure &quot;,</span>
+<span class="lineNum">     156 </span><span class="lineCov">      24378 :   number: counter(chapter) &quot;.&quot; counter(figure)</span>
+<span class="lineNum">     157 </span><span class="lineCov">        717 : );</span>
+<span class="lineNum">     158 </span>            : 
+<span class="lineNum">     159 </span>            : //TODO: Make a counter for both chapter and appendix, and automate the switch between standard and upper alpha counting?
+<span class="lineNum">     160 </span>            : $captionFigNumberAp: (
+<span class="lineNum">     161 </span><span class="lineCov">        351 :   title-label: &quot;Figure &quot;,</span>
+<span class="lineNum">     162 </span><span class="lineCov">       1833 :   number: counter(appendix, upper-alpha) &quot;.&quot; counter(figure)</span>
+<span class="lineNum">     163 </span><span class="lineCov">         39 : );</span>
+<span class="lineNum">     164 </span>            : 
+<span class="lineNum">     165 </span><span class="lineNoCov">          0 : $symbolsSectionTitle: &quot;Symbols&quot;;</span>
+<span class="lineNum">     166 </span>            : 
+<span class="lineNum">     167 </span>            : /*==========================================================
+<span class="lineNum">     168 </span>            :   STATISTICS CONFIG
+<span class="lineNum">     169 </span>            : ==========================================================*/
+<span class="lineNum">     170 </span>            : 
+<span class="lineNum">     171 </span>            : $setTableCaption: (
+<span class="lineNum">     172 </span>            :   type: table,
+<span class="lineNum">     173 </span>            :   defaultContainer: caption,
+<span class="lineNum">     174 </span>            :   hasCaption: false,
+<span class="lineNum">     175 </span>            :   hasTitle: true
+<span class="lineNum">     176 </span>            : );
+<span class="lineNum">     177 </span>            : 
+<span class="lineNum">     178 </span>            : $setFigureCaption: (
+<span class="lineNum">     179 </span>            :   type: figure,
+<span class="lineNum">     180 </span>            :   defaultContainer: figcaption,
+<span class="lineNum">     181 </span>            :   hasCaption: true,
+<span class="lineNum">     182 </span>            :   hasTitle: false
+<span class="lineNum">     183 </span>            : );
+<span class="lineNum">     184 </span>            : 
+<span class="lineNum">     185 </span>            : //If this method of setting the content of the label explicity becomes a problem,
+<span class="lineNum">     186 </span>            : //try grabbing the numbering information from the element's header
+<span class="lineNum">     187 </span>            : 
+<span class="lineNum">     188 </span>            : //NOTE: These selectors MUST match the counting selectors or be more specific
+<span class="lineNum">     189 </span>            : //otherwise, the increment and the counter() call may fire in the wrong order
+<span class="lineNum">     190 </span>            : //This may be fixed in a later version of easybake
+<span class="lineNum">     191 </span>            : $targetLabels: (
+<span class="lineNum">     192 </span>            :   (
+<span class="lineNum">     193 </span>            :     selector: '.os-eoc [data-type=&quot;exercise&quot;]',
+<span class="lineNum">     194 </span>            :     label: &quot;Exercise &quot; counter(chapter) &quot;.&quot; counter(exercise)
+<span class="lineNum">     195 </span>            :   ),
+<span class="lineNum">     196 </span>            :   (
+<span class="lineNum">     197 </span>            :     selector: 'div[data-type=&quot;chapter&quot;] .example',
+<span class="lineNum">     198 </span>            :     label: &quot;Example &quot; counter(chapter) &quot;.&quot; counter(example)
+<span class="lineNum">     199 </span>            :   ),
+<span class="lineNum">     200 </span>            :   (
+<span class="lineNum">     201 </span>            :     selector: 'div[data-type=&quot;chapter&quot;] .try',
+<span class="lineNum">     202 </span>            :     label: &quot;Try It&quot;
+<span class="lineNum">     203 </span>            :   ),
+<span class="lineNum">     204 </span>            :   (
+<span class="lineNum">     205 </span>            :     selector: '[data-type=&quot;chapter&quot;] :not(table) &gt; table',
+<span class="lineNum">     206 </span>            :     label: &quot;Table &quot; counter(chapter) &quot;.&quot; counter(table)
+<span class="lineNum">     207 </span>            :   ),
+<span class="lineNum">     208 </span>            :   (
+<span class="lineNum">     209 </span>            :     selector: '[data-type=&quot;chapter&quot;] :not(figure) &gt; figure',
+<span class="lineNum">     210 </span>            :     label: &quot;Figure &quot; counter(chapter) &quot;.&quot; counter(figure)
+<span class="lineNum">     211 </span>            :   ),
+<span class="lineNum">     212 </span>            :   (
+<span class="lineNum">     213 </span>            :     selector: '[data-type=&quot;appendix&quot;] :not(table) &gt; table',
+<span class="lineNum">     214 </span>            :     label: &quot;Table &quot; counter(appendix, upper-alpha) &quot;.&quot; counter(table)
+<span class="lineNum">     215 </span>            :   ),
+<span class="lineNum">     216 </span>            :   (
+<span class="lineNum">     217 </span>            :     selector: '[data-type=&quot;appendix&quot;] :not(figure) &gt; figure',
+<span class="lineNum">     218 </span>            :     label: &quot;Table &quot; counter(appendix, upper-alpha) &quot;.&quot; counter(figure)
+<span class="lineNum">     219 </span>            :   )
+<span class="lineNum">     220 </span>            : );
+<span class="lineNum">     221 </span>            : 
+<span class="lineNum">     222 </span>            : /*
+<span class="lineNum">     223 </span>            :   Chapter Objectives
+<span class="lineNum">     224 </span>            : 
+<span class="lineNum">     225 </span>            :   This is a Note that appears in the Introduction page of every chapter.
+<span class="lineNum">     226 </span>            : 
+<span class="lineNum">     227 </span>            :   Markup: ./examples/page.note.chapter-objectives.html-cooked.html
+<span class="lineNum">     228 </span>            : 
+<span class="lineNum">     229 </span>            :   Style guide: page.note.chapter-objectives
+<span class="lineNum">     230 </span>            : */
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.12</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>
