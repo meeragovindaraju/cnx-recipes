@@ -66,28 +66,7 @@
 </div>
 <article role="main" class="kss-main">
   <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
-     <h1 id="output-html-conventions">Output HTML conventions</h1>
-<p>The purpose of this part is to document and centralize the output HTML decisions and conventions. These are the cooked formats that are delivered to the cnx.org website, the PDF generation system, and external consumers like TEA.</p>
-<ul>
-<li>Use <code>data-*</code> whenever possible. This applies to anything we use internally.</li>
-<li>Classes are used when several attributes are needed on one element: <code>class=&quot;eoc practice-container&quot;</code> <code>data-type=&quot;composite-page&quot;</code>.</li>
-<li>No numbering or titling should be accomplished via display css, it needs to be present in the unstyled cooked HTML</li>
-<li>All book specific strings are handled via the ruleset, this includes titles for notes/features and “generic” strings like “Chapter” or “Figure”. Instead of using labels in the content, we create all the titles via the ruleset, this provides one location to look for errors if titles are incorrect and prevents localised error when creating content. This is needed for internationalization. The ruleset handles them via variables, none of those should be hard coded.</li>
-<li>Prefix classes that are created in the ruleset and preserve the classes in the Raw HTML intact.</li>
-<li>If it’s not needed for styling, it shouldn’t be in the dom.</li>
-<li>If it’s empty, it should not be included in the HTML</li>
-</ul>
-<pre><code class="lang-html">&lt;title&gt;
-  &lt;span class=”divider”&gt;&lt;/span&gt;
-  &lt;span class=”title-text”&gt;My title&lt;/span&gt;
-&lt;/title&gt;
-</code></pre>
-<p>should be</p>
-<pre><code class="lang-html">&lt;title&gt;
-  &lt;span class=”title-text”&gt;My title&lt;/span&gt;
-&lt;/title&gt;
-</code></pre>
-
+     
   </div>
 </article>
 
