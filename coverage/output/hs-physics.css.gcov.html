@@ -1,0 +1,1615 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - unnamed - output/hs-physics.css</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">output</a> - hs-physics.css<span style="font-size: 80%;"> (source / <a href="hs-physics.css.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">unnamed</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">735</td>
+            <td class="headerCovTableEntry">833</td>
+            <td class="headerCovTableEntryMed">88.2 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2017-02-21 11:12:12</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntryHi">-</td>
+          </tr>
+          <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : /*</a>
+<span class="lineNum">       2 </span>            :   Book Page
+<span class="lineNum">       3 </span>            : 
+<span class="lineNum">       4 </span>            :   A Page is usually a section inside a chapter. It contains:
+<span class="lineNum">       5 </span>            : 
+<span class="lineNum">       6 </span>            :   - `[data-type='metadata']` The attribution information for this Page
+<span class="lineNum">       7 </span>            :   - `[data-type='document-title']` The title of the Page
+<span class="lineNum">       8 </span>            : 
+<span class="lineNum">       9 </span>            :   Markup: ./book.page.html-baked.html
+<span class="lineNum">      10 </span>            : 
+<span class="lineNum">      11 </span>            :   Style guide: book.page
+<span class="lineNum">      12 </span>            : */
+<span class="lineNum">      13 </span>            : /*
+<span class="lineNum">      14 </span>            :   Page Elements
+<span class="lineNum">      15 </span>            : 
+<span class="lineNum">      16 </span>            :   Everything in here is specific to a Page in a book.
+<span class="lineNum">      17 </span>            :   A Page is usually a section inside a chapter.
+<span class="lineNum">      18 </span>            : 
+<span class="lineNum">      19 </span>            :   Style guide: page
+<span class="lineNum">      20 </span>            : */
+<span class="lineNum">      21 </span>            : /*
+<span class="lineNum">      22 </span>            :   Metadata
+<span class="lineNum">      23 </span>            : 
+<span class="lineNum">      24 </span>            :   This contains attribution information and is sometimes collated to the back of the book.
+<span class="lineNum">      25 </span>            : 
+<span class="lineNum">      26 </span>            :   Markup:
+<span class="lineNum">      27 </span>            :   &lt;div data-type=&quot;page&quot;&gt;
+<span class="lineNum">      28 </span>            :     &lt;div data-type=&quot;metadata&quot;&gt;...&lt;/div&gt;
+<span class="lineNum">      29 </span>            :   &lt;/div&gt;
+<span class="lineNum">      30 </span>            : 
+<span class="lineNum">      31 </span>            :   Style guide: page.0-metadata
+<span class="lineNum">      32 </span>            : */
+<span class="lineNum">      33 </span>            : /*
+<span class="lineNum">      34 </span>            :   Processing Instruction
+<span class="lineNum">      35 </span>            : 
+<span class="lineNum">      36 </span>            :   These are an artifact of the transforms and will disappear in the future
+<span class="lineNum">      37 </span>            : 
+<span class="lineNum">      38 </span>            :   Markup:
+<span class="lineNum">      39 </span>            :   &lt;div data-type=&quot;page&quot;&gt;
+<span class="lineNum">      40 </span>            :     &lt;cnx-pi /&gt;
+<span class="lineNum">      41 </span>            :   &lt;/div&gt;
+<span class="lineNum">      42 </span>            : 
+<span class="lineNum">      43 </span>            :   Style guide: page.0-processing
+<span class="lineNum">      44 </span>            : */
+<span class="lineNum">      45 </span>            : /*
+<span class="lineNum">      46 </span>            :   Term
+<span class="lineNum">      47 </span>            : 
+<span class="lineNum">      48 </span>            :   A term which is used to make the Book Index. Terms used in a Glossary are defined in the Glossary, not here.
+<span class="lineNum">      49 </span>            : 
+<span class="lineNum">      50 </span>            :   **TODO:** The link in the index is an empty element so it does not show up
+<span class="lineNum">      51 </span>            : 
+<span class="lineNum">      52 </span>            :   **TODO:** Discuss how to automate glossary-creation
+<span class="lineNum">      53 </span>            : 
+<span class="lineNum">      54 </span>            :   Markup: ./page.term.html-baked.html
+<span class="lineNum">      55 </span>            : 
+<span class="lineNum">      56 </span>            :   Style guide: page.term
+<span class="lineNum">      57 </span>            : */
+<span class="lineNum">      58 </span>            : /*
+<span class="lineNum">      59 </span>            :   Note
+<span class="lineNum">      60 </span>            : 
+<span class="lineNum">      61 </span>            :   A note or &quot;feature&quot;. This is usually separated visually from the rest of the
+<span class="lineNum">      62 </span>            :   content in a book with a border and a separate background color.
+<span class="lineNum">      63 </span>            : 
+<span class="lineNum">      64 </span>            :   Contains an optional title, and optionally an additional class to help style the note
+<span class="lineNum">      65 </span>            : 
+<span class="lineNum">      66 </span>            :   Markup: ./page.note.html-baked.html
+<span class="lineNum">      67 </span>            : 
+<span class="lineNum">      68 </span>            :   Style guide: page.note
+<span class="lineNum">      69 </span>            : */
+<span class="lineNum">      70 </span>            : /*
+<span class="lineNum">      71 </span>            :   Figure
+<span class="lineNum">      72 </span>            : 
+<span class="lineNum">      73 </span>            :   A `&lt;figure&gt;` is wrapped in a `&lt;div data-type='figure'&gt;` which contains:
+<span class="lineNum">      74 </span>            :   - optional `[data-type='title']`
+<span class="lineNum">      75 </span>            :   - `figure` element
+<span class="lineNum">      76 </span>            :     - `[data-type='media']` : a wrapper element which may disappear in the future
+<span class="lineNum">      77 </span>            :       - `img[src][alt]` : The image for the Figure
+<span class="lineNum">      78 </span>            : 
+<span class="lineNum">      79 </span>            :   TODO: Maybe this should use the `&lt;picture&gt;` element instead of the `[data-type='media']` element:
+<span class="lineNum">      80 </span>            :   http://www.html-baked.html5rocks.com/en/tutorials/responsive/picture-element/
+<span class="lineNum">      81 </span>            : 
+<span class="lineNum">      82 </span>            :   # TODO
+<span class="lineNum">      83 </span>            : 
+<span class="lineNum">      84 </span>            :   - Decide on what the baked markup for a figure with a title and caption should look like.
+<span class="lineNum">      85 </span>            :     - Proposals have mentioned using `&lt;figcaption&gt;` most of the time.
+<span class="lineNum">      86 </span>            :     - Maybe what is in the Raw HTML is _good enough_?
+<span class="lineNum">      87 </span>            : 
+<span class="lineNum">      88 </span>            :   Markup: ./page.figure.html-baked.html
+<span class="lineNum">      89 </span>            : 
+<span class="lineNum">      90 </span>            :   Style guide: page.figure
+<span class="lineNum">      91 </span>            : */
+<span class="lineNum">      92 </span>            : /*
+<span class="lineNum">      93 </span>            :   Paragraph
+<span class="lineNum">      94 </span>            : 
+<span class="lineNum">      95 </span>            :   A Paragraph of text. Some of the common things it can contain are:
+<span class="lineNum">      96 </span>            : 
+<span class="lineNum">      97 </span>            :   - `[data-type='term']` : A term that is defined elsewhere (in the glossary)
+<span class="lineNum">      98 </span>            :   - `strong`
+<span class="lineNum">      99 </span>            :   - `em`
+<span class="lineNum">     100 </span>            :   - `[data-type='list']` : an inline list
+<span class="lineNum">     101 </span>            :     - `[data-type='item']` : an item in the list
+<span class="lineNum">     102 </span>            :   - `math` : MathML
+<span class="lineNum">     103 </span>            : 
+<span class="lineNum">     104 </span>            :   TODO: Move these into a separate &quot;inline&quot; section in the HTML guide
+<span class="lineNum">     105 </span>            : 
+<span class="lineNum">     106 </span>            :   Markup: ./page.para.html-baked.html
+<span class="lineNum">     107 </span>            : 
+<span class="lineNum">     108 </span>            :   Style guide: page.para
+<span class="lineNum">     109 </span>            : */
+<span class="lineNum">     110 </span>            : /*
+<span class="lineNum">     111 </span>            :   Section
+<span class="lineNum">     112 </span>            : 
+<span class="lineNum">     113 </span>            :   A (sub)section of content which contains a title.
+<span class="lineNum">     114 </span>            : 
+<span class="lineNum">     115 </span>            :   Markup: ./page.section.html-baked.html
+<span class="lineNum">     116 </span>            : 
+<span class="lineNum">     117 </span>            :   Style guide: page.section
+<span class="lineNum">     118 </span>            : */
+<span class="lineNum">     119 </span>            : /*
+<span class="lineNum">     120 </span>            :   Example
+<span class="lineNum">     121 </span>            : 
+<span class="lineNum">     122 </span>            :   An example which is usually styled to not be part of the flow of normal content
+<span class="lineNum">     123 </span>            :   (similar to a Note).
+<span class="lineNum">     124 </span>            : 
+<span class="lineNum">     125 </span>            :   Markup: ./page.example.html-baked.html
+<span class="lineNum">     126 </span>            : 
+<span class="lineNum">     127 </span>            :   Style guide: page.example
+<span class="lineNum">     128 </span>            : */
+<span class="lineNum">     129 </span>            : /*
+<span class="lineNum">     130 </span>            :   Exercise
+<span class="lineNum">     131 </span>            : 
+<span class="lineNum">     132 </span>            :   An exercise contains a problem, optional title, and optional solution(s).
+<span class="lineNum">     133 </span>            : 
+<span class="lineNum">     134 </span>            :   Exercises are usually numbered and contain a link to the solution if it exists.
+<span class="lineNum">     135 </span>            :   Typically, an exercise is collated at the end of chapter.
+<span class="lineNum">     136 </span>            : 
+<span class="lineNum">     137 </span>            :   Solutions are collated (at the end of section, end of chapter or end of book), they are numbered (the number is the same as the exercise they are associated to) and link back to their exercise.
+<span class="lineNum">     138 </span>            : 
+<span class="lineNum">     139 </span>            :   Markup: ./page.exercise.html-baked.html
+<span class="lineNum">     140 </span>            : 
+<span class="lineNum">     141 </span>            :   Style guide: page.exercise
+<span class="lineNum">     142 </span>            : */
+<span class="lineNum">     143 </span>            : /*
+<span class="lineNum">     144 </span>            :   Equation
+<span class="lineNum">     145 </span>            : 
+<span class="lineNum">     146 </span>            :   An equation wraps a MathML formula and is usually numbered.
+<span class="lineNum">     147 </span>            : 
+<span class="lineNum">     148 </span>            :   Markup: ./page.equation.html-baked.html
+<span class="lineNum">     149 </span>            : 
+<span class="lineNum">     150 </span>            :   Style guide: page.equation
+<span class="lineNum">     151 </span>            : */
+<span class="lineNum">     152 </span>            : /*
+<span class="lineNum">     153 </span>            :   Glossary
+<span class="lineNum">     154 </span>            : 
+<span class="lineNum">     155 </span>            :   This element is often referred to as Key Terms in the textbook.
+<span class="lineNum">     156 </span>            :   It is collated as a separate Page at the end of a Chapter or a Book.
+<span class="lineNum">     157 </span>            :   Also, it is collected from individual glossary elements in each raw Page.
+<span class="lineNum">     158 </span>            : 
+<span class="lineNum">     159 </span>            :   Markup: ./book.glossary.html-baked.html
+<span class="lineNum">     160 </span>            : 
+<span class="lineNum">     161 </span>            :   Style guide: book.glossary
+<span class="lineNum">     162 </span>            : */
+<span class="lineNum">     163 </span>            : /*
+<span class="lineNum">     164 </span>            :   Book Index
+<span class="lineNum">     165 </span>            : 
+<span class="lineNum">     166 </span>            :   The book Index contains terms and links to their occurences in the book.
+<span class="lineNum">     167 </span>            : 
+<span class="lineNum">     168 </span>            :   Markup: ./book.index.html-baked.html
+<span class="lineNum">     169 </span>            : 
+<span class="lineNum">     170 </span>            :   Style guide: book.index
+<span class="lineNum">     171 </span>            : */
+<span class="lineNum">     172 </span>            : /*
+<span class="lineNum">     173 </span>            :   Table
+<span class="lineNum">     174 </span>            : 
+<span class="lineNum">     175 </span>            :   The `table` element may contain a `caption`, `tbody`, `col`, and other _usual_ elements.
+<span class="lineNum">     176 </span>            : 
+<span class="lineNum">     177 </span>            :   If the table contains a title, there is an additional element inside `&lt;caption&gt;`
+<span class="lineNum">     178 </span>            : 
+<span class="lineNum">     179 </span>            :   # TODO
+<span class="lineNum">     180 </span>            : 
+<span class="lineNum">     181 </span>            :   - Decide on what the baked markup for a table with a title and caption should look like.
+<span class="lineNum">     182 </span>            :     - Proposals have mentioned wrapping the `&lt;table&gt;` element with a `.os-table-container` element.
+<span class="lineNum">     183 </span>            :     - Maybe what is in the Raw HTML is _good enough_?
+<span class="lineNum">     184 </span>            : 
+<span class="lineNum">     185 </span>            :   Markup: ./page.table.html-baked.html
+<span class="lineNum">     186 </span>            : 
+<span class="lineNum">     187 </span>            :   Style guide: page.table
+<span class="lineNum">     188 </span>            : */
+<span class="lineNum">     189 </span>            : /*
+<span class="lineNum">     190 </span>            :   Composite Page
+<span class="lineNum">     191 </span>            : 
+<span class="lineNum">     192 </span>            :   These are end-of-book or end-of-chapter Pages.
+<span class="lineNum">     193 </span>            : 
+<span class="lineNum">     194 </span>            :   A Composite Page is one that is automatically generated by moving/copying content from the raw pages.
+<span class="lineNum">     195 </span>            :   Examples include the end-of-chapter exercises, end-of-book solutions, end-of-chapter glossary, index.
+<span class="lineNum">     196 </span>            : 
+<span class="lineNum">     197 </span>            :   They:
+<span class="lineNum">     198 </span>            : 
+<span class="lineNum">     199 </span>            :   - must use data-type=&quot;composite-page&quot;.
+<span class="lineNum">     200 </span>            :   - must have a unique identifier (class) for styling purposes.
+<span class="lineNum">     201 </span>            :   - usually contain content separated by section(pages) or by chapter.
+<span class="lineNum">     202 </span>            :   - now appear in the TOC (currently not the case in the PDF).
+<span class="lineNum">     203 </span>            :   - aren't numbered in the content and in the TOC (the chapters and sections are)
+<span class="lineNum">     204 </span>            :   - follow the same rules as a regular data-type=&quot;page&quot; (header hierarchy, metadata, etc.)
+<span class="lineNum">     205 </span>            : 
+<span class="lineNum">     206 </span>            :   Style guide: book.composite
+<span class="lineNum">     207 </span>            : */
+<span class="lineNum">     208 </span>            : /*
+<span class="lineNum">     209 </span>            :   Chapter
+<span class="lineNum">     210 </span>            : 
+<span class="lineNum">     211 </span>            :   A Chapter contains a title and multiple Pages, one of which may be a `.introduction` Page.
+<span class="lineNum">     212 </span>            : 
+<span class="lineNum">     213 </span>            :   The introduction page typically contains a splash image, a chapter outline and an introductory paragraph.
+<span class="lineNum">     214 </span>            : 
+<span class="lineNum">     215 </span>            :   Markup: ./book.chapter.html-baked.html
+<span class="lineNum">     216 </span>            : 
+<span class="lineNum">     217 </span>            :   Style guide: book.chapter
+<span class="lineNum">     218 </span>            : */
+<span class="lineNum">     219 </span>            : /*
+<span class="lineNum">     220 </span>            :   Unnumbered Content
+<span class="lineNum">     221 </span>            : 
+<span class="lineNum">     222 </span>            :   Content that has been marked with the class `.unnumbered` by the content team.
+<span class="lineNum">     223 </span>            : 
+<span class="lineNum">     224 </span>            :   Currently, the ruleset supports only tables and figures but
+<span class="lineNum">     225 </span>            :   this may apply to a note, a table, an equation, a figure.
+<span class="lineNum">     226 </span>            : 
+<span class="lineNum">     227 </span>            :   Markup: ./page.unnumbered.html-baked.html
+<span class="lineNum">     228 </span>            : 
+<span class="lineNum">     229 </span>            :   Style guide: page.unnumbered
+<span class="lineNum">     230 </span>            : 
+<span class="lineNum">     231 </span>            : */
+<span class="lineNum">     232 </span>            : /*
+<span class="lineNum">     233 </span>            :   Lists
+<span class="lineNum">     234 </span>            : 
+<span class="lineNum">     235 </span>            :   Lists can contain a label or title and can be block content or inline.
+<span class="lineNum">     236 </span>            : 
+<span class="lineNum">     237 </span>            :   Markup: ./page.list.html-baked.html
+<span class="lineNum">     238 </span>            : 
+<span class="lineNum">     239 </span>            :   Style guide: page.list
+<span class="lineNum">     240 </span>            : 
+<span class="lineNum">     241 </span>            : */
+<span class="lineNum">     242 </span>            : /*
+<span class="lineNum">     243 </span>            :   Iframe
+<span class="lineNum">     244 </span>            : 
+<span class="lineNum">     245 </span>            :   An iframe can show an embedded simulation or video. Some formats cannot or would
+<span class="lineNum">     246 </span>            :   rather not show the iframe and present a link instead.
+<span class="lineNum">     247 </span>            : 
+<span class="lineNum">     248 </span>            :   So we wrap the element inside a `[data-type=&quot;alternatives&quot;]` element and add
+<span class="lineNum">     249 </span>            :   enough classes to be able to select which alternative to show and which to hide.
+<span class="lineNum">     250 </span>            : 
+<span class="lineNum">     251 </span>            :   Markup: ./page.iframe.html-baked.html
+<span class="lineNum">     252 </span>            : 
+<span class="lineNum">     253 </span>            :   Style guide: page.iframe
+<span class="lineNum">     254 </span>            : */
+<span class="lineNum">     255 </span>            : /*
+<span class="lineNum">     256 </span>            :   Links
+<span class="lineNum">     257 </span>            : 
+<span class="lineNum">     258 </span>            :   Links to simulations should open in a new tab (ie `&lt;a target=&quot;_blank&quot;&gt;`)
+<span class="lineNum">     259 </span>            : 
+<span class="lineNum">     260 </span>            :   Markup: ./page.link.html-baked.html
+<span class="lineNum">     261 </span>            : 
+<span class="lineNum">     262 </span>            :   Style guide: page.link
+<span class="lineNum">     263 </span>            : 
+<span class="lineNum">     264 </span>            : */
+<span class="lineNum">     265 </span>            : /*==========================================================
+<span class="lineNum">     266 </span>            :   HIGH SCHOOL PHYSICS PAGES
+<span class="lineNum">     267 </span>            : ==========================================================*/
+<span class="lineNum">     268 </span>            : /*
+<span class="lineNum">     269 </span>            :   Section Summary
+<span class="lineNum">     270 </span>            : 
+<span class="lineNum">     271 </span>            :   These should be collated at the end of a chapter
+<span class="lineNum">     272 </span>            :   and separated by which section they came from.
+<span class="lineNum">     273 </span>            : 
+<span class="lineNum">     274 </span>            :   Markup: ./styleguide/book.composite.summary.html-baked.html
+<span class="lineNum">     275 </span>            : 
+<span class="lineNum">     276 </span>            :   Style guide: book.composite.summary
+<span class="lineNum">     277 </span>            : */
+<span class="lineNum">     278 </span>            : /*
+<span class="lineNum">     279 </span>            :   Key Equations
+<span class="lineNum">     280 </span>            : 
+<span class="lineNum">     281 </span>            :   These should be collated at the end of a chapter
+<span class="lineNum">     282 </span>            : 
+<span class="lineNum">     283 </span>            :   **Notes:** Even without the styling you can see a few problems with the ruleset code:
+<span class="lineNum">     284 </span>            :   1. the rulesets use the class attribute when they should use the `data-type`
+<span class="lineNum">     285 </span>            :   1. the solution is being duplicated
+<span class="lineNum">     286 </span>            :   1. the solution is inside the link text that points back to the problem
+<span class="lineNum">     287 </span>            :   1. new id's are generated rather than using the existing id attributes for the problem and solution
+<span class="lineNum">     288 </span>            : 
+<span class="lineNum">     289 </span>            :   Markup: ./styleguide/book.composite.key-equations.html-baked.html
+<span class="lineNum">     290 </span>            : 
+<span class="lineNum">     291 </span>            :   Style guide: book.composite.key-equations
+<span class="lineNum">     292 </span>            : */
+<span class="lineNum">     293 </span>            : /*
+<span class="lineNum">     294 </span>            :   Concept Items
+<span class="lineNum">     295 </span>            : 
+<span class="lineNum">     296 </span>            :   These should be collated at the end of a chapter
+<span class="lineNum">     297 </span>            : 
+<span class="lineNum">     298 </span>            :   Markup: ./styleguide/book.composite.concept.html-baked.html
+<span class="lineNum">     299 </span>            : 
+<span class="lineNum">     300 </span>            :   Style guide: book.composite.concept
+<span class="lineNum">     301 </span>            : */
+<span class="lineNum">     302 </span>            : /*
+<span class="lineNum">     303 </span>            :   Critical Thinking Items
+<span class="lineNum">     304 </span>            : 
+<span class="lineNum">     305 </span>            :   These should be collated at the end of a chapter
+<span class="lineNum">     306 </span>            : 
+<span class="lineNum">     307 </span>            :   Markup: ./styleguide/book.composite.critical-thinking.html-baked.html
+<span class="lineNum">     308 </span>            : 
+<span class="lineNum">     309 </span>            :   Style guide: book.composite.critical-thinking
+<span class="lineNum">     310 </span>            : */
+<span class="lineNum">     311 </span>            : /*
+<span class="lineNum">     312 </span>            :   Problems
+<span class="lineNum">     313 </span>            : 
+<span class="lineNum">     314 </span>            :   These should be collated at the end of a chapter
+<span class="lineNum">     315 </span>            : 
+<span class="lineNum">     316 </span>            :   Markup: ./styleguide/book.composite.problems.html-baked.html
+<span class="lineNum">     317 </span>            : 
+<span class="lineNum">     318 </span>            :   Style guide: book.composite.problems
+<span class="lineNum">     319 </span>            : */
+<span class="lineNum">     320 </span>            : /*
+<span class="lineNum">     321 </span>            :   Performance Task
+<span class="lineNum">     322 </span>            : 
+<span class="lineNum">     323 </span>            :   These should be collated at the end of a chapter
+<span class="lineNum">     324 </span>            : 
+<span class="lineNum">     325 </span>            :   Markup: ./styleguide/book.composite.performance.html-baked.html
+<span class="lineNum">     326 </span>            : 
+<span class="lineNum">     327 </span>            :   Style guide: book.composite.performance
+<span class="lineNum">     328 </span>            : */
+<span class="lineNum">     329 </span>            : /*
+<span class="lineNum">     330 </span>            :   Multiple Choice
+<span class="lineNum">     331 </span>            : 
+<span class="lineNum">     332 </span>            :   These should be collated at the end of a chapter
+<span class="lineNum">     333 </span>            : 
+<span class="lineNum">     334 </span>            :   Markup: ./styleguide/book.composite.multiplechoice.html-baked.html
+<span class="lineNum">     335 </span>            : 
+<span class="lineNum">     336 </span>            :   Style guide: book.composite.multiplechoice
+<span class="lineNum">     337 </span>            : */
+<span class="lineNum">     338 </span>            : /*
+<span class="lineNum">     339 </span>            :   Short Answer
+<span class="lineNum">     340 </span>            : 
+<span class="lineNum">     341 </span>            :   These should be collated at the end of a chapter
+<span class="lineNum">     342 </span>            : 
+<span class="lineNum">     343 </span>            :   Markup: ./styleguide/book.composite.shortanswer.html-baked.html
+<span class="lineNum">     344 </span>            : 
+<span class="lineNum">     345 </span>            :   Style guide: book.composite.shortanswer
+<span class="lineNum">     346 </span>            : */
+<span class="lineNum">     347 </span>            : /*
+<span class="lineNum">     348 </span>            :   Extended Response
+<span class="lineNum">     349 </span>            : 
+<span class="lineNum">     350 </span>            :   These should be collated at the end of a chapter
+<span class="lineNum">     351 </span>            : 
+<span class="lineNum">     352 </span>            :   Markup: ./styleguide/book.composite.extendedresponse.html-baked.html
+<span class="lineNum">     353 </span>            : 
+<span class="lineNum">     354 </span>            :   Style guide: book.composite.extendedresponse
+<span class="lineNum">     355 </span>            : */
+<span class="lineNum">     356 </span>            : /*
+<span class="lineNum">     357 </span>            :   Chapter Review
+<span class="lineNum">     358 </span>            : 
+<span class="lineNum">     359 </span>            :   These should be collated at the end of a chapter.
+<span class="lineNum">     360 </span>            : 
+<span class="lineNum">     361 </span>            :   Compound Composite that contains: contains Concept Items, Critical Thinking, Performance Task
+<span class="lineNum">     362 </span>            : 
+<span class="lineNum">     363 </span>            :   Markup: ./styleguide/book.compoundcomposite.chapterreview.html-baked.html
+<span class="lineNum">     364 </span>            : 
+<span class="lineNum">     365 </span>            :   Style guide: book.compoundcomposite.chapterreview
+<span class="lineNum">     366 </span>            : */
+<span class="lineNum">     367 </span>            : /*
+<span class="lineNum">     368 </span>            :   Test Prep
+<span class="lineNum">     369 </span>            : 
+<span class="lineNum">     370 </span>            :   These should be collated at the end of a chapter.
+<span class="lineNum">     371 </span>            : 
+<span class="lineNum">     372 </span>            :   Compound Composite that contains: Test Prep Multiple Choice, Test Prep Short Answer, Test Prep Extended Response
+<span class="lineNum">     373 </span>            : 
+<span class="lineNum">     374 </span>            :   Markup: ./styleguide/book.compoundcomposite.testprep.html-baked.html
+<span class="lineNum">     375 </span>            : 
+<span class="lineNum">     376 </span>            :   Style guide: book.compoundcomposite.testprep
+<span class="lineNum">     377 </span>            : */
+<span class="lineNum">     378 </span>            : /*==========================================================
+<span class="lineNum">     379 </span>            :   HIGH SCHOOL PHYSICS TITLING CONTENT
+<span class="lineNum">     380 </span>            : ==========================================================*/
+<span class="lineNum">     381 </span>            : /*
+<span class="lineNum">     382 </span>            :   Teacher Support  note
+<span class="lineNum">     383 </span>            : 
+<span class="lineNum">     384 </span>            :   Contains a title &quot;Teacher Support&quot;
+<span class="lineNum">     385 </span>            : 
+<span class="lineNum">     386 </span>            :   Markup: ./styleguide/page.note.teacher.html-baked.html
+<span class="lineNum">     387 </span>            : 
+<span class="lineNum">     388 </span>            :   Style guide: page.note.teacher
+<span class="lineNum">     389 </span>            : */
+<span class="lineNum">     390 </span>            : /*
+<span class="lineNum">     391 </span>            :   Section Learning Objectives note
+<span class="lineNum">     392 </span>            : 
+<span class="lineNum">     393 </span>            :   Contains a title &quot;Section Learning Objectives&quot;
+<span class="lineNum">     394 </span>            : 
+<span class="lineNum">     395 </span>            :   Markup: ./styleguide/page.note.learningobjectives.html-baked.html
+<span class="lineNum">     396 </span>            : 
+<span class="lineNum">     397 </span>            :   Style guide: page.note.learningobjectives
+<span class="lineNum">     398 </span>            : */
+<span class="lineNum">     399 </span>            : /*
+<span class="lineNum">     400 </span>            :   Boundless Physics note
+<span class="lineNum">     401 </span>            : 
+<span class="lineNum">     402 </span>            :   Contains a title &quot;Boundless Physics&quot; and a body containing a title and the contents of the note.
+<span class="lineNum">     403 </span>            : 
+<span class="lineNum">     404 </span>            :   Markup: ./styleguide/page.note.boundlessphysics.html-baked.html
+<span class="lineNum">     405 </span>            : 
+<span class="lineNum">     406 </span>            :   Style guide: page.note.boundlessphysics
+<span class="lineNum">     407 </span>            : */
+<span class="lineNum">     408 </span>            : /*
+<span class="lineNum">     409 </span>            :   Misconception Alert note
+<span class="lineNum">     410 </span>            : 
+<span class="lineNum">     411 </span>            :   Contains a title &quot;Misconception Alert&quot;.
+<span class="lineNum">     412 </span>            : 
+<span class="lineNum">     413 </span>            :   Markup: ./styleguide/page.note.misconception.html-baked.html
+<span class="lineNum">     414 </span>            : 
+<span class="lineNum">     415 </span>            :   Style guide: page.note.misconception
+<span class="lineNum">     416 </span>            : */
+<span class="lineNum">     417 </span>            : /*
+<span class="lineNum">     418 </span>            :   Teacher Demonstration note
+<span class="lineNum">     419 </span>            : 
+<span class="lineNum">     420 </span>            :   Contains a title &quot;Teacher Demonstration&quot;.
+<span class="lineNum">     421 </span>            : 
+<span class="lineNum">     422 </span>            :   Markup: ./styleguide/page.note.workout.html-baked.html
+<span class="lineNum">     423 </span>            : 
+<span class="lineNum">     424 </span>            :   Style guide: page.note.workout
+<span class="lineNum">     425 </span>            : */
+<span class="lineNum">     426 </span>            : /*
+<span class="lineNum">     427 </span>            :   Grasp Check note
+<span class="lineNum">     428 </span>            : 
+<span class="lineNum">     429 </span>            :   Contains a title &quot;Grasp Check&quot;.
+<span class="lineNum">     430 </span>            : 
+<span class="lineNum">     431 </span>            :   Markup: ./styleguide/page.note.grasp-check.html-baked.html
+<span class="lineNum">     432 </span>            : 
+<span class="lineNum">     433 </span>            :   Style guide: page.note.grasp-check
+<span class="lineNum">     434 </span>            : */
+<span class="lineNum">     435 </span>            : /*
+<span class="lineNum">     436 </span>            :   Snap Lab note
+<span class="lineNum">     437 </span>            : 
+<span class="lineNum">     438 </span>            :   Contains a title &quot;Snap Lab&quot; and wrap the body.
+<span class="lineNum">     439 </span>            : 
+<span class="lineNum">     440 </span>            :   Markup: ./styleguide/page.note.snap-lab.html-baked.html
+<span class="lineNum">     441 </span>            : 
+<span class="lineNum">     442 </span>            :   Style guide: page.note.snap-lab
+<span class="lineNum">     443 </span>            : */
+<span class="lineNum">     444 </span>            : /*
+<span class="lineNum">     445 </span>            :   Worked Example note
+<span class="lineNum">     446 </span>            : 
+<span class="lineNum">     447 </span>            :   Contains a title &quot;Worked Example&quot; and wraps the body.
+<span class="lineNum">     448 </span>            : 
+<span class="lineNum">     449 </span>            :   Markup: ./styleguide/page.note.worked-example.html-baked.html
+<span class="lineNum">     450 </span>            : 
+<span class="lineNum">     451 </span>            :   Style guide: page.note.worked-example
+<span class="lineNum">     452 </span>            : */
+<span class="lineNum">     453 </span>            : /*
+<span class="lineNum">     454 </span>            :   Tips For Success note
+<span class="lineNum">     455 </span>            : 
+<span class="lineNum">     456 </span>            :   Contains a title &quot;Tips For Success&quot;.
+<span class="lineNum">     457 </span>            : 
+<span class="lineNum">     458 </span>            :   Markup: ./styleguide/page.note.tips-for-success.html-baked.html
+<span class="lineNum">     459 </span>            : 
+<span class="lineNum">     460 </span>            :   Style guide: page.note.tips-for-success
+<span class="lineNum">     461 </span>            : */
+<span class="lineNum">     462 </span>            : /*
+<span class="lineNum">     463 </span>            :   Work In Physics note
+<span class="lineNum">     464 </span>            : 
+<span class="lineNum">     465 </span>            :   Contains a title &quot;Work In Physics&quot; and wraps body.
+<span class="lineNum">     466 </span>            : 
+<span class="lineNum">     467 </span>            :   Markup: ./styleguide/page.note.work-in-physics.html-baked.html
+<span class="lineNum">     468 </span>            : 
+<span class="lineNum">     469 </span>            :   Style guide: page.note.work-in-physics
+<span class="lineNum">     470 </span>            : */
+<span class="lineNum">     471 </span>            : /*
+<span class="lineNum">     472 </span>            :   Fun In Physics note
+<span class="lineNum">     473 </span>            : 
+<span class="lineNum">     474 </span>            :   Contains a title &quot;Fun In Physics&quot;.
+<span class="lineNum">     475 </span>            : 
+<span class="lineNum">     476 </span>            :   Markup: ./styleguide/page.note.fun-in-physics.html-baked.html
+<span class="lineNum">     477 </span>            : 
+<span class="lineNum">     478 </span>            :   Style guide: page.note.fun-in-physics
+<span class="lineNum">     479 </span>            : */
+<span class="lineNum">     480 </span>            : /*
+<span class="lineNum">     481 </span>            :   Links to Physics note
+<span class="lineNum">     482 </span>            : 
+<span class="lineNum">     483 </span>            :   Contains a title &quot;Links to Physics&quot; and wraps body.
+<span class="lineNum">     484 </span>            : 
+<span class="lineNum">     485 </span>            :   Markup: ./styleguide/page.note.links-to-physics.html-baked.html
+<span class="lineNum">     486 </span>            : 
+<span class="lineNum">     487 </span>            :   Style guide: page.note.links-to-physics
+<span class="lineNum">     488 </span>            : */
+<span class="lineNum">     489 </span>            : /*
+<span class="lineNum">     490 </span>            :   Watch Physics note
+<span class="lineNum">     491 </span>            : 
+<span class="lineNum">     492 </span>            :   Contains a title &quot;Watch Physics&quot; and wraps body.
+<span class="lineNum">     493 </span>            : 
+<span class="lineNum">     494 </span>            :   Markup: ./styleguide/page.note.watch-physics.html-baked.html
+<span class="lineNum">     495 </span>            : 
+<span class="lineNum">     496 </span>            :   Style guide: page.note.watch-physics
+<span class="lineNum">     497 </span>            : */
+<span class="lineNum">     498 </span>            : /*
+<span class="lineNum">     499 </span>            :   Virtual Physics note
+<span class="lineNum">     500 </span>            : 
+<span class="lineNum">     501 </span>            :   Contains a title &quot;Virtual Physics&quot; and wraps the body.
+<span class="lineNum">     502 </span>            : 
+<span class="lineNum">     503 </span>            :   Markup: ./styleguide/page.note.virtual-physics.html-baked.html
+<span class="lineNum">     504 </span>            : 
+<span class="lineNum">     505 </span>            :   Style guide: page.note.virtual-physics
+<span class="lineNum">     506 </span>            : */
+<span class="lineNum">     507 </span>            : /*==========================================================
+<span class="lineNum">     508 </span>            :   HIGH SCHOOL PHYSICS CONFIG
+<span class="lineNum">     509 </span>            : ==========================================================*/
+<span class="lineNum">     510 </span>            : /*
+<span class="lineNum">     511 </span>            :   Grasp Check
+<span class="lineNum">     512 </span>            : 
+<span class="lineNum">     513 </span>            :   This is an exercise that is fetched from exercises.openstax.org.
+<span class="lineNum">     514 </span>            :   It should be rendered with the label &quot;Grasp Check&quot; (from the data-label attribute).
+<span class="lineNum">     515 </span>            : 
+<span class="lineNum">     516 </span>            :   Markup: ./styleguide/page.exercise.grasp-check.html-baked.html
+<span class="lineNum">     517 </span>            : 
+<span class="lineNum">     518 </span>            :   Style guide: page.exercise.grasp-check
+<span class="lineNum">     519 </span>            : */
+<span class="lineNum">     520 </span><span class="lineNoCov">          0 : :pass(0) div.preface &gt; [data-type=&quot;document-title&quot;] {</span>
+<span class="lineNum">     521 </span>            :   container: h1;
+<span class="lineNum">     522 </span>            :   content: content(); }
+<span class="lineNum">     523 </span><span class="lineCov">         46 : :pass(0) :not([data-type=&quot;metadata&quot;]) &gt; [data-type=&quot;document-title&quot;] {</span>
+<span class="lineNum">     524 </span><span class="lineCov">         46 :   content: ''; }</span>
+<span class="lineNum">     525 </span><span class="lineCov">         46 :   :pass(0) :not([data-type=&quot;metadata&quot;]) &gt; [data-type=&quot;document-title&quot;]::after {</span>
+<span class="lineNum">     526 </span><span class="lineCov">         46 :     content: content();</span>
+<span class="lineNum">     527 </span><span class="lineCov">         46 :     container: span;</span>
+<span class="lineNum">     528 </span><span class="lineCov">         46 :     class: &quot;os-text&quot;; }</span>
+<span class="lineNum">     529 </span><span class="lineCov">          2 : :pass(0) a.os-interactive-link {</span>
+<span class="lineNum">     530 </span><span class="lineCov">          2 :   attr-target: &quot;_blank&quot;; }</span>
+<span class="lineNum">     531 </span><span class="lineCov">          2 : :pass(0) [data-type=&quot;exercise&quot;][data-label]:not([data-label=&quot;&quot;])::after {</span>
+<span class="lineNum">     532 </span><span class="lineCov">          2 :   container: div;</span>
+<span class="lineNum">     533 </span><span class="lineCov">          2 :   class: &quot;os-label&quot;;</span>
+<span class="lineNum">     534 </span><span class="lineCov">          2 :   content: attr(data-label);</span>
+<span class="lineNum">     535 </span><span class="lineCov">          2 :   move-to: bTitleLabel; }</span>
+<span class="lineNum">     536 </span><span class="lineCov">          2 : :pass(0) [data-type=&quot;exercise&quot;][data-label]:not([data-label=&quot;&quot;])::outside {</span>
+<span class="lineNum">     537 </span><span class="lineCov">          2 :   data-type: &quot;exercise-container&quot;;</span>
+<span class="lineNum">     538 </span><span class="lineCov">          2 :   container: div;</span>
+<span class="lineNum">     539 </span><span class="lineCov">          2 :   content: pending(bTitleLabel) content(); }</span>
+<span class="lineNum">     540 </span><span class="lineCov">          1 : :pass(0) ol[data-label]:not([data-label=&quot;&quot;])::after,</span>
+<span class="lineNum">     541 </span><span class="lineCov">          2 : :pass(0) ul[data-label]:not([data-label=&quot;&quot;])::after {</span>
+<span class="lineNum">     542 </span><span class="lineCov">          3 :   container: div;</span>
+<span class="lineNum">     543 </span><span class="lineCov">          3 :   class: &quot;os-label&quot;;</span>
+<span class="lineNum">     544 </span><span class="lineCov">          3 :   content: attr(data-label);</span>
+<span class="lineNum">     545 </span><span class="lineCov">          3 :   move-to: bListLabel; }</span>
+<span class="lineNum">     546 </span><span class="lineCov">          1 : :pass(0) ol[data-label]:not([data-label=&quot;&quot;])::outside,</span>
+<span class="lineNum">     547 </span><span class="lineCov">          2 : :pass(0) ul[data-label]:not([data-label=&quot;&quot;])::outside {</span>
+<span class="lineNum">     548 </span><span class="lineCov">          3 :   data-type: &quot;list-container&quot;;</span>
+<span class="lineNum">     549 </span><span class="lineCov">          3 :   container: div;</span>
+<span class="lineNum">     550 </span><span class="lineCov">          3 :   content: pending(bListLabel) content(); }</span>
+<span class="lineNum">     551 </span><span class="lineCov">          1 : :pass(0) :not([data-type=&quot;alternatives&quot;]) &gt; iframe {</span>
+<span class="lineNum">     552 </span><span class="lineCov">          1 :   class: attr(class) &quot;os-is-iframe&quot;; }</span>
+<span class="lineNum">     553 </span><span class="lineCov">          1 :   :pass(0) :not([data-type=&quot;alternatives&quot;]) &gt; iframe::after {</span>
+<span class="lineNum">     554 </span><span class="lineCov">          1 :     container: a;</span>
+<span class="lineNum">     555 </span><span class="lineCov">          1 :     class: &quot;os-is-link&quot;;</span>
+<span class="lineNum">     556 </span><span class="lineCov">          1 :     attr-target: &quot;_window&quot;;</span>
+<span class="lineNum">     557 </span><span class="lineCov">          1 :     attr-href: attr(src);</span>
+<span class="lineNum">     558 </span><span class="lineCov">          1 :     content: &quot;Click to view content&quot;;</span>
+<span class="lineNum">     559 </span><span class="lineCov">          1 :     move-to: bIframeLink; }</span>
+<span class="lineNum">     560 </span><span class="lineCov">          1 :   :pass(0) :not([data-type=&quot;alternatives&quot;]) &gt; iframe::outside {</span>
+<span class="lineNum">     561 </span><span class="lineCov">          1 :     container: div;</span>
+<span class="lineNum">     562 </span><span class="lineCov">          1 :     data-type: &quot;alternatives&quot;;</span>
+<span class="lineNum">     563 </span><span class="lineCov">          1 :     class: &quot;os-has-iframe os-has-link&quot;;</span>
+<span class="lineNum">     564 </span><span class="lineCov">          1 :     content: pending(bIframeLink) content(); }</span>
+<span class="lineNum">     565 </span><span class="lineNoCov">          0 : :pass(0) [data-type=&quot;metadata&quot;] &gt; [data-type=&quot;description&quot;] {</span>
+<span class="lineNum">     566 </span>            :   move-to: trash; }
+<span class="lineNum">     567 </span>            : 
+<span class="lineNum">     568 </span><span class="lineNoCov">          0 : :pass(1) div[class=&quot;note&quot;] &gt; div[data-type=&quot;title&quot;] {</span>
+<span class="lineNum">     569 </span>            :   string-set: noteTitle content();
+<span class="lineNum">     570 </span>            :   move-to: trash; }
+<span class="lineNum">     571 </span><span class="lineNoCov">          0 :   :pass(1) div[class=&quot;note&quot;] &gt; div[data-type=&quot;title&quot;]::before {</span>
+<span class="lineNum">     572 </span>            :     container: span;
+<span class="lineNum">     573 </span>            :     class: &quot;os-title-label&quot;;
+<span class="lineNum">     574 </span>            :     content: string(noteTitle);
+<span class="lineNum">     575 </span>            :     move-to: genericNoteLabel; }
+<span class="lineNum">     576 </span><span class="lineNoCov">          0 : :pass(1) div[class=&quot;note&quot;]::after {</span>
+<span class="lineNum">     577 </span>            :   container: div;
+<span class="lineNum">     578 </span>            :   content: pending(genericNoteLabel);
+<span class="lineNum">     579 </span>            :   class: &quot;os-title&quot;;
+<span class="lineNum">     580 </span>            :   move-to: genericNote; }
+<span class="lineNum">     581 </span><span class="lineNoCov">          0 : :pass(1) div[class=&quot;note&quot;]:deferred {</span>
+<span class="lineNum">     582 </span>            :   content: pending(genericNote) content(); }
+<span class="lineNum">     583 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].os-teacher::before {</span>
+<span class="lineNum">     584 </span><span class="lineCov">          1 :   container: span;</span>
+<span class="lineNum">     585 </span><span class="lineCov">          1 :   class: &quot;os-title-label&quot;;</span>
+<span class="lineNum">     586 </span><span class="lineCov">          1 :   content: &quot;Teacher Support&quot;;</span>
+<span class="lineNum">     587 </span><span class="lineCov">          1 :   move-to: bNoteLabel; }</span>
+<span class="lineNum">     588 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].os-teacher::before {</span>
+<span class="lineNum">     589 </span><span class="lineCov">          1 :   container: h3;</span>
+<span class="lineNum">     590 </span><span class="lineCov">          1 :   content: pending(bNoteLabel);</span>
+<span class="lineNum">     591 </span><span class="lineCov">          1 :   class: &quot;os-title&quot;;</span>
+<span class="lineNum">     592 </span><span class="lineCov">          1 :   move-to: bNoteHeader; }</span>
+<span class="lineNum">     593 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].os-teacher:deferred {</span>
+<span class="lineNum">     594 </span><span class="lineCov">          1 :   content: pending(bNoteHeader) content(); }</span>
+<span class="lineNum">     595 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].boundless-physics::before {</span>
+<span class="lineNum">     596 </span><span class="lineCov">          1 :   container: span;</span>
+<span class="lineNum">     597 </span><span class="lineCov">          1 :   class: &quot;os-title-label&quot;;</span>
+<span class="lineNum">     598 </span><span class="lineCov">          1 :   content: &quot;Boundless Physics&quot;;</span>
+<span class="lineNum">     599 </span><span class="lineCov">          1 :   move-to: bNoteLabel; }</span>
+<span class="lineNum">     600 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].boundless-physics::before {</span>
+<span class="lineNum">     601 </span><span class="lineCov">          1 :   container: h3;</span>
+<span class="lineNum">     602 </span><span class="lineCov">          1 :   content: pending(bNoteLabel);</span>
+<span class="lineNum">     603 </span><span class="lineCov">          1 :   class: &quot;os-title&quot;;</span>
+<span class="lineNum">     604 </span><span class="lineCov">          1 :   move-to: bNoteHeader; }</span>
+<span class="lineNum">     605 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].boundless-physics::inside {</span>
+<span class="lineNum">     606 </span><span class="lineCov">          1 :   class: &quot;os-note-body&quot;; }</span>
+<span class="lineNum">     607 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].boundless-physics:deferred {</span>
+<span class="lineNum">     608 </span><span class="lineCov">          1 :   content: pending(bNoteHeader) content(); }</span>
+<span class="lineNum">     609 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].learning-objectives::before {</span>
+<span class="lineNum">     610 </span><span class="lineCov">          1 :   container: span;</span>
+<span class="lineNum">     611 </span><span class="lineCov">          1 :   class: &quot;os-title-label&quot;;</span>
+<span class="lineNum">     612 </span><span class="lineCov">          1 :   content: &quot;Section Learning Objectives&quot;;</span>
+<span class="lineNum">     613 </span><span class="lineCov">          1 :   move-to: bNoteLabel; }</span>
+<span class="lineNum">     614 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].learning-objectives::before {</span>
+<span class="lineNum">     615 </span><span class="lineCov">          1 :   container: h3;</span>
+<span class="lineNum">     616 </span><span class="lineCov">          1 :   content: pending(bNoteLabel);</span>
+<span class="lineNum">     617 </span><span class="lineCov">          1 :   class: &quot;os-title&quot;;</span>
+<span class="lineNum">     618 </span><span class="lineCov">          1 :   move-to: bNoteHeader; }</span>
+<span class="lineNum">     619 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].learning-objectives:deferred {</span>
+<span class="lineNum">     620 </span><span class="lineCov">          1 :   content: pending(bNoteHeader) content(); }</span>
+<span class="lineNum">     621 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].ost-teacher-demonstration::before {</span>
+<span class="lineNum">     622 </span><span class="lineCov">          1 :   container: span;</span>
+<span class="lineNum">     623 </span><span class="lineCov">          1 :   class: &quot;os-title-label&quot;;</span>
+<span class="lineNum">     624 </span><span class="lineCov">          1 :   content: &quot;Teacher Demonstration&quot;;</span>
+<span class="lineNum">     625 </span><span class="lineCov">          1 :   move-to: bNoteLabel; }</span>
+<span class="lineNum">     626 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].ost-teacher-demonstration::before {</span>
+<span class="lineNum">     627 </span><span class="lineCov">          1 :   container: h3;</span>
+<span class="lineNum">     628 </span><span class="lineCov">          1 :   content: pending(bNoteLabel);</span>
+<span class="lineNum">     629 </span><span class="lineCov">          1 :   class: &quot;os-title&quot;;</span>
+<span class="lineNum">     630 </span><span class="lineCov">          1 :   move-to: bNoteHeader; }</span>
+<span class="lineNum">     631 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].ost-teacher-demonstration:deferred {</span>
+<span class="lineNum">     632 </span><span class="lineCov">          1 :   content: pending(bNoteHeader) content(); }</span>
+<span class="lineNum">     633 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].ost-misconception::before {</span>
+<span class="lineNum">     634 </span><span class="lineCov">          1 :   container: span;</span>
+<span class="lineNum">     635 </span><span class="lineCov">          1 :   class: &quot;os-title-label&quot;;</span>
+<span class="lineNum">     636 </span><span class="lineCov">          1 :   content: &quot;Misconception Alert&quot;;</span>
+<span class="lineNum">     637 </span><span class="lineCov">          1 :   move-to: bNoteLabel; }</span>
+<span class="lineNum">     638 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].ost-misconception::before {</span>
+<span class="lineNum">     639 </span><span class="lineCov">          1 :   container: h3;</span>
+<span class="lineNum">     640 </span><span class="lineCov">          1 :   content: pending(bNoteLabel);</span>
+<span class="lineNum">     641 </span><span class="lineCov">          1 :   class: &quot;os-title&quot;;</span>
+<span class="lineNum">     642 </span><span class="lineCov">          1 :   move-to: bNoteHeader; }</span>
+<span class="lineNum">     643 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].ost-misconception:deferred {</span>
+<span class="lineNum">     644 </span><span class="lineCov">          1 :   content: pending(bNoteHeader) content(); }</span>
+<span class="lineNum">     645 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].grasp-check::before {</span>
+<span class="lineNum">     646 </span><span class="lineCov">          1 :   container: span;</span>
+<span class="lineNum">     647 </span><span class="lineCov">          1 :   class: &quot;os-title-label&quot;;</span>
+<span class="lineNum">     648 </span><span class="lineCov">          1 :   content: &quot;Grasp Check&quot;;</span>
+<span class="lineNum">     649 </span><span class="lineCov">          1 :   move-to: bNoteLabel; }</span>
+<span class="lineNum">     650 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].grasp-check::before {</span>
+<span class="lineNum">     651 </span><span class="lineCov">          1 :   container: h3;</span>
+<span class="lineNum">     652 </span><span class="lineCov">          1 :   content: pending(bNoteLabel);</span>
+<span class="lineNum">     653 </span><span class="lineCov">          1 :   class: &quot;os-title&quot;;</span>
+<span class="lineNum">     654 </span><span class="lineCov">          1 :   move-to: bNoteHeader; }</span>
+<span class="lineNum">     655 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].grasp-check:deferred {</span>
+<span class="lineNum">     656 </span><span class="lineCov">          1 :   content: pending(bNoteHeader) content(); }</span>
+<span class="lineNum">     657 </span><span class="lineCov">          2 : :pass(1) [data-type=&quot;note&quot;].snap-lab::before {</span>
+<span class="lineNum">     658 </span><span class="lineCov">          2 :   container: span;</span>
+<span class="lineNum">     659 </span><span class="lineCov">          2 :   class: &quot;os-title-label&quot;;</span>
+<span class="lineNum">     660 </span><span class="lineCov">          2 :   content: &quot;Snap Lab&quot;;</span>
+<span class="lineNum">     661 </span><span class="lineCov">          2 :   move-to: bNoteLabel; }</span>
+<span class="lineNum">     662 </span><span class="lineCov">          2 : :pass(1) [data-type=&quot;note&quot;].snap-lab::before {</span>
+<span class="lineNum">     663 </span><span class="lineCov">          2 :   container: h3;</span>
+<span class="lineNum">     664 </span><span class="lineCov">          2 :   content: pending(bNoteLabel);</span>
+<span class="lineNum">     665 </span><span class="lineCov">          2 :   class: &quot;os-title&quot;;</span>
+<span class="lineNum">     666 </span><span class="lineCov">          2 :   move-to: bNoteHeader; }</span>
+<span class="lineNum">     667 </span><span class="lineCov">          2 : :pass(1) [data-type=&quot;note&quot;].snap-lab::inside {</span>
+<span class="lineNum">     668 </span><span class="lineCov">          2 :   class: &quot;os-note-body&quot;; }</span>
+<span class="lineNum">     669 </span><span class="lineCov">          2 : :pass(1) [data-type=&quot;note&quot;].snap-lab:deferred {</span>
+<span class="lineNum">     670 </span><span class="lineCov">          2 :   content: pending(bNoteHeader) content(); }</span>
+<span class="lineNum">     671 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].worked-example::before {</span>
+<span class="lineNum">     672 </span><span class="lineCov">          1 :   container: span;</span>
+<span class="lineNum">     673 </span><span class="lineCov">          1 :   class: &quot;os-title-label&quot;;</span>
+<span class="lineNum">     674 </span><span class="lineCov">          1 :   content: &quot;Worked Example&quot;;</span>
+<span class="lineNum">     675 </span><span class="lineCov">          1 :   move-to: bNoteLabel; }</span>
+<span class="lineNum">     676 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].worked-example::before {</span>
+<span class="lineNum">     677 </span><span class="lineCov">          1 :   container: h3;</span>
+<span class="lineNum">     678 </span><span class="lineCov">          1 :   content: pending(bNoteLabel);</span>
+<span class="lineNum">     679 </span><span class="lineCov">          1 :   class: &quot;os-title&quot;;</span>
+<span class="lineNum">     680 </span><span class="lineCov">          1 :   move-to: bNoteHeader; }</span>
+<span class="lineNum">     681 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].worked-example::inside {</span>
+<span class="lineNum">     682 </span><span class="lineCov">          1 :   class: &quot;os-note-body&quot;; }</span>
+<span class="lineNum">     683 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].worked-example:deferred {</span>
+<span class="lineNum">     684 </span><span class="lineCov">          1 :   content: pending(bNoteHeader) content(); }</span>
+<span class="lineNum">     685 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].tips-for-success::before {</span>
+<span class="lineNum">     686 </span><span class="lineCov">          1 :   container: span;</span>
+<span class="lineNum">     687 </span><span class="lineCov">          1 :   class: &quot;os-title-label&quot;;</span>
+<span class="lineNum">     688 </span><span class="lineCov">          1 :   content: &quot;Tips For Success&quot;;</span>
+<span class="lineNum">     689 </span><span class="lineCov">          1 :   move-to: bNoteLabel; }</span>
+<span class="lineNum">     690 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].tips-for-success::before {</span>
+<span class="lineNum">     691 </span><span class="lineCov">          1 :   container: h3;</span>
+<span class="lineNum">     692 </span><span class="lineCov">          1 :   content: pending(bNoteLabel);</span>
+<span class="lineNum">     693 </span><span class="lineCov">          1 :   class: &quot;os-title&quot;;</span>
+<span class="lineNum">     694 </span><span class="lineCov">          1 :   move-to: bNoteHeader; }</span>
+<span class="lineNum">     695 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].tips-for-success:deferred {</span>
+<span class="lineNum">     696 </span><span class="lineCov">          1 :   content: pending(bNoteHeader) content(); }</span>
+<span class="lineNum">     697 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].work-in-physics::before {</span>
+<span class="lineNum">     698 </span><span class="lineCov">          1 :   container: span;</span>
+<span class="lineNum">     699 </span><span class="lineCov">          1 :   class: &quot;os-title-label&quot;;</span>
+<span class="lineNum">     700 </span><span class="lineCov">          1 :   content: &quot;Work In Physics&quot;;</span>
+<span class="lineNum">     701 </span><span class="lineCov">          1 :   move-to: bNoteLabel; }</span>
+<span class="lineNum">     702 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].work-in-physics::before {</span>
+<span class="lineNum">     703 </span><span class="lineCov">          1 :   container: h3;</span>
+<span class="lineNum">     704 </span><span class="lineCov">          1 :   content: pending(bNoteLabel);</span>
+<span class="lineNum">     705 </span><span class="lineCov">          1 :   class: &quot;os-title&quot;;</span>
+<span class="lineNum">     706 </span><span class="lineCov">          1 :   move-to: bNoteHeader; }</span>
+<span class="lineNum">     707 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].work-in-physics::inside {</span>
+<span class="lineNum">     708 </span><span class="lineCov">          1 :   class: &quot;os-note-body&quot;; }</span>
+<span class="lineNum">     709 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].work-in-physics:deferred {</span>
+<span class="lineNum">     710 </span><span class="lineCov">          1 :   content: pending(bNoteHeader) content(); }</span>
+<span class="lineNum">     711 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].fun-in-physics::before {</span>
+<span class="lineNum">     712 </span><span class="lineCov">          1 :   container: span;</span>
+<span class="lineNum">     713 </span><span class="lineCov">          1 :   class: &quot;os-title-label&quot;;</span>
+<span class="lineNum">     714 </span><span class="lineCov">          1 :   content: &quot;Fun In Physics&quot;;</span>
+<span class="lineNum">     715 </span><span class="lineCov">          1 :   move-to: bNoteLabel; }</span>
+<span class="lineNum">     716 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].fun-in-physics::before {</span>
+<span class="lineNum">     717 </span><span class="lineCov">          1 :   container: h3;</span>
+<span class="lineNum">     718 </span><span class="lineCov">          1 :   content: pending(bNoteLabel);</span>
+<span class="lineNum">     719 </span><span class="lineCov">          1 :   class: &quot;os-title&quot;;</span>
+<span class="lineNum">     720 </span><span class="lineCov">          1 :   move-to: bNoteHeader; }</span>
+<span class="lineNum">     721 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].fun-in-physics:deferred {</span>
+<span class="lineNum">     722 </span><span class="lineCov">          1 :   content: pending(bNoteHeader) content(); }</span>
+<span class="lineNum">     723 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].links-to-physics::before {</span>
+<span class="lineNum">     724 </span><span class="lineCov">          1 :   container: span;</span>
+<span class="lineNum">     725 </span><span class="lineCov">          1 :   class: &quot;os-title-label&quot;;</span>
+<span class="lineNum">     726 </span><span class="lineCov">          1 :   content: &quot;Links To Physics&quot;;</span>
+<span class="lineNum">     727 </span><span class="lineCov">          1 :   move-to: bNoteLabel; }</span>
+<span class="lineNum">     728 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].links-to-physics::before {</span>
+<span class="lineNum">     729 </span><span class="lineCov">          1 :   container: h3;</span>
+<span class="lineNum">     730 </span><span class="lineCov">          1 :   content: pending(bNoteLabel);</span>
+<span class="lineNum">     731 </span><span class="lineCov">          1 :   class: &quot;os-title&quot;;</span>
+<span class="lineNum">     732 </span><span class="lineCov">          1 :   move-to: bNoteHeader; }</span>
+<span class="lineNum">     733 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].links-to-physics::inside {</span>
+<span class="lineNum">     734 </span><span class="lineCov">          1 :   class: &quot;os-note-body&quot;; }</span>
+<span class="lineNum">     735 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].links-to-physics:deferred {</span>
+<span class="lineNum">     736 </span><span class="lineCov">          1 :   content: pending(bNoteHeader) content(); }</span>
+<span class="lineNum">     737 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].watch-physics::before {</span>
+<span class="lineNum">     738 </span><span class="lineCov">          1 :   container: span;</span>
+<span class="lineNum">     739 </span><span class="lineCov">          1 :   class: &quot;os-title-label&quot;;</span>
+<span class="lineNum">     740 </span><span class="lineCov">          1 :   content: &quot;Watch Physics&quot;;</span>
+<span class="lineNum">     741 </span><span class="lineCov">          1 :   move-to: bNoteLabel; }</span>
+<span class="lineNum">     742 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].watch-physics::before {</span>
+<span class="lineNum">     743 </span><span class="lineCov">          1 :   container: h3;</span>
+<span class="lineNum">     744 </span><span class="lineCov">          1 :   content: pending(bNoteLabel);</span>
+<span class="lineNum">     745 </span><span class="lineCov">          1 :   class: &quot;os-title&quot;;</span>
+<span class="lineNum">     746 </span><span class="lineCov">          1 :   move-to: bNoteHeader; }</span>
+<span class="lineNum">     747 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].watch-physics::inside {</span>
+<span class="lineNum">     748 </span><span class="lineCov">          1 :   class: &quot;os-note-body&quot;; }</span>
+<span class="lineNum">     749 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].watch-physics:deferred {</span>
+<span class="lineNum">     750 </span><span class="lineCov">          1 :   content: pending(bNoteHeader) content(); }</span>
+<span class="lineNum">     751 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].virtual-physics::before {</span>
+<span class="lineNum">     752 </span><span class="lineCov">          1 :   container: span;</span>
+<span class="lineNum">     753 </span><span class="lineCov">          1 :   class: &quot;os-title-label&quot;;</span>
+<span class="lineNum">     754 </span><span class="lineCov">          1 :   content: &quot;Virtual Physics&quot;;</span>
+<span class="lineNum">     755 </span><span class="lineCov">          1 :   move-to: bNoteLabel; }</span>
+<span class="lineNum">     756 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].virtual-physics::before {</span>
+<span class="lineNum">     757 </span><span class="lineCov">          1 :   container: h3;</span>
+<span class="lineNum">     758 </span><span class="lineCov">          1 :   content: pending(bNoteLabel);</span>
+<span class="lineNum">     759 </span><span class="lineCov">          1 :   class: &quot;os-title&quot;;</span>
+<span class="lineNum">     760 </span><span class="lineCov">          1 :   move-to: bNoteHeader; }</span>
+<span class="lineNum">     761 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].virtual-physics::inside {</span>
+<span class="lineNum">     762 </span><span class="lineCov">          1 :   class: &quot;os-note-body&quot;; }</span>
+<span class="lineNum">     763 </span><span class="lineCov">          1 : :pass(1) [data-type=&quot;note&quot;].virtual-physics:deferred {</span>
+<span class="lineNum">     764 </span><span class="lineCov">          1 :   content: pending(bNoteHeader) content(); }</span>
+<span class="lineNum">     765 </span><span class="lineNoCov">          0 : :pass(1) [data-type=&quot;metadata&quot;] &gt; [data-type=&quot;description&quot;] {</span>
+<span class="lineNum">     766 </span>            :   move-to: trash; }
+<span class="lineNum">     767 </span><span class="lineNoCov">          0 : :pass(1) div.missing-exercise {</span>
+<span class="lineNum">     768 </span>            :   move-to: trash; }
+<span class="lineNum">     769 </span><span class="lineNoCov">          0 : :pass(1) .key-equations table:not(.unnumbered) {</span>
+<span class="lineNum">     770 </span>            :   class: attr(class) &quot; unnumbered&quot;; }
+<span class="lineNum">     771 </span><span class="lineNoCov">          0 : :pass(1) .worked-example [data-type=&quot;exercise&quot;]:not(.unnumbered) {</span>
+<span class="lineNum">     772 </span>            :   class: attr(class) &quot; unnumbered&quot;; }
+<span class="lineNum">     773 </span><span class="lineNoCov">          0 : :pass(1) [data-type=&quot;exercise&quot;].grasp-check:not(.unnumbered) {</span>
+<span class="lineNum">     774 </span>            :   class: attr(class) &quot; unnumbered&quot;; }
+<span class="lineNum">     775 </span><span class="lineNoCov">          0 : :pass(1) .os-practice-problems [data-type=&quot;exercise&quot;]:not(.unnumbered) {</span>
+<span class="lineNum">     776 </span>            :   class: attr(class) &quot; unnumbered&quot;; }
+<span class="lineNum">     777 </span>            : 
+<span class="lineNum">     778 </span><span class="lineCov">         44 : :pass(2) body {</span>
+<span class="lineNum">     779 </span><span class="lineCov">         44 :   counter-reset: chapter; }</span>
+<span class="lineNum">     780 </span><span class="lineCov">         45 : :pass(2) div[data-type=&quot;chapter&quot;] {</span>
+<span class="lineNum">     781 </span><span class="lineCov">         45 :   counter-increment: chapter; }</span>
+<span class="lineNum">     782 </span><span class="lineCov">         45 : :pass(2) div[data-type=&quot;chapter&quot;]::before {</span>
+<span class="lineNum">     783 </span><span class="lineCov">         45 :   container: span;</span>
+<span class="lineNum">     784 </span><span class="lineCov">         45 :   content: counter(chapter);</span>
+<span class="lineNum">     785 </span><span class="lineCov">         45 :   class: os-number;</span>
+<span class="lineNum">     786 </span><span class="lineCov">         45 :   move-to: bChapterLabel; }</span>
+<span class="lineNum">     787 </span><span class="lineCov">         14 : :pass(2) div[data-type=&quot;chapter&quot;] &gt; [data-type=&quot;document-title&quot;] {</span>
+<span class="lineNum">     788 </span><span class="lineCov">         14 :   container: h1;</span>
+<span class="lineNum">     789 </span><span class="lineCov">         14 :   content: pending(bChapterLabel) content(); }</span>
+<span class="lineNum">     790 </span><span class="lineCov">         44 : :pass(2) body {</span>
+<span class="lineNum">     791 </span><span class="lineCov">         44 :   counter-reset: appendix; }</span>
+<span class="lineNum">     792 </span><span class="lineNoCov">          0 : :pass(2) div.appendix {</span>
+<span class="lineNum">     793 </span>            :   counter-increment: appendix; }
+<span class="lineNum">     794 </span><span class="lineNoCov">          0 : :pass(2) div.appendix::before {</span>
+<span class="lineNum">     795 </span>            :   container: span;
+<span class="lineNum">     796 </span>            :   content: &quot;Appendix &quot;;
+<span class="lineNum">     797 </span>            :   class: os-title-label;
+<span class="lineNum">     798 </span>            :   move-to: bAppendixLabel; }
+<span class="lineNum">     799 </span><span class="lineNoCov">          0 : :pass(2) div.appendix::before {</span>
+<span class="lineNum">     800 </span>            :   container: span;
+<span class="lineNum">     801 </span>            :   content: counter(appendix,upper-alpha);
+<span class="lineNum">     802 </span>            :   class: os-number;
+<span class="lineNum">     803 </span>            :   move-to: bAppendixLabel; }
+<span class="lineNum">     804 </span><span class="lineNoCov">          0 : :pass(2) div.appendix &gt; [data-type=&quot;document-title&quot;] {</span>
+<span class="lineNum">     805 </span>            :   container: h1;
+<span class="lineNum">     806 </span>            :   content: pending(bAppendixLabel) content(); }
+<span class="lineNum">     807 </span><span class="lineCov">         45 : :pass(2) [data-type=&quot;chapter&quot;], :pass(2) .appendix {</span>
+<span class="lineNum">     808 </span><span class="lineCov">         45 :   counter-reset: section; }</span>
+<span class="lineNum">     809 </span><span class="lineCov">         60 : :pass(2) div[data-type=&quot;chapter&quot;] &gt; div[data-type=&quot;page&quot;]:not(.introduction) {</span>
+<span class="lineNum">     810 </span><span class="lineCov">         60 :   counter-increment: section; }</span>
+<span class="lineNum">     811 </span><span class="lineCov">         60 : :pass(2) div[data-type=&quot;chapter&quot;] &gt; div[data-type=&quot;page&quot;]:not(.introduction)::before {</span>
+<span class="lineNum">     812 </span><span class="lineCov">         60 :   container: span;</span>
+<span class="lineNum">     813 </span><span class="lineCov">         60 :   content: counter(chapter) &quot;.&quot; counter(section);</span>
+<span class="lineNum">     814 </span><span class="lineCov">         60 :   class: os-number;</span>
+<span class="lineNum">     815 </span><span class="lineCov">         60 :   move-to: bSectionLabel; }</span>
+<span class="lineNum">     816 </span><span class="lineCov">         30 : :pass(2) div[data-type=&quot;chapter&quot;] &gt; div[data-type=&quot;page&quot;]:not(.introduction) &gt; [data-type=&quot;document-title&quot;] {</span>
+<span class="lineNum">     817 </span><span class="lineCov">         30 :   container: h2;</span>
+<span class="lineNum">     818 </span><span class="lineCov">         30 :   content: pending(bSectionLabel) content(); }</span>
+<span class="lineNum">     819 </span><span class="lineCov">          1 : :pass(2) div[data-type=&quot;chapter&quot;] &gt; div[data-type=&quot;page&quot;].introduction &gt; [data-type=&quot;document-title&quot;] {</span>
+<span class="lineNum">     820 </span><span class="lineCov">          1 :   container: h2; }</span>
+<span class="lineNum">     821 </span><span class="lineCov">         44 : :pass(2) body {</span>
+<span class="lineNum">     822 </span><span class="lineCov">         44 :   counter-reset: term; }</span>
+<span class="lineNum">     823 </span><span class="lineCov">          5 : :pass(2) div[data-type=&quot;page&quot;] span[data-type=&quot;term&quot;], :pass(2) div[data-type=&quot;composite-page&quot;] span[data-type=&quot;term&quot;] {</span>
+<span class="lineNum">     824 </span><span class="lineCov">          5 :   counter-increment: term; }</span>
+<span class="lineNum">     825 </span><span class="lineCov">         62 : :pass(2) div[data-type=&quot;page&quot;],</span>
+<span class="lineNum">     826 </span><span class="lineNoCov">          0 : :pass(2) div[data-type=&quot;composite-page&quot;] {</span>
+<span class="lineNum">     827 </span><span class="lineCov">         62 :   string-set: pageID attr(id); }</span>
+<span class="lineNum">     828 </span><span class="lineCov">          5 : :pass(2) div[data-type=&quot;page&quot;] span[data-type=&quot;term&quot;],</span>
+<span class="lineNum">     829 </span><span class="lineNoCov">          0 : :pass(2) div[data-type=&quot;composite-page&quot;] span[data-type=&quot;term&quot;] {</span>
+<span class="lineNum">     830 </span><span class="lineCov">          5 :   attr-id: &quot;auto_&quot; string(pageID) &quot;_term&quot; counter(term); }</span>
+<span class="lineNum">     831 </span><span class="lineCov">          5 :   :pass(2) div[data-type=&quot;page&quot;] span[data-type=&quot;term&quot;]:match(&quot;^[a-zA-Z]&quot;),</span>
+<span class="lineNum">     832 </span><span class="lineNoCov">          0 :   :pass(2) div[data-type=&quot;composite-page&quot;] span[data-type=&quot;term&quot;]:match(&quot;^[a-zA-Z]&quot;) {</span>
+<span class="lineNum">     833 </span><span class="lineCov">          5 :     attr-group-by: first-letter(content()); }</span>
+<span class="lineNum">     834 </span><span class="lineNoCov">          0 :   :pass(2) div[data-type=&quot;page&quot;] span[data-type=&quot;term&quot;]:match(&quot;^[^a-zA-Z]&quot;),</span>
+<span class="lineNum">     835 </span><span class="lineNoCov">          0 :   :pass(2) div[data-type=&quot;composite-page&quot;] span[data-type=&quot;term&quot;]:match(&quot;^[^a-zA-Z]&quot;) {</span>
+<span class="lineNum">     836 </span>            :     attr-group-by: &quot;&quot;; }
+<span class="lineNum">     837 </span><span class="lineCov">         32 : :pass(2) div[data-type=&quot;page&quot;] &gt; [data-type=&quot;document-title&quot;],</span>
+<span class="lineNum">     838 </span><span class="lineNoCov">          0 : :pass(2) div[data-type=&quot;composite-page&quot;] &gt; [data-type=&quot;document-title&quot;] {</span>
+<span class="lineNum">     839 </span><span class="lineCov">         32 :   node-set: sectionHeaderNode; }</span>
+<span class="lineNum">     840 </span><span class="lineCov">          2 : :pass(2) div[data-type=&quot;chapter&quot;] div[data-type=&quot;glossary&quot;] {</span>
+<span class="lineNum">     841 </span>            :   /* Discard this Page-specific glossary because it is collated later and the title is added when this is collated */
+<span class="lineNum">     842 </span><span class="lineCov">          2 :   move-to: trash; }</span>
+<span class="lineNum">     843 </span><span class="lineCov">          2 : :pass(2) div[data-type=&quot;chapter&quot;] div[data-type=&quot;glossary&quot;] dl {</span>
+<span class="lineNum">     844 </span><span class="lineCov">          2 :   move-to: glossary-TOCOMPOSITE; }</span>
+<span class="lineNum">     845 </span><span class="lineNoCov">          0 :   :pass(2) div[data-type=&quot;chapter&quot;] div[data-type=&quot;glossary&quot;] dl &gt; [data-type=&quot;title&quot;] {</span>
+<span class="lineNum">     846 </span>            :     /* Discard this Page-specific title because a chapter title is added when collated */
+<span class="lineNum">     847 </span>            :     move-to: trash; }
+<span class="lineNum">     848 </span><span class="lineCov">         45 : :pass(2) div[data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">     849 </span><span class="lineCov">         45 :   container: div;</span>
+<span class="lineNum">     850 </span><span class="lineCov">         45 :   content: pending(glossary-TOCOMPOSITE);</span>
+<span class="lineNum">     851 </span><span class="lineCov">         45 :   class: &quot;os-eoc os-glossary-container&quot;;</span>
+<span class="lineNum">     852 </span><span class="lineCov">         45 :   data-type: &quot;composite-page&quot;;</span>
+<span class="lineNum">     853 </span><span class="lineCov">         45 :   sort-by: dl &gt; dt, nocase; }</span>
+<span class="lineNum">     854 </span><span class="lineCov">          2 : :pass(2) div[data-type=&quot;chapter&quot;] section.summary {</span>
+<span class="lineNum">     855 </span><span class="lineCov">          2 :   move-to: summary-TOCOMPOSITE; }</span>
+<span class="lineNum">     856 </span><span class="lineCov">          2 :   :pass(2) div[data-type=&quot;chapter&quot;] section.summary &gt; [data-type=&quot;title&quot;] {</span>
+<span class="lineNum">     857 </span>            :     /* Discard this Page-specific title because a chapter title is added when collated */
+<span class="lineNum">     858 </span><span class="lineCov">          2 :     move-to: trash; }</span>
+<span class="lineNum">     859 </span><span class="lineCov">         45 : :pass(2) div[data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">     860 </span><span class="lineCov">         45 :   container: div;</span>
+<span class="lineNum">     861 </span><span class="lineCov">         45 :   content: pending(summary-TOCOMPOSITE);</span>
+<span class="lineNum">     862 </span><span class="lineCov">         45 :   class: &quot;os-eoc os-summary-container&quot;;</span>
+<span class="lineNum">     863 </span><span class="lineCov">         45 :   data-type: &quot;composite-page&quot;; }</span>
+<span class="lineNum">     864 </span><span class="lineNoCov">          0 : :pass(2) div[data-type=&quot;chapter&quot;] section.key-equations {</span>
+<span class="lineNum">     865 </span>            :   move-to: key-equations-TOCOMPOSITE; }
+<span class="lineNum">     866 </span><span class="lineNoCov">          0 :   :pass(2) div[data-type=&quot;chapter&quot;] section.key-equations &gt; [data-type=&quot;title&quot;] {</span>
+<span class="lineNum">     867 </span>            :     /* Discard this Page-specific title because a chapter title is added when collated */
+<span class="lineNum">     868 </span>            :     move-to: trash; }
+<span class="lineNum">     869 </span><span class="lineCov">         45 : :pass(2) div[data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">     870 </span><span class="lineCov">         45 :   container: div;</span>
+<span class="lineNum">     871 </span><span class="lineCov">         45 :   content: pending(key-equations-TOCOMPOSITE);</span>
+<span class="lineNum">     872 </span><span class="lineCov">         45 :   class: &quot;os-eoc os-key-equations-container&quot;;</span>
+<span class="lineNum">     873 </span><span class="lineCov">         45 :   data-type: &quot;composite-page&quot;; }</span>
+<span class="lineNum">     874 </span><span class="lineNoCov">          0 : :pass(2) div[data-type=&quot;chapter&quot;] section.chapter-review {</span>
+<span class="lineNum">     875 </span>            :   move-to: chapter-review-TOCOMPOSITE; }
+<span class="lineNum">     876 </span><span class="lineNoCov">          0 :   :pass(2) div[data-type=&quot;chapter&quot;] section.chapter-review &gt; [data-type=&quot;title&quot;] {</span>
+<span class="lineNum">     877 </span>            :     /* Discard this Page-specific title because a chapter title is added when collated */
+<span class="lineNum">     878 </span>            :     move-to: trash; }
+<span class="lineNum">     879 </span><span class="lineCov">         45 : :pass(2) div[data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">     880 </span><span class="lineCov">         45 :   container: div;</span>
+<span class="lineNum">     881 </span><span class="lineCov">         45 :   content: pending(chapter-review-TOCOMPOSITE);</span>
+<span class="lineNum">     882 </span><span class="lineCov">         45 :   class: &quot;os-eoc os-chapter-review-container&quot;;</span>
+<span class="lineNum">     883 </span><span class="lineCov">         45 :   data-type: &quot;composite-page&quot;; }</span>
+<span class="lineNum">     884 </span><span class="lineNoCov">          0 : :pass(2) div[data-type=&quot;chapter&quot;] section.test-prep {</span>
+<span class="lineNum">     885 </span>            :   move-to: test-prep-TOCOMPOSITE; }
+<span class="lineNum">     886 </span><span class="lineNoCov">          0 :   :pass(2) div[data-type=&quot;chapter&quot;] section.test-prep &gt; [data-type=&quot;title&quot;] {</span>
+<span class="lineNum">     887 </span>            :     /* Discard this Page-specific title because a chapter title is added when collated */
+<span class="lineNum">     888 </span>            :     move-to: trash; }
+<span class="lineNum">     889 </span><span class="lineCov">         45 : :pass(2) div[data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">     890 </span><span class="lineCov">         45 :   container: div;</span>
+<span class="lineNum">     891 </span><span class="lineCov">         45 :   content: pending(test-prep-TOCOMPOSITE);</span>
+<span class="lineNum">     892 </span><span class="lineCov">         45 :   class: &quot;os-eoc os-test-prep-container&quot;;</span>
+<span class="lineNum">     893 </span><span class="lineCov">         45 :   data-type: &quot;composite-page&quot;; }</span>
+<span class="lineNum">     894 </span>            : 
+<span class="lineNum">     895 </span><span class="lineCov">         32 : :pass(3) div[data-type=&quot;page&quot;] &gt; [data-type=&quot;document-title&quot;],</span>
+<span class="lineNum">     896 </span><span class="lineNoCov">          0 : :pass(3) div[data-type=&quot;composite-page&quot;] &gt; [data-type=&quot;document-title&quot;] {</span>
+<span class="lineNum">     897 </span><span class="lineCov">         32 :   node-set: sectionHeaderNode; }</span>
+<span class="lineNum">     898 </span><span class="lineCov">         32 : :pass(3) div[data-type=&quot;page&quot;] &gt; [data-type=&quot;document-title&quot;],</span>
+<span class="lineNum">     899 </span><span class="lineNoCov">          0 : :pass(3) div[data-type=&quot;composite-page&quot;] &gt; [data-type=&quot;document-title&quot;] {</span>
+<span class="lineNum">     900 </span><span class="lineCov">         32 :   string-set: sectionHeaderString content(); }</span>
+<span class="lineNum">     901 </span><span class="lineCov">          5 : :pass(3) div[data-type=&quot;page&quot;] span[data-type=&quot;term&quot;]::after, :pass(3) div[data-type=&quot;composite-page&quot;] span[data-type=&quot;term&quot;]::after {</span>
+<span class="lineNum">     902 </span><span class="lineCov">          5 :   content: content();</span>
+<span class="lineNum">     903 </span><span class="lineCov">          5 :   attr-group-by: attr(group-by);</span>
+<span class="lineNum">     904 </span><span class="lineCov">          5 :   container: span;</span>
+<span class="lineNum">     905 </span><span class="lineCov">          5 :   class: &quot;os-term&quot;;</span>
+<span class="lineNum">     906 </span><span class="lineCov">          5 :   move-to: index-term; }</span>
+<span class="lineNum">     907 </span><span class="lineCov">          5 : :pass(3) div[data-type=&quot;page&quot;] span[data-type=&quot;term&quot;]::after, :pass(3) div[data-type=&quot;composite-page&quot;] span[data-type=&quot;term&quot;]::after {</span>
+<span class="lineNum">     908 </span><span class="lineCov">          5 :   content: string(sectionHeaderString);</span>
+<span class="lineNum">     909 </span><span class="lineCov">          5 :   container: span;</span>
+<span class="lineNum">     910 </span><span class="lineCov">          5 :   class: &quot;os-term-section&quot;;</span>
+<span class="lineNum">     911 </span><span class="lineCov">          5 :   move-to: index-section; }</span>
+<span class="lineNum">     912 </span><span class="lineCov">          5 : :pass(3) div[data-type=&quot;page&quot;] span[data-type=&quot;term&quot;]::after, :pass(3) div[data-type=&quot;composite-page&quot;] span[data-type=&quot;term&quot;]::after {</span>
+<span class="lineNum">     913 </span><span class="lineCov">          5 :   container: a;</span>
+<span class="lineNum">     914 </span><span class="lineCov">          5 :   content: pending(index-section);</span>
+<span class="lineNum">     915 </span><span class="lineCov">          5 :   attr-href: &quot;#&quot; attr(id);</span>
+<span class="lineNum">     916 </span><span class="lineCov">          5 :   class: &quot;os-term-section-link&quot;;</span>
+<span class="lineNum">     917 </span><span class="lineCov">          5 :   move-to: index-section-link; }</span>
+<span class="lineNum">     918 </span><span class="lineCov">          5 : :pass(3) div[data-type=&quot;page&quot;] span[data-type=&quot;term&quot;]::after, :pass(3) div[data-type=&quot;composite-page&quot;] span[data-type=&quot;term&quot;]::after {</span>
+<span class="lineNum">     919 </span><span class="lineCov">          5 :   container: span;</span>
+<span class="lineNum">     920 </span><span class="lineCov">          5 :   content: ', ';</span>
+<span class="lineNum">     921 </span><span class="lineCov">          5 :   class: &quot;os-index-link-separator&quot;;</span>
+<span class="lineNum">     922 </span><span class="lineCov">          5 :   move-to: index-section-link; }</span>
+<span class="lineNum">     923 </span><span class="lineCov">          5 : :pass(3) div[data-type=&quot;page&quot;] span[data-type=&quot;term&quot;]::after, :pass(3) div[data-type=&quot;composite-page&quot;] span[data-type=&quot;term&quot;]::after {</span>
+<span class="lineNum">     924 </span><span class="lineCov">          5 :   content: pending(index-term) pending(index-section-link);</span>
+<span class="lineNum">     925 </span><span class="lineCov">          5 :   class: os-index-item;</span>
+<span class="lineNum">     926 </span><span class="lineCov">          5 :   move-to: index-TOCOMPOSITE; }</span>
+<span class="lineNum">     927 </span>            : 
+<span class="lineNum">     928 </span><span class="lineCov">         44 : :pass(4) body {</span>
+<span class="lineNum">     929 </span><span class="lineCov">         44 :   counter-reset: exerciseAll; }</span>
+<span class="lineNum">     930 </span><span class="lineNoCov">          0 : :pass(4) .os-eoc [data-type=&quot;exercise&quot;] {</span>
+<span class="lineNum">     931 </span>            :   counter-increment: exerciseAll; }
+<span class="lineNum">     932 </span><span class="lineCov">         45 : :pass(4) div[data-type=&quot;chapter&quot;] {</span>
+<span class="lineNum">     933 </span><span class="lineCov">         45 :   node-set: chapterHeaderNode; }</span>
+<span class="lineNum">     934 </span><span class="lineNoCov">          0 : :pass(4) [data-type=&quot;chapter&quot;] .os-index-chapter-area {</span>
+<span class="lineNum">     935 </span>            :   content: nodes(chapterHeaderNode) content();
+<span class="lineNum">     936 </span>            :   move-to: index-TOCOMPOSITE; }
+<span class="lineNum">     937 </span>            : 
+<span class="lineNum">     938 </span><span class="lineCov">         32 : :pass(5) div[data-type=&quot;page&quot;] &gt; [data-type=&quot;document-title&quot;],</span>
+<span class="lineNum">     939 </span><span class="lineNoCov">          0 : :pass(5) div[data-type=&quot;composite-page&quot;] &gt; [data-type=&quot;document-title&quot;] {</span>
+<span class="lineNum">     940 </span><span class="lineCov">         32 :   node-set: sectionHeaderNode; }</span>
+<span class="lineNum">     941 </span><span class="lineCov">         44 : :pass(5) body::after {</span>
+<span class="lineNum">     942 </span><span class="lineCov">         44 :   container: div;</span>
+<span class="lineNum">     943 </span><span class="lineCov">         44 :   content: pending(index-TOCOMPOSITE);</span>
+<span class="lineNum">     944 </span><span class="lineCov">         44 :   class: &quot;os-eob os-index-container&quot;;</span>
+<span class="lineNum">     945 </span><span class="lineCov">         44 :   data-type: &quot;composite-page&quot;;</span>
+<span class="lineNum">     946 </span><span class="lineCov">         44 :   group-by: span, &quot;span::attr(group-by)&quot;, nocase; }</span>
+<span class="lineNum">     947 </span><span class="lineCov">         32 : :pass(5) [data-type=&quot;chapter&quot;] [data-type=&quot;page&quot;] &gt; [data-type=&quot;document-title&quot;] {</span>
+<span class="lineNum">     948 </span><span class="lineCov">         32 :   node-set: CompoundSectionHeaderNode; }</span>
+<span class="lineNum">     949 </span><span class="lineCov">          3 : :pass(5) [data-type=&quot;chapter&quot;] .concept {</span>
+<span class="lineNum">     950 </span><span class="lineCov">          3 :   content: nodes(CompoundSectionHeaderNode) content();</span>
+<span class="lineNum">     951 </span><span class="lineCov">          3 :   move-to: concept-separated; }</span>
+<span class="lineNum">     952 </span><span class="lineCov">          3 :   :pass(5) [data-type=&quot;chapter&quot;] .concept &gt; [data-type=&quot;title&quot;] {</span>
+<span class="lineNum">     953 </span><span class="lineCov">          3 :     move-to: trash; }</span>
+<span class="lineNum">     954 </span><span class="lineCov">         62 : :pass(5) [data-type=&quot;chapter&quot;] [data-type=&quot;page&quot;]::after {</span>
+<span class="lineNum">     955 </span><span class="lineCov">         62 :   class: &quot;os-concept-chapter-area&quot;;</span>
+<span class="lineNum">     956 </span><span class="lineCov">         62 :   content: pending(concept-separated);</span>
+<span class="lineNum">     957 </span><span class="lineCov">         62 :   move-to: concept-sectionSeparatedContainer; }</span>
+<span class="lineNum">     958 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">     959 </span><span class="lineCov">         45 :   class: os-concept;</span>
+<span class="lineNum">     960 </span><span class="lineCov">         45 :   content: pending(concept-sectionSeparatedContainer);</span>
+<span class="lineNum">     961 </span><span class="lineCov">         45 :   move-to: concept-DESTINATION; }</span>
+<span class="lineNum">     962 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">     963 </span><span class="lineCov">         45 :   container: h2;</span>
+<span class="lineNum">     964 </span><span class="lineCov">         45 :   data-type: &quot;title&quot;;</span>
+<span class="lineNum">     965 </span><span class="lineCov">         45 :   content: &quot;Concept Items&quot;;</span>
+<span class="lineNum">     966 </span><span class="lineCov">         45 :   move-to: concept-title; }</span>
+<span class="lineNum">     967 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">     968 </span><span class="lineCov">         45 :   class: &quot;os-concept-container&quot;;</span>
+<span class="lineNum">     969 </span><span class="lineCov">         45 :   content: pending(concept-title) pending(concept-DESTINATION);</span>
+<span class="lineNum">     970 </span><span class="lineCov">         45 :   move-to: composite-DESTINATION; }</span>
+<span class="lineNum">     971 </span><span class="lineCov">          3 : :pass(5) [data-type=&quot;chapter&quot;] .critical-thinking {</span>
+<span class="lineNum">     972 </span><span class="lineCov">          3 :   content: nodes(CompoundSectionHeaderNode) content();</span>
+<span class="lineNum">     973 </span><span class="lineCov">          3 :   move-to: critical-thinking-separated; }</span>
+<span class="lineNum">     974 </span><span class="lineCov">          3 :   :pass(5) [data-type=&quot;chapter&quot;] .critical-thinking &gt; [data-type=&quot;title&quot;] {</span>
+<span class="lineNum">     975 </span><span class="lineCov">          3 :     move-to: trash; }</span>
+<span class="lineNum">     976 </span><span class="lineCov">         62 : :pass(5) [data-type=&quot;chapter&quot;] [data-type=&quot;page&quot;]::after {</span>
+<span class="lineNum">     977 </span><span class="lineCov">         62 :   class: &quot;os-critical-thinking-chapter-area&quot;;</span>
+<span class="lineNum">     978 </span><span class="lineCov">         62 :   content: pending(critical-thinking-separated);</span>
+<span class="lineNum">     979 </span><span class="lineCov">         62 :   move-to: critical-thinking-sectionSeparatedContainer; }</span>
+<span class="lineNum">     980 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">     981 </span><span class="lineCov">         45 :   class: os-critical-thinking;</span>
+<span class="lineNum">     982 </span><span class="lineCov">         45 :   content: pending(critical-thinking-sectionSeparatedContainer);</span>
+<span class="lineNum">     983 </span><span class="lineCov">         45 :   move-to: critical-thinking-DESTINATION; }</span>
+<span class="lineNum">     984 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">     985 </span><span class="lineCov">         45 :   container: h2;</span>
+<span class="lineNum">     986 </span><span class="lineCov">         45 :   data-type: &quot;title&quot;;</span>
+<span class="lineNum">     987 </span><span class="lineCov">         45 :   content: &quot;Critical Thinking Items&quot;;</span>
+<span class="lineNum">     988 </span><span class="lineCov">         45 :   move-to: critical-thinking-title; }</span>
+<span class="lineNum">     989 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">     990 </span><span class="lineCov">         45 :   class: &quot;os-critical-thinking-container&quot;;</span>
+<span class="lineNum">     991 </span><span class="lineCov">         45 :   content: pending(critical-thinking-title) pending(critical-thinking-DESTINATION);</span>
+<span class="lineNum">     992 </span><span class="lineCov">         45 :   move-to: composite-DESTINATION; }</span>
+<span class="lineNum">     993 </span><span class="lineNoCov">          0 : :pass(5) [data-type=&quot;chapter&quot;] .ost-chapter-review.problem {</span>
+<span class="lineNum">     994 </span>            :   content: nodes(CompoundSectionHeaderNode) content();
+<span class="lineNum">     995 </span>            :   move-to: ost-chapter-review.problem-separated; }
+<span class="lineNum">     996 </span><span class="lineNoCov">          0 :   :pass(5) [data-type=&quot;chapter&quot;] .ost-chapter-review.problem &gt; [data-type=&quot;title&quot;] {</span>
+<span class="lineNum">     997 </span>            :     move-to: trash; }
+<span class="lineNum">     998 </span><span class="lineCov">         62 : :pass(5) [data-type=&quot;chapter&quot;] [data-type=&quot;page&quot;]::after {</span>
+<span class="lineNum">     999 </span><span class="lineCov">         62 :   class: &quot;os-ost-chapter-review.problem-chapter-area&quot;;</span>
+<span class="lineNum">    1000 </span><span class="lineCov">         62 :   content: pending(ost-chapter-review.problem-separated);</span>
+<span class="lineNum">    1001 </span><span class="lineCov">         62 :   move-to: ost-chapter-review.problem-sectionSeparatedContainer; }</span>
+<span class="lineNum">    1002 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">    1003 </span><span class="lineCov">         45 :   class: os-ost-chapter-review.problem;</span>
+<span class="lineNum">    1004 </span><span class="lineCov">         45 :   content: pending(ost-chapter-review.problem-sectionSeparatedContainer);</span>
+<span class="lineNum">    1005 </span><span class="lineCov">         45 :   move-to: ost-chapter-review.problem-DESTINATION; }</span>
+<span class="lineNum">    1006 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">    1007 </span><span class="lineCov">         45 :   container: h2;</span>
+<span class="lineNum">    1008 </span><span class="lineCov">         45 :   data-type: &quot;title&quot;;</span>
+<span class="lineNum">    1009 </span><span class="lineCov">         45 :   content: &quot;Problems&quot;;</span>
+<span class="lineNum">    1010 </span><span class="lineCov">         45 :   move-to: ost-chapter-review.problem-title; }</span>
+<span class="lineNum">    1011 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">    1012 </span><span class="lineCov">         45 :   class: &quot;os-ost-chapter-review.problem-container&quot;;</span>
+<span class="lineNum">    1013 </span><span class="lineCov">         45 :   content: pending(ost-chapter-review.problem-title) pending(ost-chapter-review.problem-DESTINATION);</span>
+<span class="lineNum">    1014 </span><span class="lineCov">         45 :   move-to: composite-DESTINATION; }</span>
+<span class="lineNum">    1015 </span><span class="lineCov">          3 : :pass(5) [data-type=&quot;chapter&quot;] .performance {</span>
+<span class="lineNum">    1016 </span><span class="lineCov">          3 :   content: nodes(CompoundSectionHeaderNode) content();</span>
+<span class="lineNum">    1017 </span><span class="lineCov">          3 :   move-to: performance-separated; }</span>
+<span class="lineNum">    1018 </span><span class="lineCov">          3 :   :pass(5) [data-type=&quot;chapter&quot;] .performance &gt; [data-type=&quot;title&quot;] {</span>
+<span class="lineNum">    1019 </span><span class="lineCov">          3 :     move-to: trash; }</span>
+<span class="lineNum">    1020 </span><span class="lineCov">         62 : :pass(5) [data-type=&quot;chapter&quot;] [data-type=&quot;page&quot;]::after {</span>
+<span class="lineNum">    1021 </span><span class="lineCov">         62 :   class: &quot;os-performance-chapter-area&quot;;</span>
+<span class="lineNum">    1022 </span><span class="lineCov">         62 :   content: pending(performance-separated);</span>
+<span class="lineNum">    1023 </span><span class="lineCov">         62 :   move-to: performance-sectionSeparatedContainer; }</span>
+<span class="lineNum">    1024 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">    1025 </span><span class="lineCov">         45 :   class: os-performance;</span>
+<span class="lineNum">    1026 </span><span class="lineCov">         45 :   content: pending(performance-sectionSeparatedContainer);</span>
+<span class="lineNum">    1027 </span><span class="lineCov">         45 :   move-to: performance-DESTINATION; }</span>
+<span class="lineNum">    1028 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">    1029 </span><span class="lineCov">         45 :   container: h2;</span>
+<span class="lineNum">    1030 </span><span class="lineCov">         45 :   data-type: &quot;title&quot;;</span>
+<span class="lineNum">    1031 </span><span class="lineCov">         45 :   content: &quot;Performance Task&quot;;</span>
+<span class="lineNum">    1032 </span><span class="lineCov">         45 :   move-to: performance-title; }</span>
+<span class="lineNum">    1033 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">    1034 </span><span class="lineCov">         45 :   class: &quot;os-performance-container&quot;;</span>
+<span class="lineNum">    1035 </span><span class="lineCov">         45 :   content: pending(performance-title) pending(performance-DESTINATION);</span>
+<span class="lineNum">    1036 </span><span class="lineCov">         45 :   move-to: composite-DESTINATION; }</span>
+<span class="lineNum">    1037 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">    1038 </span><span class="lineCov">         45 :   class: &quot;os-eoc os-chapter-review-container&quot;;</span>
+<span class="lineNum">    1039 </span><span class="lineCov">         45 :   data-type: composite-page;</span>
+<span class="lineNum">    1040 </span><span class="lineCov">         45 :   content: pending(composite-DESTINATION); }</span>
+<span class="lineNum">    1041 </span><span class="lineCov">         32 : :pass(5) [data-type=&quot;chapter&quot;] [data-type=&quot;page&quot;] &gt; [data-type=&quot;document-title&quot;] {</span>
+<span class="lineNum">    1042 </span><span class="lineCov">         32 :   node-set: CompoundSectionHeaderNode; }</span>
+<span class="lineNum">    1043 </span><span class="lineCov">          3 : :pass(5) [data-type=&quot;chapter&quot;] .multiple-choice {</span>
+<span class="lineNum">    1044 </span><span class="lineCov">          3 :   content: nodes(CompoundSectionHeaderNode) content();</span>
+<span class="lineNum">    1045 </span><span class="lineCov">          3 :   move-to: multiple-choice-separated; }</span>
+<span class="lineNum">    1046 </span><span class="lineCov">          3 :   :pass(5) [data-type=&quot;chapter&quot;] .multiple-choice &gt; [data-type=&quot;title&quot;] {</span>
+<span class="lineNum">    1047 </span><span class="lineCov">          3 :     move-to: trash; }</span>
+<span class="lineNum">    1048 </span><span class="lineCov">         62 : :pass(5) [data-type=&quot;chapter&quot;] [data-type=&quot;page&quot;]::after {</span>
+<span class="lineNum">    1049 </span><span class="lineCov">         62 :   class: &quot;os-multiple-choice-chapter-area&quot;;</span>
+<span class="lineNum">    1050 </span><span class="lineCov">         62 :   content: pending(multiple-choice-separated);</span>
+<span class="lineNum">    1051 </span><span class="lineCov">         62 :   move-to: multiple-choice-sectionSeparatedContainer; }</span>
+<span class="lineNum">    1052 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">    1053 </span><span class="lineCov">         45 :   class: os-multiple-choice;</span>
+<span class="lineNum">    1054 </span><span class="lineCov">         45 :   content: pending(multiple-choice-sectionSeparatedContainer);</span>
+<span class="lineNum">    1055 </span><span class="lineCov">         45 :   move-to: multiple-choice-DESTINATION; }</span>
+<span class="lineNum">    1056 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">    1057 </span><span class="lineCov">         45 :   container: h2;</span>
+<span class="lineNum">    1058 </span><span class="lineCov">         45 :   data-type: &quot;title&quot;;</span>
+<span class="lineNum">    1059 </span><span class="lineCov">         45 :   content: &quot;Multiple Choice&quot;;</span>
+<span class="lineNum">    1060 </span><span class="lineCov">         45 :   move-to: multiple-choice-title; }</span>
+<span class="lineNum">    1061 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">    1062 </span><span class="lineCov">         45 :   class: &quot;os-multiple-choice-container&quot;;</span>
+<span class="lineNum">    1063 </span><span class="lineCov">         45 :   content: pending(multiple-choice-title) pending(multiple-choice-DESTINATION);</span>
+<span class="lineNum">    1064 </span><span class="lineCov">         45 :   move-to: composite-DESTINATION; }</span>
+<span class="lineNum">    1065 </span><span class="lineCov">          3 : :pass(5) [data-type=&quot;chapter&quot;] .short-answer {</span>
+<span class="lineNum">    1066 </span><span class="lineCov">          3 :   content: nodes(CompoundSectionHeaderNode) content();</span>
+<span class="lineNum">    1067 </span><span class="lineCov">          3 :   move-to: short-answer-separated; }</span>
+<span class="lineNum">    1068 </span><span class="lineCov">          3 :   :pass(5) [data-type=&quot;chapter&quot;] .short-answer &gt; [data-type=&quot;title&quot;] {</span>
+<span class="lineNum">    1069 </span><span class="lineCov">          3 :     move-to: trash; }</span>
+<span class="lineNum">    1070 </span><span class="lineCov">         62 : :pass(5) [data-type=&quot;chapter&quot;] [data-type=&quot;page&quot;]::after {</span>
+<span class="lineNum">    1071 </span><span class="lineCov">         62 :   class: &quot;os-short-answer-chapter-area&quot;;</span>
+<span class="lineNum">    1072 </span><span class="lineCov">         62 :   content: pending(short-answer-separated);</span>
+<span class="lineNum">    1073 </span><span class="lineCov">         62 :   move-to: short-answer-sectionSeparatedContainer; }</span>
+<span class="lineNum">    1074 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">    1075 </span><span class="lineCov">         45 :   class: os-short-answer;</span>
+<span class="lineNum">    1076 </span><span class="lineCov">         45 :   content: pending(short-answer-sectionSeparatedContainer);</span>
+<span class="lineNum">    1077 </span><span class="lineCov">         45 :   move-to: short-answer-DESTINATION; }</span>
+<span class="lineNum">    1078 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">    1079 </span><span class="lineCov">         45 :   container: h2;</span>
+<span class="lineNum">    1080 </span><span class="lineCov">         45 :   data-type: &quot;title&quot;;</span>
+<span class="lineNum">    1081 </span><span class="lineCov">         45 :   content: &quot;Short Answer&quot;;</span>
+<span class="lineNum">    1082 </span><span class="lineCov">         45 :   move-to: short-answer-title; }</span>
+<span class="lineNum">    1083 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">    1084 </span><span class="lineCov">         45 :   class: &quot;os-short-answer-container&quot;;</span>
+<span class="lineNum">    1085 </span><span class="lineCov">         45 :   content: pending(short-answer-title) pending(short-answer-DESTINATION);</span>
+<span class="lineNum">    1086 </span><span class="lineCov">         45 :   move-to: composite-DESTINATION; }</span>
+<span class="lineNum">    1087 </span><span class="lineCov">          3 : :pass(5) [data-type=&quot;chapter&quot;] .extended-response {</span>
+<span class="lineNum">    1088 </span><span class="lineCov">          3 :   content: nodes(CompoundSectionHeaderNode) content();</span>
+<span class="lineNum">    1089 </span><span class="lineCov">          3 :   move-to: extended-response-separated; }</span>
+<span class="lineNum">    1090 </span><span class="lineCov">          3 :   :pass(5) [data-type=&quot;chapter&quot;] .extended-response &gt; [data-type=&quot;title&quot;] {</span>
+<span class="lineNum">    1091 </span><span class="lineCov">          3 :     move-to: trash; }</span>
+<span class="lineNum">    1092 </span><span class="lineCov">         62 : :pass(5) [data-type=&quot;chapter&quot;] [data-type=&quot;page&quot;]::after {</span>
+<span class="lineNum">    1093 </span><span class="lineCov">         62 :   class: &quot;os-extended-response-chapter-area&quot;;</span>
+<span class="lineNum">    1094 </span><span class="lineCov">         62 :   content: pending(extended-response-separated);</span>
+<span class="lineNum">    1095 </span><span class="lineCov">         62 :   move-to: extended-response-sectionSeparatedContainer; }</span>
+<span class="lineNum">    1096 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">    1097 </span><span class="lineCov">         45 :   class: os-extended-response;</span>
+<span class="lineNum">    1098 </span><span class="lineCov">         45 :   content: pending(extended-response-sectionSeparatedContainer);</span>
+<span class="lineNum">    1099 </span><span class="lineCov">         45 :   move-to: extended-response-DESTINATION; }</span>
+<span class="lineNum">    1100 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">    1101 </span><span class="lineCov">         45 :   container: h2;</span>
+<span class="lineNum">    1102 </span><span class="lineCov">         45 :   data-type: &quot;title&quot;;</span>
+<span class="lineNum">    1103 </span><span class="lineCov">         45 :   content: &quot;Extended Response&quot;;</span>
+<span class="lineNum">    1104 </span><span class="lineCov">         45 :   move-to: extended-response-title; }</span>
+<span class="lineNum">    1105 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">    1106 </span><span class="lineCov">         45 :   class: &quot;os-extended-response-container&quot;;</span>
+<span class="lineNum">    1107 </span><span class="lineCov">         45 :   content: pending(extended-response-title) pending(extended-response-DESTINATION);</span>
+<span class="lineNum">    1108 </span><span class="lineCov">         45 :   move-to: composite-DESTINATION; }</span>
+<span class="lineNum">    1109 </span><span class="lineCov">         45 : :pass(5) [data-type=&quot;chapter&quot;]::after {</span>
+<span class="lineNum">    1110 </span><span class="lineCov">         45 :   class: &quot;os-eoc os-test-prep-container&quot;;</span>
+<span class="lineNum">    1111 </span><span class="lineCov">         45 :   data-type: composite-page;</span>
+<span class="lineNum">    1112 </span><span class="lineCov">         45 :   content: pending(composite-DESTINATION); }</span>
+<span class="lineNum">    1113 </span>            : 
+<span class="lineNum">    1114 </span><span class="lineCov">          3 : :pass(6) .os-index-container &gt; div.group-by:first-of-type &gt; span.group-label {</span>
+<span class="lineNum">    1115 </span><span class="lineCov">          3 :   content: &quot;Symbols&quot;; }</span>
+<span class="lineNum">    1116 </span><span class="lineCov">         44 : :pass(6) body {</span>
+<span class="lineNum">    1117 </span><span class="lineCov">         44 :   counter-reset: chapter; }</span>
+<span class="lineNum">    1118 </span><span class="lineCov">         45 : :pass(6) div[data-type=&quot;chapter&quot;] {</span>
+<span class="lineNum">    1119 </span><span class="lineCov">         45 :   counter-increment: chapter; }</span>
+<span class="lineNum">    1120 </span><span class="lineCov">         44 : :pass(6) body {</span>
+<span class="lineNum">    1121 </span><span class="lineCov">         44 :   counter-reset: appendix; }</span>
+<span class="lineNum">    1122 </span><span class="lineNoCov">          0 : :pass(6) div.appendix {</span>
+<span class="lineNum">    1123 </span>            :   counter-increment: appendix; }
+<span class="lineNum">    1124 </span><span class="lineCov">         18 : :pass(6) .os-eoc [data-type=&quot;exercise&quot;] {</span>
+<span class="lineNum">    1125 </span><span class="lineCov">         18 :   string-set: target-label &quot;Exercise &quot; counter(chapter) &quot;.&quot; counter(exercise); }</span>
+<span class="lineNum">    1126 </span><span class="lineCov">          2 : :pass(6) div[data-type=&quot;chapter&quot;] .example {</span>
+<span class="lineNum">    1127 </span><span class="lineCov">          2 :   string-set: target-label &quot;Example &quot; counter(chapter) &quot;.&quot; counter(example); }</span>
+<span class="lineNum">    1128 </span><span class="lineCov">          4 : :pass(6) [data-type=&quot;chapter&quot;] :not(table) &gt; table:not(.unnumbered) {</span>
+<span class="lineNum">    1129 </span><span class="lineCov">          4 :   string-set: target-label &quot;Table &quot; counter(chapter) &quot;.&quot; counter(table); }</span>
+<span class="lineNum">    1130 </span><span class="lineCov">          3 : :pass(6) [data-type=&quot;chapter&quot;] :not(figure) &gt; figure:not(.unnumbered) {</span>
+<span class="lineNum">    1131 </span><span class="lineCov">          3 :   string-set: target-label &quot;Figure &quot; counter(chapter) &quot;.&quot; counter(figure); }</span>
+<span class="lineNum">    1132 </span><span class="lineNoCov">          0 : :pass(6) [data-type=&quot;appendix&quot;] :not(table) &gt; table:not(.unnumbered) {</span>
+<span class="lineNum">    1133 </span>            :   string-set: target-label &quot;Table &quot; counter(appendix,upper-alpha) &quot;.&quot; counter(table); }
+<span class="lineNum">    1134 </span><span class="lineNoCov">          0 : :pass(6) [data-type=&quot;appendix&quot;] :not(figure) &gt; figure:not(.unnumbered) {</span>
+<span class="lineNum">    1135 </span>            :   string-set: target-label &quot;Figure &quot; counter(appendix,upper-alpha) &quot;.&quot; counter(figure); }
+<span class="lineNum">    1136 </span><span class="lineCov">          1 : :pass(6) a.autogenerated-content {</span>
+<span class="lineNum">    1137 </span><span class="lineCov">          1 :   content: target-string(attr(href), target-label); }</span>
+<span class="lineNum">    1138 </span><span class="lineCov">         45 : :pass(6) [data-type=&quot;chapter&quot;], :pass(6) .appendix {</span>
+<span class="lineNum">    1139 </span><span class="lineCov">         45 :   counter-reset: equation; }</span>
+<span class="lineNum">    1140 </span><span class="lineCov">          1 : :pass(6) [data-type=&quot;equation&quot;] {</span>
+<span class="lineNum">    1141 </span><span class="lineCov">          1 :   counter-increment: equation; }</span>
+<span class="lineNum">    1142 </span><span class="lineNoCov">          0 : :pass(6) section:not(.summary) [data-type=&quot;equation&quot;]:not(.unnumbered)::before {</span>
+<span class="lineNum">    1143 </span>            :   container: span;
+<span class="lineNum">    1144 </span>            :   content: counter(chapter) &quot;.&quot; counter(equation);
+<span class="lineNum">    1145 </span>            :   class: os-number; }
+<span class="lineNum">    1146 </span><span class="lineNoCov">          0 : :pass(6) body &gt; [data-type=&quot;metadata&quot;] {</span>
+<span class="lineNum">    1147 </span>            :   node-set: bookMetadata; }
+<span class="lineNum">    1148 </span><span class="lineCov">         95 : :pass(6) [data-type=&quot;composite-page&quot;] {</span>
+<span class="lineNum">    1149 </span><span class="lineCov">         95 :   content: nodes(bookMetadata) content(); }</span>
+<span class="lineNum">    1150 </span><span class="lineCov">          1 : :pass(6) [data-type=&quot;composite-page&quot;].os-eoc.os-glossary-container::before {</span>
+<span class="lineNum">    1151 </span><span class="lineCov">          1 :   container: span;</span>
+<span class="lineNum">    1152 </span><span class="lineCov">          1 :   content: &quot;Key Terms&quot;;</span>
+<span class="lineNum">    1153 </span><span class="lineCov">          1 :   class: os-text;</span>
+<span class="lineNum">    1154 </span><span class="lineCov">          1 :   move-to: h1-TITLECONTAINER; }</span>
+<span class="lineNum">    1155 </span><span class="lineCov">          1 : :pass(6) [data-type=&quot;composite-page&quot;].os-eoc.os-glossary-container::before {</span>
+<span class="lineNum">    1156 </span><span class="lineCov">          1 :   container: h1;</span>
+<span class="lineNum">    1157 </span><span class="lineCov">          1 :   data-type: &quot;document-title&quot;;</span>
+<span class="lineNum">    1158 </span><span class="lineCov">          1 :   content: pending(h1-TITLECONTAINER); }</span>
+<span class="lineNum">    1159 </span><span class="lineCov">          1 : :pass(6) [data-type=&quot;composite-page&quot;].os-eoc.os-summary-container::before {</span>
+<span class="lineNum">    1160 </span><span class="lineCov">          1 :   container: span;</span>
+<span class="lineNum">    1161 </span><span class="lineCov">          1 :   content: &quot;Section Summary&quot;;</span>
+<span class="lineNum">    1162 </span><span class="lineCov">          1 :   class: os-text;</span>
+<span class="lineNum">    1163 </span><span class="lineCov">          1 :   move-to: h1-TITLECONTAINER; }</span>
+<span class="lineNum">    1164 </span><span class="lineCov">          1 : :pass(6) [data-type=&quot;composite-page&quot;].os-eoc.os-summary-container::before {</span>
+<span class="lineNum">    1165 </span><span class="lineCov">          1 :   container: h1;</span>
+<span class="lineNum">    1166 </span><span class="lineCov">          1 :   data-type: &quot;document-title&quot;;</span>
+<span class="lineNum">    1167 </span><span class="lineCov">          1 :   content: pending(h1-TITLECONTAINER); }</span>
+<span class="lineNum">    1168 </span><span class="lineNoCov">          0 : :pass(6) [data-type=&quot;composite-page&quot;].os-eoc.os-key-equations-container::before {</span>
+<span class="lineNum">    1169 </span>            :   container: span;
+<span class="lineNum">    1170 </span>            :   content: &quot;Key Equations&quot;;
+<span class="lineNum">    1171 </span>            :   class: os-text;
+<span class="lineNum">    1172 </span>            :   move-to: h1-TITLECONTAINER; }
+<span class="lineNum">    1173 </span><span class="lineNoCov">          0 : :pass(6) [data-type=&quot;composite-page&quot;].os-eoc.os-key-equations-container::before {</span>
+<span class="lineNum">    1174 </span>            :   container: h1;
+<span class="lineNum">    1175 </span>            :   data-type: &quot;document-title&quot;;
+<span class="lineNum">    1176 </span>            :   content: pending(h1-TITLECONTAINER); }
+<span class="lineNum">    1177 </span><span class="lineCov">         45 : :pass(6) [data-type=&quot;composite-page&quot;].os-eoc.os-chapter-review-container::before {</span>
+<span class="lineNum">    1178 </span><span class="lineCov">         45 :   container: span;</span>
+<span class="lineNum">    1179 </span><span class="lineCov">         45 :   content: &quot;Chapter Review&quot;;</span>
+<span class="lineNum">    1180 </span><span class="lineCov">         45 :   class: os-text;</span>
+<span class="lineNum">    1181 </span><span class="lineCov">         45 :   move-to: h1-TITLECONTAINER; }</span>
+<span class="lineNum">    1182 </span><span class="lineCov">         45 : :pass(6) [data-type=&quot;composite-page&quot;].os-eoc.os-chapter-review-container::before {</span>
+<span class="lineNum">    1183 </span><span class="lineCov">         45 :   container: h1;</span>
+<span class="lineNum">    1184 </span><span class="lineCov">         45 :   data-type: &quot;document-title&quot;;</span>
+<span class="lineNum">    1185 </span><span class="lineCov">         45 :   content: pending(h1-TITLECONTAINER); }</span>
+<span class="lineNum">    1186 </span><span class="lineCov">         45 : :pass(6) [data-type=&quot;composite-page&quot;].os-eoc.os-test-prep-container::before {</span>
+<span class="lineNum">    1187 </span><span class="lineCov">         45 :   container: span;</span>
+<span class="lineNum">    1188 </span><span class="lineCov">         45 :   content: &quot;Test Prep&quot;;</span>
+<span class="lineNum">    1189 </span><span class="lineCov">         45 :   class: os-text;</span>
+<span class="lineNum">    1190 </span><span class="lineCov">         45 :   move-to: h1-TITLECONTAINER; }</span>
+<span class="lineNum">    1191 </span><span class="lineCov">         45 : :pass(6) [data-type=&quot;composite-page&quot;].os-eoc.os-test-prep-container::before {</span>
+<span class="lineNum">    1192 </span><span class="lineCov">         45 :   container: h1;</span>
+<span class="lineNum">    1193 </span><span class="lineCov">         45 :   data-type: &quot;document-title&quot;;</span>
+<span class="lineNum">    1194 </span><span class="lineCov">         45 :   content: pending(h1-TITLECONTAINER); }</span>
+<span class="lineNum">    1195 </span><span class="lineCov">          3 : :pass(6) [data-type=&quot;composite-page&quot;].os-eob.os-index-container::before {</span>
+<span class="lineNum">    1196 </span><span class="lineCov">          3 :   container: span;</span>
+<span class="lineNum">    1197 </span><span class="lineCov">          3 :   content: &quot;Index&quot;;</span>
+<span class="lineNum">    1198 </span><span class="lineCov">          3 :   class: os-text;</span>
+<span class="lineNum">    1199 </span><span class="lineCov">          3 :   move-to: h1-TITLECONTAINER; }</span>
+<span class="lineNum">    1200 </span><span class="lineCov">          3 : :pass(6) [data-type=&quot;composite-page&quot;].os-eob.os-index-container::before {</span>
+<span class="lineNum">    1201 </span><span class="lineCov">          3 :   container: h1;</span>
+<span class="lineNum">    1202 </span><span class="lineCov">          3 :   data-type: &quot;document-title&quot;;</span>
+<span class="lineNum">    1203 </span><span class="lineCov">          3 :   content: pending(h1-TITLECONTAINER); }</span>
+<span class="lineNum">    1204 </span><span class="lineCov">         95 : :pass(6) div[data-type=&quot;composite-page&quot;] {</span>
+<span class="lineNum">    1205 </span><span class="lineCov">         95 :   attr-id: uuid() &quot;@1&quot;; }</span>
+<span class="lineNum">    1206 </span><span class="lineCov">         14 : :pass(6) div[data-type='chapter'] &gt; h1[data-type='document-title'] {</span>
+<span class="lineNum">    1207 </span><span class="lineCov">         14 :   counter-increment: chapTitleNum;</span>
+<span class="lineNum">    1208 </span><span class="lineCov">         14 :   attr-id: &quot;chapTitle&quot; counter(chapTitleNum); }</span>
+<span class="lineNum">    1209 </span><span class="lineCov">         45 : :pass(6) [data-type=&quot;chapter&quot;] {</span>
+<span class="lineNum">    1210 </span><span class="lineCov">         45 :   counter-reset: exerciseMaybeInContent; }</span>
+<span class="lineNum">    1211 </span><span class="lineCov">         24 : :pass(6) :not([data-type=&quot;example&quot;]) &gt; [data-type=&quot;exercise&quot;]:not(.unnumbered) {</span>
+<span class="lineNum">    1212 </span><span class="lineCov">         24 :   counter-increment: exerciseMaybeInContent; }</span>
+<span class="lineNum">    1213 </span><span class="lineCov">          7 : :pass(6) [data-type=&quot;page&quot;] [data-type=&quot;exercise&quot;]:not(.unnumbered) [data-type=&quot;problem&quot;]::before {</span>
+<span class="lineNum">    1214 </span><span class="lineCov">          7 :   container: span;</span>
+<span class="lineNum">    1215 </span><span class="lineCov">          7 :   content: counter(exerciseMaybeInContent);</span>
+<span class="lineNum">    1216 </span><span class="lineCov">          7 :   class: os-number; }</span>
+<span class="lineNum">    1217 </span><span class="lineCov">          7 : :pass(6) [data-type=&quot;page&quot;] [data-type=&quot;exercise&quot;]:not(.unnumbered) [data-type=&quot;problem&quot;]::before {</span>
+<span class="lineNum">    1218 </span><span class="lineCov">          7 :   container: span;</span>
+<span class="lineNum">    1219 </span><span class="lineCov">          7 :   content: &quot;Exercise&quot;;</span>
+<span class="lineNum">    1220 </span><span class="lineCov">          7 :   class: os-title-label; }</span>
+<span class="lineNum">    1221 </span><span class="lineCov">         95 : :pass(6) [data-type=&quot;composite-page&quot;], :pass(6) .appendix {</span>
+<span class="lineNum">    1222 </span><span class="lineCov">         95 :   counter-reset: exercise; }</span>
+<span class="lineNum">    1223 </span><span class="lineCov">         18 : :pass(6) .os-eoc [data-type=&quot;exercise&quot;] {</span>
+<span class="lineNum">    1224 </span><span class="lineCov">         18 :   counter-increment: exercise; }</span>
+<span class="lineNum">    1225 </span><span class="lineCov">         18 : :pass(6) .os-eoc [data-type=&quot;exercise&quot;] [data-type=&quot;problem&quot;]::before {</span>
+<span class="lineNum">    1226 </span><span class="lineCov">         18 :   container: span;</span>
+<span class="lineNum">    1227 </span><span class="lineCov">         18 :   content: &quot;. &quot;;</span>
+<span class="lineNum">    1228 </span><span class="lineCov">         18 :   class: os-divider; }</span>
+<span class="lineNum">    1229 </span><span class="lineCov">         18 : :pass(6) .os-eoc [data-type=&quot;exercise&quot;] [data-type=&quot;problem&quot;]::before {</span>
+<span class="lineNum">    1230 </span><span class="lineCov">         18 :   container: span;</span>
+<span class="lineNum">    1231 </span><span class="lineCov">         18 :   content: counter(exercise);</span>
+<span class="lineNum">    1232 </span><span class="lineCov">         18 :   class: os-number; }</span>
+<span class="lineNum">    1233 </span><span class="lineCov">         18 : :pass(6) .os-eoc [data-type=&quot;exercise&quot;] [data-type=&quot;solution&quot;]::before {</span>
+<span class="lineNum">    1234 </span><span class="lineCov">         18 :   container: span;</span>
+<span class="lineNum">    1235 </span><span class="lineCov">         18 :   content: &quot;. &quot;;</span>
+<span class="lineNum">    1236 </span><span class="lineCov">         18 :   class: os-divider; }</span>
+<span class="lineNum">    1237 </span><span class="lineCov">         18 : :pass(6) .os-eoc [data-type=&quot;exercise&quot;] [data-type=&quot;solution&quot;]::before {</span>
+<span class="lineNum">    1238 </span><span class="lineCov">         18 :   container: span;</span>
+<span class="lineNum">    1239 </span><span class="lineCov">         18 :   content: counter(exercise);</span>
+<span class="lineNum">    1240 </span><span class="lineCov">         18 :   class: os-number; }</span>
+<span class="lineNum">    1241 </span><span class="lineCov">         45 : :pass(6) [data-type=&quot;chapter&quot;], :pass(6) .appendix {</span>
+<span class="lineNum">    1242 </span><span class="lineCov">         45 :   counter-reset: table; }</span>
+<span class="lineNum">    1243 </span><span class="lineCov">          4 : :pass(6) :not(table) &gt; table:not(.unnumbered) {</span>
+<span class="lineNum">    1244 </span><span class="lineCov">          4 :   counter-increment: table; }</span>
+<span class="lineNum">    1245 </span><span class="lineCov">         45 : :pass(6) [data-type=&quot;chapter&quot;], :pass(6) .appendix {</span>
+<span class="lineNum">    1246 </span><span class="lineCov">         45 :   counter-reset: figure; }</span>
+<span class="lineNum">    1247 </span><span class="lineCov">          3 : :pass(6) :not(figure) &gt; figure:not(.unnumbered) {</span>
+<span class="lineNum">    1248 </span><span class="lineCov">          3 :   counter-increment: figure; }</span>
+<span class="lineNum">    1249 </span><span class="lineCov">          4 : :pass(6) [data-type=&quot;chapter&quot;] :not(table) &gt; table:not(.unnumbered)::before {</span>
+<span class="lineNum">    1250 </span><span class="lineCov">          4 :   container: span;</span>
+<span class="lineNum">    1251 </span><span class="lineCov">          4 :   content: &quot;Table &quot;;</span>
+<span class="lineNum">    1252 </span><span class="lineCov">          4 :   class: os-title-label;</span>
+<span class="lineNum">    1253 </span><span class="lineCov">          4 :   move-to: bCaption; }</span>
+<span class="lineNum">    1254 </span><span class="lineCov">          4 : :pass(6) [data-type=&quot;chapter&quot;] :not(table) &gt; table:not(.unnumbered)::before {</span>
+<span class="lineNum">    1255 </span><span class="lineCov">          4 :   container: span;</span>
+<span class="lineNum">    1256 </span><span class="lineCov">          4 :   content: counter(chapter) &quot;.&quot; counter(table);</span>
+<span class="lineNum">    1257 </span><span class="lineCov">          4 :   class: os-number;</span>
+<span class="lineNum">    1258 </span><span class="lineCov">          4 :   move-to: bCaption; }</span>
+<span class="lineNum">    1259 </span><span class="lineCov">          2 : :pass(6) [data-type=&quot;chapter&quot;] :not(table) &gt; table:not(.unnumbered) caption {</span>
+<span class="lineNum">    1260 </span><span class="lineCov">          2 :   container: span;</span>
+<span class="lineNum">    1261 </span><span class="lineCov">          2 :   class: &quot;os-caption&quot;;</span>
+<span class="lineNum">    1262 </span><span class="lineCov">          2 :   move-to: bCaption; }</span>
+<span class="lineNum">    1263 </span><span class="lineCov">          1 : :pass(6) [data-type=&quot;chapter&quot;] :not(table) &gt; table:not(.unnumbered) caption [data-type=&quot;title&quot;] {</span>
+<span class="lineNum">    1264 </span><span class="lineCov">          1 :   container: span;</span>
+<span class="lineNum">    1265 </span><span class="lineCov">          1 :   class: &quot;os-title&quot;;</span>
+<span class="lineNum">    1266 </span><span class="lineCov">          1 :   move-to: bCaption; }</span>
+<span class="lineNum">    1267 </span><span class="lineCov">          4 : :pass(6) [data-type=&quot;chapter&quot;] :not(table) &gt; table:not(.unnumbered)::after {</span>
+<span class="lineNum">    1268 </span><span class="lineCov">          4 :   container: div;</span>
+<span class="lineNum">    1269 </span><span class="lineCov">          4 :   class: &quot;os-caption-container&quot;;</span>
+<span class="lineNum">    1270 </span><span class="lineCov">          4 :   content: pending(bCaption);</span>
+<span class="lineNum">    1271 </span><span class="lineCov">          4 :   move-to: bCaptionContainer; }</span>
+<span class="lineNum">    1272 </span><span class="lineCov">          4 : :pass(6) [data-type=&quot;chapter&quot;] :not(table) &gt; table:not(.unnumbered)::outside {</span>
+<span class="lineNum">    1273 </span><span class="lineCov">          4 :   class: os-table;</span>
+<span class="lineNum">    1274 </span><span class="lineCov">          4 :   container: div;</span>
+<span class="lineNum">    1275 </span><span class="lineCov">          4 :   content: content() pending(bCaptionContainer); }</span>
+<span class="lineNum">    1276 </span><span class="lineNoCov">          0 : :pass(6) [data-type=&quot;chapter&quot;] &gt; table.unnumbered caption {</span>
+<span class="lineNum">    1277 </span>            :   move-to: trash; }
+<span class="lineNum">    1278 </span><span class="lineNoCov">          0 : :pass(6) .appendix :not(table) &gt; table:not(.unnumbered)::before {</span>
+<span class="lineNum">    1279 </span>            :   container: span;
+<span class="lineNum">    1280 </span>            :   content: &quot;Table &quot;;
+<span class="lineNum">    1281 </span>            :   class: os-title-label;
+<span class="lineNum">    1282 </span>            :   move-to: bCaption; }
+<span class="lineNum">    1283 </span><span class="lineNoCov">          0 : :pass(6) .appendix :not(table) &gt; table:not(.unnumbered)::before {</span>
+<span class="lineNum">    1284 </span>            :   container: span;
+<span class="lineNum">    1285 </span>            :   content: counter(appendix,upper-alpha) &quot;.&quot; counter(table);
+<span class="lineNum">    1286 </span>            :   class: os-number;
+<span class="lineNum">    1287 </span>            :   move-to: bCaption; }
+<span class="lineNum">    1288 </span><span class="lineNoCov">          0 : :pass(6) .appendix :not(table) &gt; table:not(.unnumbered) caption {</span>
+<span class="lineNum">    1289 </span>            :   container: span;
+<span class="lineNum">    1290 </span>            :   class: &quot;os-caption&quot;;
+<span class="lineNum">    1291 </span>            :   move-to: bCaption; }
+<span class="lineNum">    1292 </span><span class="lineNoCov">          0 : :pass(6) .appendix :not(table) &gt; table:not(.unnumbered) caption [data-type=&quot;title&quot;] {</span>
+<span class="lineNum">    1293 </span>            :   container: span;
+<span class="lineNum">    1294 </span>            :   class: &quot;os-title&quot;;
+<span class="lineNum">    1295 </span>            :   move-to: bCaption; }
+<span class="lineNum">    1296 </span><span class="lineNoCov">          0 : :pass(6) .appendix :not(table) &gt; table:not(.unnumbered)::after {</span>
+<span class="lineNum">    1297 </span>            :   container: div;
+<span class="lineNum">    1298 </span>            :   class: &quot;os-caption-container&quot;;
+<span class="lineNum">    1299 </span>            :   content: pending(bCaption);
+<span class="lineNum">    1300 </span>            :   move-to: bCaptionContainer; }
+<span class="lineNum">    1301 </span><span class="lineNoCov">          0 : :pass(6) .appendix :not(table) &gt; table:not(.unnumbered)::outside {</span>
+<span class="lineNum">    1302 </span>            :   class: os-table;
+<span class="lineNum">    1303 </span>            :   container: div;
+<span class="lineNum">    1304 </span>            :   content: content() pending(bCaptionContainer); }
+<span class="lineNum">    1305 </span><span class="lineNoCov">          0 : :pass(6) .appendix &gt; table.unnumbered caption {</span>
+<span class="lineNum">    1306 </span>            :   move-to: trash; }
+<span class="lineNum">    1307 </span><span class="lineCov">          3 : :pass(6) [data-type=&quot;chapter&quot;] :not(figure) &gt; figure:not(.unnumbered)::before {</span>
+<span class="lineNum">    1308 </span><span class="lineCov">          3 :   container: span;</span>
+<span class="lineNum">    1309 </span><span class="lineCov">          3 :   content: &quot;Figure &quot;;</span>
+<span class="lineNum">    1310 </span><span class="lineCov">          3 :   class: os-title-label;</span>
+<span class="lineNum">    1311 </span><span class="lineCov">          3 :   move-to: bCaption; }</span>
+<span class="lineNum">    1312 </span><span class="lineCov">          3 : :pass(6) [data-type=&quot;chapter&quot;] :not(figure) &gt; figure:not(.unnumbered)::before {</span>
+<span class="lineNum">    1313 </span><span class="lineCov">          3 :   container: span;</span>
+<span class="lineNum">    1314 </span><span class="lineCov">          3 :   content: counter(chapter) &quot;.&quot; counter(figure);</span>
+<span class="lineNum">    1315 </span><span class="lineCov">          3 :   class: os-number;</span>
+<span class="lineNum">    1316 </span><span class="lineCov">          3 :   move-to: bCaption; }</span>
+<span class="lineNum">    1317 </span><span class="lineCov">          1 : :pass(6) [data-type=&quot;chapter&quot;] :not(figure) &gt; figure:not(.unnumbered) figcaption {</span>
+<span class="lineNum">    1318 </span><span class="lineCov">          1 :   container: span;</span>
+<span class="lineNum">    1319 </span><span class="lineCov">          1 :   class: &quot;os-caption&quot;;</span>
+<span class="lineNum">    1320 </span><span class="lineCov">          1 :   move-to: bCaption; }</span>
+<span class="lineNum">    1321 </span><span class="lineCov">          2 : :pass(6) [data-type=&quot;chapter&quot;] :not(figure) &gt; figure:not(.unnumbered) [data-type=&quot;title&quot;] {</span>
+<span class="lineNum">    1322 </span><span class="lineCov">          2 :   container: span;</span>
+<span class="lineNum">    1323 </span><span class="lineCov">          2 :   class: &quot;os-title&quot;;</span>
+<span class="lineNum">    1324 </span><span class="lineCov">          2 :   move-to: bCaption; }</span>
+<span class="lineNum">    1325 </span><span class="lineCov">          3 : :pass(6) [data-type=&quot;chapter&quot;] :not(figure) &gt; figure:not(.unnumbered)::after {</span>
+<span class="lineNum">    1326 </span><span class="lineCov">          3 :   container: div;</span>
+<span class="lineNum">    1327 </span><span class="lineCov">          3 :   class: &quot;os-caption-container&quot;;</span>
+<span class="lineNum">    1328 </span><span class="lineCov">          3 :   content: pending(bCaption);</span>
+<span class="lineNum">    1329 </span><span class="lineCov">          3 :   move-to: bCaptionContainer; }</span>
+<span class="lineNum">    1330 </span><span class="lineCov">          3 : :pass(6) [data-type=&quot;chapter&quot;] :not(figure) &gt; figure:not(.unnumbered)::outside {</span>
+<span class="lineNum">    1331 </span><span class="lineCov">          3 :   class: os-figure;</span>
+<span class="lineNum">    1332 </span><span class="lineCov">          3 :   container: div;</span>
+<span class="lineNum">    1333 </span><span class="lineCov">          3 :   content: content() pending(bCaptionContainer); }</span>
+<span class="lineNum">    1334 </span><span class="lineNoCov">          0 : :pass(6) [data-type=&quot;chapter&quot;] &gt; figure.unnumbered figcaption {</span>
+<span class="lineNum">    1335 </span>            :   move-to: trash; }
+<span class="lineNum">    1336 </span><span class="lineNoCov">          0 : :pass(6) .appendix :not(figure) &gt; figure:not(.unnumbered)::before {</span>
+<span class="lineNum">    1337 </span>            :   container: span;
+<span class="lineNum">    1338 </span>            :   content: &quot;Figure &quot;;
+<span class="lineNum">    1339 </span>            :   class: os-title-label;
+<span class="lineNum">    1340 </span>            :   move-to: bCaption; }
+<span class="lineNum">    1341 </span><span class="lineNoCov">          0 : :pass(6) .appendix :not(figure) &gt; figure:not(.unnumbered)::before {</span>
+<span class="lineNum">    1342 </span>            :   container: span;
+<span class="lineNum">    1343 </span>            :   content: counter(appendix,upper-alpha) &quot;.&quot; counter(figure);
+<span class="lineNum">    1344 </span>            :   class: os-number;
+<span class="lineNum">    1345 </span>            :   move-to: bCaption; }
+<span class="lineNum">    1346 </span><span class="lineNoCov">          0 : :pass(6) .appendix :not(figure) &gt; figure:not(.unnumbered) figcaption {</span>
+<span class="lineNum">    1347 </span>            :   container: span;
+<span class="lineNum">    1348 </span>            :   class: &quot;os-caption&quot;;
+<span class="lineNum">    1349 </span>            :   move-to: bCaption; }
+<span class="lineNum">    1350 </span><span class="lineNoCov">          0 : :pass(6) .appendix :not(figure) &gt; figure:not(.unnumbered) [data-type=&quot;title&quot;] {</span>
+<span class="lineNum">    1351 </span>            :   container: span;
+<span class="lineNum">    1352 </span>            :   class: &quot;os-title&quot;;
+<span class="lineNum">    1353 </span>            :   move-to: bCaption; }
+<span class="lineNum">    1354 </span><span class="lineNoCov">          0 : :pass(6) .appendix :not(figure) &gt; figure:not(.unnumbered)::after {</span>
+<span class="lineNum">    1355 </span>            :   container: div;
+<span class="lineNum">    1356 </span>            :   class: &quot;os-caption-container&quot;;
+<span class="lineNum">    1357 </span>            :   content: pending(bCaption);
+<span class="lineNum">    1358 </span>            :   move-to: bCaptionContainer; }
+<span class="lineNum">    1359 </span><span class="lineNoCov">          0 : :pass(6) .appendix :not(figure) &gt; figure:not(.unnumbered)::outside {</span>
+<span class="lineNum">    1360 </span>            :   class: os-figure;
+<span class="lineNum">    1361 </span>            :   container: div;
+<span class="lineNum">    1362 </span>            :   content: content() pending(bCaptionContainer); }
+<span class="lineNum">    1363 </span><span class="lineNoCov">          0 : :pass(6) .appendix &gt; figure.unnumbered figcaption {</span>
+<span class="lineNum">    1364 </span>            :   move-to: trash; }
+<span class="lineNum">    1365 </span><span class="lineCov">         15 : :pass(6) [data-type=&quot;chapter&quot;] [data-type=&quot;page&quot;] [data-type=&quot;note&quot;] &gt; .os-title,</span>
+<span class="lineNum">    1366 </span><span class="lineNoCov">          0 : :pass(6) [data-type=&quot;chapter&quot;] [data-type=&quot;page&quot;] [data-type=&quot;example&quot;] &gt; .os-title {</span>
+<span class="lineNum">    1367 </span><span class="lineCov">         15 :   container: h3; }</span>
+<span class="lineNum">    1368 </span><span class="lineCov">          8 : :pass(6) [data-type=&quot;chapter&quot;] [data-type=&quot;page&quot;] [data-type=&quot;note&quot;] .os-note-body &gt; [data-type=&quot;title&quot;],</span>
+<span class="lineNum">    1369 </span><span class="lineNoCov">          0 : :pass(6) [data-type=&quot;chapter&quot;] [data-type=&quot;page&quot;] [data-type=&quot;example&quot;] .os-note-body &gt; [data-type=&quot;title&quot;] {</span>
+<span class="lineNum">    1370 </span><span class="lineCov">          8 :   class: &quot;os-subtitle&quot;;</span>
+<span class="lineNum">    1371 </span><span class="lineCov">          8 :   container: h4; }</span>
+<span class="lineNum">    1372 </span>            : 
+<span class="lineNum">    1373 </span><span class="lineCov">          4 : :pass(7) .os-index-link-separator:last-child {</span>
+<span class="lineNum">    1374 </span><span class="lineCov">          4 :   move-to: trash; }</span>
+<span class="lineNum">    1375 </span><span class="lineCov">         18 : :pass(7) .os-eoc [data-type=&quot;solution&quot;] {</span>
+<span class="lineNum">    1376 </span><span class="lineCov">         18 :   move-to: trash; }</span>
+<span class="lineNum">    1377 </span><span class="lineCov">         95 : :pass(7) [data-type=&quot;composite-page&quot;] &gt; [data-type=&quot;document-title&quot;] {</span>
+<span class="lineNum">    1378 </span><span class="lineCov">         95 :   string-set: doc-title-TOMETADATA content(); }</span>
+<span class="lineNum">    1379 </span><span class="lineNoCov">          0 : :pass(7) [data-type=&quot;composite-page&quot;] &gt; [data-type=&quot;metadata&quot;] &gt; [data-type=&quot;document-title&quot;] {</span>
+<span class="lineNum">    1380 </span>            :   content: string(doc-title-TOMETADATA); }
+<span class="lineNum">    1381 </span>            : 
+<span class="lineNum">    1382 </span><span class="lineNoCov">          0 : :pass(8) div.os-eoc [data-type=&quot;cnx-archive-uri&quot;], :pass(8) div.os-eob [data-type=&quot;cnx-archive-uri&quot;] {</span>
+<span class="lineNum">    1383 </span>            :   move-to: trash; }
+<span class="lineNum">    1384 </span><span class="lineNoCov">          0 : :pass(8) body &gt; div[data-type=&quot;page&quot;],</span>
+<span class="lineNum">    1385 </span><span class="lineCov">          3 : :pass(8) body &gt; div[data-type=&quot;composite-page&quot;] {</span>
+<span class="lineNum">    1386 </span><span class="lineCov">          3 :   string-set: page-id attr(id); }</span>
+<span class="lineNum">    1387 </span><span class="lineNoCov">          0 :   :pass(8) body &gt; div[data-type=&quot;page&quot;] &gt; [data-type='document-title'],</span>
+<span class="lineNum">    1388 </span><span class="lineCov">          3 :   :pass(8) body &gt; div[data-type=&quot;composite-page&quot;] &gt; [data-type='document-title'] {</span>
+<span class="lineNum">    1389 </span><span class="lineCov">          3 :     node-set: pageTitle; }</span>
+<span class="lineNum">    1390 </span>            :   :pass(8) body &gt; div[data-type=&quot;page&quot;] &gt; [data-type='metadata']
+<span class="lineNum">    1391 </span><span class="lineNoCov">          0 :   &gt; [data-type='cnx-archive-shortid'],</span>
+<span class="lineNum">    1392 </span>            :   :pass(8) body &gt; div[data-type=&quot;composite-page&quot;] &gt; [data-type='metadata']
+<span class="lineNum">    1393 </span><span class="lineNoCov">          0 :   &gt; [data-type='cnx-archive-shortid'] {</span>
+<span class="lineNum">    1394 </span>            :     string-set: page-shortid attr(data-value); }
+<span class="lineNum">    1395 </span><span class="lineNoCov">          0 :   :pass(8) body &gt; div[data-type=&quot;page&quot;]::after,</span>
+<span class="lineNum">    1396 </span><span class="lineCov">          3 :   :pass(8) body &gt; div[data-type=&quot;composite-page&quot;]::after {</span>
+<span class="lineNum">    1397 </span><span class="lineCov">          3 :     content: nodes(pageTitle);</span>
+<span class="lineNum">    1398 </span><span class="lineCov">          3 :     attr-href: &quot;#&quot; string(page-id);</span>
+<span class="lineNum">    1399 </span><span class="lineCov">          3 :     container: a;</span>
+<span class="lineNum">    1400 </span><span class="lineCov">          3 :     move-to: page-link; }</span>
+<span class="lineNum">    1401 </span><span class="lineNoCov">          0 :   :pass(8) body &gt; div[data-type=&quot;page&quot;]::after,</span>
+<span class="lineNum">    1402 </span><span class="lineCov">          3 :   :pass(8) body &gt; div[data-type=&quot;composite-page&quot;]::after {</span>
+<span class="lineNum">    1403 </span><span class="lineCov">          3 :     content: pending(page-link);</span>
+<span class="lineNum">    1404 </span><span class="lineCov">          3 :     move-to: eob-toc;</span>
+<span class="lineNum">    1405 </span><span class="lineCov">          3 :     attr-cnx-archive-uri: attr(id);</span>
+<span class="lineNum">    1406 </span><span class="lineCov">          3 :     attr-cnx-archive-shortid: string(page-shortid);</span>
+<span class="lineNum">    1407 </span><span class="lineCov">          3 :     container: li; }</span>
+<span class="lineNum">    1408 </span><span class="lineCov">         14 : :pass(8) body &gt; div[data-type='chapter'] &gt; [data-type='document-title'] {</span>
+<span class="lineNum">    1409 </span><span class="lineCov">         14 :   node-set: chapterTitle;</span>
+<span class="lineNum">    1410 </span><span class="lineCov">         14 :   string-set: chapTitle-id attr(id); }</span>
+<span class="lineNum">    1411 </span>            : :pass(8) body &gt; div[data-type='chapter'] &gt; [data-type='metadata']
+<span class="lineNum">    1412 </span><span class="lineNoCov">          0 : &gt; [data-type='cnx-archive-shortid'] {</span>
+<span class="lineNum">    1413 </span>            :   string-set: chap-shortid attr(data-value); }
+<span class="lineNum">    1414 </span><span class="lineCov">         45 : :pass(8) body &gt; div[data-type='chapter']::after {</span>
+<span class="lineNum">    1415 </span><span class="lineCov">         45 :   content: nodes(chapterTitle);</span>
+<span class="lineNum">    1416 </span><span class="lineCov">         45 :   attr-href: &quot;#&quot; string(chapTitle-id);</span>
+<span class="lineNum">    1417 </span><span class="lineCov">         45 :   container: a;</span>
+<span class="lineNum">    1418 </span><span class="lineCov">         45 :   move-to: eoc-toc; }</span>
+<span class="lineNum">    1419 </span><span class="lineCov">         61 : :pass(8) body &gt; div[data-type='chapter'] &gt; div[data-type=&quot;page&quot;],</span>
+<span class="lineNum">    1420 </span><span class="lineCov">         92 : :pass(8) body &gt; div[data-type='chapter'] &gt; div[data-type=&quot;composite-page&quot;] {</span>
+<span class="lineNum">    1421 </span><span class="lineCov">        153 :   string-set: page-id-chap attr(id); }</span>
+<span class="lineNum">    1422 </span><span class="lineCov">         31 :   :pass(8) body &gt; div[data-type='chapter'] &gt; div[data-type=&quot;page&quot;] &gt; [data-type='document-title'],</span>
+<span class="lineNum">    1423 </span><span class="lineCov">         92 :   :pass(8) body &gt; div[data-type='chapter'] &gt; div[data-type=&quot;composite-page&quot;] &gt; [data-type='document-title'] {</span>
+<span class="lineNum">    1424 </span><span class="lineCov">        123 :     node-set: PageTitle; }</span>
+<span class="lineNum">    1425 </span>            :   :pass(8) body &gt; div[data-type='chapter'] &gt; div[data-type=&quot;page&quot;] &gt; [data-type='metadata']
+<span class="lineNum">    1426 </span><span class="lineNoCov">          0 :   &gt; [data-type='cnx-archive-shortid'],</span>
+<span class="lineNum">    1427 </span>            :   :pass(8) body &gt; div[data-type='chapter'] &gt; div[data-type=&quot;composite-page&quot;] &gt; [data-type='metadata']
+<span class="lineNum">    1428 </span><span class="lineNoCov">          0 :   &gt; [data-type='cnx-archive-shortid'] {</span>
+<span class="lineNum">    1429 </span>            :     string-set: page-shortid attr(data-value); }
+<span class="lineNum">    1430 </span><span class="lineCov">         61 :   :pass(8) body &gt; div[data-type='chapter'] &gt; div[data-type=&quot;page&quot;]::after,</span>
+<span class="lineNum">    1431 </span><span class="lineCov">         92 :   :pass(8) body &gt; div[data-type='chapter'] &gt; div[data-type=&quot;composite-page&quot;]::after {</span>
+<span class="lineNum">    1432 </span><span class="lineCov">        153 :     content: nodes(PageTitle);</span>
+<span class="lineNum">    1433 </span><span class="lineCov">        153 :     attr-href: &quot;#&quot; string(page-id-chap);</span>
+<span class="lineNum">    1434 </span><span class="lineCov">        153 :     container: a;</span>
+<span class="lineNum">    1435 </span><span class="lineCov">        153 :     move-to: page-link; }</span>
+<span class="lineNum">    1436 </span><span class="lineCov">         61 :   :pass(8) body &gt; div[data-type='chapter'] &gt; div[data-type=&quot;page&quot;]::after,</span>
+<span class="lineNum">    1437 </span><span class="lineCov">         92 :   :pass(8) body &gt; div[data-type='chapter'] &gt; div[data-type=&quot;composite-page&quot;]::after {</span>
+<span class="lineNum">    1438 </span><span class="lineCov">        153 :     content: pending(page-link);</span>
+<span class="lineNum">    1439 </span><span class="lineCov">        153 :     move-to: eoc-toc-pages;</span>
+<span class="lineNum">    1440 </span><span class="lineCov">        153 :     attr-cnx-archive-uri: attr(id);</span>
+<span class="lineNum">    1441 </span><span class="lineCov">        153 :     attr-cnx-archive-shortid: string(page-shortid);</span>
+<span class="lineNum">    1442 </span><span class="lineCov">        153 :     container: li; }</span>
+<span class="lineNum">    1443 </span><span class="lineCov">         45 : :pass(8) body &gt; div[data-type='chapter']::after {</span>
+<span class="lineNum">    1444 </span><span class="lineCov">         45 :   content: pending(eoc-toc-pages);</span>
+<span class="lineNum">    1445 </span><span class="lineCov">         45 :   container: ol;</span>
+<span class="lineNum">    1446 </span><span class="lineCov">         45 :   class: os-chapter;</span>
+<span class="lineNum">    1447 </span><span class="lineCov">         45 :   move-to: eoc-toc; }</span>
+<span class="lineNum">    1448 </span><span class="lineCov">         45 : :pass(8) body &gt; div[data-type='chapter']::after {</span>
+<span class="lineNum">    1449 </span><span class="lineCov">         45 :   content: pending(eoc-toc);</span>
+<span class="lineNum">    1450 </span><span class="lineCov">         45 :   attr-cnx-archive-uri: attr(id);</span>
+<span class="lineNum">    1451 </span><span class="lineCov">         45 :   attr-cnx-archive-shortid: string(chap-shortid);</span>
+<span class="lineNum">    1452 </span><span class="lineCov">         45 :   container: li;</span>
+<span class="lineNum">    1453 </span><span class="lineCov">         45 :   move-to: eob-toc; }</span>
+<span class="lineNum">    1454 </span><span class="lineNoCov">          0 : :pass(8) body &gt; div[data-type=&quot;unit&quot;] &gt; [data-type='document-title'] {</span>
+<span class="lineNum">    1455 </span>            :   node-set: unitTitle;
+<span class="lineNum">    1456 </span>            :   string-set: uTitle-id attr(id); }
+<span class="lineNum">    1457 </span>            : :pass(8) body &gt; div[data-type=&quot;unit&quot;] &gt; [data-type='metadata']
+<span class="lineNum">    1458 </span><span class="lineNoCov">          0 : &gt; [data-type='cnx-archive-shortid'] {</span>
+<span class="lineNum">    1459 </span>            :   string-set: unit-shortid attr(data-value); }
+<span class="lineNum">    1460 </span><span class="lineNoCov">          0 : :pass(8) body &gt; div[data-type=&quot;unit&quot;]::after {</span>
+<span class="lineNum">    1461 </span>            :   content: nodes(unitTitle);
+<span class="lineNum">    1462 </span>            :   attr-href: &quot;#&quot; string(uTitle-id);
+<span class="lineNum">    1463 </span>            :   container: a;
+<span class="lineNum">    1464 </span>            :   move-to: eou-toc; }
+<span class="lineNum">    1465 </span><span class="lineNoCov">          0 : :pass(8) body &gt; div[data-type=&quot;unit&quot;] &gt; div[data-type='chapter'] &gt; [data-type='document-title'] {</span>
+<span class="lineNum">    1466 </span>            :   node-set: chapterTitle;
+<span class="lineNum">    1467 </span>            :   string-set: chapTitle-id attr(id); }
+<span class="lineNum">    1468 </span>            : :pass(8) body &gt; div[data-type=&quot;unit&quot;] &gt; div[data-type='chapter'] &gt; [data-type='metadata']
+<span class="lineNum">    1469 </span><span class="lineNoCov">          0 : &gt; [data-type='cnx-archive-shortid'] {</span>
+<span class="lineNum">    1470 </span>            :   string-set: chap-shortid attr(data-value); }
+<span class="lineNum">    1471 </span><span class="lineNoCov">          0 : :pass(8) body &gt; div[data-type=&quot;unit&quot;] &gt; div[data-type='chapter']::after {</span>
+<span class="lineNum">    1472 </span>            :   content: nodes(chapterTitle);
+<span class="lineNum">    1473 </span>            :   attr-href: &quot;#&quot; string(chapTitle-id);
+<span class="lineNum">    1474 </span>            :   container: a;
+<span class="lineNum">    1475 </span>            :   move-to: eoc-toc; }
+<span class="lineNum">    1476 </span><span class="lineNoCov">          0 : :pass(8) body &gt; div[data-type=&quot;unit&quot;] &gt; div[data-type='chapter'] &gt; div[data-type=&quot;page&quot;],</span>
+<span class="lineNum">    1477 </span><span class="lineNoCov">          0 : :pass(8) body &gt; div[data-type=&quot;unit&quot;] &gt; div[data-type='chapter'] &gt; div[data-type=&quot;composite-page&quot;] {</span>
+<span class="lineNum">    1478 </span>            :   string-set: page-id-chap attr(id); }
+<span class="lineNum">    1479 </span><span class="lineNoCov">          0 :   :pass(8) body &gt; div[data-type=&quot;unit&quot;] &gt; div[data-type='chapter'] &gt; div[data-type=&quot;page&quot;] &gt; [data-type='document-title'],</span>
+<span class="lineNum">    1480 </span><span class="lineNoCov">          0 :   :pass(8) body &gt; div[data-type=&quot;unit&quot;] &gt; div[data-type='chapter'] &gt; div[data-type=&quot;composite-page&quot;] &gt; [data-type='document-title'] {</span>
+<span class="lineNum">    1481 </span>            :     node-set: PageTitle; }
+<span class="lineNum">    1482 </span>            :   :pass(8) body &gt; div[data-type=&quot;unit&quot;] &gt; div[data-type='chapter'] &gt; div[data-type=&quot;page&quot;] &gt; [data-type='metadata']
+<span class="lineNum">    1483 </span><span class="lineNoCov">          0 :   &gt; [data-type='cnx-archive-shortid'],</span>
+<span class="lineNum">    1484 </span>            :   :pass(8) body &gt; div[data-type=&quot;unit&quot;] &gt; div[data-type='chapter'] &gt; div[data-type=&quot;composite-page&quot;] &gt; [data-type='metadata']
+<span class="lineNum">    1485 </span><span class="lineNoCov">          0 :   &gt; [data-type='cnx-archive-shortid'] {</span>
+<span class="lineNum">    1486 </span>            :     string-set: page-shortid attr(data-value); }
+<span class="lineNum">    1487 </span><span class="lineNoCov">          0 :   :pass(8) body &gt; div[data-type=&quot;unit&quot;] &gt; div[data-type='chapter'] &gt; div[data-type=&quot;page&quot;]::after,</span>
+<span class="lineNum">    1488 </span><span class="lineNoCov">          0 :   :pass(8) body &gt; div[data-type=&quot;unit&quot;] &gt; div[data-type='chapter'] &gt; div[data-type=&quot;composite-page&quot;]::after {</span>
+<span class="lineNum">    1489 </span>            :     content: nodes(PageTitle);
+<span class="lineNum">    1490 </span>            :     attr-href: &quot;#&quot; string(page-id-chap);
+<span class="lineNum">    1491 </span>            :     container: a;
+<span class="lineNum">    1492 </span>            :     move-to: page-link; }
+<span class="lineNum">    1493 </span><span class="lineNoCov">          0 :   :pass(8) body &gt; div[data-type=&quot;unit&quot;] &gt; div[data-type='chapter'] &gt; div[data-type=&quot;page&quot;]::after,</span>
+<span class="lineNum">    1494 </span><span class="lineNoCov">          0 :   :pass(8) body &gt; div[data-type=&quot;unit&quot;] &gt; div[data-type='chapter'] &gt; div[data-type=&quot;composite-page&quot;]::after {</span>
+<span class="lineNum">    1495 </span>            :     content: pending(page-link);
+<span class="lineNum">    1496 </span>            :     move-to: eoc-toc-pages;
+<span class="lineNum">    1497 </span>            :     attr-cnx-archive-uri: attr(id);
+<span class="lineNum">    1498 </span>            :     attr-cnx-archive-shortid: string(page-shortid);
+<span class="lineNum">    1499 </span>            :     container: li; }
+<span class="lineNum">    1500 </span><span class="lineNoCov">          0 : :pass(8) body &gt; div[data-type=&quot;unit&quot;] &gt; div[data-type='chapter']::after {</span>
+<span class="lineNum">    1501 </span>            :   content: pending(eoc-toc-pages);
+<span class="lineNum">    1502 </span>            :   container: ol;
+<span class="lineNum">    1503 </span>            :   class: os-chapter;
+<span class="lineNum">    1504 </span>            :   move-to: eoc-toc; }
+<span class="lineNum">    1505 </span><span class="lineNoCov">          0 : :pass(8) body &gt; div[data-type=&quot;unit&quot;] &gt; div[data-type='chapter']::after {</span>
+<span class="lineNum">    1506 </span>            :   content: pending(eoc-toc);
+<span class="lineNum">    1507 </span>            :   attr-cnx-archive-uri: attr(id);
+<span class="lineNum">    1508 </span>            :   attr-cnx-archive-shortid: string(chap-shortid);
+<span class="lineNum">    1509 </span>            :   container: li;
+<span class="lineNum">    1510 </span>            :   move-to: eou-toc-chapters; }
+<span class="lineNum">    1511 </span><span class="lineNoCov">          0 : :pass(8) body &gt; div[data-type=&quot;unit&quot;]::after {</span>
+<span class="lineNum">    1512 </span>            :   content: pending(eou-toc-chapters);
+<span class="lineNum">    1513 </span>            :   container: ol;
+<span class="lineNum">    1514 </span>            :   class: os-unit;
+<span class="lineNum">    1515 </span>            :   move-to: eou-toc; }
+<span class="lineNum">    1516 </span><span class="lineNoCov">          0 : :pass(8) body &gt; div[data-type=&quot;unit&quot;]::after {</span>
+<span class="lineNum">    1517 </span>            :   content: pending(eou-toc);
+<span class="lineNum">    1518 </span>            :   attr-cnx-archive-uri: attr(id);
+<span class="lineNum">    1519 </span>            :   attr-cnx-archive-shortid: string(unit-shortid);
+<span class="lineNum">    1520 </span>            :   container: li;
+<span class="lineNum">    1521 </span>            :   move-to: eob-toc; }
+<span class="lineNum">    1522 </span>            : 
+<span class="lineNum">    1523 </span><span class="lineNoCov">          0 : :pass(9) nav#toc {</span>
+<span class="lineNum">    1524 </span>            :   content: ''; }
+<span class="lineNum">    1525 </span><span class="lineNoCov">          0 :   :pass(9) nav#toc::after {</span>
+<span class="lineNum">    1526 </span>            :     content: pending(eob-toc);
+<span class="lineNum">    1527 </span>            :     container: ol; }
+<span class="lineNum">    1528 </span>            : 
+<span class="lineNum">    1529 </span><span class="lineNoCov">          0 : :pass(10) nav#toc li &gt; a &gt; h1 &gt; span,</span>
+<span class="lineNum">    1530 </span><span class="lineNoCov">          0 : :pass(10) nav#toc li &gt; a &gt; h2 &gt; span,</span>
+<span class="lineNum">    1531 </span><span class="lineNoCov">          0 : :pass(10) nav#toc li &gt; a &gt; div &gt; span {</span>
+<span class="lineNum">    1532 </span>            :   move-to: title-spans; }
+<span class="lineNum">    1533 </span><span class="lineNoCov">          0 : :pass(10) nav#toc li &gt; a:deferred {</span>
+<span class="lineNum">    1534 </span>            :   content: pending(title-spans); }
+<span class="lineNum">    1535 </span>            : 
+<span class="lineNum">    1536 </span><span class="lineCov">         44 : :pass(100) body:deferred::after {</span>
+<span class="lineNum">    1537 </span><span class="lineCov">         44 :   content: clear(trash); }</span>
+<span class="lineNum">    1538 </span>            : 
+<span class="lineNum">    1539 </span>            : /*# sourceMappingURL=hs-physics.css.map */
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.13</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

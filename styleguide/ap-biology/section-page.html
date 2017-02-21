@@ -1,0 +1,3939 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Openstax HTML Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="./guide.css">
+
+
+  <style>
+  .-hidden-checkbox-for-choosing-output-type { display: none; }
+  .-toggle-hidden { display: none; }
+  .kss-markup .-kss-autogen-guide-markup::before { font-size: 150%; font-weight: bold; }
+  .kss-markup .-kss-autogen-guide-markup[data-kss-format="html-raw"]::before { content: 'Raw HTML:'; }
+  .kss-markup .-kss-autogen-guide-markup[data-kss-format="html-baked"]::before { content: 'Baked HTML:'; }
+
+  /* Only show the rendered "baked" HTML */
+  .kss-modifier__example > .-kss-autogen-guide-markup:not([data-kss-format="html-baked"]) { display: none; }
+  </style>
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">Openstax HTML Guide</h1>
+  </header>
+
+  <select id="choose-which-format-to-look-at">
+    <option value="html-baked">Show Baked HTML</option>
+    <option value="html-raw">Show Raw HTML</option>
+    <option value="-all">Show All Formats</option>
+    <option value="-none">Show No Formats</option>
+  </select>
+
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-book.html">
+          <span class="kss-nav__ref">1</span
+          ><span class="kss-nav__name">book</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-page.html">
+          <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Page Elements</span>
+        </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-0-metadata">
+                <span class="kss-nav__ref ">2.1</span
+                ><span class="kss-nav__name">Metadata</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-0-processing">
+                <span class="kss-nav__ref ">2.2</span
+                ><span class="kss-nav__name">Processing Instruction</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-equation">
+                <span class="kss-nav__ref ">2.3</span
+                ><span class="kss-nav__name">Equation</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-example">
+                <span class="kss-nav__ref ">2.4</span
+                ><span class="kss-nav__name">Example</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-exercise">
+                <span class="kss-nav__ref ">2.5</span
+                ><span class="kss-nav__name">Exercise</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-figure">
+                <span class="kss-nav__ref ">2.6</span
+                ><span class="kss-nav__name">Figure</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-iframe">
+                <span class="kss-nav__ref ">2.7</span
+                ><span class="kss-nav__name">Iframe</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-link">
+                <span class="kss-nav__ref ">2.8</span
+                ><span class="kss-nav__name">Links</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-list">
+                <span class="kss-nav__ref ">2.9</span
+                ><span class="kss-nav__name">Lists</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-note">
+                <span class="kss-nav__ref ">2.10</span
+                ><span class="kss-nav__name">Note</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-note-ap-everyday">
+                <span class="kss-nav__ref kss-nav__ref-child">2.10.1</span
+                ><span class="kss-nav__name">Everyday Connection for AP Courses note</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-note-ap-science-practices">
+                <span class="kss-nav__ref kss-nav__ref-child">2.10.2</span
+                ><span class="kss-nav__name">Science Practice Connection for AP Courses note</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-note-art-connection">
+                <span class="kss-nav__ref kss-nav__ref-child">2.10.3</span
+                ><span class="kss-nav__name">Art Connection note</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-note-art-connection">
+                <span class="kss-nav__ref kss-nav__ref-child">2.10.3</span
+                ><span class="kss-nav__name">Art Connection note</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-note-career-connection">
+                <span class="kss-nav__ref kss-nav__ref-child">2.10.4</span
+                ><span class="kss-nav__name">Career Connection note</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-note-career-connection">
+                <span class="kss-nav__ref kss-nav__ref-child">2.10.4</span
+                ><span class="kss-nav__name">Career Connection note</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-note-connection-ap-courses">
+                <span class="kss-nav__ref kss-nav__ref-child">2.10.5</span
+                ><span class="kss-nav__name">Connection for AP Courses note</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-note-everyday-connection">
+                <span class="kss-nav__ref kss-nav__ref-child">2.10.6</span
+                ><span class="kss-nav__name">Everyday Connection note</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-note-everyday-connection">
+                <span class="kss-nav__ref kss-nav__ref-child">2.10.6</span
+                ><span class="kss-nav__name">Everyday Connection note</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-note-evolution-connection">
+                <span class="kss-nav__ref kss-nav__ref-child">2.10.7</span
+                ><span class="kss-nav__name">Evolution Connection note</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-note-evolution-connection">
+                <span class="kss-nav__ref kss-nav__ref-child">2.10.7</span
+                ><span class="kss-nav__name">Evolution Connection note</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-note-link-to-learning">
+                <span class="kss-nav__ref kss-nav__ref-child">2.10.8</span
+                ><span class="kss-nav__name">Link to Learning note</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-note-link-to-learning">
+                <span class="kss-nav__ref kss-nav__ref-child">2.10.8</span
+                ><span class="kss-nav__name">Link to Learning note</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-note-scientific-method-connection">
+                <span class="kss-nav__ref kss-nav__ref-child">2.10.9</span
+                ><span class="kss-nav__name">Scientific Method Connection note</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-note-scientific-method-connection">
+                <span class="kss-nav__ref kss-nav__ref-child">2.10.9</span
+                ><span class="kss-nav__name">Scientific Method Connection note</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-note-teacher-support">
+                <span class="kss-nav__ref kss-nav__ref-child">2.10.10</span
+                ><span class="kss-nav__name">Teacher Support note</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-note-visual-connection">
+                <span class="kss-nav__ref kss-nav__ref-child">2.10.11</span
+                ><span class="kss-nav__name">Visual Connection note</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-para">
+                <span class="kss-nav__ref ">2.11</span
+                ><span class="kss-nav__name">Paragraph</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-section">
+                <span class="kss-nav__ref ">2.12</span
+                ><span class="kss-nav__name">Section</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-table">
+                <span class="kss-nav__ref ">2.13</span
+                ><span class="kss-nav__name">Table</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-term">
+                <span class="kss-nav__ref ">2.14</span
+                ><span class="kss-nav__name">Term</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-unnumbered">
+                <span class="kss-nav__ref ">2.15</span
+                ><span class="kss-nav__name">Unnumbered Content</span>
+              </a>
+            </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+
+      <div     id="kssref-page" class="kss-section kss-section--depth-1">
+
+    <div class="kss-style">
+      <h1 class="kss-title kss-title--level-1">
+        <a class="kss-title__permalink" href="#kssref-page">
+          <span class="kss-title__ref">
+              2
+            <span class="kss-title__permalink-hash">
+                #page
+            </span>
+          </span>
+          Page Elements
+        </a>
+      </h1>
+
+
+      <div class="kss-description">
+        <p>Everything in here is specific to a Page in a book.
+A Page is usually a section inside a chapter.</p>
+
+      </div>
+    </div>
+
+
+      </div>
+      <section id="kssref-page-0-metadata" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-page-0-metadata">
+          <span class="kss-title__ref">
+              2.1
+            <span class="kss-title__permalink-hash">
+                #page.0-metadata
+            </span>
+          </span>
+          Metadata
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>This contains attribution information and is sometimes collated to the back of the book.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div data-type="page">
+  <div data-type="metadata">...</div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div data-type=&quot;page&quot;&gt;
+  &lt;div data-type=&quot;metadata&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-0-processing" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-page-0-processing">
+          <span class="kss-title__ref">
+              2.2
+            <span class="kss-title__permalink-hash">
+                #page.0-processing
+            </span>
+          </span>
+          Processing Instruction
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>These are an artifact of the transforms and will disappear in the future</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div data-type="page">
+  <cnx-pi />
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div data-type=&quot;page&quot;&gt;
+  &lt;cnx-pi /&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-equation" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-page-equation">
+          <span class="kss-title__ref">
+              2.3
+            <span class="kss-title__permalink-hash">
+                #page.equation
+            </span>
+          </span>
+          Equation
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>An equation wraps a MathML formula and is usually numbered.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+<!-- Markup starts here -->
+<div data-type="equation">
+  <math><mn>2</mn><mo>*</mo><mn>2</mn><mo>=</mo><mn>4</mn></math>
+</div>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+<!-- Markup starts here -->
+<div data-type="equation">
+  <math><mn>2</mn><mo>*</mo><mn>2</mn><mo>=</mo><mn>4</mn></math>
+</div>
+
+  </div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+&lt;!-- Markup starts here --&gt;
+&lt;div data-type=&quot;equation&quot;&gt;
+  &lt;math&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mo&gt;*&lt;/mo&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/math&gt;
+&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+&lt;!-- Markup starts here --&gt;
+&lt;div data-type=&quot;equation&quot;&gt;
+  &lt;math&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mo&gt;*&lt;/mo&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/math&gt;
+&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-example" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-page-example">
+          <span class="kss-title__ref">
+              2.4
+            <span class="kss-title__permalink-hash">
+                #page.example
+            </span>
+          </span>
+          Example
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>An example which is usually styled to not be part of the flow of normal content
+(similar to a Note).</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+<div data-type="page">
+
+<!-- Markup starts here -->
+<div data-type="example" class="example">
+  <div data-type="title">How to Calculate Velocity</div>
+  <p>
+    To determine the velocity, you will first need to find how far the
+    object travelled, and then how long it took.
+  </p>
+</div>
+
+</div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+<div data-type="page">
+
+<!-- Markup starts here -->
+<div data-type="example" class="example">
+  <div data-type="title">How to Calculate Velocity</div>
+  <p>
+    To determine the velocity, you will first need to find how far the
+    object travelled, and then how long it took.
+  </p>
+</div>
+
+</div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+&lt;div data-type=&quot;page&quot;&gt;
+
+&lt;!-- Markup starts here --&gt;
+&lt;div data-type=&quot;example&quot; class=&quot;example&quot;&gt;
+  &lt;div data-type=&quot;title&quot;&gt;How to Calculate Velocity&lt;/div&gt;
+  &lt;p&gt;
+    To determine the velocity, you will first need to find how far the
+    object travelled, and then how long it took.
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+&lt;div data-type=&quot;page&quot;&gt;
+
+&lt;!-- Markup starts here --&gt;
+&lt;div data-type=&quot;example&quot; class=&quot;example&quot;&gt;
+  &lt;div data-type=&quot;title&quot;&gt;How to Calculate Velocity&lt;/div&gt;
+  &lt;p&gt;
+    To determine the velocity, you will first need to find how far the
+    object travelled, and then how long it took.
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-exercise" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-page-exercise">
+          <span class="kss-title__ref">
+              2.5
+            <span class="kss-title__permalink-hash">
+                #page.exercise
+            </span>
+          </span>
+          Exercise
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>An exercise contains a problem, optional title, and optional solution(s).</p>
+<p>Exercises are usually numbered and contain a link to the solution if it exists.
+Typically, an exercise is collated at the end of chapter.</p>
+<p>Solutions are collated (at the end of section, end of chapter or end of book), they are numbered (the number is the same as the exercise they are associated to) and link back to their exercise.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="exercise" id="ex1">
+      <div data-type="problem">
+        <p>If an apple fell 3 meters in 2 seconds, what was the speed of the apple?</p>
+      </div>
+      <div data-type="solution">
+        <p>It fell 1.5 meters per second</p>
+      </div>
+    </div>
+
+    <!-- exercises inside an example are not numbered -->
+    <div data-type="example" class="example">
+      <div data-type="title">This example should not have a numbered exercise</div>
+
+      <div data-type="exercise" id="ex-in-example">
+        <div data-type="problem">
+          <p>If an apple fell 3 meters in 2 seconds, what was the speed of the apple?</p>
+        </div>
+        <div data-type="solution">
+          <p>It fell 1.5 meters per second</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- exercises with a class of unnumbered should not be numbered -->
+    <div data-type="exercise" id="ex-unnumbered" class="unnumbered">
+      <div data-type="problem">
+        <p>This should be unnumbered. If an apple fell 3 meters in 2 seconds, what was the speed of the apple?</p>
+      </div>
+      <div data-type="solution">
+        <p>It fell 1.5 meters per second</p>
+      </div>
+    </div>
+
+    <div data-type="exercise" id="ex2">
+      <div data-type="problem">
+        <p>If an apple fell 3 meters in 2 seconds, what was the speed of the apple?</p>
+      </div>
+      <div data-type="solution">
+        <p>It fell 1.5 meters per second</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Verify that the exercise counter resets for the next chapter -->
+<div data-type="chapter">
+  <div data-type="page">
+
+    <div data-type="exercise" id="ex2.1">
+      <div data-type="problem">
+        <p>If an apple fell 3 meters in 2 seconds, what was the speed of the apple?</p>
+      </div>
+      <div data-type="solution">
+        <p>It fell 1.5 meters per second</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="exercise" id="ex1">
+      <div data-type="problem">
+        <p>If an apple fell 3 meters in 2 seconds, what was the speed of the apple?</p>
+      </div>
+      <div data-type="solution">
+        <p>It fell 1.5 meters per second</p>
+      </div>
+    </div>
+
+    <!-- exercises inside an example are not numbered -->
+    <div data-type="example" class="example">
+      <div data-type="title">This example should not have a numbered exercise</div>
+
+      <div data-type="exercise" id="ex-in-example">
+        <div data-type="problem">
+          <p>If an apple fell 3 meters in 2 seconds, what was the speed of the apple?</p>
+        </div>
+        <div data-type="solution">
+          <p>It fell 1.5 meters per second</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- exercises with a class of unnumbered should not be numbered -->
+    <div data-type="exercise" id="ex-unnumbered" class="unnumbered">
+      <div data-type="problem">
+        <p>This should be unnumbered. If an apple fell 3 meters in 2 seconds, what was the speed of the apple?</p>
+      </div>
+      <div data-type="solution">
+        <p>It fell 1.5 meters per second</p>
+      </div>
+    </div>
+
+    <div data-type="exercise" id="ex2">
+      <div data-type="problem">
+        <p>If an apple fell 3 meters in 2 seconds, what was the speed of the apple?</p>
+      </div>
+      <div data-type="solution">
+        <p>It fell 1.5 meters per second</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Verify that the exercise counter resets for the next chapter -->
+<div data-type="chapter">
+  <div data-type="page">
+
+    <div data-type="exercise" id="ex2.1">
+      <div data-type="problem">
+        <p>If an apple fell 3 meters in 2 seconds, what was the speed of the apple?</p>
+      </div>
+      <div data-type="solution">
+        <p>It fell 1.5 meters per second</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;exercise&quot; id=&quot;ex1&quot;&gt;
+      &lt;div data-type=&quot;problem&quot;&gt;
+        &lt;p&gt;If an apple fell 3 meters in 2 seconds, what was the speed of the apple?&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div data-type=&quot;solution&quot;&gt;
+        &lt;p&gt;It fell 1.5 meters per second&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- exercises inside an example are not numbered --&gt;
+    &lt;div data-type=&quot;example&quot; class=&quot;example&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;This example should not have a numbered exercise&lt;/div&gt;
+
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex-in-example&quot;&gt;
+        &lt;div data-type=&quot;problem&quot;&gt;
+          &lt;p&gt;If an apple fell 3 meters in 2 seconds, what was the speed of the apple?&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot;&gt;
+          &lt;p&gt;It fell 1.5 meters per second&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- exercises with a class of unnumbered should not be numbered --&gt;
+    &lt;div data-type=&quot;exercise&quot; id=&quot;ex-unnumbered&quot; class=&quot;unnumbered&quot;&gt;
+      &lt;div data-type=&quot;problem&quot;&gt;
+        &lt;p&gt;This should be unnumbered. If an apple fell 3 meters in 2 seconds, what was the speed of the apple?&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div data-type=&quot;solution&quot;&gt;
+        &lt;p&gt;It fell 1.5 meters per second&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div data-type=&quot;exercise&quot; id=&quot;ex2&quot;&gt;
+      &lt;div data-type=&quot;problem&quot;&gt;
+        &lt;p&gt;If an apple fell 3 meters in 2 seconds, what was the speed of the apple?&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div data-type=&quot;solution&quot;&gt;
+        &lt;p&gt;It fell 1.5 meters per second&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;!-- Verify that the exercise counter resets for the next chapter --&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;div data-type=&quot;exercise&quot; id=&quot;ex2.1&quot;&gt;
+      &lt;div data-type=&quot;problem&quot;&gt;
+        &lt;p&gt;If an apple fell 3 meters in 2 seconds, what was the speed of the apple?&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div data-type=&quot;solution&quot;&gt;
+        &lt;p&gt;It fell 1.5 meters per second&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;exercise&quot; id=&quot;ex1&quot;&gt;
+      &lt;div data-type=&quot;problem&quot;&gt;
+        &lt;p&gt;If an apple fell 3 meters in 2 seconds, what was the speed of the apple?&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div data-type=&quot;solution&quot;&gt;
+        &lt;p&gt;It fell 1.5 meters per second&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- exercises inside an example are not numbered --&gt;
+    &lt;div data-type=&quot;example&quot; class=&quot;example&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;This example should not have a numbered exercise&lt;/div&gt;
+
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex-in-example&quot;&gt;
+        &lt;div data-type=&quot;problem&quot;&gt;
+          &lt;p&gt;If an apple fell 3 meters in 2 seconds, what was the speed of the apple?&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot;&gt;
+          &lt;p&gt;It fell 1.5 meters per second&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- exercises with a class of unnumbered should not be numbered --&gt;
+    &lt;div data-type=&quot;exercise&quot; id=&quot;ex-unnumbered&quot; class=&quot;unnumbered&quot;&gt;
+      &lt;div data-type=&quot;problem&quot;&gt;
+        &lt;p&gt;This should be unnumbered. If an apple fell 3 meters in 2 seconds, what was the speed of the apple?&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div data-type=&quot;solution&quot;&gt;
+        &lt;p&gt;It fell 1.5 meters per second&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div data-type=&quot;exercise&quot; id=&quot;ex2&quot;&gt;
+      &lt;div data-type=&quot;problem&quot;&gt;
+        &lt;p&gt;If an apple fell 3 meters in 2 seconds, what was the speed of the apple?&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div data-type=&quot;solution&quot;&gt;
+        &lt;p&gt;It fell 1.5 meters per second&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;!-- Verify that the exercise counter resets for the next chapter --&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;div data-type=&quot;exercise&quot; id=&quot;ex2.1&quot;&gt;
+      &lt;div data-type=&quot;problem&quot;&gt;
+        &lt;p&gt;If an apple fell 3 meters in 2 seconds, what was the speed of the apple?&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div data-type=&quot;solution&quot;&gt;
+        &lt;p&gt;It fell 1.5 meters per second&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-figure" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-page-figure">
+          <span class="kss-title__ref">
+              2.6
+            <span class="kss-title__permalink-hash">
+                #page.figure
+            </span>
+          </span>
+          Figure
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>A <code>&lt;figure&gt;</code> is wrapped in a <code>&lt;div data-type=&#39;figure&#39;&gt;</code> which contains:</p>
+<ul>
+<li>optional <code>[data-type=&#39;title&#39;]</code></li>
+<li><code>figure</code> element<ul>
+<li><code>[data-type=&#39;media&#39;]</code> : a wrapper element which may disappear in the future<ul>
+<li><code>img[src][alt]</code> : The image for the Figure</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>TODO: Maybe this should use the <code>&lt;picture&gt;</code> element instead of the <code>[data-type=&#39;media&#39;]</code> element:
+<a href="http://www.html-baked.html5rocks.com/en/tutorials/responsive/picture-element/">http://www.html-baked.html5rocks.com/en/tutorials/responsive/picture-element/</a></p>
+<h1 id="todo">TODO</h1>
+<ul>
+<li>Decide on what the baked markup for a figure with a title and caption should look like.<ul>
+<li>Proposals have mentioned using <code>&lt;figcaption&gt;</code> most of the time.</li>
+<li>Maybe what is in the Raw HTML is <em>good enough</em>?</li>
+</ul>
+</li>
+</ul>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <figure>
+      <div data-type="title">U.S. Minimum Wage and Inflation </div>
+      <div data-type="media">
+        <img
+          src="https://cnx.org/resources/d47864c2ac77d80b1f2ff4c4c7f1b2059669e3e9/Figure_01_00_01.jpg"
+          alt="The spiral galaxy Andromeda"
+        />
+      </div>
+      <figcaption>The Andromeda Galaxy is one of many spiral galaxies...</figcaption>
+    </figure>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div class="os-figure"><figure>
+      
+      <div data-type="media">
+        <img src="https://cnx.org/resources/d47864c2ac77d80b1f2ff4c4c7f1b2059669e3e9/Figure_01_00_01.jpg" alt="The spiral galaxy Andromeda">
+      </div>
+      
+    </figure><div class="os-caption-container"><span class="os-title-label">Figure </span><span class="os-number">1.1</span><span data-type="title" class="os-title">U.S. Minimum Wage and Inflation </span><span class="os-caption">The Andromeda Galaxy is one of many spiral galaxies...</span></div></div>
+
+  </div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;figure&gt;
+      &lt;div data-type=&quot;title&quot;&gt;U.S. Minimum Wage and Inflation &lt;/div&gt;
+      &lt;div data-type=&quot;media&quot;&gt;
+        &lt;img
+          src=&quot;https://cnx.org/resources/d47864c2ac77d80b1f2ff4c4c7f1b2059669e3e9/Figure_01_00_01.jpg&quot;
+          alt=&quot;The spiral galaxy Andromeda&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;figcaption&gt;The Andromeda Galaxy is one of many spiral galaxies...&lt;/figcaption&gt;
+    &lt;/figure&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div class=&quot;os-figure&quot;&gt;&lt;figure&gt;
+      
+      &lt;div data-type=&quot;media&quot;&gt;
+        &lt;img src=&quot;https://cnx.org/resources/d47864c2ac77d80b1f2ff4c4c7f1b2059669e3e9/Figure_01_00_01.jpg&quot; alt=&quot;The spiral galaxy Andromeda&quot;&gt;
+      &lt;/div&gt;
+      
+    &lt;/figure&gt;&lt;div class=&quot;os-caption-container&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Figure &lt;/span&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span data-type=&quot;title&quot; class=&quot;os-title&quot;&gt;U.S. Minimum Wage and Inflation &lt;/span&gt;&lt;span class=&quot;os-caption&quot;&gt;The Andromeda Galaxy is one of many spiral galaxies...&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-iframe" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-page-iframe">
+          <span class="kss-title__ref">
+              2.7
+            <span class="kss-title__permalink-hash">
+                #page.iframe
+            </span>
+          </span>
+          Iframe
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>An iframe can show an embedded simulation or video. Some formats cannot or would
+rather not show the iframe and present a link instead.</p>
+<p>So we wrap the element inside a <code>[data-type=&quot;alternatives&quot;]</code> element and add
+enough classes to be able to select which alternative to show and which to hide.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rStL7niR7gs" frameborder="0" allowfullscreen></iframe>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rStL7niR7gs" frameborder="0" allowfullscreen></iframe>
+
+  </div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/rStL7niR7gs&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/rStL7niR7gs&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-link" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-page-link">
+          <span class="kss-title__ref">
+              2.8
+            <span class="kss-title__permalink-hash">
+                #page.link
+            </span>
+          </span>
+          Links
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Links to simulations should open in a new tab (ie <code>&lt;a target=&quot;_blank&quot;&gt;</code>)</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <p id="id-para">
+      Link to a simulation:
+      <a class="os-interactive-link" href="foo-archive.cnx.org/specials/bam">link</a>
+    </p>
+
+    <p>
+      Link to a website:
+      <a href="https://cnx.org">link</a>
+    </p>
+
+    <p>
+      Link to a paragraph:
+      <a href="#id-para">link</a>
+    </p>
+
+    <p>
+      Link to a figure:
+      <a href="#id-figure">link</a>
+    </p>
+
+    <figure id="id-figure">
+      <div data-type="title">Figure Title</div>
+    </figure>
+
+    <figure>
+      <a class="os-interactive-link" href="https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html">link inside a figure</a>
+    </figure>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <p id="id-para">
+      Link to a simulation:
+      <a class="os-interactive-link" href="foo-archive.cnx.org/specials/bam" target="_blank">link</a>
+    </p>
+
+    <p>
+      Link to a website:
+      <a href="https://cnx.org">link</a>
+    </p>
+
+    <p>
+      Link to a paragraph:
+      <a href="#id-para">link</a>
+    </p>
+
+    <p>
+      Link to a figure:
+      <a href="#id-figure">link</a>
+    </p>
+
+    <div class="os-figure"><figure id="id-figure">
+      
+    </figure><div class="os-caption-container"><span class="os-title-label">Figure </span><span class="os-number">1.1</span><span data-type="title" class="os-title">Figure Title</span></div></div>
+
+    <div class="os-figure"><figure>
+      <a class="os-interactive-link" href="https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html" target="_blank">link inside a figure</a>
+    </figure><div class="os-caption-container"><span class="os-title-label">Figure </span><span class="os-number">1.2</span></div></div>
+
+  </div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;p id=&quot;id-para&quot;&gt;
+      Link to a simulation:
+      &lt;a class=&quot;os-interactive-link&quot; href=&quot;foo-archive.cnx.org/specials/bam&quot;&gt;link&lt;/a&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      Link to a website:
+      &lt;a href=&quot;https://cnx.org&quot;&gt;link&lt;/a&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      Link to a paragraph:
+      &lt;a href=&quot;#id-para&quot;&gt;link&lt;/a&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      Link to a figure:
+      &lt;a href=&quot;#id-figure&quot;&gt;link&lt;/a&gt;
+    &lt;/p&gt;
+
+    &lt;figure id=&quot;id-figure&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;Figure Title&lt;/div&gt;
+    &lt;/figure&gt;
+
+    &lt;figure&gt;
+      &lt;a class=&quot;os-interactive-link&quot; href=&quot;https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html&quot;&gt;link inside a figure&lt;/a&gt;
+    &lt;/figure&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;p id=&quot;id-para&quot;&gt;
+      Link to a simulation:
+      &lt;a class=&quot;os-interactive-link&quot; href=&quot;foo-archive.cnx.org/specials/bam&quot; target=&quot;_blank&quot;&gt;link&lt;/a&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      Link to a website:
+      &lt;a href=&quot;https://cnx.org&quot;&gt;link&lt;/a&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      Link to a paragraph:
+      &lt;a href=&quot;#id-para&quot;&gt;link&lt;/a&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      Link to a figure:
+      &lt;a href=&quot;#id-figure&quot;&gt;link&lt;/a&gt;
+    &lt;/p&gt;
+
+    &lt;div class=&quot;os-figure&quot;&gt;&lt;figure id=&quot;id-figure&quot;&gt;
+      
+    &lt;/figure&gt;&lt;div class=&quot;os-caption-container&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Figure &lt;/span&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span data-type=&quot;title&quot; class=&quot;os-title&quot;&gt;Figure Title&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+
+    &lt;div class=&quot;os-figure&quot;&gt;&lt;figure&gt;
+      &lt;a class=&quot;os-interactive-link&quot; href=&quot;https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html&quot; target=&quot;_blank&quot;&gt;link inside a figure&lt;/a&gt;
+    &lt;/figure&gt;&lt;div class=&quot;os-caption-container&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Figure &lt;/span&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-list" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-page-list">
+          <span class="kss-title__ref">
+              2.9
+            <span class="kss-title__permalink-hash">
+                #page.list
+            </span>
+          </span>
+          Lists
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Lists can contain a label or title and can be block content or inline.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <ol>
+      <li>numbered item</li>
+      <li>another numbered item</li>
+    </ol>
+
+    <!-- Lists with labels -->
+    <ol data-label="Labeled ordered list">
+      <li>numbered item</li>
+      <li>another numbered item</li>
+    </ol>
+
+    <ul data-label="Labeled bulleted list">
+      <li>numbered item</li>
+      <li>another numbered item</li>
+    </ul>
+
+    <ul>
+      <li data-label="item label1">(this should have a label to the left)</li>
+      <li data-label="item label2">(this should have a label to the left)</li>
+    </ul>
+
+    <p>An example of an inline list:
+      <span data-type="list">
+        <span data-type="item">-10</span>
+        <span data-type="item">-5</span>
+        <span data-type="item">-2</span>
+        <span data-type="item">-1</span>
+        <span data-type="item">5</span>
+        <span data-type="item">50</span>
+      </span>
+    </p>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <ol>
+      <li>numbered item</li>
+      <li>another numbered item</li>
+    </ol>
+
+    <!-- Lists with labels -->
+    <div data-type="list-container"><div class="os-label">Labeled ordered list</div><ol data-label="Labeled ordered list">
+      <li>numbered item</li>
+      <li>another numbered item</li>
+    </ol></div>
+
+    <div data-type="list-container"><div class="os-label">Labeled bulleted list</div><ul data-label="Labeled bulleted list">
+      <li>numbered item</li>
+      <li>another numbered item</li>
+    </ul></div>
+
+    <ul>
+      <li data-label="item label1">(this should have a label to the left)</li>
+      <li data-label="item label2">(this should have a label to the left)</li>
+    </ul>
+
+    <p>An example of an inline list:
+      <span data-type="list">
+        <span data-type="item">-10</span>
+        <span data-type="item">-5</span>
+        <span data-type="item">-2</span>
+        <span data-type="item">-1</span>
+        <span data-type="item">5</span>
+        <span data-type="item">50</span>
+      </span>
+    </p>
+
+  </div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;ol&gt;
+      &lt;li&gt;numbered item&lt;/li&gt;
+      &lt;li&gt;another numbered item&lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;!-- Lists with labels --&gt;
+    &lt;ol data-label=&quot;Labeled ordered list&quot;&gt;
+      &lt;li&gt;numbered item&lt;/li&gt;
+      &lt;li&gt;another numbered item&lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;ul data-label=&quot;Labeled bulleted list&quot;&gt;
+      &lt;li&gt;numbered item&lt;/li&gt;
+      &lt;li&gt;another numbered item&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;ul&gt;
+      &lt;li data-label=&quot;item label1&quot;&gt;(this should have a label to the left)&lt;/li&gt;
+      &lt;li data-label=&quot;item label2&quot;&gt;(this should have a label to the left)&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;An example of an inline list:
+      &lt;span data-type=&quot;list&quot;&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-10&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-5&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-2&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-1&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;5&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;50&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;ol&gt;
+      &lt;li&gt;numbered item&lt;/li&gt;
+      &lt;li&gt;another numbered item&lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;!-- Lists with labels --&gt;
+    &lt;div data-type=&quot;list-container&quot;&gt;&lt;div class=&quot;os-label&quot;&gt;Labeled ordered list&lt;/div&gt;&lt;ol data-label=&quot;Labeled ordered list&quot;&gt;
+      &lt;li&gt;numbered item&lt;/li&gt;
+      &lt;li&gt;another numbered item&lt;/li&gt;
+    &lt;/ol&gt;&lt;/div&gt;
+
+    &lt;div data-type=&quot;list-container&quot;&gt;&lt;div class=&quot;os-label&quot;&gt;Labeled bulleted list&lt;/div&gt;&lt;ul data-label=&quot;Labeled bulleted list&quot;&gt;
+      &lt;li&gt;numbered item&lt;/li&gt;
+      &lt;li&gt;another numbered item&lt;/li&gt;
+    &lt;/ul&gt;&lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li data-label=&quot;item label1&quot;&gt;(this should have a label to the left)&lt;/li&gt;
+      &lt;li data-label=&quot;item label2&quot;&gt;(this should have a label to the left)&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;An example of an inline list:
+      &lt;span data-type=&quot;list&quot;&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-10&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-5&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-2&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-1&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;5&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;50&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-note" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-page-note">
+          <span class="kss-title__ref">
+              2.10
+            <span class="kss-title__permalink-hash">
+                #page.note
+            </span>
+          </span>
+          Note
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>A note or &quot;feature&quot;. This is usually separated visually from the rest of the
+content in a book with a border and a separate background color.</p>
+<p>Contains an optional title, and optionally an additional class to help style the note</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note">
+      <div data-type="title">The Title</div>
+      <p>Body of the note</p>
+    </div>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note">
+      <div data-type="title">The Title</div>
+      <p>Body of the note</p>
+    </div>
+
+  </div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;The Title&lt;/div&gt;
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;The Title&lt;/div&gt;
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-note-ap-everyday" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-page-note-ap-everyday">
+          <span class="kss-title__ref">
+              2.10.1
+            <span class="kss-title__permalink-hash">
+                #page.note.ap-everyday
+            </span>
+          </span>
+          Everyday Connection for AP Courses note
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Contains a title &quot;Everyday Connection for AP Courses&quot; and a body containing a title and the contents of the note.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="ap-everyday">
+      <p>Body of the note</p>
+    </div>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="ap-everyday"><h3 class="os-title"><span class="os-title-label">Everyday Connection for AP&#174;&#160;Courses</span></h3><div class="os-note-body">
+      <p>Body of the note</p>
+    </div>
+
+  </div></div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;ap-everyday&quot;&gt;
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;ap-everyday&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Everyday Connection for AP&amp;#174;&amp;#160;Courses&lt;/span&gt;&lt;/h3&gt;&lt;div class=&quot;os-note-body&quot;&gt;
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-note-ap-science-practices" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-page-note-ap-science-practices">
+          <span class="kss-title__ref">
+              2.10.2
+            <span class="kss-title__permalink-hash">
+                #page.note.ap-science-practices
+            </span>
+          </span>
+          Science Practice Connection for AP Courses note
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Contains a title &quot;Science Practice Connection for AP Courses&quot; and a body containing a title and the contents of the note.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="ap-science-practices">
+      <div data-type="note">
+        <div data-type="title">Title</div>
+        <div data-type="exercise" id="ex2">
+          <div data-type="problem">
+            <p>What is 3+3?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="ap-science-practices"><h3 class="os-title"><span class="os-title-label">Science Practice Connection for AP&#174;&#160;Courses</span></h3><div class="os-note-body">
+      <div data-type="note">
+        <div data-type="title">Title</div>
+        <div data-type="exercise" id="ex2">
+          <div data-type="problem">
+            <p>What is 3+3?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div></div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;ap-science-practices&quot;&gt;
+      &lt;div data-type=&quot;note&quot;&gt;
+        &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
+        &lt;div data-type=&quot;exercise&quot; id=&quot;ex2&quot;&gt;
+          &lt;div data-type=&quot;problem&quot;&gt;
+            &lt;p&gt;What is 3+3?&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;ap-science-practices&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Science Practice Connection for AP&amp;#174;&amp;#160;Courses&lt;/span&gt;&lt;/h3&gt;&lt;div class=&quot;os-note-body&quot;&gt;
+      &lt;div data-type=&quot;note&quot;&gt;
+        &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
+        &lt;div data-type=&quot;exercise&quot; id=&quot;ex2&quot;&gt;
+          &lt;div data-type=&quot;problem&quot;&gt;
+            &lt;p&gt;What is 3+3?&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-note-art-connection" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-page-note-art-connection">
+          <span class="kss-title__ref">
+              2.10.3
+            <span class="kss-title__permalink-hash">
+                #page.note.art-connection
+            </span>
+          </span>
+          Art Connection note
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Contains a title &quot;Art Connection&quot; and a body containing a title and the contents of the note.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="art-connection">
+      <div data-type="title">Title</div>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="art-connection"><h3 class="os-title"><span class="os-title-label">Art Connection</span></h3><div class="os-note-body">
+      <h4 data-type="title" class="os-subtitle">Title</h4>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div></div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;art-connection&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;art-connection&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Art Connection&lt;/span&gt;&lt;/h3&gt;&lt;div class=&quot;os-note-body&quot;&gt;
+      &lt;h4 data-type=&quot;title&quot; class=&quot;os-subtitle&quot;&gt;Title&lt;/h4&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-note-art-connection" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-page-note-art-connection">
+          <span class="kss-title__ref">
+              2.10.3
+            <span class="kss-title__permalink-hash">
+                #page.note.art-connection
+            </span>
+          </span>
+          Art Connection note
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Contains a title &quot;Art Connection&quot; and a body containing a title and the contents of the note.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="art-connection">
+      <div data-type="title">Title</div>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="art-connection"><h3 class="os-title"><span class="os-title-label">Art Connection</span></h3><div class="os-note-body">
+      <h4 data-type="title" class="os-subtitle">Title</h4>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div></div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;art-connection&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;art-connection&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Art Connection&lt;/span&gt;&lt;/h3&gt;&lt;div class=&quot;os-note-body&quot;&gt;
+      &lt;h4 data-type=&quot;title&quot; class=&quot;os-subtitle&quot;&gt;Title&lt;/h4&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-note-career-connection" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-page-note-career-connection">
+          <span class="kss-title__ref">
+              2.10.4
+            <span class="kss-title__permalink-hash">
+                #page.note.career-connection
+            </span>
+          </span>
+          Career Connection note
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Contains a title &quot;Career Connection&quot; and a body containing a title and the contents of the note.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="career">
+      <div data-type="title">Title</div>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="career"><h3 class="os-title"><span class="os-title-label">Career Connection Note</span></h3><div class="os-note-body">
+      <h4 data-type="title" class="os-subtitle">Title</h4>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div></div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;career&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;career&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Career Connection Note&lt;/span&gt;&lt;/h3&gt;&lt;div class=&quot;os-note-body&quot;&gt;
+      &lt;h4 data-type=&quot;title&quot; class=&quot;os-subtitle&quot;&gt;Title&lt;/h4&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-note-career-connection" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-page-note-career-connection">
+          <span class="kss-title__ref">
+              2.10.4
+            <span class="kss-title__permalink-hash">
+                #page.note.career-connection
+            </span>
+          </span>
+          Career Connection note
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Contains a title &quot;Career Connection&quot; and a body containing a title and the contents of the note.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="career">
+      <div data-type="title">Title</div>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="career"><h3 class="os-title"><span class="os-title-label">Career Connection Note</span></h3><div class="os-note-body">
+      <h4 data-type="title" class="os-subtitle">Title</h4>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div></div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;career&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;career&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Career Connection Note&lt;/span&gt;&lt;/h3&gt;&lt;div class=&quot;os-note-body&quot;&gt;
+      &lt;h4 data-type=&quot;title&quot; class=&quot;os-subtitle&quot;&gt;Title&lt;/h4&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-note-connection-ap-courses" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-page-note-connection-ap-courses">
+          <span class="kss-title__ref">
+              2.10.5
+            <span class="kss-title__permalink-hash">
+                #page.note.connection-ap-courses
+            </span>
+          </span>
+          Connection for AP Courses note
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Contains a title &quot;Connection for AP Courses&quot; and a body containing a title and the contents of the note.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="ap-connection">
+      <h3 data-type="title">Title</h3>
+      <p>Body of the note</p>
+    </div>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="ap-connection"><h3 class="os-title"><span class="os-title-label">Connection for AP&#174;&#160;Courses</span></h3><div class="os-note-body">
+      <h4 data-type="title" class="os-subtitle">Title</h4>
+      <p>Body of the note</p>
+    </div>
+
+  </div></div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;ap-connection&quot;&gt;
+      &lt;h3 data-type=&quot;title&quot;&gt;Title&lt;/h3&gt;
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;ap-connection&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Connection for AP&amp;#174;&amp;#160;Courses&lt;/span&gt;&lt;/h3&gt;&lt;div class=&quot;os-note-body&quot;&gt;
+      &lt;h4 data-type=&quot;title&quot; class=&quot;os-subtitle&quot;&gt;Title&lt;/h4&gt;
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-note-everyday-connection" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-page-note-everyday-connection">
+          <span class="kss-title__ref">
+              2.10.6
+            <span class="kss-title__permalink-hash">
+                #page.note.everyday-connection
+            </span>
+          </span>
+          Everyday Connection note
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Contains a title &quot;Everyday Connection&quot; and a body containing a title and the contents of the note.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="everyday">
+      <div data-type="title">Title</div>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="everyday"><h3 class="os-title"><span class="os-title-label">Everyday Connection</span></h3><div class="os-note-body">
+      <h4 data-type="title" class="os-subtitle">Title</h4>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div></div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;everyday&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;everyday&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Everyday Connection&lt;/span&gt;&lt;/h3&gt;&lt;div class=&quot;os-note-body&quot;&gt;
+      &lt;h4 data-type=&quot;title&quot; class=&quot;os-subtitle&quot;&gt;Title&lt;/h4&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-note-everyday-connection" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-page-note-everyday-connection">
+          <span class="kss-title__ref">
+              2.10.6
+            <span class="kss-title__permalink-hash">
+                #page.note.everyday-connection
+            </span>
+          </span>
+          Everyday Connection note
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Contains a title &quot;Everyday Connection&quot; and a body containing a title and the contents of the note.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="everyday">
+      <div data-type="title">Title</div>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="everyday"><h3 class="os-title"><span class="os-title-label">Everyday Connection</span></h3><div class="os-note-body">
+      <h4 data-type="title" class="os-subtitle">Title</h4>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div></div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;everyday&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;everyday&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Everyday Connection&lt;/span&gt;&lt;/h3&gt;&lt;div class=&quot;os-note-body&quot;&gt;
+      &lt;h4 data-type=&quot;title&quot; class=&quot;os-subtitle&quot;&gt;Title&lt;/h4&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-note-evolution-connection" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-page-note-evolution-connection">
+          <span class="kss-title__ref">
+              2.10.7
+            <span class="kss-title__permalink-hash">
+                #page.note.evolution-connection
+            </span>
+          </span>
+          Evolution Connection note
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Contains a title &quot;Evolution Connection&quot; and a body containing a title and the contents of the note.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="evolution">
+      <div data-type="title">Title</div>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="evolution"><h3 class="os-title"><span class="os-title-label">Evolution Connection</span></h3><div class="os-note-body">
+      <h4 data-type="title" class="os-subtitle">Title</h4>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div></div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;evolution&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;evolution&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Evolution Connection&lt;/span&gt;&lt;/h3&gt;&lt;div class=&quot;os-note-body&quot;&gt;
+      &lt;h4 data-type=&quot;title&quot; class=&quot;os-subtitle&quot;&gt;Title&lt;/h4&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-note-evolution-connection" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-page-note-evolution-connection">
+          <span class="kss-title__ref">
+              2.10.7
+            <span class="kss-title__permalink-hash">
+                #page.note.evolution-connection
+            </span>
+          </span>
+          Evolution Connection note
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Contains a title &quot;Evolution Connection&quot; and a body containing a title and the contents of the note.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="evolution">
+      <div data-type="title">Title</div>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="evolution"><h3 class="os-title"><span class="os-title-label">Evolution Connection</span></h3><div class="os-note-body">
+      <h4 data-type="title" class="os-subtitle">Title</h4>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div></div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;evolution&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;evolution&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Evolution Connection&lt;/span&gt;&lt;/h3&gt;&lt;div class=&quot;os-note-body&quot;&gt;
+      &lt;h4 data-type=&quot;title&quot; class=&quot;os-subtitle&quot;&gt;Title&lt;/h4&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-note-link-to-learning" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-page-note-link-to-learning">
+          <span class="kss-title__ref">
+              2.10.8
+            <span class="kss-title__permalink-hash">
+                #page.note.link-to-learning
+            </span>
+          </span>
+          Link to Learning note
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Contains a title &quot;Link to Learning&quot;</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="interactive">
+      <div data-type="title">Title</div>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="interactive"><h3 class="os-title"><span class="os-title-label">Link to Learning</span></h3>
+      <div data-type="title">Title</div>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;interactive&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;interactive&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Link to Learning&lt;/span&gt;&lt;/h3&gt;
+      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-note-link-to-learning" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-page-note-link-to-learning">
+          <span class="kss-title__ref">
+              2.10.8
+            <span class="kss-title__permalink-hash">
+                #page.note.link-to-learning
+            </span>
+          </span>
+          Link to Learning note
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Contains a title &quot;Link to Learning&quot;</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="interactive">
+      <div data-type="title">Title</div>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="interactive"><h3 class="os-title"><span class="os-title-label">Link to Learning</span></h3>
+      <div data-type="title">Title</div>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;interactive&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;interactive&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Link to Learning&lt;/span&gt;&lt;/h3&gt;
+      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-note-scientific-method-connection" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-page-note-scientific-method-connection">
+          <span class="kss-title__ref">
+              2.10.9
+            <span class="kss-title__permalink-hash">
+                #page.note.scientific-method-connection
+            </span>
+          </span>
+          Scientific Method Connection note
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Contains a title &quot;Scientific Method Connection&quot; and a body containing a title and the contents of the note.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="experiment">
+      <div data-type="title">Title</div>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="experiment"><h3 class="os-title"><span class="os-title-label">Scientific Method Connection</span></h3><div class="os-note-body">
+      <h4 data-type="title" class="os-subtitle">Title</h4>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div></div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;experiment&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;experiment&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Scientific Method Connection&lt;/span&gt;&lt;/h3&gt;&lt;div class=&quot;os-note-body&quot;&gt;
+      &lt;h4 data-type=&quot;title&quot; class=&quot;os-subtitle&quot;&gt;Title&lt;/h4&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-note-scientific-method-connection" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-page-note-scientific-method-connection">
+          <span class="kss-title__ref">
+              2.10.9
+            <span class="kss-title__permalink-hash">
+                #page.note.scientific-method-connection
+            </span>
+          </span>
+          Scientific Method Connection note
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Contains a title &quot;Scientific Method Connection&quot; and a body containing a title and the contents of the note.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="experiment">
+      <div data-type="title">Title</div>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="experiment"><h3 class="os-title"><span class="os-title-label">Scientific Method Connection</span></h3><div class="os-note-body">
+      <h4 data-type="title" class="os-subtitle">Title</h4>
+
+      <p>Body of the note</p>
+    </div>
+
+  </div></div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;experiment&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;experiment&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Scientific Method Connection&lt;/span&gt;&lt;/h3&gt;&lt;div class=&quot;os-note-body&quot;&gt;
+      &lt;h4 data-type=&quot;title&quot; class=&quot;os-subtitle&quot;&gt;Title&lt;/h4&gt;
+
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-note-teacher-support" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-page-note-teacher-support">
+          <span class="kss-title__ref">
+              2.10.10
+            <span class="kss-title__permalink-hash">
+                #page.note.teacher-support
+            </span>
+          </span>
+          Teacher Support note
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Contains a title &quot;Teacher Support&quot; and a body containing a title and the contents of the note.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="os-teacher">
+      <p>Body of the note</p>
+    </div>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="os-teacher"><h3 class="os-title"><span class="os-title-label">Teacher Support</span></h3><div class="os-note-body">
+      <p>Body of the note</p>
+    </div>
+
+  </div></div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;os-teacher&quot;&gt;
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;os-teacher&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Teacher Support&lt;/span&gt;&lt;/h3&gt;&lt;div class=&quot;os-note-body&quot;&gt;
+      &lt;p&gt;Body of the note&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-note-visual-connection" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-page-note-visual-connection">
+          <span class="kss-title__ref">
+              2.10.11
+            <span class="kss-title__permalink-hash">
+                #page.note.visual-connection
+            </span>
+          </span>
+          Visual Connection note
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Contains a title &quot;Visual Connection&quot; and a body containing a title and the contents of the note.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="visual-connection">
+      <div data-type="title">Title</div>
+        <div data-type="exercise" class="os-exercise" id="ex2">
+          <div data-type="problem">
+            <p>What is 3+3?</p>
+          </div>
+        </div>
+    </div>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="note" class="visual-connection"><h3 class="os-title"><span class="os-title-label">Visual Connection</span></h3><div class="os-note-body">
+      <h4 data-type="title" class="os-subtitle">Title</h4>
+        <div data-type="exercise" class="os-exercise" id="ex2">
+          <div data-type="problem">
+            <p>What is 3+3?</p>
+          </div>
+        </div>
+    </div>
+
+  </div></div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;visual-connection&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
+        &lt;div data-type=&quot;exercise&quot; class=&quot;os-exercise&quot; id=&quot;ex2&quot;&gt;
+          &lt;div data-type=&quot;problem&quot;&gt;
+            &lt;p&gt;What is 3+3?&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;note&quot; class=&quot;visual-connection&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Visual Connection&lt;/span&gt;&lt;/h3&gt;&lt;div class=&quot;os-note-body&quot;&gt;
+      &lt;h4 data-type=&quot;title&quot; class=&quot;os-subtitle&quot;&gt;Title&lt;/h4&gt;
+        &lt;div data-type=&quot;exercise&quot; class=&quot;os-exercise&quot; id=&quot;ex2&quot;&gt;
+          &lt;div data-type=&quot;problem&quot;&gt;
+            &lt;p&gt;What is 3+3?&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-para" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-page-para">
+          <span class="kss-title__ref">
+              2.11
+            <span class="kss-title__permalink-hash">
+                #page.para
+            </span>
+          </span>
+          Paragraph
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>A Paragraph of text. Some of the common things it can contain are:</p>
+<ul>
+<li><code>[data-type=&#39;term&#39;]</code> : A term that is defined elsewhere (in the glossary)</li>
+<li><code>strong</code></li>
+<li><code>em</code></li>
+<li><code>[data-type=&#39;list&#39;]</code> : an inline list<ul>
+<li><code>[data-type=&#39;item&#39;]</code> : an item in the list</li>
+</ul>
+</li>
+<li><code>math</code> : MathML</li>
+</ul>
+<p>TODO: Move these into a separate &quot;inline&quot; section in the HTML guide</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <p>
+      The word <span data-type="term">velocity</span> is used to describe how
+      fast an item is going as well as the direction using the equation:
+      <math>
+        <mi>V</mi>
+        <mo>=</mo>
+        <mfrac>
+          <mi>d</mi>
+          <mi>t</mi>
+        </mfrac>
+      </math>
+    </p>
+    <p>An example of speeding up would be the following velocities:
+      <span data-type="list">
+        <span data-type="item">-10</span>
+        <span data-type="item">-5</span>
+        <span data-type="item">-2</span>
+        <span data-type="item">-1</span>
+        <span data-type="item">5</span>
+        <span data-type="item">50</span>
+      </span>
+    </p>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <p>
+      The word <span data-type="term" id="auto__term1" group-by="v">velocity</span> is used to describe how
+      fast an item is going as well as the direction using the equation:
+      <math>
+        <mi>V</mi>
+        <mo>=</mo>
+        <mfrac>
+          <mi>d</mi>
+          <mi>t</mi>
+        </mfrac>
+      </math>
+    </p>
+    <p>An example of speeding up would be the following velocities:
+      <span data-type="list">
+        <span data-type="item">-10</span>
+        <span data-type="item">-5</span>
+        <span data-type="item">-2</span>
+        <span data-type="item">-1</span>
+        <span data-type="item">5</span>
+        <span data-type="item">50</span>
+      </span>
+    </p>
+
+  </div>
+</div>
+<div class="os-eob os-index-container" data-type="composite-page" id="autobaked-1@1"><h1 data-type="document-title"><span class="os-text">Index</span></h1><div class="group-by"><span class="group-label">Symbols</span><div class="os-index-item"><span group-by="v" class="os-term">velocity</span><a href="#auto__term1" class="os-term-section-link"><span class="os-term-section"><div></div></span></a></div></div></div></body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;p&gt;
+      The word &lt;span data-type=&quot;term&quot;&gt;velocity&lt;/span&gt; is used to describe how
+      fast an item is going as well as the direction using the equation:
+      &lt;math&gt;
+        &lt;mi&gt;V&lt;/mi&gt;
+        &lt;mo&gt;=&lt;/mo&gt;
+        &lt;mfrac&gt;
+          &lt;mi&gt;d&lt;/mi&gt;
+          &lt;mi&gt;t&lt;/mi&gt;
+        &lt;/mfrac&gt;
+      &lt;/math&gt;
+    &lt;/p&gt;
+    &lt;p&gt;An example of speeding up would be the following velocities:
+      &lt;span data-type=&quot;list&quot;&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-10&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-5&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-2&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-1&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;5&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;50&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;p&gt;
+      The word &lt;span data-type=&quot;term&quot; id=&quot;auto__term1&quot; group-by=&quot;v&quot;&gt;velocity&lt;/span&gt; is used to describe how
+      fast an item is going as well as the direction using the equation:
+      &lt;math&gt;
+        &lt;mi&gt;V&lt;/mi&gt;
+        &lt;mo&gt;=&lt;/mo&gt;
+        &lt;mfrac&gt;
+          &lt;mi&gt;d&lt;/mi&gt;
+          &lt;mi&gt;t&lt;/mi&gt;
+        &lt;/mfrac&gt;
+      &lt;/math&gt;
+    &lt;/p&gt;
+    &lt;p&gt;An example of speeding up would be the following velocities:
+      &lt;span data-type=&quot;list&quot;&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-10&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-5&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-2&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-1&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;5&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;50&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;os-eob os-index-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-1@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Index&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;group-by&quot;&gt;&lt;span class=&quot;group-label&quot;&gt;Symbols&lt;/span&gt;&lt;div class=&quot;os-index-item&quot;&gt;&lt;span group-by=&quot;v&quot; class=&quot;os-term&quot;&gt;velocity&lt;/span&gt;&lt;a href=&quot;#auto__term1&quot; class=&quot;os-term-section-link&quot;&gt;&lt;span class=&quot;os-term-section&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-section" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-page-section">
+          <span class="kss-title__ref">
+              2.12
+            <span class="kss-title__permalink-hash">
+                #page.section
+            </span>
+          </span>
+          Section
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>A (sub)section of content which contains a title.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <section>
+      <h3 data-type="title">Kinematics in One Dimension</h3>
+      <p>
+        Kinematics is a complex topics so we begin by looking at it in one
+        dimension...
+      </p>
+    </section>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <section>
+      <h3 data-type="title">Kinematics in One Dimension</h3>
+      <p>
+        Kinematics is a complex topics so we begin by looking at it in one
+        dimension...
+      </p>
+    </section>
+
+  </div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;section&gt;
+      &lt;h3 data-type=&quot;title&quot;&gt;Kinematics in One Dimension&lt;/h3&gt;
+      &lt;p&gt;
+        Kinematics is a complex topics so we begin by looking at it in one
+        dimension...
+      &lt;/p&gt;
+    &lt;/section&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;section&gt;
+      &lt;h3 data-type=&quot;title&quot;&gt;Kinematics in One Dimension&lt;/h3&gt;
+      &lt;p&gt;
+        Kinematics is a complex topics so we begin by looking at it in one
+        dimension...
+      &lt;/p&gt;
+    &lt;/section&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-table" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-page-table">
+          <span class="kss-title__ref">
+              2.13
+            <span class="kss-title__permalink-hash">
+                #page.table
+            </span>
+          </span>
+          Table
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>The <code>table</code> element may contain a <code>caption</code>, <code>tbody</code>, <code>col</code>, and other <em>usual</em> elements.</p>
+<p>If the table contains a title, there is an additional element inside <code>&lt;caption&gt;</code></p>
+<h1 id="todo">TODO</h1>
+<ul>
+<li>Decide on what the baked markup for a table with a title and caption should look like.<ul>
+<li>Proposals have mentioned wrapping the <code>&lt;table&gt;</code> element with a <code>.os-table-container</code> element.</li>
+<li>Maybe what is in the Raw HTML is <em>good enough</em>?</li>
+</ul>
+</li>
+</ul>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <table>
+      <caption>and a caption</caption>
+      <tbody>
+        <tr>
+          <td>A table cell</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <!-- Example table with a title and a caption -->
+    <table>
+      <caption>
+        <span data-type="title">Economic Freedoms, 2015</span>
+        (Source: The Heritage Foundation, 2015 Index of Economic
+         Freedom, Country Rankings, http://www.heritage.org/index/ranking)
+      </caption>
+      <tbody>
+        <tr>
+          <td>A table cell</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- An unnumbered table with a title and caption -->
+    <table class="unnumbered">
+      <caption>
+        <span data-type="title">Economic Freedoms, 2015</span>
+        An unnumbered table with a title and caption
+      </caption>
+      <tbody>
+        <tr>
+          <td>A table cell</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- An unnumbered table -->
+    <table class="unnumbered">
+      <tbody>
+        <tr>
+          <td>An unnumbered table cell</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div class="os-table"><table>
+      
+      <tbody>
+        <tr>
+          <td>A table cell</td>
+        </tr>
+      </tbody>
+    </table><div class="os-caption-container"><span class="os-title-label">Table </span><span class="os-number">1.1</span><span class="os-caption">and a caption</span></div></div>
+
+
+    <!-- Example table with a title and a caption -->
+    <div class="os-table"><table>
+      
+      <tbody>
+        <tr>
+          <td>A table cell</td>
+        </tr>
+      </tbody>
+    </table><div class="os-caption-container"><span class="os-title-label">Table </span><span class="os-number">1.2</span><span class="os-caption">
+        
+        (Source: The Heritage Foundation, 2015 Index of Economic
+         Freedom, Country Rankings, http://www.heritage.org/index/ranking)
+      </span><span data-type="title" class="os-title">Economic Freedoms, 2015</span></div></div>
+
+    <!-- An unnumbered table with a title and caption -->
+    <table class="unnumbered">
+      <caption>
+        <span data-type="title">Economic Freedoms, 2015</span>
+        An unnumbered table with a title and caption
+      </caption>
+      <tbody>
+        <tr>
+          <td>A table cell</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- An unnumbered table -->
+    <table class="unnumbered">
+      <tbody>
+        <tr>
+          <td>An unnumbered table cell</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;table&gt;
+      &lt;caption&gt;and a caption&lt;/caption&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;A table cell&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+
+    &lt;!-- Example table with a title and a caption --&gt;
+    &lt;table&gt;
+      &lt;caption&gt;
+        &lt;span data-type=&quot;title&quot;&gt;Economic Freedoms, 2015&lt;/span&gt;
+        (Source: The Heritage Foundation, 2015 Index of Economic
+         Freedom, Country Rankings, http://www.heritage.org/index/ranking)
+      &lt;/caption&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;A table cell&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;!-- An unnumbered table with a title and caption --&gt;
+    &lt;table class=&quot;unnumbered&quot;&gt;
+      &lt;caption&gt;
+        &lt;span data-type=&quot;title&quot;&gt;Economic Freedoms, 2015&lt;/span&gt;
+        An unnumbered table with a title and caption
+      &lt;/caption&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;A table cell&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;!-- An unnumbered table --&gt;
+    &lt;table class=&quot;unnumbered&quot;&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;An unnumbered table cell&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div class=&quot;os-table&quot;&gt;&lt;table&gt;
+      
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;A table cell&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;&lt;div class=&quot;os-caption-container&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Table &lt;/span&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-caption&quot;&gt;and a caption&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+
+
+    &lt;!-- Example table with a title and a caption --&gt;
+    &lt;div class=&quot;os-table&quot;&gt;&lt;table&gt;
+      
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;A table cell&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;&lt;div class=&quot;os-caption-container&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Table &lt;/span&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-caption&quot;&gt;
+        
+        (Source: The Heritage Foundation, 2015 Index of Economic
+         Freedom, Country Rankings, http://www.heritage.org/index/ranking)
+      &lt;/span&gt;&lt;span data-type=&quot;title&quot; class=&quot;os-title&quot;&gt;Economic Freedoms, 2015&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+
+    &lt;!-- An unnumbered table with a title and caption --&gt;
+    &lt;table class=&quot;unnumbered&quot;&gt;
+      &lt;caption&gt;
+        &lt;span data-type=&quot;title&quot;&gt;Economic Freedoms, 2015&lt;/span&gt;
+        An unnumbered table with a title and caption
+      &lt;/caption&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;A table cell&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;!-- An unnumbered table --&gt;
+    &lt;table class=&quot;unnumbered&quot;&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;An unnumbered table cell&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-term" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-page-term">
+          <span class="kss-title__ref">
+              2.14
+            <span class="kss-title__permalink-hash">
+                #page.term
+            </span>
+          </span>
+          Term
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>A term which is used to make the Book Index. Terms used in a Glossary are defined in the Glossary, not here.</p>
+<p><strong>TODO:</strong> The link in the index is an empty element so it does not show up</p>
+<p><strong>TODO:</strong> Discuss how to automate glossary-creation</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <p>The <span data-type="term">velocity</span> of an object
+      represents the speed and the direction</p>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <p>The <span data-type="term" id="auto__term1" group-by="v">velocity</span> of an object
+      represents the speed and the direction</p>
+
+  </div>
+</div>
+<div class="os-eob os-index-container" data-type="composite-page" id="autobaked-1@1"><h1 data-type="document-title"><span class="os-text">Index</span></h1><div class="group-by"><span class="group-label">Symbols</span><div class="os-index-item"><span group-by="v" class="os-term">velocity</span><a href="#auto__term1" class="os-term-section-link"><span class="os-term-section"><div></div></span></a></div></div></div></body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;p&gt;The &lt;span data-type=&quot;term&quot;&gt;velocity&lt;/span&gt; of an object
+      represents the speed and the direction&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;p&gt;The &lt;span data-type=&quot;term&quot; id=&quot;auto__term1&quot; group-by=&quot;v&quot;&gt;velocity&lt;/span&gt; of an object
+      represents the speed and the direction&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;os-eob os-index-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-1@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Index&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;group-by&quot;&gt;&lt;span class=&quot;group-label&quot;&gt;Symbols&lt;/span&gt;&lt;div class=&quot;os-index-item&quot;&gt;&lt;span group-by=&quot;v&quot; class=&quot;os-term&quot;&gt;velocity&lt;/span&gt;&lt;a href=&quot;#auto__term1&quot; class=&quot;os-term-section-link&quot;&gt;&lt;span class=&quot;os-term-section&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-unnumbered" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-page-unnumbered">
+          <span class="kss-title__ref">
+              2.15
+            <span class="kss-title__permalink-hash">
+                #page.unnumbered
+            </span>
+          </span>
+          Unnumbered Content
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Content that has been marked with the class <code>.unnumbered</code> by the content team.</p>
+<p>Currently, the ruleset supports only tables and figures but
+this may apply to a note, a table, an equation, a figure.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <table class="unnumbered" data-label="">
+      <caption><span data-type="title">Section Key Terms</span></caption>
+      <tbody>
+        <tr>
+          <td>Some</td>
+          <td>content</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <figure class="unnumbered">
+      <div data-type="title">U.S. Minimum Wage and Inflation </div>
+      <div data-type="media">
+        <img
+          src="https://cnx.org/resources/d47864c2ac77d80b1f2ff4c4c7f1b2059669e3e9/Figure_01_00_01.jpg"
+          alt="The spiral galaxy Andromeda"
+        />
+      </div>
+      <figcaption>The Andromeda Galaxy is one of many spiral galaxies...</figcaption>
+    </figure>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <table class="unnumbered" data-label="">
+      <caption><span data-type="title">Section Key Terms</span></caption>
+      <tbody>
+        <tr>
+          <td>Some</td>
+          <td>content</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <figure class="unnumbered">
+      <div data-type="title">U.S. Minimum Wage and Inflation </div>
+      <div data-type="media">
+        <img src="https://cnx.org/resources/d47864c2ac77d80b1f2ff4c4c7f1b2059669e3e9/Figure_01_00_01.jpg" alt="The spiral galaxy Andromeda">
+      </div>
+      <figcaption>The Andromeda Galaxy is one of many spiral galaxies...</figcaption>
+    </figure>
+
+  </div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;table class=&quot;unnumbered&quot; data-label=&quot;&quot;&gt;
+      &lt;caption&gt;&lt;span data-type=&quot;title&quot;&gt;Section Key Terms&lt;/span&gt;&lt;/caption&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Some&lt;/td&gt;
+          &lt;td&gt;content&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;figure class=&quot;unnumbered&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;U.S. Minimum Wage and Inflation &lt;/div&gt;
+      &lt;div data-type=&quot;media&quot;&gt;
+        &lt;img
+          src=&quot;https://cnx.org/resources/d47864c2ac77d80b1f2ff4c4c7f1b2059669e3e9/Figure_01_00_01.jpg&quot;
+          alt=&quot;The spiral galaxy Andromeda&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;figcaption&gt;The Andromeda Galaxy is one of many spiral galaxies...&lt;/figcaption&gt;
+    &lt;/figure&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;table class=&quot;unnumbered&quot; data-label=&quot;&quot;&gt;
+      &lt;caption&gt;&lt;span data-type=&quot;title&quot;&gt;Section Key Terms&lt;/span&gt;&lt;/caption&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Some&lt;/td&gt;
+          &lt;td&gt;content&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;figure class=&quot;unnumbered&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;U.S. Minimum Wage and Inflation &lt;/div&gt;
+      &lt;div data-type=&quot;media&quot;&gt;
+        &lt;img src=&quot;https://cnx.org/resources/d47864c2ac77d80b1f2ff4c4c7f1b2059669e3e9/Figure_01_00_01.jpg&quot; alt=&quot;The spiral galaxy Andromeda&quot;&gt;
+      &lt;/div&gt;
+      &lt;figcaption&gt;The Andromeda Galaxy is one of many spiral galaxies...&lt;/figcaption&gt;
+    &lt;/figure&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+</article>
+
+<!-- SCRIPTS -->
+<script src="public/prettify.js"></script>
+<script src="public/kss.js"></script>
+
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

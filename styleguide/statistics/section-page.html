@@ -21,10 +21,10 @@
   .-toggle-hidden { display: none; }
   .kss-markup .-kss-autogen-guide-markup::before { font-size: 150%; font-weight: bold; }
   .kss-markup .-kss-autogen-guide-markup[data-kss-format="html-raw"]::before { content: 'Raw HTML:'; }
-  .kss-markup .-kss-autogen-guide-markup[data-kss-format="html-cooked"]::before { content: 'Cooked HTML:'; }
+  .kss-markup .-kss-autogen-guide-markup[data-kss-format="html-baked"]::before { content: 'Baked HTML:'; }
 
-  /* Only show the rendered "cooked" HTML */
-  .kss-modifier__example > .-kss-autogen-guide-markup:not([data-kss-format="html-cooked"]) { display: none; }
+  /* Only show the rendered "baked" HTML */
+  .kss-modifier__example > .-kss-autogen-guide-markup:not([data-kss-format="html-baked"]) { display: none; }
   </style>
 </head>
 <body id="kss-node">
@@ -35,7 +35,7 @@
   </header>
 
   <select id="choose-which-format-to-look-at">
-    <option value="html-cooked">Show Cooked HTML</option>
+    <option value="html-baked">Show Baked HTML</option>
     <option value="html-raw">Show Raw HTML</option>
     <option value="-all">Show All Formats</option>
     <option value="-none">Show No Formats</option>
@@ -98,62 +98,74 @@
               </a>
             </li>
             <li class="kss-nav__menu-item">
-              <a href="section-page.html#kssref-page-note">
+              <a href="section-page.html#kssref-page-iframe">
                 <span class="kss-nav__ref ">2.7</span
+                ><span class="kss-nav__name">Iframe</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-link">
+                <span class="kss-nav__ref ">2.8</span
+                ><span class="kss-nav__name">Links</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-list">
+                <span class="kss-nav__ref ">2.9</span
+                ><span class="kss-nav__name">Lists</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-page.html#kssref-page-note">
+                <span class="kss-nav__ref ">2.10</span
                 ><span class="kss-nav__name">Note</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
-              <a href="section-page.html#kssref-page-note-bringhome">
-                <span class="kss-nav__ref kss-nav__ref-child">2.7.1</span
-                ><span class="kss-nav__name">Bring It Home note</span>
+              <a href="section-page.html#kssref-page-note-chapter-objectives">
+                <span class="kss-nav__ref kss-nav__ref-child">2.10.1</span
+                ><span class="kss-nav__name">Chapter Objectives</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
-              <a href="section-page.html#kssref-page-note-clearup">
-                <span class="kss-nav__ref kss-nav__ref-child">2.7.2</span
-                ><span class="kss-nav__name">Clear It Up note</span>
+              <a href="section-page.html#kssref-page-note-collab">
+                <span class="kss-nav__ref kss-nav__ref-child">2.10.2</span
+                ><span class="kss-nav__name">Collaborative Excerise note</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
-              <a href="section-page.html#kssref-page-note-linkup">
-                <span class="kss-nav__ref kss-nav__ref-child">2.7.3</span
-                ><span class="kss-nav__name">Link It Up note</span>
-              </a>
-            </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-page.html#kssref-page-note-workout">
-                <span class="kss-nav__ref kss-nav__ref-child">2.7.4</span
-                ><span class="kss-nav__name">Work It Out note</span>
+              <a href="section-page.html#kssref-page-note-try">
+                <span class="kss-nav__ref kss-nav__ref-child">2.10.3</span
+                ><span class="kss-nav__name">Try It Feature</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-page.html#kssref-page-para">
-                <span class="kss-nav__ref ">2.8</span
+                <span class="kss-nav__ref ">2.11</span
                 ><span class="kss-nav__name">Paragraph</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-page.html#kssref-page-section">
-                <span class="kss-nav__ref ">2.9</span
+                <span class="kss-nav__ref ">2.12</span
                 ><span class="kss-nav__name">Section</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-page.html#kssref-page-table">
-                <span class="kss-nav__ref ">2.10</span
+                <span class="kss-nav__ref ">2.13</span
                 ><span class="kss-nav__name">Table</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-page.html#kssref-page-term">
-                <span class="kss-nav__ref ">2.11</span
+                <span class="kss-nav__ref ">2.14</span
                 ><span class="kss-nav__name">Term</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-page.html#kssref-page-unnumbered">
-                <span class="kss-nav__ref ">2.12</span
+                <span class="kss-nav__ref ">2.15</span
                 ><span class="kss-nav__name">Unnumbered Content</span>
               </a>
             </li>
@@ -308,7 +320,7 @@ A Page is usually a section inside a chapter.</p>
   </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
   <div data-type="page">
 
@@ -319,7 +331,7 @@ A Page is usually a section inside a chapter.</p>
 
   </div>
 </div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="4c9143b8-4062-45d0-9415-bd7b787df2c8@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter </h2></div></div></body></html>
+</body></html>
 </section>
 
         </div>
@@ -338,7 +350,7 @@ A Page is usually a section inside a chapter.</p>
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
   &lt;div data-type=&quot;page&quot;&gt;
 
@@ -349,7 +361,7 @@ A Page is usually a section inside a chapter.</p>
 
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;4c9143b8-4062-45d0-9415-bd7b787df2c8@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter &lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>
@@ -399,13 +411,13 @@ A Page is usually a section inside a chapter.</p>
 </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
 <div data-type="page">
 
 <!-- Markup starts here -->
-<div data-type="example" class="example">
-  <div data-type="title">How to Calculate Velocity</div>
+<div data-type="example" class="example"><h3 class="os-title"><span class="os-title-label">Example </span><span class="os-number">1.1</span><span class="os-text">How to Calculate Velocity</span></h3>
+  
   <p>
     To determine the velocity, you will first need to find how far the
     object travelled, and then how long it took.
@@ -414,7 +426,7 @@ A Page is usually a section inside a chapter.</p>
 
 </div>
 </div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="e9c38a59-17ae-44e1-9bfa-a5731b3f721b@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter </h2></div></div></body></html>
+</body></html>
 </section>
 
         </div>
@@ -437,13 +449,13 @@ A Page is usually a section inside a chapter.</p>
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
 &lt;div data-type=&quot;page&quot;&gt;
 
 &lt;!-- Markup starts here --&gt;
-&lt;div data-type=&quot;example&quot; class=&quot;example&quot;&gt;
-  &lt;div data-type=&quot;title&quot;&gt;How to Calculate Velocity&lt;/div&gt;
+&lt;div data-type=&quot;example&quot; class=&quot;example&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Example &lt;/span&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;How to Calculate Velocity&lt;/span&gt;&lt;/h3&gt;
+  
   &lt;p&gt;
     To determine the velocity, you will first need to find how far the
     object travelled, and then how long it took.
@@ -452,7 +464,7 @@ A Page is usually a section inside a chapter.</p>
 
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;e9c38a59-17ae-44e1-9bfa-a5731b3f721b@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter &lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>
@@ -493,35 +505,135 @@ Typically, an exercise is collated at the end of chapter.</p>
   <div data-type="page">
 
     <!-- Markup starts here -->
-    <div data-type="exercise" class="exercise">
-      <div data-type="problem" class="problem">
+    <div data-type="exercise" id="ex1">
+      <div data-type="problem">
         <p>If an apple fell 3 meters in 2 seconds, what was the speed of the apple?</p>
       </div>
-      <div data-type="solution" class="solution">
-        <p>If fell 1.5 meters per second</p>
+      <div data-type="solution">
+        <p>It fell 1.5 meters per second</p>
+      </div>
+    </div>
+
+    <!-- exercises inside an example are not numbered -->
+    <div data-type="example" class="example">
+      <div data-type="title">This example should not have a numbered exercise</div>
+
+      <div data-type="exercise" id="ex-in-example">
+        <div data-type="problem">
+          <p>If an apple fell 3 meters in 2 seconds, what was the speed of the apple?</p>
+        </div>
+        <div data-type="solution">
+          <p>It fell 1.5 meters per second</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- exercises with a class of unnumbered should not be numbered -->
+    <div data-type="exercise" id="ex-unnumbered" class="unnumbered">
+      <div data-type="problem">
+        <p>This should be unnumbered. If an apple fell 3 meters in 2 seconds, what was the speed of the apple?</p>
+      </div>
+      <div data-type="solution">
+        <p>It fell 1.5 meters per second</p>
+      </div>
+    </div>
+
+    <div data-type="exercise" id="ex2">
+      <div data-type="problem">
+        <p>If an apple fell 3 meters in 2 seconds, what was the speed of the apple?</p>
+      </div>
+      <div data-type="solution">
+        <p>It fell 1.5 meters per second</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Verify that the exercise counter resets for the next chapter -->
+<div data-type="chapter">
+  <div data-type="page">
+
+    <div data-type="exercise" id="ex2.1">
+      <div data-type="problem">
+        <p>If an apple fell 3 meters in 2 seconds, what was the speed of the apple?</p>
+      </div>
+      <div data-type="solution">
+        <p>It fell 1.5 meters per second</p>
       </div>
     </div>
 
   </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
   <div data-type="page">
 
     <!-- Markup starts here -->
-    <div data-type="exercise" class="exercise os-hasSolution ">
-      <div data-type="problem" class="problem">
+    <div data-type="exercise" id="ex1" class=" os-hasSolution ">
+      <div data-type="problem"><span class="os-title-label">Exercise</span><span class="os-number">1</span>
         <p>If an apple fell 3 meters in 2 seconds, what was the speed of the apple?</p>
       </div>
-      <div data-type="solution" class="solution">
-        <p>If fell 1.5 meters per second</p>
+      <div data-type="solution" id="ex1-solution">
+        <p>It fell 1.5 meters per second</p>
+      </div>
+    </div>
+
+    <!-- exercises inside an example are not numbered -->
+    <div data-type="example" class="example"><h3 class="os-title"><span class="os-title-label">Example </span><span class="os-number">1.1</span><span class="os-text">This example should not have a numbered exercise</span></h3>
+      
+
+      <div data-type="exercise" id="ex-in-example" class=" os-hasSolution  unnumbered">
+        <div data-type="problem">
+          <p>If an apple fell 3 meters in 2 seconds, what was the speed of the apple?</p>
+        </div>
+        <div data-type="solution" id="ex-in-example-solution"><div data-type="solution-title"><span class="os-title-label">Solution </span><a class="os-number" href="#ex-in-example">1.1</a></div>
+          <p>It fell 1.5 meters per second</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- exercises with a class of unnumbered should not be numbered -->
+    <div data-type="exercise" id="ex-unnumbered" class="unnumbered os-hasSolution ">
+      <div data-type="problem">
+        <p>This should be unnumbered. If an apple fell 3 meters in 2 seconds, what was the speed of the apple?</p>
+      </div>
+      <div data-type="solution" id="ex-unnumbered-solution">
+        <p>It fell 1.5 meters per second</p>
+      </div>
+    </div>
+
+    <div data-type="exercise" id="ex2" class=" os-hasSolution ">
+      <div data-type="problem"><span class="os-title-label">Exercise</span><span class="os-number">2</span>
+        <p>If an apple fell 3 meters in 2 seconds, what was the speed of the apple?</p>
+      </div>
+      <div data-type="solution" id="ex2-solution">
+        <p>It fell 1.5 meters per second</p>
       </div>
     </div>
 
   </div>
 </div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="d02f2212-7e54-4cfe-bd1b-aee8416c1d3f@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter </h2></div></div></body></html>
+
+
+<!-- Verify that the exercise counter resets for the next chapter -->
+<div data-type="chapter">
+  <div data-type="page">
+
+    <div data-type="exercise" id="ex2.1" class=" os-hasSolution ">
+      <div data-type="problem"><span class="os-title-label">Exercise</span><span class="os-number">1</span>
+        <p>If an apple fell 3 meters in 2 seconds, what was the speed of the apple?</p>
+      </div>
+      <div data-type="solution" id="ex2.1-solution">
+        <p>It fell 1.5 meters per second</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body></html>
 </section>
 
         </div>
@@ -533,35 +645,135 @@ Typically, an exercise is collated at the end of chapter.</p>
   &lt;div data-type=&quot;page&quot;&gt;
 
     &lt;!-- Markup starts here --&gt;
-    &lt;div data-type=&quot;exercise&quot; class=&quot;exercise&quot;&gt;
-      &lt;div data-type=&quot;problem&quot; class=&quot;problem&quot;&gt;
+    &lt;div data-type=&quot;exercise&quot; id=&quot;ex1&quot;&gt;
+      &lt;div data-type=&quot;problem&quot;&gt;
         &lt;p&gt;If an apple fell 3 meters in 2 seconds, what was the speed of the apple?&lt;/p&gt;
       &lt;/div&gt;
-      &lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;
-        &lt;p&gt;If fell 1.5 meters per second&lt;/p&gt;
+      &lt;div data-type=&quot;solution&quot;&gt;
+        &lt;p&gt;It fell 1.5 meters per second&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- exercises inside an example are not numbered --&gt;
+    &lt;div data-type=&quot;example&quot; class=&quot;example&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;This example should not have a numbered exercise&lt;/div&gt;
+
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex-in-example&quot;&gt;
+        &lt;div data-type=&quot;problem&quot;&gt;
+          &lt;p&gt;If an apple fell 3 meters in 2 seconds, what was the speed of the apple?&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot;&gt;
+          &lt;p&gt;It fell 1.5 meters per second&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- exercises with a class of unnumbered should not be numbered --&gt;
+    &lt;div data-type=&quot;exercise&quot; id=&quot;ex-unnumbered&quot; class=&quot;unnumbered&quot;&gt;
+      &lt;div data-type=&quot;problem&quot;&gt;
+        &lt;p&gt;This should be unnumbered. If an apple fell 3 meters in 2 seconds, what was the speed of the apple?&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div data-type=&quot;solution&quot;&gt;
+        &lt;p&gt;It fell 1.5 meters per second&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div data-type=&quot;exercise&quot; id=&quot;ex2&quot;&gt;
+      &lt;div data-type=&quot;problem&quot;&gt;
+        &lt;p&gt;If an apple fell 3 meters in 2 seconds, what was the speed of the apple?&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div data-type=&quot;solution&quot;&gt;
+        &lt;p&gt;It fell 1.5 meters per second&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;!-- Verify that the exercise counter resets for the next chapter --&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;div data-type=&quot;exercise&quot; id=&quot;ex2.1&quot;&gt;
+      &lt;div data-type=&quot;problem&quot;&gt;
+        &lt;p&gt;If an apple fell 3 meters in 2 seconds, what was the speed of the apple?&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div data-type=&quot;solution&quot;&gt;
+        &lt;p&gt;It fell 1.5 meters per second&lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;
 
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
   &lt;div data-type=&quot;page&quot;&gt;
 
     &lt;!-- Markup starts here --&gt;
-    &lt;div data-type=&quot;exercise&quot; class=&quot;exercise os-hasSolution &quot;&gt;
-      &lt;div data-type=&quot;problem&quot; class=&quot;problem&quot;&gt;
+    &lt;div data-type=&quot;exercise&quot; id=&quot;ex1&quot; class=&quot; os-hasSolution &quot;&gt;
+      &lt;div data-type=&quot;problem&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Exercise&lt;/span&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;
         &lt;p&gt;If an apple fell 3 meters in 2 seconds, what was the speed of the apple?&lt;/p&gt;
       &lt;/div&gt;
-      &lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;
-        &lt;p&gt;If fell 1.5 meters per second&lt;/p&gt;
+      &lt;div data-type=&quot;solution&quot; id=&quot;ex1-solution&quot;&gt;
+        &lt;p&gt;It fell 1.5 meters per second&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- exercises inside an example are not numbered --&gt;
+    &lt;div data-type=&quot;example&quot; class=&quot;example&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Example &lt;/span&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;This example should not have a numbered exercise&lt;/span&gt;&lt;/h3&gt;
+      
+
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex-in-example&quot; class=&quot; os-hasSolution  unnumbered&quot;&gt;
+        &lt;div data-type=&quot;problem&quot;&gt;
+          &lt;p&gt;If an apple fell 3 meters in 2 seconds, what was the speed of the apple?&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot; id=&quot;ex-in-example-solution&quot;&gt;&lt;div data-type=&quot;solution-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Solution &lt;/span&gt;&lt;a class=&quot;os-number&quot; href=&quot;#ex-in-example&quot;&gt;1.1&lt;/a&gt;&lt;/div&gt;
+          &lt;p&gt;It fell 1.5 meters per second&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- exercises with a class of unnumbered should not be numbered --&gt;
+    &lt;div data-type=&quot;exercise&quot; id=&quot;ex-unnumbered&quot; class=&quot;unnumbered os-hasSolution &quot;&gt;
+      &lt;div data-type=&quot;problem&quot;&gt;
+        &lt;p&gt;This should be unnumbered. If an apple fell 3 meters in 2 seconds, what was the speed of the apple?&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div data-type=&quot;solution&quot; id=&quot;ex-unnumbered-solution&quot;&gt;
+        &lt;p&gt;It fell 1.5 meters per second&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div data-type=&quot;exercise&quot; id=&quot;ex2&quot; class=&quot; os-hasSolution &quot;&gt;
+      &lt;div data-type=&quot;problem&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Exercise&lt;/span&gt;&lt;span class=&quot;os-number&quot;&gt;2&lt;/span&gt;
+        &lt;p&gt;If an apple fell 3 meters in 2 seconds, what was the speed of the apple?&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div data-type=&quot;solution&quot; id=&quot;ex2-solution&quot;&gt;
+        &lt;p&gt;It fell 1.5 meters per second&lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;
 
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;d02f2212-7e54-4cfe-bd1b-aee8416c1d3f@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter &lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+
+
+&lt;!-- Verify that the exercise counter resets for the next chapter --&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;div data-type=&quot;exercise&quot; id=&quot;ex2.1&quot; class=&quot; os-hasSolution &quot;&gt;
+      &lt;div data-type=&quot;problem&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Exercise&lt;/span&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;
+        &lt;p&gt;If an apple fell 3 meters in 2 seconds, what was the speed of the apple?&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div data-type=&quot;solution&quot; id=&quot;ex2.1-solution&quot;&gt;
+        &lt;p&gt;It fell 1.5 meters per second&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>
@@ -596,10 +808,10 @@ Typically, an exercise is collated at the end of chapter.</p>
 </li>
 </ul>
 <p>TODO: Maybe this should use the <code>&lt;picture&gt;</code> element instead of the <code>[data-type=&#39;media&#39;]</code> element:
-<a href="http://www.html-cooked.html5rocks.com/en/tutorials/responsive/picture-element/">http://www.html-cooked.html5rocks.com/en/tutorials/responsive/picture-element/</a></p>
+<a href="http://www.html-baked.html5rocks.com/en/tutorials/responsive/picture-element/">http://www.html-baked.html5rocks.com/en/tutorials/responsive/picture-element/</a></p>
 <h1 id="todo">TODO</h1>
 <ul>
-<li>Decide on what the cooked markup for a figure with a title and caption should look like.<ul>
+<li>Decide on what the baked markup for a figure with a title and caption should look like.<ul>
 <li>Proposals have mentioned using <code>&lt;figcaption&gt;</code> most of the time.</li>
 <li>Maybe what is in the Raw HTML is <em>good enough</em>?</li>
 </ul>
@@ -633,24 +845,22 @@ Typically, an exercise is collated at the end of chapter.</p>
   </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
   <div data-type="page">
 
     <!-- Markup starts here -->
-    <div class="os-figure">
-
-  <figure>
-      
+    <div class="os-figure"><figure>
+      <div data-type="title">U.S. Minimum Wage and Inflation </div>
       <div data-type="media">
         <img src="https://cnx.org/resources/d47864c2ac77d80b1f2ff4c4c7f1b2059669e3e9/Figure_01_00_01.jpg" alt="The spiral galaxy Andromeda">
       </div>
       
-    </figure><div class="os-caption-container"><span class="os-title-label">Figure </span><span class="os-number">1.1</span><span data-type="title" class="os-title">U.S. Minimum Wage and Inflation </span><span class="os-caption">The Andromeda Galaxy is one of many spiral galaxies...</span></div></div>
+    </figure><div class="os-caption-container"><span class="os-title-label">Figure </span><span class="os-number">1.1</span><span class="os-caption">The Andromeda Galaxy is one of many spiral galaxies...</span></div></div>
 
   </div>
 </div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="9863cdfd-9778-4f7e-b49d-bd400d82e96f@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter </h2></div></div></body></html>
+</body></html>
 </section>
 
         </div>
@@ -676,24 +886,483 @@ Typically, an exercise is collated at the end of chapter.</p>
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
   &lt;div data-type=&quot;page&quot;&gt;
 
     &lt;!-- Markup starts here --&gt;
-    &lt;div class=&quot;os-figure&quot;&gt;
-
-  &lt;figure&gt;
-      
+    &lt;div class=&quot;os-figure&quot;&gt;&lt;figure&gt;
+      &lt;div data-type=&quot;title&quot;&gt;U.S. Minimum Wage and Inflation &lt;/div&gt;
       &lt;div data-type=&quot;media&quot;&gt;
         &lt;img src=&quot;https://cnx.org/resources/d47864c2ac77d80b1f2ff4c4c7f1b2059669e3e9/Figure_01_00_01.jpg&quot; alt=&quot;The spiral galaxy Andromeda&quot;&gt;
       &lt;/div&gt;
       
-    &lt;/figure&gt;&lt;div class=&quot;os-caption-container&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Figure &lt;/span&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span data-type=&quot;title&quot; class=&quot;os-title&quot;&gt;U.S. Minimum Wage and Inflation &lt;/span&gt;&lt;span class=&quot;os-caption&quot;&gt;The Andromeda Galaxy is one of many spiral galaxies...&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;/figure&gt;&lt;div class=&quot;os-caption-container&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Figure &lt;/span&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-caption&quot;&gt;The Andromeda Galaxy is one of many spiral galaxies...&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
 
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;9863cdfd-9778-4f7e-b49d-bd400d82e96f@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter &lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-iframe" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-page-iframe">
+          <span class="kss-title__ref">
+              2.7
+            <span class="kss-title__permalink-hash">
+                #page.iframe
+            </span>
+          </span>
+          Iframe
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>An iframe can show an embedded simulation or video. Some formats cannot or would
+rather not show the iframe and present a link instead.</p>
+<p>So we wrap the element inside a <code>[data-type=&quot;alternatives&quot;]</code> element and add
+enough classes to be able to select which alternative to show and which to hide.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rStL7niR7gs" frameborder="0" allowfullscreen></iframe>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <div data-type="alternatives" class="os-has-iframe os-has-link"><a class="os-is-link" target="_window" href="https://www.youtube.com/embed/rStL7niR7gs">Click to view content</a><iframe width="560" height="315" src="https://www.youtube.com/embed/rStL7niR7gs" frameborder="0" allowfullscreen class="os-is-iframe"></iframe></div>
+
+  </div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/rStL7niR7gs&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;div data-type=&quot;alternatives&quot; class=&quot;os-has-iframe os-has-link&quot;&gt;&lt;a class=&quot;os-is-link&quot; target=&quot;_window&quot; href=&quot;https://www.youtube.com/embed/rStL7niR7gs&quot;&gt;Click to view content&lt;/a&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/rStL7niR7gs&quot; frameborder=&quot;0&quot; allowfullscreen class=&quot;os-is-iframe&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-link" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-page-link">
+          <span class="kss-title__ref">
+              2.8
+            <span class="kss-title__permalink-hash">
+                #page.link
+            </span>
+          </span>
+          Links
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Links to simulations should open in a new tab (ie <code>&lt;a target=&quot;_blank&quot;&gt;</code>)</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <p id="id-para">
+      Link to a simulation:
+      <a class="os-interactive-link" href="foo-archive.cnx.org/specials/bam">link</a>
+    </p>
+
+    <p>
+      Link to a website:
+      <a href="https://cnx.org">link</a>
+    </p>
+
+    <p>
+      Link to a paragraph:
+      <a href="#id-para">link</a>
+    </p>
+
+    <p>
+      Link to a figure:
+      <a href="#id-figure">link</a>
+    </p>
+
+    <figure id="id-figure">
+      <div data-type="title">Figure Title</div>
+    </figure>
+
+    <figure>
+      <a class="os-interactive-link" href="https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html">link inside a figure</a>
+    </figure>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <p id="id-para">
+      Link to a simulation:
+      <a class="os-interactive-link" href="foo-archive.cnx.org/specials/bam" target="_blank">link</a>
+    </p>
+
+    <p>
+      Link to a website:
+      <a href="https://cnx.org">link</a>
+    </p>
+
+    <p>
+      Link to a paragraph:
+      <a href="#id-para">link</a>
+    </p>
+
+    <p>
+      Link to a figure:
+      <a href="#id-figure">link</a>
+    </p>
+
+    <div class="os-figure"><figure id="id-figure">
+      <div data-type="title">Figure Title</div>
+    </figure><div class="os-caption-container"><span class="os-title-label">Figure </span><span class="os-number">1.1</span></div></div>
+
+    <div class="os-figure"><figure>
+      <a class="os-interactive-link" href="https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html" target="_blank">link inside a figure</a>
+    </figure><div class="os-caption-container"><span class="os-title-label">Figure </span><span class="os-number">1.2</span></div></div>
+
+  </div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;p id=&quot;id-para&quot;&gt;
+      Link to a simulation:
+      &lt;a class=&quot;os-interactive-link&quot; href=&quot;foo-archive.cnx.org/specials/bam&quot;&gt;link&lt;/a&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      Link to a website:
+      &lt;a href=&quot;https://cnx.org&quot;&gt;link&lt;/a&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      Link to a paragraph:
+      &lt;a href=&quot;#id-para&quot;&gt;link&lt;/a&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      Link to a figure:
+      &lt;a href=&quot;#id-figure&quot;&gt;link&lt;/a&gt;
+    &lt;/p&gt;
+
+    &lt;figure id=&quot;id-figure&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;Figure Title&lt;/div&gt;
+    &lt;/figure&gt;
+
+    &lt;figure&gt;
+      &lt;a class=&quot;os-interactive-link&quot; href=&quot;https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html&quot;&gt;link inside a figure&lt;/a&gt;
+    &lt;/figure&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;p id=&quot;id-para&quot;&gt;
+      Link to a simulation:
+      &lt;a class=&quot;os-interactive-link&quot; href=&quot;foo-archive.cnx.org/specials/bam&quot; target=&quot;_blank&quot;&gt;link&lt;/a&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      Link to a website:
+      &lt;a href=&quot;https://cnx.org&quot;&gt;link&lt;/a&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      Link to a paragraph:
+      &lt;a href=&quot;#id-para&quot;&gt;link&lt;/a&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      Link to a figure:
+      &lt;a href=&quot;#id-figure&quot;&gt;link&lt;/a&gt;
+    &lt;/p&gt;
+
+    &lt;div class=&quot;os-figure&quot;&gt;&lt;figure id=&quot;id-figure&quot;&gt;
+      &lt;div data-type=&quot;title&quot;&gt;Figure Title&lt;/div&gt;
+    &lt;/figure&gt;&lt;div class=&quot;os-caption-container&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Figure &lt;/span&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+
+    &lt;div class=&quot;os-figure&quot;&gt;&lt;figure&gt;
+      &lt;a class=&quot;os-interactive-link&quot; href=&quot;https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html&quot; target=&quot;_blank&quot;&gt;link inside a figure&lt;/a&gt;
+    &lt;/figure&gt;&lt;div class=&quot;os-caption-container&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Figure &lt;/span&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-page-list" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-page-list">
+          <span class="kss-title__ref">
+              2.9
+            <span class="kss-title__permalink-hash">
+                #page.list
+            </span>
+          </span>
+          Lists
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Lists can contain a label or title and can be block content or inline.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <ol>
+      <li>numbered item</li>
+      <li>another numbered item</li>
+    </ol>
+
+    <!-- Lists with labels -->
+    <ol data-label="Labeled ordered list">
+      <li>numbered item</li>
+      <li>another numbered item</li>
+    </ol>
+
+    <ul data-label="Labeled bulleted list">
+      <li>numbered item</li>
+      <li>another numbered item</li>
+    </ul>
+
+    <ul>
+      <li data-label="item label1">(this should have a label to the left)</li>
+      <li data-label="item label2">(this should have a label to the left)</li>
+    </ul>
+
+    <p>An example of an inline list:
+      <span data-type="list">
+        <span data-type="item">-10</span>
+        <span data-type="item">-5</span>
+        <span data-type="item">-2</span>
+        <span data-type="item">-1</span>
+        <span data-type="item">5</span>
+        <span data-type="item">50</span>
+      </span>
+    </p>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <div data-type="page">
+
+    <!-- Markup starts here -->
+    <ol>
+      <li>numbered item</li>
+      <li>another numbered item</li>
+    </ol>
+
+    <!-- Lists with labels -->
+    <div data-type="list-container"><div class="os-label">Labeled ordered list</div><ol data-label="Labeled ordered list">
+      <li>numbered item</li>
+      <li>another numbered item</li>
+    </ol></div>
+
+    <div data-type="list-container"><div class="os-label">Labeled bulleted list</div><ul data-label="Labeled bulleted list">
+      <li>numbered item</li>
+      <li>another numbered item</li>
+    </ul></div>
+
+    <ul>
+      <li data-label="item label1">(this should have a label to the left)</li>
+      <li data-label="item label2">(this should have a label to the left)</li>
+    </ul>
+
+    <p>An example of an inline list:
+      <span data-type="list">
+        <span data-type="item">-10</span>
+        <span data-type="item">-5</span>
+        <span data-type="item">-2</span>
+        <span data-type="item">-1</span>
+        <span data-type="item">5</span>
+        <span data-type="item">50</span>
+      </span>
+    </p>
+
+  </div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;ol&gt;
+      &lt;li&gt;numbered item&lt;/li&gt;
+      &lt;li&gt;another numbered item&lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;!-- Lists with labels --&gt;
+    &lt;ol data-label=&quot;Labeled ordered list&quot;&gt;
+      &lt;li&gt;numbered item&lt;/li&gt;
+      &lt;li&gt;another numbered item&lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;ul data-label=&quot;Labeled bulleted list&quot;&gt;
+      &lt;li&gt;numbered item&lt;/li&gt;
+      &lt;li&gt;another numbered item&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;ul&gt;
+      &lt;li data-label=&quot;item label1&quot;&gt;(this should have a label to the left)&lt;/li&gt;
+      &lt;li data-label=&quot;item label2&quot;&gt;(this should have a label to the left)&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;An example of an inline list:
+      &lt;span data-type=&quot;list&quot;&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-10&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-5&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-2&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-1&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;5&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;50&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;ol&gt;
+      &lt;li&gt;numbered item&lt;/li&gt;
+      &lt;li&gt;another numbered item&lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;!-- Lists with labels --&gt;
+    &lt;div data-type=&quot;list-container&quot;&gt;&lt;div class=&quot;os-label&quot;&gt;Labeled ordered list&lt;/div&gt;&lt;ol data-label=&quot;Labeled ordered list&quot;&gt;
+      &lt;li&gt;numbered item&lt;/li&gt;
+      &lt;li&gt;another numbered item&lt;/li&gt;
+    &lt;/ol&gt;&lt;/div&gt;
+
+    &lt;div data-type=&quot;list-container&quot;&gt;&lt;div class=&quot;os-label&quot;&gt;Labeled bulleted list&lt;/div&gt;&lt;ul data-label=&quot;Labeled bulleted list&quot;&gt;
+      &lt;li&gt;numbered item&lt;/li&gt;
+      &lt;li&gt;another numbered item&lt;/li&gt;
+    &lt;/ul&gt;&lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li data-label=&quot;item label1&quot;&gt;(this should have a label to the left)&lt;/li&gt;
+      &lt;li data-label=&quot;item label2&quot;&gt;(this should have a label to the left)&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;An example of an inline list:
+      &lt;span data-type=&quot;list&quot;&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-10&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-5&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-2&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;-1&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;5&lt;/span&gt;
+        &lt;span data-type=&quot;item&quot;&gt;50&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>
@@ -705,7 +1374,7 @@ Typically, an exercise is collated at the end of chapter.</p>
       <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink" href="#kssref-page-note">
           <span class="kss-title__ref">
-              2.7
+              2.10
             <span class="kss-title__permalink-hash">
                 #page.note
             </span>
@@ -741,7 +1410,7 @@ content in a book with a border and a separate background color.</p>
   </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
   <div data-type="page">
 
@@ -753,7 +1422,7 @@ content in a book with a border and a separate background color.</p>
 
   </div>
 </div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="a94ff9e3-2d6e-4fc1-9d9d-b4e43452c67b@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter </h2></div></div></body></html>
+</body></html>
 </section>
 
         </div>
@@ -773,7 +1442,7 @@ content in a book with a border and a separate background color.</p>
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
   &lt;div data-type=&quot;page&quot;&gt;
 
@@ -785,30 +1454,30 @@ content in a book with a border and a separate background color.</p>
 
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;a94ff9e3-2d6e-4fc1-9d9d-b4e43452c67b@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter &lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>
 
       </section>
-      <section id="kssref-page-note-bringhome" class="kss-section kss-section--depth-3">
+      <section id="kssref-page-note-chapter-objectives" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink" href="#kssref-page-note-bringhome">
+        <a class="kss-title__permalink" href="#kssref-page-note-chapter-objectives">
           <span class="kss-title__ref">
-              2.7.1
+              2.10.1
             <span class="kss-title__permalink-hash">
-                #page.note.bringhome
+                #page.note.chapter-objectives
             </span>
           </span>
-          Bring It Home note
+          Chapter Objectives
         </a>
       </h3>
 
 
       <div class="kss-description">
-        <p>Contains a title &quot;Bring It Home&quot; and a body containing a title and the contents of the note.</p>
+        <p>This is a Note that appears in the Introduction page of every chapter.</p>
 
       </div>
     </div>
@@ -823,29 +1492,37 @@ content in a book with a border and a separate background color.</p>
   <div data-type="page">
 
     <!-- Markup starts here -->
-    <div data-type="note" class="bringhome">
-      <div data-type="title">Title</div>
-
-      <p>Body of the note</p>
-    </div>
+<div data-type="note" class="chapter-objectives">
+  <div data-type="title">Chapter Objectives</div>
+  <p>By the end of this chapter, the student should be able to:</p>
+  <ul>
+    <li>Recognize and differentiate between key terms.</li>
+    <li>Apply various types of sampling methods to data collection.</li>
+    <li>Create and interpret frequency tables.</li>
+  </ul>
+</div>
 
   </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
   <div data-type="page">
 
     <!-- Markup starts here -->
-    <div data-type="note" class="bringhome"><h3 class="os-title"><span class="os-title-label">Bring It Home</span></h3><div class="os-note-body">
-      <div data-type="title">Title</div>
-
-      <p>Body of the note</p>
-    </div></div>
+<div data-type="note" class="chapter-objectives">
+  <div data-type="title">Chapter Objectives</div>
+  <p>By the end of this chapter, the student should be able to:</p>
+  <ul>
+    <li>Recognize and differentiate between key terms.</li>
+    <li>Apply various types of sampling methods to data collection.</li>
+    <li>Create and interpret frequency tables.</li>
+  </ul>
+</div>
 
   </div>
 </div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="3145f746-bb74-48e1-ab28-ad54c580e383@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter </h2></div></div></body></html>
+</body></html>
 </section>
 
         </div>
@@ -857,52 +1534,60 @@ content in a book with a border and a separate background color.</p>
   &lt;div data-type=&quot;page&quot;&gt;
 
     &lt;!-- Markup starts here --&gt;
-    &lt;div data-type=&quot;note&quot; class=&quot;bringhome&quot;&gt;
-      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
-
-      &lt;p&gt;Body of the note&lt;/p&gt;
-    &lt;/div&gt;
+&lt;div data-type=&quot;note&quot; class=&quot;chapter-objectives&quot;&gt;
+  &lt;div data-type=&quot;title&quot;&gt;Chapter Objectives&lt;/div&gt;
+  &lt;p&gt;By the end of this chapter, the student should be able to:&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Recognize and differentiate between key terms.&lt;/li&gt;
+    &lt;li&gt;Apply various types of sampling methods to data collection.&lt;/li&gt;
+    &lt;li&gt;Create and interpret frequency tables.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
 
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
   &lt;div data-type=&quot;page&quot;&gt;
 
     &lt;!-- Markup starts here --&gt;
-    &lt;div data-type=&quot;note&quot; class=&quot;bringhome&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Bring It Home&lt;/span&gt;&lt;/h3&gt;&lt;div class=&quot;os-note-body&quot;&gt;
-      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
-
-      &lt;p&gt;Body of the note&lt;/p&gt;
-    &lt;/div&gt;&lt;/div&gt;
+&lt;div data-type=&quot;note&quot; class=&quot;chapter-objectives&quot;&gt;
+  &lt;div data-type=&quot;title&quot;&gt;Chapter Objectives&lt;/div&gt;
+  &lt;p&gt;By the end of this chapter, the student should be able to:&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Recognize and differentiate between key terms.&lt;/li&gt;
+    &lt;li&gt;Apply various types of sampling methods to data collection.&lt;/li&gt;
+    &lt;li&gt;Create and interpret frequency tables.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
 
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;3145f746-bb74-48e1-ab28-ad54c580e383@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter &lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>
 
       </section>
-      <section id="kssref-page-note-clearup" class="kss-section kss-section--depth-3">
+      <section id="kssref-page-note-collab" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink" href="#kssref-page-note-clearup">
+        <a class="kss-title__permalink" href="#kssref-page-note-collab">
           <span class="kss-title__ref">
-              2.7.2
+              2.10.2
             <span class="kss-title__permalink-hash">
-                #page.note.clearup
+                #page.note.collab
             </span>
           </span>
-          Clear It Up note
+          Collaborative Excerise note
         </a>
       </h3>
 
 
       <div class="kss-description">
-        <p>Contains a title &quot;Clear It Up&quot; and a body containing a title and the contents of the note.</p>
+        <p>Contains a title &quot;Collaborative Excerise&quot; and the content of the note.</p>
 
       </div>
     </div>
@@ -917,29 +1602,37 @@ content in a book with a border and a separate background color.</p>
   <div data-type="page">
 
     <!-- Markup starts here -->
-    <div data-type="note" class="clearup">
-      <div data-type="title">Title</div>
-
-      <p>Body of the note</p>
-    </div>
+<div data-type="note" class="collab">
+  <div data-type="title">Collaborative Excerise</div>
+  <p>By the end of this chapter, the student should be able to:</p>
+  <ul>
+    <li>Recognize and differentiate between key terms.</li>
+    <li>Apply various types of sampling methods to data collection.</li>
+    <li>Create and interpret frequency tables.</li>
+  </ul>
+</div>
 
   </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
   <div data-type="page">
 
     <!-- Markup starts here -->
-    <div data-type="note" class="clearup"><h3 class="os-title"><span class="os-title-label">Clear It Up</span></h3><div class="os-note-body">
-      <div data-type="title">Title</div>
-
-      <p>Body of the note</p>
-    </div></div>
+<div data-type="note" class="collab"><h3 class="os-title"><span class="os-title-label">Collaborative Excerise</span></h3>
+  <div data-type="title">Collaborative Excerise</div>
+  <p>By the end of this chapter, the student should be able to:</p>
+  <ul>
+    <li>Recognize and differentiate between key terms.</li>
+    <li>Apply various types of sampling methods to data collection.</li>
+    <li>Create and interpret frequency tables.</li>
+  </ul>
+</div>
 
   </div>
 </div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="0e7cadb4-34cc-47fe-a397-e18ce45d93c3@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter </h2></div></div></body></html>
+</body></html>
 </section>
 
         </div>
@@ -951,220 +1644,64 @@ content in a book with a border and a separate background color.</p>
   &lt;div data-type=&quot;page&quot;&gt;
 
     &lt;!-- Markup starts here --&gt;
-    &lt;div data-type=&quot;note&quot; class=&quot;clearup&quot;&gt;
-      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
-
-      &lt;p&gt;Body of the note&lt;/p&gt;
-    &lt;/div&gt;
+&lt;div data-type=&quot;note&quot; class=&quot;collab&quot;&gt;
+  &lt;div data-type=&quot;title&quot;&gt;Collaborative Excerise&lt;/div&gt;
+  &lt;p&gt;By the end of this chapter, the student should be able to:&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Recognize and differentiate between key terms.&lt;/li&gt;
+    &lt;li&gt;Apply various types of sampling methods to data collection.&lt;/li&gt;
+    &lt;li&gt;Create and interpret frequency tables.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
 
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
   &lt;div data-type=&quot;page&quot;&gt;
 
     &lt;!-- Markup starts here --&gt;
-    &lt;div data-type=&quot;note&quot; class=&quot;clearup&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Clear It Up&lt;/span&gt;&lt;/h3&gt;&lt;div class=&quot;os-note-body&quot;&gt;
-      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
-
-      &lt;p&gt;Body of the note&lt;/p&gt;
-    &lt;/div&gt;&lt;/div&gt;
+&lt;div data-type=&quot;note&quot; class=&quot;collab&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Collaborative Excerise&lt;/span&gt;&lt;/h3&gt;
+  &lt;div data-type=&quot;title&quot;&gt;Collaborative Excerise&lt;/div&gt;
+  &lt;p&gt;By the end of this chapter, the student should be able to:&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Recognize and differentiate between key terms.&lt;/li&gt;
+    &lt;li&gt;Apply various types of sampling methods to data collection.&lt;/li&gt;
+    &lt;li&gt;Create and interpret frequency tables.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
 
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;0e7cadb4-34cc-47fe-a397-e18ce45d93c3@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter &lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>
 
       </section>
-      <section id="kssref-page-note-linkup" class="kss-section kss-section--depth-3">
+      <section id="kssref-page-note-try" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink" href="#kssref-page-note-linkup">
+        <a class="kss-title__permalink" href="#kssref-page-note-try">
           <span class="kss-title__ref">
-              2.7.3
+              2.10.3
             <span class="kss-title__permalink-hash">
-                #page.note.linkup
+                #page.note.try
             </span>
           </span>
-          Link It Up note
+          Try It Feature
         </a>
       </h3>
 
 
       <div class="kss-description">
-        <p>Contains a title &quot;Link It Up&quot;</p>
+        <p>This is a note that is numbered based on the example before it</p>
 
       </div>
     </div>
 
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
-<div data-type="chapter">
-  <div data-type="page">
-
-    <!-- Markup starts here -->
-    <div data-type="note" class="linkup">
-      <div data-type="title">Title</div>
-
-      <p>Body of the note</p>
-    </div>
-
-  </div>
-</div>
-</section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
-<html><body><div data-type="chapter">
-  <div data-type="page">
-
-    <!-- Markup starts here -->
-    <div data-type="note" class="linkup"><h3 class="os-title"><span class="os-title-label">Link It Up</span></h3>
-      <div data-type="title">Title</div>
-
-      <p>Body of the note</p>
-    </div>
-
-  </div>
-</div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="7645019c-a0fd-4c9e-98ca-935b9c1b7aaa@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter </h2></div></div></body></html>
-</section>
-
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
-&lt;div data-type=&quot;chapter&quot;&gt;
-  &lt;div data-type=&quot;page&quot;&gt;
-
-    &lt;!-- Markup starts here --&gt;
-    &lt;div data-type=&quot;note&quot; class=&quot;linkup&quot;&gt;
-      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
-
-      &lt;p&gt;Body of the note&lt;/p&gt;
-    &lt;/div&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
-&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
-  &lt;div data-type=&quot;page&quot;&gt;
-
-    &lt;!-- Markup starts here --&gt;
-    &lt;div data-type=&quot;note&quot; class=&quot;linkup&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Link It Up&lt;/span&gt;&lt;/h3&gt;
-      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
-
-      &lt;p&gt;Body of the note&lt;/p&gt;
-    &lt;/div&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;7645019c-a0fd-4c9e-98ca-935b9c1b7aaa@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter &lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
-&lt;/section&gt;
-</code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-page-note-workout" class="kss-section kss-section--depth-3">
-
-    <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink" href="#kssref-page-note-workout">
-          <span class="kss-title__ref">
-              2.7.4
-            <span class="kss-title__permalink-hash">
-                #page.note.workout
-            </span>
-          </span>
-          Work It Out note
-        </a>
-      </h3>
-
-
-      <div class="kss-description">
-        <p>Contains a title &quot;Work It Out&quot; and a body containing a title and the contents of the note.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
-        </div>
-        <div class="kss-modifier__example">
-          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
-<div data-type="chapter">
-  <div data-type="page">
-
-    <!-- Markup starts here -->
-    <div data-type="note" class="workout">
-      <div data-type="title">Title</div>
-
-      <p>Body of the note</p>
-    </div>
-
-  </div>
-</div>
-</section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
-<html><body><div data-type="chapter">
-  <div data-type="page">
-
-    <!-- Markup starts here -->
-    <div data-type="note" class="workout"><h3 class="os-title"><span class="os-title-label">Work It Out</span></h3><div class="os-note-body">
-      <div data-type="title">Title</div>
-
-      <p>Body of the note</p>
-    </div></div>
-
-  </div>
-</div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="139b3946-b135-40ea-9052-d96997e16a41@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter </h2></div></div></body></html>
-</section>
-
-        </div>
-      </div>
-
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
-&lt;div data-type=&quot;chapter&quot;&gt;
-  &lt;div data-type=&quot;page&quot;&gt;
-
-    &lt;!-- Markup starts here --&gt;
-    &lt;div data-type=&quot;note&quot; class=&quot;workout&quot;&gt;
-      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
-
-      &lt;p&gt;Body of the note&lt;/p&gt;
-    &lt;/div&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
-&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
-  &lt;div data-type=&quot;page&quot;&gt;
-
-    &lt;!-- Markup starts here --&gt;
-    &lt;div data-type=&quot;note&quot; class=&quot;workout&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Work It Out&lt;/span&gt;&lt;/h3&gt;&lt;div class=&quot;os-note-body&quot;&gt;
-      &lt;div data-type=&quot;title&quot;&gt;Title&lt;/div&gt;
-
-      &lt;p&gt;Body of the note&lt;/p&gt;
-    &lt;/div&gt;&lt;/div&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;139b3946-b135-40ea-9052-d96997e16a41@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter &lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
-&lt;/section&gt;
-</code></pre>
-      </div>
 
       </section>
       <section id="kssref-page-para" class="kss-section kss-section--depth-2">
@@ -1173,7 +1710,7 @@ content in a book with a border and a separate background color.</p>
       <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink" href="#kssref-page-para">
           <span class="kss-title__ref">
-              2.8
+              2.11
             <span class="kss-title__permalink-hash">
                 #page.para
             </span>
@@ -1236,7 +1773,7 @@ content in a book with a border and a separate background color.</p>
   </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
   <div data-type="page">
 
@@ -1266,7 +1803,7 @@ content in a book with a border and a separate background color.</p>
 
   </div>
 </div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="618fda10-b581-4460-9a50-248de8cf51b3@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter </h2></div></div><div class="os-eob os-index-container" data-type="composite-page" id="f5fe8a8b-0f8f-4835-91d4-b3a2113f210f@1"><h1 data-type="document-title"><span class="os-text">Index</span></h1><div class="group-by"><span class="group-label">Symbols</span><div class="os-index-item"><span group-by="v" class="os-term">velocity</span><a href="#auto__term1" class="os-term-section-link"><span class="os-term-section"><div></div></span></a></div></div></div></body></html>
+<div class="os-eob os-index-container" data-type="composite-page" id="autobaked-1@1"><h1 data-type="document-title"><span class="os-text">Index</span></h1><div class="group-by"><span class="group-label">Symbols</span><div class="os-index-item"><span group-by="v" class="os-term">velocity</span><a href="#auto__term1" class="os-term-section-link"><span class="os-term-section"><div></div></span></a></div></div></div></body></html>
 </section>
 
         </div>
@@ -1304,7 +1841,7 @@ content in a book with a border and a separate background color.</p>
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
   &lt;div data-type=&quot;page&quot;&gt;
 
@@ -1334,7 +1871,7 @@ content in a book with a border and a separate background color.</p>
 
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;618fda10-b581-4460-9a50-248de8cf51b3@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter &lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;os-eob os-index-container&quot; data-type=&quot;composite-page&quot; id=&quot;f5fe8a8b-0f8f-4835-91d4-b3a2113f210f@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Index&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;group-by&quot;&gt;&lt;span class=&quot;group-label&quot;&gt;Symbols&lt;/span&gt;&lt;div class=&quot;os-index-item&quot;&gt;&lt;span group-by=&quot;v&quot; class=&quot;os-term&quot;&gt;velocity&lt;/span&gt;&lt;a href=&quot;#auto__term1&quot; class=&quot;os-term-section-link&quot;&gt;&lt;span class=&quot;os-term-section&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;div class=&quot;os-eob os-index-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-1@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Index&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;group-by&quot;&gt;&lt;span class=&quot;group-label&quot;&gt;Symbols&lt;/span&gt;&lt;div class=&quot;os-index-item&quot;&gt;&lt;span group-by=&quot;v&quot; class=&quot;os-term&quot;&gt;velocity&lt;/span&gt;&lt;a href=&quot;#auto__term1&quot; class=&quot;os-term-section-link&quot;&gt;&lt;span class=&quot;os-term-section&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>
@@ -1346,7 +1883,7 @@ content in a book with a border and a separate background color.</p>
       <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink" href="#kssref-page-section">
           <span class="kss-title__ref">
-              2.9
+              2.12
             <span class="kss-title__permalink-hash">
                 #page.section
             </span>
@@ -1383,7 +1920,7 @@ content in a book with a border and a separate background color.</p>
   </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
   <div data-type="page">
 
@@ -1398,7 +1935,7 @@ content in a book with a border and a separate background color.</p>
 
   </div>
 </div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="c9c4a7da-79ef-4343-bb23-153860ac0b52@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter </h2></div></div></body></html>
+</body></html>
 </section>
 
         </div>
@@ -1421,7 +1958,7 @@ content in a book with a border and a separate background color.</p>
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
   &lt;div data-type=&quot;page&quot;&gt;
 
@@ -1436,7 +1973,7 @@ content in a book with a border and a separate background color.</p>
 
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;c9c4a7da-79ef-4343-bb23-153860ac0b52@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter &lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>
@@ -1448,7 +1985,7 @@ content in a book with a border and a separate background color.</p>
       <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink" href="#kssref-page-table">
           <span class="kss-title__ref">
-              2.10
+              2.13
             <span class="kss-title__permalink-hash">
                 #page.table
             </span>
@@ -1463,7 +2000,7 @@ content in a book with a border and a separate background color.</p>
 <p>If the table contains a title, there is an additional element inside <code>&lt;caption&gt;</code></p>
 <h1 id="todo">TODO</h1>
 <ul>
-<li>Decide on what the cooked markup for a table with a title and caption should look like.<ul>
+<li>Decide on what the baked markup for a table with a title and caption should look like.<ul>
 <li>Proposals have mentioned wrapping the <code>&lt;table&gt;</code> element with a <code>.os-table-container</code> element.</li>
 <li>Maybe what is in the Raw HTML is <em>good enough</em>?</li>
 </ul>
@@ -1507,46 +2044,85 @@ content in a book with a border and a separate background color.</p>
       </tbody>
     </table>
 
+    <!-- An unnumbered table with a title and caption -->
+    <table class="unnumbered">
+      <caption>
+        <span data-type="title">Economic Freedoms, 2015</span>
+        An unnumbered table with a title and caption
+      </caption>
+      <tbody>
+        <tr>
+          <td>A table cell</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- An unnumbered table -->
+    <table class="unnumbered">
+      <tbody>
+        <tr>
+          <td>An unnumbered table cell</td>
+        </tr>
+      </tbody>
+    </table>
+
   </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
   <div data-type="page">
 
     <!-- Markup starts here -->
-    <div class="os-table">
-
-
-    <table>
-      
+    <div class="os-table"><table>
+      <caption>and a caption</caption>
       <tbody>
         <tr>
           <td>A table cell</td>
         </tr>
       </tbody>
-    </table><div class="os-caption-container"><span class="os-title-label">Table </span><span class="os-number">1.1</span><span class="os-caption">and a caption</span></div></div>
+    </table><div class="os-caption-container"><span class="os-title-label">Table </span><span class="os-number">1.1</span></div></div>
 
 
     <!-- Example table with a title and a caption -->
-    <div class="os-table">
-
-  <table>
-      
+    <div class="os-table"><table>
+      <caption>
+        
+        (Source: The Heritage Foundation, 2015 Index of Economic
+         Freedom, Country Rankings, http://www.heritage.org/index/ranking)
+      </caption>
       <tbody>
         <tr>
           <td>A table cell</td>
         </tr>
       </tbody>
-    </table><div class="os-caption-container"><span class="os-title-label">Table </span><span class="os-number">1.2</span><span class="os-caption">
-        
-        (Source: The Heritage Foundation, 2015 Index of Economic
-         Freedom, Country Rankings, http://www.heritage.org/index/ranking)
-      </span><span data-type="title" class="os-title">Economic Freedoms, 2015</span></div></div>
+    </table><div class="os-caption-container"><span class="os-title-label">Table </span><span class="os-number">1.2</span><span data-type="title" class="os-title">Economic Freedoms, 2015</span></div></div>
+
+    <!-- An unnumbered table with a title and caption -->
+    <table class="unnumbered">
+      <caption>
+        <span data-type="title">Economic Freedoms, 2015</span>
+        An unnumbered table with a title and caption
+      </caption>
+      <tbody>
+        <tr>
+          <td>A table cell</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- An unnumbered table -->
+    <table class="unnumbered">
+      <tbody>
+        <tr>
+          <td>An unnumbered table cell</td>
+        </tr>
+      </tbody>
+    </table>
 
   </div>
 </div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="021344e4-add6-4a37-a03d-948593dfc84f@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter </h2></div></div></body></html>
+</body></html>
 </section>
 
         </div>
@@ -1582,46 +2158,85 @@ content in a book with a border and a separate background color.</p>
       &lt;/tbody&gt;
     &lt;/table&gt;
 
+    &lt;!-- An unnumbered table with a title and caption --&gt;
+    &lt;table class=&quot;unnumbered&quot;&gt;
+      &lt;caption&gt;
+        &lt;span data-type=&quot;title&quot;&gt;Economic Freedoms, 2015&lt;/span&gt;
+        An unnumbered table with a title and caption
+      &lt;/caption&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;A table cell&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;!-- An unnumbered table --&gt;
+    &lt;table class=&quot;unnumbered&quot;&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;An unnumbered table cell&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
   &lt;div data-type=&quot;page&quot;&gt;
 
     &lt;!-- Markup starts here --&gt;
-    &lt;div class=&quot;os-table&quot;&gt;
-
-
-    &lt;table&gt;
-      
+    &lt;div class=&quot;os-table&quot;&gt;&lt;table&gt;
+      &lt;caption&gt;and a caption&lt;/caption&gt;
       &lt;tbody&gt;
         &lt;tr&gt;
           &lt;td&gt;A table cell&lt;/td&gt;
         &lt;/tr&gt;
       &lt;/tbody&gt;
-    &lt;/table&gt;&lt;div class=&quot;os-caption-container&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Table &lt;/span&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-caption&quot;&gt;and a caption&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;/table&gt;&lt;div class=&quot;os-caption-container&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Table &lt;/span&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
 
 
     &lt;!-- Example table with a title and a caption --&gt;
-    &lt;div class=&quot;os-table&quot;&gt;
-
-  &lt;table&gt;
-      
+    &lt;div class=&quot;os-table&quot;&gt;&lt;table&gt;
+      &lt;caption&gt;
+        
+        (Source: The Heritage Foundation, 2015 Index of Economic
+         Freedom, Country Rankings, http://www.heritage.org/index/ranking)
+      &lt;/caption&gt;
       &lt;tbody&gt;
         &lt;tr&gt;
           &lt;td&gt;A table cell&lt;/td&gt;
         &lt;/tr&gt;
       &lt;/tbody&gt;
-    &lt;/table&gt;&lt;div class=&quot;os-caption-container&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Table &lt;/span&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-caption&quot;&gt;
-        
-        (Source: The Heritage Foundation, 2015 Index of Economic
-         Freedom, Country Rankings, http://www.heritage.org/index/ranking)
-      &lt;/span&gt;&lt;span data-type=&quot;title&quot; class=&quot;os-title&quot;&gt;Economic Freedoms, 2015&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;/table&gt;&lt;div class=&quot;os-caption-container&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Table &lt;/span&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span data-type=&quot;title&quot; class=&quot;os-title&quot;&gt;Economic Freedoms, 2015&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+
+    &lt;!-- An unnumbered table with a title and caption --&gt;
+    &lt;table class=&quot;unnumbered&quot;&gt;
+      &lt;caption&gt;
+        &lt;span data-type=&quot;title&quot;&gt;Economic Freedoms, 2015&lt;/span&gt;
+        An unnumbered table with a title and caption
+      &lt;/caption&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;A table cell&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;!-- An unnumbered table --&gt;
+    &lt;table class=&quot;unnumbered&quot;&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;An unnumbered table cell&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
 
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;021344e4-add6-4a37-a03d-948593dfc84f@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter &lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>
@@ -1633,7 +2248,7 @@ content in a book with a border and a separate background color.</p>
       <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink" href="#kssref-page-term">
           <span class="kss-title__ref">
-              2.11
+              2.14
             <span class="kss-title__permalink-hash">
                 #page.term
             </span>
@@ -1667,7 +2282,7 @@ content in a book with a border and a separate background color.</p>
   </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
   <div data-type="page">
 
@@ -1677,7 +2292,7 @@ content in a book with a border and a separate background color.</p>
 
   </div>
 </div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="e7fe7949-91ef-4f57-9297-9750ed9831bd@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter </h2></div></div><div class="os-eob os-index-container" data-type="composite-page" id="17d76038-f726-463b-bb88-1e81d4bbad9e@1"><h1 data-type="document-title"><span class="os-text">Index</span></h1><div class="group-by"><span class="group-label">Symbols</span><div class="os-index-item"><span group-by="v" class="os-term">velocity</span><a href="#auto__term1" class="os-term-section-link"><span class="os-term-section"><div></div></span></a></div></div></div></body></html>
+<div class="os-eob os-index-container" data-type="composite-page" id="autobaked-1@1"><h1 data-type="document-title"><span class="os-text">Index</span></h1><div class="group-by"><span class="group-label">Symbols</span><div class="os-index-item"><span group-by="v" class="os-term">velocity</span><a href="#auto__term1" class="os-term-section-link"><span class="os-term-section"><div></div></span></a></div></div></div></body></html>
 </section>
 
         </div>
@@ -1695,7 +2310,7 @@ content in a book with a border and a separate background color.</p>
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
   &lt;div data-type=&quot;page&quot;&gt;
 
@@ -1705,7 +2320,7 @@ content in a book with a border and a separate background color.</p>
 
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;e7fe7949-91ef-4f57-9297-9750ed9831bd@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter &lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;os-eob os-index-container&quot; data-type=&quot;composite-page&quot; id=&quot;17d76038-f726-463b-bb88-1e81d4bbad9e@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Index&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;group-by&quot;&gt;&lt;span class=&quot;group-label&quot;&gt;Symbols&lt;/span&gt;&lt;div class=&quot;os-index-item&quot;&gt;&lt;span group-by=&quot;v&quot; class=&quot;os-term&quot;&gt;velocity&lt;/span&gt;&lt;a href=&quot;#auto__term1&quot; class=&quot;os-term-section-link&quot;&gt;&lt;span class=&quot;os-term-section&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;div class=&quot;os-eob os-index-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-1@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Index&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;group-by&quot;&gt;&lt;span class=&quot;group-label&quot;&gt;Symbols&lt;/span&gt;&lt;div class=&quot;os-index-item&quot;&gt;&lt;span group-by=&quot;v&quot; class=&quot;os-term&quot;&gt;velocity&lt;/span&gt;&lt;a href=&quot;#auto__term1&quot; class=&quot;os-term-section-link&quot;&gt;&lt;span class=&quot;os-term-section&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>
@@ -1717,7 +2332,7 @@ content in a book with a border and a separate background color.</p>
       <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink" href="#kssref-page-unnumbered">
           <span class="kss-title__ref">
-              2.12
+              2.15
             <span class="kss-title__permalink-hash">
                 #page.unnumbered
             </span>
@@ -1769,13 +2384,13 @@ this may apply to a note, a table, an equation, a figure.</p>
   </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
   <div data-type="page">
 
     <!-- Markup starts here -->
     <table class="unnumbered" data-label="">
-      
+      <caption><span data-type="title">Section Key Terms</span></caption>
       <tbody>
         <tr>
           <td>Some</td>
@@ -1789,12 +2404,12 @@ this may apply to a note, a table, an equation, a figure.</p>
       <div data-type="media">
         <img src="https://cnx.org/resources/d47864c2ac77d80b1f2ff4c4c7f1b2059669e3e9/Figure_01_00_01.jpg" alt="The spiral galaxy Andromeda">
       </div>
-      
+      <figcaption>The Andromeda Galaxy is one of many spiral galaxies...</figcaption>
     </figure>
 
   </div>
 </div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="1d77b0c4-42bb-441a-8bce-70570513f943@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter </h2></div></div></body></html>
+</body></html>
 </section>
 
         </div>
@@ -1830,13 +2445,13 @@ this may apply to a note, a table, an equation, a figure.</p>
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
   &lt;div data-type=&quot;page&quot;&gt;
 
     &lt;!-- Markup starts here --&gt;
     &lt;table class=&quot;unnumbered&quot; data-label=&quot;&quot;&gt;
-      
+      &lt;caption&gt;&lt;span data-type=&quot;title&quot;&gt;Section Key Terms&lt;/span&gt;&lt;/caption&gt;
       &lt;tbody&gt;
         &lt;tr&gt;
           &lt;td&gt;Some&lt;/td&gt;
@@ -1850,12 +2465,12 @@ this may apply to a note, a table, an equation, a figure.</p>
       &lt;div data-type=&quot;media&quot;&gt;
         &lt;img src=&quot;https://cnx.org/resources/d47864c2ac77d80b1f2ff4c4c7f1b2059669e3e9/Figure_01_00_01.jpg&quot; alt=&quot;The spiral galaxy Andromeda&quot;&gt;
       &lt;/div&gt;
-      
+      &lt;figcaption&gt;The Andromeda Galaxy is one of many spiral galaxies...&lt;/figcaption&gt;
     &lt;/figure&gt;
 
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;1d77b0c4-42bb-441a-8bce-70570513f943@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter &lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>

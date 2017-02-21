@@ -21,10 +21,10 @@
   .-toggle-hidden { display: none; }
   .kss-markup .-kss-autogen-guide-markup::before { font-size: 150%; font-weight: bold; }
   .kss-markup .-kss-autogen-guide-markup[data-kss-format="html-raw"]::before { content: 'Raw HTML:'; }
-  .kss-markup .-kss-autogen-guide-markup[data-kss-format="html-cooked"]::before { content: 'Cooked HTML:'; }
+  .kss-markup .-kss-autogen-guide-markup[data-kss-format="html-baked"]::before { content: 'Baked HTML:'; }
 
-  /* Only show the rendered "cooked" HTML */
-  .kss-modifier__example > .-kss-autogen-guide-markup:not([data-kss-format="html-cooked"]) { display: none; }
+  /* Only show the rendered "baked" HTML */
+  .kss-modifier__example > .-kss-autogen-guide-markup:not([data-kss-format="html-baked"]) { display: none; }
   </style>
 </head>
 <body id="kss-node">
@@ -35,7 +35,7 @@
   </header>
 
   <select id="choose-which-format-to-look-at">
-    <option value="html-cooked">Show Cooked HTML</option>
+    <option value="html-baked">Show Baked HTML</option>
     <option value="html-raw">Show Raw HTML</option>
     <option value="-all">Show All Formats</option>
     <option value="-none">Show No Formats</option>
@@ -201,19 +201,19 @@
   </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
-  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-divider"> | </span><span class="os-text">Kinematics</span></h1>
+  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-divider"> </span><span class="os-text">Kinematics</span></h1>
   <div data-type="page" class="introduction">
     <h2 data-type="document-title"><span class="os-text">Introduction</span></h2>
     ...
   </div>
   <div data-type="page">
-    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> | </span><span class="os-text">Kinematics in One Dimension</span></h2>
+    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> </span><span class="os-text">Kinematics in One Dimension</span></h2>
     ...
   </div>
 </div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="8f72db85-4756-4771-8770-ead8023394ce@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter 1</h2></div></div></body></html>
+<div class="os-eob os-solutions-container" data-type="composite-page" id="autobaked-1@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter 1</h2></div></div></body></html>
 </section>
 
         </div>
@@ -233,19 +233,19 @@
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
-  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Kinematics&lt;/span&gt;&lt;/h1&gt;
+  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Kinematics&lt;/span&gt;&lt;/h1&gt;
   &lt;div data-type=&quot;page&quot; class=&quot;introduction&quot;&gt;
     &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Introduction&lt;/span&gt;&lt;/h2&gt;
     ...
   &lt;/div&gt;
   &lt;div data-type=&quot;page&quot;&gt;
-    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Kinematics in One Dimension&lt;/span&gt;&lt;/h2&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Kinematics in One Dimension&lt;/span&gt;&lt;/h2&gt;
     ...
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;8f72db85-4756-4771-8770-ead8023394ce@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter 1&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-1@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter 1&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>
@@ -324,11 +324,11 @@ and have answers collated at the end of the chapter.</p>
     <!-- Markup starts here -->
     <section class="critical-thinking">
       <h3 data-type="title">Critical Thinking</h3>
-      <div data-type="exercise" class="exercise">
+      <div data-type="exercise" id="ex1">
         <div data-type="problem">
           <p>What is 2+2?</p>
         </div>
-        <div data-type="solution" class="solution">4</div>
+        <div data-type="solution">4</div>
       </div>
     </section>
     <!-- Markup ends here -->
@@ -342,11 +342,11 @@ and have answers collated at the end of the chapter.</p>
     <!-- Markup starts here -->
     <section class="critical-thinking">
       <h3 data-type="title">Critical Thinking</h3>
-      <div data-type="exercise" class="exercise">
+      <div data-type="exercise" id="ex2">
         <div data-type="problem">
           <p>What is 3+3?</p>
         </div>
-        <div data-type="solution" class="solution">6</div>
+        <div data-type="solution">6</div>
       </div>
     </section>
     <!-- Markup ends here -->
@@ -354,11 +354,11 @@ and have answers collated at the end of the chapter.</p>
   </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
-  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-divider"> | </span><span class="os-text">Chapter Title</span></h1>
+  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-divider"> </span><span class="os-text">Chapter Title</span></h1>
   <div data-type="page">
-    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> | </span><span class="os-text">Page Title</span></h2>
+    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> </span><span class="os-text">Page Title</span></h2>
     Normal book content goes here
 
     <!-- Markup starts here -->
@@ -368,7 +368,7 @@ and have answers collated at the end of the chapter.</p>
   </div>
 
   <div data-type="page">
-    <h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-divider"> | </span><span class="os-text">Another Page Title</span></h2>
+    <h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-divider"> </span><span class="os-text">Another Page Title</span></h2>
     Normal book content goes here
 
     <!-- Markup starts here -->
@@ -376,24 +376,24 @@ and have answers collated at the end of the chapter.</p>
     <!-- Markup ends here -->
 
   </div>
-<div class="os-eoc os-critical-thinking-container" data-type="composite-page" id="471a0fb5-4fd1-42fb-b5aa-fbddb9b6d470@1"><h1 data-type="document-title"><span class="os-text">Critical Thinking Questions</span></h1><section class="critical-thinking">
+<div class="os-eoc os-critical-thinking-container" data-type="composite-page" id="autobaked-1@1"><h1 data-type="document-title"><span class="os-text">Critical Thinking Questions</span></h1><section class="critical-thinking">
       
-      <div data-type="exercise" class="exercise os-hasSolution ">
-        <div data-type="problem"><a class="os-number" id="problem-1" href="#solution-1">1</a>
+      <div data-type="exercise" id="ex1" class=" os-hasSolution ">
+        <div data-type="problem"><a class="os-number" href="#ex1-solution">1</a><span class="os-divider">.</span>
           <p>What is 2+2?</p>
         </div>
-        <div data-type="solution" class="solution"><a id="solution-1" href="#problem-1"><span class="os-number">1</span>4</a>4</div>
+        <div data-type="solution" id="ex1-solution"><a class="os-number" href="#ex1">1</a><span class="os-divider">.</span>4</div>
       </div>
     </section><section class="critical-thinking">
       
-      <div data-type="exercise" class="exercise os-hasSolution ">
-        <div data-type="problem"><a class="os-number" id="problem-2" href="#solution-2">2</a>
+      <div data-type="exercise" id="ex2" class=" os-hasSolution ">
+        <div data-type="problem"><a class="os-number" href="#ex2-solution">2</a><span class="os-divider">.</span>
           <p>What is 3+3?</p>
         </div>
-        <div data-type="solution" class="solution"><a id="solution-2" href="#problem-2"><span class="os-number">2</span>6</a>6</div>
+        <div data-type="solution" id="ex2-solution"><a class="os-number" href="#ex2">2</a><span class="os-divider">.</span>6</div>
       </div>
     </section></div></div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="4ec10ccd-191c-4105-9975-46e399ee6ae8@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter 1</h2></div></div></body></html>
+<div class="os-eob os-solutions-container" data-type="composite-page" id="autobaked-2@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter 1</h2></div></div></body></html>
 </section>
 
         </div>
@@ -410,11 +410,11 @@ and have answers collated at the end of the chapter.</p>
     &lt;!-- Markup starts here --&gt;
     &lt;section class=&quot;critical-thinking&quot;&gt;
       &lt;h3 data-type=&quot;title&quot;&gt;Critical Thinking&lt;/h3&gt;
-      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise&quot;&gt;
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex1&quot;&gt;
         &lt;div data-type=&quot;problem&quot;&gt;
           &lt;p&gt;What is 2+2?&lt;/p&gt;
         &lt;/div&gt;
-        &lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;4&lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot;&gt;4&lt;/div&gt;
       &lt;/div&gt;
     &lt;/section&gt;
     &lt;!-- Markup ends here --&gt;
@@ -428,11 +428,11 @@ and have answers collated at the end of the chapter.</p>
     &lt;!-- Markup starts here --&gt;
     &lt;section class=&quot;critical-thinking&quot;&gt;
       &lt;h3 data-type=&quot;title&quot;&gt;Critical Thinking&lt;/h3&gt;
-      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise&quot;&gt;
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex2&quot;&gt;
         &lt;div data-type=&quot;problem&quot;&gt;
           &lt;p&gt;What is 3+3?&lt;/p&gt;
         &lt;/div&gt;
-        &lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;6&lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot;&gt;6&lt;/div&gt;
       &lt;/div&gt;
     &lt;/section&gt;
     &lt;!-- Markup ends here --&gt;
@@ -440,11 +440,11 @@ and have answers collated at the end of the chapter.</p>
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
-  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
+  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
   &lt;div data-type=&quot;page&quot;&gt;
-    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
     Normal book content goes here
 
     &lt;!-- Markup starts here --&gt;
@@ -454,7 +454,7 @@ and have answers collated at the end of the chapter.</p>
   &lt;/div&gt;
 
   &lt;div data-type=&quot;page&quot;&gt;
-    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h2&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h2&gt;
     Normal book content goes here
 
     &lt;!-- Markup starts here --&gt;
@@ -462,24 +462,24 @@ and have answers collated at the end of the chapter.</p>
     &lt;!-- Markup ends here --&gt;
 
   &lt;/div&gt;
-&lt;div class=&quot;os-eoc os-critical-thinking-container&quot; data-type=&quot;composite-page&quot; id=&quot;471a0fb5-4fd1-42fb-b5aa-fbddb9b6d470@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Critical Thinking Questions&lt;/span&gt;&lt;/h1&gt;&lt;section class=&quot;critical-thinking&quot;&gt;
+&lt;div class=&quot;os-eoc os-critical-thinking-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-1@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Critical Thinking Questions&lt;/span&gt;&lt;/h1&gt;&lt;section class=&quot;critical-thinking&quot;&gt;
       
-      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise os-hasSolution &quot;&gt;
-        &lt;div data-type=&quot;problem&quot;&gt;&lt;a class=&quot;os-number&quot; id=&quot;problem-1&quot; href=&quot;#solution-1&quot;&gt;1&lt;/a&gt;
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex1&quot; class=&quot; os-hasSolution &quot;&gt;
+        &lt;div data-type=&quot;problem&quot;&gt;&lt;a class=&quot;os-number&quot; href=&quot;#ex1-solution&quot;&gt;1&lt;/a&gt;&lt;span class=&quot;os-divider&quot;&gt;.&lt;/span&gt;
           &lt;p&gt;What is 2+2?&lt;/p&gt;
         &lt;/div&gt;
-        &lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;&lt;a id=&quot;solution-1&quot; href=&quot;#problem-1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;4&lt;/a&gt;4&lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot; id=&quot;ex1-solution&quot;&gt;&lt;a class=&quot;os-number&quot; href=&quot;#ex1&quot;&gt;1&lt;/a&gt;&lt;span class=&quot;os-divider&quot;&gt;.&lt;/span&gt;4&lt;/div&gt;
       &lt;/div&gt;
     &lt;/section&gt;&lt;section class=&quot;critical-thinking&quot;&gt;
       
-      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise os-hasSolution &quot;&gt;
-        &lt;div data-type=&quot;problem&quot;&gt;&lt;a class=&quot;os-number&quot; id=&quot;problem-2&quot; href=&quot;#solution-2&quot;&gt;2&lt;/a&gt;
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex2&quot; class=&quot; os-hasSolution &quot;&gt;
+        &lt;div data-type=&quot;problem&quot;&gt;&lt;a class=&quot;os-number&quot; href=&quot;#ex2-solution&quot;&gt;2&lt;/a&gt;&lt;span class=&quot;os-divider&quot;&gt;.&lt;/span&gt;
           &lt;p&gt;What is 3+3?&lt;/p&gt;
         &lt;/div&gt;
-        &lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;&lt;a id=&quot;solution-2&quot; href=&quot;#problem-2&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;2&lt;/span&gt;6&lt;/a&gt;6&lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot; id=&quot;ex2-solution&quot;&gt;&lt;a class=&quot;os-number&quot; href=&quot;#ex2&quot;&gt;2&lt;/a&gt;&lt;span class=&quot;os-divider&quot;&gt;.&lt;/span&gt;6&lt;/div&gt;
       &lt;/div&gt;
     &lt;/section&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;4ec10ccd-191c-4105-9975-46e399ee6ae8@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter 1&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-2@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter 1&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>
@@ -523,11 +523,11 @@ and have answers collated at the end of the chapter.</p>
     <!-- Markup starts here -->
     <section class="problems">
       <h3 data-type="title">Problems</h3>
-      <div data-type="exercise" class="exercise">
+      <div data-type="exercise" id="ex1">
         <div data-type="problem">
           <p>What is 2+2?</p>
         </div>
-        <div data-type="solution" class="solution">4</div>
+        <div data-type="solution">4</div>
       </div>
     </section>
     <!-- Markup ends here -->
@@ -541,11 +541,11 @@ and have answers collated at the end of the chapter.</p>
     <!-- Markup starts here -->
     <section class="problems">
       <h3 data-type="title">Problems</h3>
-      <div data-type="exercise" class="exercise">
+      <div data-type="exercise" id="ex2">
         <div data-type="problem">
           <p>What is 3+3?</p>
         </div>
-        <div data-type="solution" class="solution">6</div>
+        <div data-type="solution">6</div>
       </div>
     </section>
     <!-- Markup ends here -->
@@ -553,11 +553,11 @@ and have answers collated at the end of the chapter.</p>
   </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
-  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-divider"> | </span><span class="os-text">Chapter Title</span></h1>
+  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-divider"> </span><span class="os-text">Chapter Title</span></h1>
   <div data-type="page">
-    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> | </span><span class="os-text">Page Title</span></h2>
+    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> </span><span class="os-text">Page Title</span></h2>
     Normal book content goes here
 
     <!-- Markup starts here -->
@@ -567,7 +567,7 @@ and have answers collated at the end of the chapter.</p>
   </div>
 
   <div data-type="page">
-    <h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-divider"> | </span><span class="os-text">Another Page Title</span></h2>
+    <h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-divider"> </span><span class="os-text">Another Page Title</span></h2>
     Normal book content goes here
 
     <!-- Markup starts here -->
@@ -575,24 +575,24 @@ and have answers collated at the end of the chapter.</p>
     <!-- Markup ends here -->
 
   </div>
-<div class="os-eoc os-problems-container" data-type="composite-page" id="81b4d171-c835-4538-abe3-6e6304f73d6e@1"><h1 data-type="document-title"><span class="os-text">Problems</span></h1><section class="problems">
+<div class="os-eoc os-problems-container" data-type="composite-page" id="autobaked-1@1"><h1 data-type="document-title"><span class="os-text">Problems</span></h1><section class="problems">
       
-      <div data-type="exercise" class="exercise os-hasSolution ">
-        <div data-type="problem"><a class="os-number" id="problem-1" href="#solution-1">1</a>
+      <div data-type="exercise" id="ex1" class=" os-hasSolution ">
+        <div data-type="problem"><a class="os-number" href="#ex1-solution">1</a><span class="os-divider">.</span>
           <p>What is 2+2?</p>
         </div>
         
       </div>
     </section><section class="problems">
       
-      <div data-type="exercise" class="exercise os-hasSolution ">
-        <div data-type="problem"><a class="os-number" id="problem-2" href="#solution-2">2</a>
+      <div data-type="exercise" id="ex2" class=" os-hasSolution ">
+        <div data-type="problem"><a class="os-number" href="#ex2-solution">2</a><span class="os-divider">.</span>
           <p>What is 3+3?</p>
         </div>
         
       </div>
     </section></div></div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="19961928-8692-4f60-bdc9-a5478076ea22@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter 1</h2><div data-type="solution" class="solution"><a id="solution-1" href="#problem-1"><span class="os-number">1</span>4</a>4</div><div data-type="solution" class="solution"><a id="solution-2" href="#problem-2"><span class="os-number">2</span>6</a>6</div></div></div></body></html>
+<div class="os-eob os-solutions-container" data-type="composite-page" id="autobaked-2@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter 1</h2><div data-type="solution" id="ex1-solution"><a class="os-number" href="#ex1">1</a><span class="os-divider">.</span>4</div><div data-type="solution" id="ex2-solution"><a class="os-number" href="#ex2">2</a><span class="os-divider">.</span>6</div></div></div></body></html>
 </section>
 
         </div>
@@ -609,11 +609,11 @@ and have answers collated at the end of the chapter.</p>
     &lt;!-- Markup starts here --&gt;
     &lt;section class=&quot;problems&quot;&gt;
       &lt;h3 data-type=&quot;title&quot;&gt;Problems&lt;/h3&gt;
-      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise&quot;&gt;
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex1&quot;&gt;
         &lt;div data-type=&quot;problem&quot;&gt;
           &lt;p&gt;What is 2+2?&lt;/p&gt;
         &lt;/div&gt;
-        &lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;4&lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot;&gt;4&lt;/div&gt;
       &lt;/div&gt;
     &lt;/section&gt;
     &lt;!-- Markup ends here --&gt;
@@ -627,11 +627,11 @@ and have answers collated at the end of the chapter.</p>
     &lt;!-- Markup starts here --&gt;
     &lt;section class=&quot;problems&quot;&gt;
       &lt;h3 data-type=&quot;title&quot;&gt;Problems&lt;/h3&gt;
-      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise&quot;&gt;
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex2&quot;&gt;
         &lt;div data-type=&quot;problem&quot;&gt;
           &lt;p&gt;What is 3+3?&lt;/p&gt;
         &lt;/div&gt;
-        &lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;6&lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot;&gt;6&lt;/div&gt;
       &lt;/div&gt;
     &lt;/section&gt;
     &lt;!-- Markup ends here --&gt;
@@ -639,11 +639,11 @@ and have answers collated at the end of the chapter.</p>
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
-  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
+  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
   &lt;div data-type=&quot;page&quot;&gt;
-    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
     Normal book content goes here
 
     &lt;!-- Markup starts here --&gt;
@@ -653,7 +653,7 @@ and have answers collated at the end of the chapter.</p>
   &lt;/div&gt;
 
   &lt;div data-type=&quot;page&quot;&gt;
-    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h2&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h2&gt;
     Normal book content goes here
 
     &lt;!-- Markup starts here --&gt;
@@ -661,24 +661,24 @@ and have answers collated at the end of the chapter.</p>
     &lt;!-- Markup ends here --&gt;
 
   &lt;/div&gt;
-&lt;div class=&quot;os-eoc os-problems-container&quot; data-type=&quot;composite-page&quot; id=&quot;81b4d171-c835-4538-abe3-6e6304f73d6e@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Problems&lt;/span&gt;&lt;/h1&gt;&lt;section class=&quot;problems&quot;&gt;
+&lt;div class=&quot;os-eoc os-problems-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-1@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Problems&lt;/span&gt;&lt;/h1&gt;&lt;section class=&quot;problems&quot;&gt;
       
-      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise os-hasSolution &quot;&gt;
-        &lt;div data-type=&quot;problem&quot;&gt;&lt;a class=&quot;os-number&quot; id=&quot;problem-1&quot; href=&quot;#solution-1&quot;&gt;1&lt;/a&gt;
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex1&quot; class=&quot; os-hasSolution &quot;&gt;
+        &lt;div data-type=&quot;problem&quot;&gt;&lt;a class=&quot;os-number&quot; href=&quot;#ex1-solution&quot;&gt;1&lt;/a&gt;&lt;span class=&quot;os-divider&quot;&gt;.&lt;/span&gt;
           &lt;p&gt;What is 2+2?&lt;/p&gt;
         &lt;/div&gt;
         
       &lt;/div&gt;
     &lt;/section&gt;&lt;section class=&quot;problems&quot;&gt;
       
-      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise os-hasSolution &quot;&gt;
-        &lt;div data-type=&quot;problem&quot;&gt;&lt;a class=&quot;os-number&quot; id=&quot;problem-2&quot; href=&quot;#solution-2&quot;&gt;2&lt;/a&gt;
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex2&quot; class=&quot; os-hasSolution &quot;&gt;
+        &lt;div data-type=&quot;problem&quot;&gt;&lt;a class=&quot;os-number&quot; href=&quot;#ex2-solution&quot;&gt;2&lt;/a&gt;&lt;span class=&quot;os-divider&quot;&gt;.&lt;/span&gt;
           &lt;p&gt;What is 3+3?&lt;/p&gt;
         &lt;/div&gt;
         
       &lt;/div&gt;
     &lt;/section&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;19961928-8692-4f60-bdc9-a5478076ea22@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter 1&lt;/h2&gt;&lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;&lt;a id=&quot;solution-1&quot; href=&quot;#problem-1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;4&lt;/a&gt;4&lt;/div&gt;&lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;&lt;a id=&quot;solution-2&quot; href=&quot;#problem-2&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;2&lt;/span&gt;6&lt;/a&gt;6&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-2@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter 1&lt;/h2&gt;&lt;div data-type=&quot;solution&quot; id=&quot;ex1-solution&quot;&gt;&lt;a class=&quot;os-number&quot; href=&quot;#ex1&quot;&gt;1&lt;/a&gt;&lt;span class=&quot;os-divider&quot;&gt;.&lt;/span&gt;4&lt;/div&gt;&lt;div data-type=&quot;solution&quot; id=&quot;ex2-solution&quot;&gt;&lt;a class=&quot;os-number&quot; href=&quot;#ex2&quot;&gt;2&lt;/a&gt;&lt;span class=&quot;os-divider&quot;&gt;.&lt;/span&gt;6&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>
@@ -742,11 +742,11 @@ and separated by which section they came from.</p>
   </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
-  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-divider"> | </span><span class="os-text">Chapter Title</span></h1>
+  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-divider"> </span><span class="os-text">Chapter Title</span></h1>
   <div data-type="page">
-    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> | </span><span class="os-text">Page Title</span></h2>
+    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> </span><span class="os-text">Page Title</span></h2>
     Normal book content goes here
 
     <!-- Markup starts here -->
@@ -756,7 +756,7 @@ and separated by which section they came from.</p>
   </div>
 
   <div data-type="page">
-    <h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-divider"> | </span><span class="os-text">Another Page Title</span></h2>
+    <h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-divider"> </span><span class="os-text">Another Page Title</span></h2>
     Normal book content goes here
 
     <!-- Markup starts here -->
@@ -765,10 +765,10 @@ and separated by which section they came from.</p>
 
   </div>
 </div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="5bb21811-0d2f-4b7c-a8dc-354f0f7754cc@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter 1</h2></div></div><div class="os-eob os-references-container" data-type="composite-page" id="6cce96de-1f10-414f-9310-020fc2decb27@1"><h1 data-type="document-title"><span class="os-text">References</span></h1><section class="references"><h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> | </span><span class="os-text">Page Title</span></h2>
+<div class="os-eob os-solutions-container" data-type="composite-page" id="autobaked-1@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter 1</h2></div></div><div class="os-eob os-references-container" data-type="composite-page" id="autobaked-2@1"><h1 data-type="document-title"><span class="os-text">References</span></h1><section class="references"><h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> </span><span class="os-text">Page Title</span></h2>
       
       <p>CITATION 1</p>
-    </section><section class="references"><h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-divider"> | </span><span class="os-text">Another Page Title</span></h2>
+    </section><section class="references"><h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-divider"> </span><span class="os-text">Another Page Title</span></h2>
       
       <p>CITATION 2</p>
     </section></div></body></html>
@@ -808,11 +808,11 @@ and separated by which section they came from.</p>
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
-  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
+  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
   &lt;div data-type=&quot;page&quot;&gt;
-    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
     Normal book content goes here
 
     &lt;!-- Markup starts here --&gt;
@@ -822,7 +822,7 @@ and separated by which section they came from.</p>
   &lt;/div&gt;
 
   &lt;div data-type=&quot;page&quot;&gt;
-    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h2&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h2&gt;
     Normal book content goes here
 
     &lt;!-- Markup starts here --&gt;
@@ -831,10 +831,10 @@ and separated by which section they came from.</p>
 
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;5bb21811-0d2f-4b7c-a8dc-354f0f7754cc@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter 1&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;os-eob os-references-container&quot; data-type=&quot;composite-page&quot; id=&quot;6cce96de-1f10-414f-9310-020fc2decb27@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;References&lt;/span&gt;&lt;/h1&gt;&lt;section class=&quot;references&quot;&gt;&lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-1@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter 1&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;os-eob os-references-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-2@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;References&lt;/span&gt;&lt;/h1&gt;&lt;section class=&quot;references&quot;&gt;&lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
       
       &lt;p&gt;CITATION 1&lt;/p&gt;
-    &lt;/section&gt;&lt;section class=&quot;references&quot;&gt;&lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h2&gt;
+    &lt;/section&gt;&lt;section class=&quot;references&quot;&gt;&lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h2&gt;
       
       &lt;p&gt;CITATION 2&lt;/p&gt;
     &lt;/section&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
@@ -860,8 +860,7 @@ and separated by which section they came from.</p>
 
 
       <div class="kss-description">
-        <p>These should be collated at the end of a chapter
-and have answers collated at the end of the chapter.</p>
+        <p>These should be collated at the end of a chapter and have answers collated at the end of the chapter.</p>
 
       </div>
     </div>
@@ -881,11 +880,11 @@ and have answers collated at the end of the chapter.</p>
     <!-- Markup starts here -->
     <section class="review-questions">
       <h3 data-type="title">Review Questions</h3>
-      <div data-type="exercise" class="exercise">
+      <div data-type="exercise" id="ex1">
         <div data-type="problem">
           <p>What is 2+2?</p>
         </div>
-        <div data-type="solution" class="solution">4</div>
+        <div data-type="solution">4</div>
       </div>
     </section>
     <!-- Markup ends here -->
@@ -899,11 +898,11 @@ and have answers collated at the end of the chapter.</p>
     <!-- Markup starts here -->
     <section class="review-questions">
       <h3 data-type="title">Review Questions</h3>
-      <div data-type="exercise" class="exercise">
+      <div data-type="exercise" id="ex2">
         <div data-type="problem">
           <p>What is 3+3?</p>
         </div>
-        <div data-type="solution" class="solution">6</div>
+        <div data-type="solution">6</div>
       </div>
     </section>
     <!-- Markup ends here -->
@@ -911,11 +910,11 @@ and have answers collated at the end of the chapter.</p>
   </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
-  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-divider"> | </span><span class="os-text">Chapter Title</span></h1>
+  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-divider"> </span><span class="os-text">Chapter Title</span></h1>
   <div data-type="page">
-    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> | </span><span class="os-text">Page Title</span></h2>
+    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> </span><span class="os-text">Page Title</span></h2>
     Normal book content goes here
 
     <!-- Markup starts here -->
@@ -925,7 +924,7 @@ and have answers collated at the end of the chapter.</p>
   </div>
 
   <div data-type="page">
-    <h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-divider"> | </span><span class="os-text">Another Page Title</span></h2>
+    <h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-divider"> </span><span class="os-text">Another Page Title</span></h2>
     Normal book content goes here
 
     <!-- Markup starts here -->
@@ -933,24 +932,24 @@ and have answers collated at the end of the chapter.</p>
     <!-- Markup ends here -->
 
   </div>
-<div class="os-eoc os-review-questions-container" data-type="composite-page" id="656a486c-1462-4708-b0b1-07f73c8dd9ed@1"><h1 data-type="document-title"><span class="os-text">Review Questions</span></h1><section class="review-questions">
+<div class="os-eoc os-review-questions-container" data-type="composite-page" id="autobaked-1@1"><h1 data-type="document-title"><span class="os-text">Review Questions</span></h1><section class="review-questions">
       
-      <div data-type="exercise" class="exercise os-hasSolution ">
-        <div data-type="problem"><a class="os-number" id="problem-1" href="#solution-1">1</a>
+      <div data-type="exercise" id="ex1" class=" os-hasSolution ">
+        <div data-type="problem"><a class="os-number" href="#ex1-solution">1</a><span class="os-divider">.</span>
           <p>What is 2+2?</p>
         </div>
-        <div data-type="solution" class="solution"><a id="solution-1" href="#problem-1"><span class="os-number">1</span>4</a>4</div>
+        <div data-type="solution" id="ex1-solution"><a class="os-number" href="#ex1">1</a><span class="os-divider">.</span>4</div>
       </div>
     </section><section class="review-questions">
       
-      <div data-type="exercise" class="exercise os-hasSolution ">
-        <div data-type="problem"><a class="os-number" id="problem-2" href="#solution-2">2</a>
+      <div data-type="exercise" id="ex2" class=" os-hasSolution ">
+        <div data-type="problem"><a class="os-number" href="#ex2-solution">2</a><span class="os-divider">.</span>
           <p>What is 3+3?</p>
         </div>
-        <div data-type="solution" class="solution"><a id="solution-2" href="#problem-2"><span class="os-number">2</span>6</a>6</div>
+        <div data-type="solution" id="ex2-solution"><a class="os-number" href="#ex2">2</a><span class="os-divider">.</span>6</div>
       </div>
     </section></div></div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="60a62d9c-75ea-4ca2-b17a-8eea00a9fa09@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter 1</h2></div></div></body></html>
+<div class="os-eob os-solutions-container" data-type="composite-page" id="autobaked-2@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter 1</h2></div></div></body></html>
 </section>
 
         </div>
@@ -967,11 +966,11 @@ and have answers collated at the end of the chapter.</p>
     &lt;!-- Markup starts here --&gt;
     &lt;section class=&quot;review-questions&quot;&gt;
       &lt;h3 data-type=&quot;title&quot;&gt;Review Questions&lt;/h3&gt;
-      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise&quot;&gt;
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex1&quot;&gt;
         &lt;div data-type=&quot;problem&quot;&gt;
           &lt;p&gt;What is 2+2?&lt;/p&gt;
         &lt;/div&gt;
-        &lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;4&lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot;&gt;4&lt;/div&gt;
       &lt;/div&gt;
     &lt;/section&gt;
     &lt;!-- Markup ends here --&gt;
@@ -985,11 +984,11 @@ and have answers collated at the end of the chapter.</p>
     &lt;!-- Markup starts here --&gt;
     &lt;section class=&quot;review-questions&quot;&gt;
       &lt;h3 data-type=&quot;title&quot;&gt;Review Questions&lt;/h3&gt;
-      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise&quot;&gt;
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex2&quot;&gt;
         &lt;div data-type=&quot;problem&quot;&gt;
           &lt;p&gt;What is 3+3?&lt;/p&gt;
         &lt;/div&gt;
-        &lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;6&lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot;&gt;6&lt;/div&gt;
       &lt;/div&gt;
     &lt;/section&gt;
     &lt;!-- Markup ends here --&gt;
@@ -997,11 +996,11 @@ and have answers collated at the end of the chapter.</p>
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
-  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
+  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
   &lt;div data-type=&quot;page&quot;&gt;
-    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
     Normal book content goes here
 
     &lt;!-- Markup starts here --&gt;
@@ -1011,7 +1010,7 @@ and have answers collated at the end of the chapter.</p>
   &lt;/div&gt;
 
   &lt;div data-type=&quot;page&quot;&gt;
-    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h2&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h2&gt;
     Normal book content goes here
 
     &lt;!-- Markup starts here --&gt;
@@ -1019,24 +1018,24 @@ and have answers collated at the end of the chapter.</p>
     &lt;!-- Markup ends here --&gt;
 
   &lt;/div&gt;
-&lt;div class=&quot;os-eoc os-review-questions-container&quot; data-type=&quot;composite-page&quot; id=&quot;656a486c-1462-4708-b0b1-07f73c8dd9ed@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Review Questions&lt;/span&gt;&lt;/h1&gt;&lt;section class=&quot;review-questions&quot;&gt;
+&lt;div class=&quot;os-eoc os-review-questions-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-1@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Review Questions&lt;/span&gt;&lt;/h1&gt;&lt;section class=&quot;review-questions&quot;&gt;
       
-      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise os-hasSolution &quot;&gt;
-        &lt;div data-type=&quot;problem&quot;&gt;&lt;a class=&quot;os-number&quot; id=&quot;problem-1&quot; href=&quot;#solution-1&quot;&gt;1&lt;/a&gt;
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex1&quot; class=&quot; os-hasSolution &quot;&gt;
+        &lt;div data-type=&quot;problem&quot;&gt;&lt;a class=&quot;os-number&quot; href=&quot;#ex1-solution&quot;&gt;1&lt;/a&gt;&lt;span class=&quot;os-divider&quot;&gt;.&lt;/span&gt;
           &lt;p&gt;What is 2+2?&lt;/p&gt;
         &lt;/div&gt;
-        &lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;&lt;a id=&quot;solution-1&quot; href=&quot;#problem-1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;4&lt;/a&gt;4&lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot; id=&quot;ex1-solution&quot;&gt;&lt;a class=&quot;os-number&quot; href=&quot;#ex1&quot;&gt;1&lt;/a&gt;&lt;span class=&quot;os-divider&quot;&gt;.&lt;/span&gt;4&lt;/div&gt;
       &lt;/div&gt;
     &lt;/section&gt;&lt;section class=&quot;review-questions&quot;&gt;
       
-      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise os-hasSolution &quot;&gt;
-        &lt;div data-type=&quot;problem&quot;&gt;&lt;a class=&quot;os-number&quot; id=&quot;problem-2&quot; href=&quot;#solution-2&quot;&gt;2&lt;/a&gt;
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex2&quot; class=&quot; os-hasSolution &quot;&gt;
+        &lt;div data-type=&quot;problem&quot;&gt;&lt;a class=&quot;os-number&quot; href=&quot;#ex2-solution&quot;&gt;2&lt;/a&gt;&lt;span class=&quot;os-divider&quot;&gt;.&lt;/span&gt;
           &lt;p&gt;What is 3+3?&lt;/p&gt;
         &lt;/div&gt;
-        &lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;&lt;a id=&quot;solution-2&quot; href=&quot;#problem-2&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;2&lt;/span&gt;6&lt;/a&gt;6&lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot; id=&quot;ex2-solution&quot;&gt;&lt;a class=&quot;os-number&quot; href=&quot;#ex2&quot;&gt;2&lt;/a&gt;&lt;span class=&quot;os-divider&quot;&gt;.&lt;/span&gt;6&lt;/div&gt;
       &lt;/div&gt;
     &lt;/section&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;60a62d9c-75ea-4ca2-b17a-8eea00a9fa09@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter 1&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-2@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter 1&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>
@@ -1059,8 +1058,7 @@ and have answers collated at the end of the chapter.</p>
 
 
       <div class="kss-description">
-        <p>These should be collated at the end of a chapter
-and have answers collated at the end of the chapter.</p>
+        <p>These should be collated at the end of a chapter and have answers collated at the end of the chapter.</p>
 <p><strong>Notes:</strong> Even without the styling you can see a few problems with the ruleset code:</p>
 <ol>
 <li>the rulesets use the class attribute when they should use the <code>data-type</code></li>
@@ -1087,36 +1085,36 @@ and have answers collated at the end of the chapter.</p>
     <!-- Markup starts here -->
     <section class="self-check-questions">
       <h3 data-type="title">Self-Check Questions</h3>
-      <div data-type="exercise" class="exercise">
+      <div data-type="exercise" id="ex1">
         <div data-type="problem">
           <p>What is 2+2?</p>
         </div>
-        <div data-type="solution" class="solution">4</div>
+        <div data-type="solution">4</div>
       </div>
     </section>
   </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
-  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-divider"> | </span><span class="os-text">Chapter Title</span></h1>
+  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-divider"> </span><span class="os-text">Chapter Title</span></h1>
   <div data-type="page">
-    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> | </span><span class="os-text">Page Title</span></h2>
+    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> </span><span class="os-text">Page Title</span></h2>
     Normal book content goes here
 
     <!-- Markup starts here -->
     
   </div>
-<div class="os-eoc os-self-check-questions-container" data-type="composite-page" id="1ca6b423-0732-4a0a-8708-37110fd9fac1@1"><h1 data-type="document-title"><span class="os-text">Self-Check Questions</span></h1><section class="self-check-questions">
+<div class="os-eoc os-self-check-questions-container" data-type="composite-page" id="autobaked-1@1"><h1 data-type="document-title"><span class="os-text">Self-Check Questions</span></h1><section class="self-check-questions">
       
-      <div data-type="exercise" class="exercise os-hasSolution ">
-        <div data-type="problem"><a class="os-number" id="problem-1" href="#solution-1">1</a>
+      <div data-type="exercise" id="ex1" class=" os-hasSolution ">
+        <div data-type="problem"><a class="os-number" href="#ex1-solution">1</a><span class="os-divider">.</span>
           <p>What is 2+2?</p>
         </div>
         
       </div>
     </section></div></div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="397031df-f74e-4e4f-b683-7a3db802efc2@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter 1</h2><div data-type="solution" class="solution"><a id="solution-1" href="#problem-1"><span class="os-number">1</span>4</a>4</div></div></div></body></html>
+<div class="os-eob os-solutions-container" data-type="composite-page" id="autobaked-2@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter 1</h2><div data-type="solution" id="ex1-solution"><a class="os-number" href="#ex1">1</a><span class="os-divider">.</span>4</div></div></div></body></html>
 </section>
 
         </div>
@@ -1133,36 +1131,36 @@ and have answers collated at the end of the chapter.</p>
     &lt;!-- Markup starts here --&gt;
     &lt;section class=&quot;self-check-questions&quot;&gt;
       &lt;h3 data-type=&quot;title&quot;&gt;Self-Check Questions&lt;/h3&gt;
-      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise&quot;&gt;
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex1&quot;&gt;
         &lt;div data-type=&quot;problem&quot;&gt;
           &lt;p&gt;What is 2+2?&lt;/p&gt;
         &lt;/div&gt;
-        &lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;4&lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot;&gt;4&lt;/div&gt;
       &lt;/div&gt;
     &lt;/section&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
-  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
+  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
   &lt;div data-type=&quot;page&quot;&gt;
-    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
     Normal book content goes here
 
     &lt;!-- Markup starts here --&gt;
     
   &lt;/div&gt;
-&lt;div class=&quot;os-eoc os-self-check-questions-container&quot; data-type=&quot;composite-page&quot; id=&quot;1ca6b423-0732-4a0a-8708-37110fd9fac1@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Self-Check Questions&lt;/span&gt;&lt;/h1&gt;&lt;section class=&quot;self-check-questions&quot;&gt;
+&lt;div class=&quot;os-eoc os-self-check-questions-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-1@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Self-Check Questions&lt;/span&gt;&lt;/h1&gt;&lt;section class=&quot;self-check-questions&quot;&gt;
       
-      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise os-hasSolution &quot;&gt;
-        &lt;div data-type=&quot;problem&quot;&gt;&lt;a class=&quot;os-number&quot; id=&quot;problem-1&quot; href=&quot;#solution-1&quot;&gt;1&lt;/a&gt;
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex1&quot; class=&quot; os-hasSolution &quot;&gt;
+        &lt;div data-type=&quot;problem&quot;&gt;&lt;a class=&quot;os-number&quot; href=&quot;#ex1-solution&quot;&gt;1&lt;/a&gt;&lt;span class=&quot;os-divider&quot;&gt;.&lt;/span&gt;
           &lt;p&gt;What is 2+2?&lt;/p&gt;
         &lt;/div&gt;
         
       &lt;/div&gt;
     &lt;/section&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;397031df-f74e-4e4f-b683-7a3db802efc2@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter 1&lt;/h2&gt;&lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;&lt;a id=&quot;solution-1&quot; href=&quot;#problem-1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;4&lt;/a&gt;4&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-2@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter 1&lt;/h2&gt;&lt;div data-type=&quot;solution&quot; id=&quot;ex1-solution&quot;&gt;&lt;a class=&quot;os-number&quot; href=&quot;#ex1&quot;&gt;1&lt;/a&gt;&lt;span class=&quot;os-divider&quot;&gt;.&lt;/span&gt;4&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>
@@ -1185,8 +1183,7 @@ and have answers collated at the end of the chapter.</p>
 
 
       <div class="kss-description">
-        <p>These should be collated at the end of a chapter
-and separated by which section they came from.</p>
+        <p>These should be collated at the end of a chapter and separated by which section they came from.</p>
 
       </div>
     </div>
@@ -1226,11 +1223,11 @@ and separated by which section they came from.</p>
   </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
-  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-divider"> | </span><span class="os-text">Chapter Title</span></h1>
+  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-divider"> </span><span class="os-text">Chapter Title</span></h1>
   <div data-type="page">
-    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> | </span><span class="os-text">Page Title</span></h2>
+    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> </span><span class="os-text">Page Title</span></h2>
     Normal book content goes here
 
     <!-- Markup starts here -->
@@ -1240,7 +1237,7 @@ and separated by which section they came from.</p>
   </div>
 
   <div data-type="page">
-    <h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-divider"> | </span><span class="os-text">Another Page Title</span></h2>
+    <h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-divider"> </span><span class="os-text">Another Page Title</span></h2>
     Normal book content goes here
 
     <!-- Markup starts here -->
@@ -1248,14 +1245,14 @@ and separated by which section they came from.</p>
     <!-- Markup ends here -->
 
   </div>
-<div class="os-eoc os-summary-container" data-type="composite-page" id="bec8ea92-d809-4d4f-839f-378ea32fe701@1"><h1 data-type="document-title"><span class="os-text">Key Concepts and Summary</span></h1><section class="summary"><h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> | </span><span class="os-text">Page Title</span></h2>
+<div class="os-eoc os-summary-container" data-type="composite-page" id="autobaked-1@1"><h1 data-type="document-title"><span class="os-text">Key Concepts and Summary</span></h1><section class="summary"><h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> </span><span class="os-text">Page Title</span></h2>
       
       <p>CONCEPT 1</p>
-    </section><section class="summary"><h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-divider"> | </span><span class="os-text">Another Page Title</span></h2>
+    </section><section class="summary"><h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-divider"> </span><span class="os-text">Another Page Title</span></h2>
       
       <p>CONCEPT 2</p>
     </section></div></div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="a063fdda-6e04-426f-b540-44bcf295c52a@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter 1</h2></div></div></body></html>
+<div class="os-eob os-solutions-container" data-type="composite-page" id="autobaked-2@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter 1</h2></div></div></body></html>
 </section>
 
         </div>
@@ -1292,11 +1289,11 @@ and separated by which section they came from.</p>
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
-  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
+  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
   &lt;div data-type=&quot;page&quot;&gt;
-    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
     Normal book content goes here
 
     &lt;!-- Markup starts here --&gt;
@@ -1306,7 +1303,7 @@ and separated by which section they came from.</p>
   &lt;/div&gt;
 
   &lt;div data-type=&quot;page&quot;&gt;
-    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h2&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h2&gt;
     Normal book content goes here
 
     &lt;!-- Markup starts here --&gt;
@@ -1314,14 +1311,14 @@ and separated by which section they came from.</p>
     &lt;!-- Markup ends here --&gt;
 
   &lt;/div&gt;
-&lt;div class=&quot;os-eoc os-summary-container&quot; data-type=&quot;composite-page&quot; id=&quot;bec8ea92-d809-4d4f-839f-378ea32fe701@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Key Concepts and Summary&lt;/span&gt;&lt;/h1&gt;&lt;section class=&quot;summary&quot;&gt;&lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;os-eoc os-summary-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-1@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Key Concepts and Summary&lt;/span&gt;&lt;/h1&gt;&lt;section class=&quot;summary&quot;&gt;&lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
       
       &lt;p&gt;CONCEPT 1&lt;/p&gt;
-    &lt;/section&gt;&lt;section class=&quot;summary&quot;&gt;&lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h2&gt;
+    &lt;/section&gt;&lt;section class=&quot;summary&quot;&gt;&lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h2&gt;
       
       &lt;p&gt;CONCEPT 2&lt;/p&gt;
     &lt;/section&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;a063fdda-6e04-426f-b540-44bcf295c52a@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter 1&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-2@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter 1&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>
@@ -1365,11 +1362,11 @@ and have answers collated at the end of the chapter.</p>
     <!-- Markup starts here -->
     <section class="ap-test-prep">
       <h3 data-type="title">Test Prep For AP® Courses</h3>
-      <div data-type="exercise" class="exercise">
+      <div data-type="exercise" id="ex1">
         <div data-type="problem">
           <p>What is 2+2?</p>
         </div>
-        <div data-type="solution" class="solution">4</div>
+        <div data-type="solution">4</div>
       </div>
     </section>
     <!-- Markup ends here -->
@@ -1383,11 +1380,11 @@ and have answers collated at the end of the chapter.</p>
     <!-- Markup starts here -->
     <section class="ap-test-prep">
       <h3 data-type="title">Test Prep For AP® Courses</h3>
-      <div data-type="exercise" class="exercise">
+      <div data-type="exercise" id="ex2">
         <div data-type="problem">
           <p>What is 3+3?</p>
         </div>
-        <div data-type="solution" class="solution">6</div>
+        <div data-type="solution">6</div>
       </div>
     </section>
     <!-- Markup ends here -->
@@ -1395,11 +1392,11 @@ and have answers collated at the end of the chapter.</p>
   </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
-  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-divider"> | </span><span class="os-text">Chapter Title</span></h1>
+  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-divider"> </span><span class="os-text">Chapter Title</span></h1>
   <div data-type="page">
-    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> | </span><span class="os-text">Page Title</span></h2>
+    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> </span><span class="os-text">Page Title</span></h2>
     Normal book content goes here
 
     <!-- Markup starts here -->
@@ -1409,7 +1406,7 @@ and have answers collated at the end of the chapter.</p>
   </div>
 
   <div data-type="page">
-    <h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-divider"> | </span><span class="os-text">Another Page Title</span></h2>
+    <h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-divider"> </span><span class="os-text">Another Page Title</span></h2>
     Normal book content goes here
 
     <!-- Markup starts here -->
@@ -1417,24 +1414,24 @@ and have answers collated at the end of the chapter.</p>
     <!-- Markup ends here -->
 
   </div>
-<div class="os-eoc os-ap-test-prep-container" data-type="composite-page" id="7ddf6208-119d-4333-8789-c3c58fad8c9c@1"><h1 data-type="document-title"><span class="os-text">Test Prep For AP&#174; Courses</span></h1><section class="ap-test-prep">
+<div class="os-eoc os-ap-test-prep-container" data-type="composite-page" id="autobaked-1@1"><h1 data-type="document-title"><span class="os-text">Test Prep For AP&#174; Courses</span></h1><section class="ap-test-prep">
       
-      <div data-type="exercise" class="exercise os-hasSolution ">
-        <div data-type="problem"><a class="os-number" id="problem-1" href="#solution-1">1</a>
+      <div data-type="exercise" id="ex1" class=" os-hasSolution ">
+        <div data-type="problem"><a class="os-number" href="#ex1-solution">1</a><span class="os-divider">.</span>
           <p>What is 2+2?</p>
         </div>
         
       </div>
     </section><section class="ap-test-prep">
       
-      <div data-type="exercise" class="exercise os-hasSolution ">
-        <div data-type="problem"><a class="os-number" id="problem-2" href="#solution-2">2</a>
+      <div data-type="exercise" id="ex2" class=" os-hasSolution ">
+        <div data-type="problem"><a class="os-number" href="#ex2-solution">2</a><span class="os-divider">.</span>
           <p>What is 3+3?</p>
         </div>
         
       </div>
     </section></div></div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="1ca136ac-dc6f-4f98-8bdc-59e1fa715a1f@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter 1</h2><div data-type="solution" class="solution"><a id="solution-1" href="#problem-1"><span class="os-number">1</span>4</a>4</div><div data-type="solution" class="solution"><a id="solution-2" href="#problem-2"><span class="os-number">2</span>6</a>6</div></div></div></body></html>
+<div class="os-eob os-solutions-container" data-type="composite-page" id="autobaked-2@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter 1</h2><div data-type="solution" id="ex1-solution"><a class="os-number" href="#ex1">1</a><span class="os-divider">.</span>4</div><div data-type="solution" id="ex2-solution"><a class="os-number" href="#ex2">2</a><span class="os-divider">.</span>6</div></div></div></body></html>
 </section>
 
         </div>
@@ -1451,11 +1448,11 @@ and have answers collated at the end of the chapter.</p>
     &lt;!-- Markup starts here --&gt;
     &lt;section class=&quot;ap-test-prep&quot;&gt;
       &lt;h3 data-type=&quot;title&quot;&gt;Test Prep For AP® Courses&lt;/h3&gt;
-      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise&quot;&gt;
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex1&quot;&gt;
         &lt;div data-type=&quot;problem&quot;&gt;
           &lt;p&gt;What is 2+2?&lt;/p&gt;
         &lt;/div&gt;
-        &lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;4&lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot;&gt;4&lt;/div&gt;
       &lt;/div&gt;
     &lt;/section&gt;
     &lt;!-- Markup ends here --&gt;
@@ -1469,11 +1466,11 @@ and have answers collated at the end of the chapter.</p>
     &lt;!-- Markup starts here --&gt;
     &lt;section class=&quot;ap-test-prep&quot;&gt;
       &lt;h3 data-type=&quot;title&quot;&gt;Test Prep For AP® Courses&lt;/h3&gt;
-      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise&quot;&gt;
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex2&quot;&gt;
         &lt;div data-type=&quot;problem&quot;&gt;
           &lt;p&gt;What is 3+3?&lt;/p&gt;
         &lt;/div&gt;
-        &lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;6&lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot;&gt;6&lt;/div&gt;
       &lt;/div&gt;
     &lt;/section&gt;
     &lt;!-- Markup ends here --&gt;
@@ -1481,11 +1478,11 @@ and have answers collated at the end of the chapter.</p>
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
-  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
+  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
   &lt;div data-type=&quot;page&quot;&gt;
-    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
     Normal book content goes here
 
     &lt;!-- Markup starts here --&gt;
@@ -1495,7 +1492,7 @@ and have answers collated at the end of the chapter.</p>
   &lt;/div&gt;
 
   &lt;div data-type=&quot;page&quot;&gt;
-    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h2&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h2&gt;
     Normal book content goes here
 
     &lt;!-- Markup starts here --&gt;
@@ -1503,24 +1500,24 @@ and have answers collated at the end of the chapter.</p>
     &lt;!-- Markup ends here --&gt;
 
   &lt;/div&gt;
-&lt;div class=&quot;os-eoc os-ap-test-prep-container&quot; data-type=&quot;composite-page&quot; id=&quot;7ddf6208-119d-4333-8789-c3c58fad8c9c@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Test Prep For AP&amp;#174; Courses&lt;/span&gt;&lt;/h1&gt;&lt;section class=&quot;ap-test-prep&quot;&gt;
+&lt;div class=&quot;os-eoc os-ap-test-prep-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-1@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Test Prep For AP&amp;#174; Courses&lt;/span&gt;&lt;/h1&gt;&lt;section class=&quot;ap-test-prep&quot;&gt;
       
-      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise os-hasSolution &quot;&gt;
-        &lt;div data-type=&quot;problem&quot;&gt;&lt;a class=&quot;os-number&quot; id=&quot;problem-1&quot; href=&quot;#solution-1&quot;&gt;1&lt;/a&gt;
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex1&quot; class=&quot; os-hasSolution &quot;&gt;
+        &lt;div data-type=&quot;problem&quot;&gt;&lt;a class=&quot;os-number&quot; href=&quot;#ex1-solution&quot;&gt;1&lt;/a&gt;&lt;span class=&quot;os-divider&quot;&gt;.&lt;/span&gt;
           &lt;p&gt;What is 2+2?&lt;/p&gt;
         &lt;/div&gt;
         
       &lt;/div&gt;
     &lt;/section&gt;&lt;section class=&quot;ap-test-prep&quot;&gt;
       
-      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise os-hasSolution &quot;&gt;
-        &lt;div data-type=&quot;problem&quot;&gt;&lt;a class=&quot;os-number&quot; id=&quot;problem-2&quot; href=&quot;#solution-2&quot;&gt;2&lt;/a&gt;
+      &lt;div data-type=&quot;exercise&quot; id=&quot;ex2&quot; class=&quot; os-hasSolution &quot;&gt;
+        &lt;div data-type=&quot;problem&quot;&gt;&lt;a class=&quot;os-number&quot; href=&quot;#ex2-solution&quot;&gt;2&lt;/a&gt;&lt;span class=&quot;os-divider&quot;&gt;.&lt;/span&gt;
           &lt;p&gt;What is 3+3?&lt;/p&gt;
         &lt;/div&gt;
         
       &lt;/div&gt;
     &lt;/section&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;1ca136ac-dc6f-4f98-8bdc-59e1fa715a1f@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter 1&lt;/h2&gt;&lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;&lt;a id=&quot;solution-1&quot; href=&quot;#problem-1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;4&lt;/a&gt;4&lt;/div&gt;&lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;&lt;a id=&quot;solution-2&quot; href=&quot;#problem-2&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;2&lt;/span&gt;6&lt;/a&gt;6&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-2@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter 1&lt;/h2&gt;&lt;div data-type=&quot;solution&quot; id=&quot;ex1-solution&quot;&gt;&lt;a class=&quot;os-number&quot; href=&quot;#ex1&quot;&gt;1&lt;/a&gt;&lt;span class=&quot;os-divider&quot;&gt;.&lt;/span&gt;4&lt;/div&gt;&lt;div data-type=&quot;solution&quot; id=&quot;ex2-solution&quot;&gt;&lt;a class=&quot;os-number&quot; href=&quot;#ex2&quot;&gt;2&lt;/a&gt;&lt;span class=&quot;os-divider&quot;&gt;.&lt;/span&gt;6&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>
@@ -1586,37 +1583,31 @@ Also, it is collected from individual glossary elements in each raw Page.</p>
   </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
-  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-divider"> | </span><span class="os-text">Chapter Title</span></h1>
+  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-divider"> </span><span class="os-text">Chapter Title</span></h1>
   <div data-type="page">
-    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> | </span><span class="os-text">Velocity Page</span></h2>
+    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> </span><span class="os-text">Velocity Page</span></h2>
     Normal book content goes here
     <!-- Start of glossary markup -->
-    <div data-type="glossary">
-      
-      
-    </div>
+    
   </div>
 
   <div data-type="page">
-    <h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-divider"> | </span><span class="os-text">Acceleration Page</span></h2>
+    <h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-divider"> </span><span class="os-text">Acceleration Page</span></h2>
     Normal book content goes here
     <!-- Start of glossary markup -->
-    <div data-type="glossary">
-      
-      
-    </div>
+    
 
   </div>
-<div class="os-eoc os-glossary-container" data-type="composite-page" id="1cf0e61e-b224-402f-b97d-b7b8d3648ad3@1"><h1 data-type="document-title"><span class="os-text">Key Terms</span></h1><dl>
+<div class="os-eoc os-glossary-container" data-type="composite-page" id="autobaked-1@1"><h1 data-type="document-title"><span class="os-text">Key Terms</span></h1><dl>
         <dt>acceleration</dt>
         <dd>Change in velocity over time</dd>
       </dl><dl>
         <dt>velocity</dt>
         <dd>Speed with a direction</dd>
       </dl></div></div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="d6d20bb6-4122-45e1-9faf-a7eb5f1889dd@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter 1</h2></div></div></body></html>
+<div class="os-eob os-solutions-container" data-type="composite-page" id="autobaked-2@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter 1</h2></div></div></body></html>
 </section>
 
         </div>
@@ -1654,37 +1645,31 @@ Also, it is collected from individual glossary elements in each raw Page.</p>
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
-  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
+  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
   &lt;div data-type=&quot;page&quot;&gt;
-    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Velocity Page&lt;/span&gt;&lt;/h2&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Velocity Page&lt;/span&gt;&lt;/h2&gt;
     Normal book content goes here
     &lt;!-- Start of glossary markup --&gt;
-    &lt;div data-type=&quot;glossary&quot;&gt;
-      
-      
-    &lt;/div&gt;
+    
   &lt;/div&gt;
 
   &lt;div data-type=&quot;page&quot;&gt;
-    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Acceleration Page&lt;/span&gt;&lt;/h2&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Acceleration Page&lt;/span&gt;&lt;/h2&gt;
     Normal book content goes here
     &lt;!-- Start of glossary markup --&gt;
-    &lt;div data-type=&quot;glossary&quot;&gt;
-      
-      
-    &lt;/div&gt;
+    
 
   &lt;/div&gt;
-&lt;div class=&quot;os-eoc os-glossary-container&quot; data-type=&quot;composite-page&quot; id=&quot;1cf0e61e-b224-402f-b97d-b7b8d3648ad3@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Key Terms&lt;/span&gt;&lt;/h1&gt;&lt;dl&gt;
+&lt;div class=&quot;os-eoc os-glossary-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-1@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Key Terms&lt;/span&gt;&lt;/h1&gt;&lt;dl&gt;
         &lt;dt&gt;acceleration&lt;/dt&gt;
         &lt;dd&gt;Change in velocity over time&lt;/dd&gt;
       &lt;/dl&gt;&lt;dl&gt;
         &lt;dt&gt;velocity&lt;/dt&gt;
         &lt;dd&gt;Speed with a direction&lt;/dd&gt;
       &lt;/dl&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;d6d20bb6-4122-45e1-9faf-a7eb5f1889dd@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter 1&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-2@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter 1&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>
@@ -1734,23 +1719,23 @@ Also, it is collected from individual glossary elements in each raw Page.</p>
   </div>
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
-  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-divider"> | </span><span class="os-text">Chapter Title</span></h1>
+  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-divider"> </span><span class="os-text">Chapter Title</span></h1>
   <div data-type="page">
-    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> | </span><span class="os-text">Velocity Page</span></h2>
+    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> </span><span class="os-text">Velocity Page</span></h2>
     Normal book content goes here with a <span data-type="term" id="auto__term1" group-by="T">Term1</span> and
     <span data-type="term" id="auto__term2" group-by="T">Term2</span>
 
   </div>
 
   <div data-type="page">
-    <h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-divider"> | </span><span class="os-text">Acceleration Page</span></h2>
+    <h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-divider"> </span><span class="os-text">Acceleration Page</span></h2>
     Normal book content goes here with a <span data-type="term" id="auto__term3" group-by="T">Term1</span>
 
   </div>
 </div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="173b4cac-d190-410e-af50-483ea26bd494@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter 1</h2></div></div><div class="os-eob os-index-container" data-type="composite-page" id="7c7cb7d9-7d70-4e9c-b2da-92866f1180b4@1"><h1 data-type="document-title"><span class="os-text">Index</span></h1><div class="group-by"><span class="group-label">Symbols</span><div class="os-index-item"><span group-by="T" class="os-term">Term1</span><a href="#auto__term1" class="os-term-section-link"><span class="os-term-section">1.1 | Velocity Page</span></a><span class="os-index-link-separator">, </span><a href="#auto__term3" class="os-term-section-link"><span class="os-term-section">1.2 | Acceleration Page</span></a></div><div class="os-index-item"><span group-by="T" class="os-term">Term2</span><a href="#auto__term2" class="os-term-section-link"><span class="os-term-section">1.1 | Velocity Page</span></a></div></div></div></body></html>
+<div class="os-eob os-solutions-container" data-type="composite-page" id="autobaked-1@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter 1</h2></div></div><div class="os-eob os-index-container" data-type="composite-page" id="autobaked-2@1"><h1 data-type="document-title"><span class="os-text">Index</span></h1><div class="group-by"><span class="group-label">Symbols</span><div class="os-index-item"><span group-by="T" class="os-term">Term1</span><a href="#auto__term1" class="os-term-section-link"><span class="os-term-section">1.1 Velocity Page</span></a><span class="os-index-link-separator">, </span><a href="#auto__term3" class="os-term-section-link"><span class="os-term-section">1.2 Acceleration Page</span></a></div><div class="os-index-item"><span group-by="T" class="os-term">Term2</span><a href="#auto__term2" class="os-term-section-link"><span class="os-term-section">1.1 Velocity Page</span></a></div></div></div></body></html>
 </section>
 
         </div>
@@ -1774,23 +1759,23 @@ Also, it is collected from individual glossary elements in each raw Page.</p>
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
-  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
+  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
   &lt;div data-type=&quot;page&quot;&gt;
-    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Velocity Page&lt;/span&gt;&lt;/h2&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Velocity Page&lt;/span&gt;&lt;/h2&gt;
     Normal book content goes here with a &lt;span data-type=&quot;term&quot; id=&quot;auto__term1&quot; group-by=&quot;T&quot;&gt;Term1&lt;/span&gt; and
     &lt;span data-type=&quot;term&quot; id=&quot;auto__term2&quot; group-by=&quot;T&quot;&gt;Term2&lt;/span&gt;
 
   &lt;/div&gt;
 
   &lt;div data-type=&quot;page&quot;&gt;
-    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Acceleration Page&lt;/span&gt;&lt;/h2&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Acceleration Page&lt;/span&gt;&lt;/h2&gt;
     Normal book content goes here with a &lt;span data-type=&quot;term&quot; id=&quot;auto__term3&quot; group-by=&quot;T&quot;&gt;Term1&lt;/span&gt;
 
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;173b4cac-d190-410e-af50-483ea26bd494@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter 1&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;os-eob os-index-container&quot; data-type=&quot;composite-page&quot; id=&quot;7c7cb7d9-7d70-4e9c-b2da-92866f1180b4@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Index&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;group-by&quot;&gt;&lt;span class=&quot;group-label&quot;&gt;Symbols&lt;/span&gt;&lt;div class=&quot;os-index-item&quot;&gt;&lt;span group-by=&quot;T&quot; class=&quot;os-term&quot;&gt;Term1&lt;/span&gt;&lt;a href=&quot;#auto__term1&quot; class=&quot;os-term-section-link&quot;&gt;&lt;span class=&quot;os-term-section&quot;&gt;1.1 | Velocity Page&lt;/span&gt;&lt;/a&gt;&lt;span class=&quot;os-index-link-separator&quot;&gt;, &lt;/span&gt;&lt;a href=&quot;#auto__term3&quot; class=&quot;os-term-section-link&quot;&gt;&lt;span class=&quot;os-term-section&quot;&gt;1.2 | Acceleration Page&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;os-index-item&quot;&gt;&lt;span group-by=&quot;T&quot; class=&quot;os-term&quot;&gt;Term2&lt;/span&gt;&lt;a href=&quot;#auto__term2&quot; class=&quot;os-term-section-link&quot;&gt;&lt;span class=&quot;os-term-section&quot;&gt;1.1 | Velocity Page&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-1@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter 1&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;os-eob os-index-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-2@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Index&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;group-by&quot;&gt;&lt;span class=&quot;group-label&quot;&gt;Symbols&lt;/span&gt;&lt;div class=&quot;os-index-item&quot;&gt;&lt;span group-by=&quot;T&quot; class=&quot;os-term&quot;&gt;Term1&lt;/span&gt;&lt;a href=&quot;#auto__term1&quot; class=&quot;os-term-section-link&quot;&gt;&lt;span class=&quot;os-term-section&quot;&gt;1.1 Velocity Page&lt;/span&gt;&lt;/a&gt;&lt;span class=&quot;os-index-link-separator&quot;&gt;, &lt;/span&gt;&lt;a href=&quot;#auto__term3&quot; class=&quot;os-term-section-link&quot;&gt;&lt;span class=&quot;os-term-section&quot;&gt;1.2 Acceleration Page&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;os-index-item&quot;&gt;&lt;span group-by=&quot;T&quot; class=&quot;os-term&quot;&gt;Term2&lt;/span&gt;&lt;a href=&quot;#auto__term2&quot; class=&quot;os-term-section-link&quot;&gt;&lt;span class=&quot;os-term-section&quot;&gt;1.1 Velocity Page&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>
@@ -1839,18 +1824,18 @@ Also, it is collected from individual glossary elements in each raw Page.</p>
 
 </div>
 </section>
-<section class="-kss-autogen-guide-markup" data-kss-format="html-cooked">
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
 <html><body><div data-type="chapter">
 
 <div data-type="page">
-  <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> | </span><span class="os-text">Kinematics in One Dimension</span></h2>
+  <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-divider"> </span><span class="os-text">Kinematics in One Dimension</span></h2>
   <div data-type="metadata">...</div>
   <p>This is the contents of the section (aka Page)</p>
   <p>It can contain multiple paragraphs, notes, exercises, etc</p>
 </div>
 
 </div>
-<div class="os-eob os-solutions-container" data-type="composite-page" id="2f10186a-30b8-47a1-8ab3-d0527eefbf54@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter </h2></div></div></body></html>
+<div class="os-eob os-solutions-container" data-type="composite-page" id="autobaked-1@1"><h1 data-type="document-title"><span class="os-text">Answer Key</span></h1><div class="os-solutions-chapter-area"><h2 class="os-title">Chapter </h2></div></div></body></html>
 </section>
 
         </div>
@@ -1869,18 +1854,18 @@ Also, it is collected from individual glossary elements in each raw Page.</p>
 
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-cooked&quot;&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
 &lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
 
 &lt;div data-type=&quot;page&quot;&gt;
-  &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; | &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Kinematics in One Dimension&lt;/span&gt;&lt;/h2&gt;
+  &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-divider&quot;&gt; &lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Kinematics in One Dimension&lt;/span&gt;&lt;/h2&gt;
   &lt;div data-type=&quot;metadata&quot;&gt;...&lt;/div&gt;
   &lt;p&gt;This is the contents of the section (aka Page)&lt;/p&gt;
   &lt;p&gt;It can contain multiple paragraphs, notes, exercises, etc&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;2f10186a-30b8-47a1-8ab3-d0527eefbf54@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter &lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;div class=&quot;os-eob os-solutions-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-1@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Answer Key&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;os-solutions-chapter-area&quot;&gt;&lt;h2 class=&quot;os-title&quot;&gt;Chapter &lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
 &lt;/section&gt;
 </code></pre>
       </div>

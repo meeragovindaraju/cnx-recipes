@@ -1,0 +1,379 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - statistics-baked.html.lcov - books/statistics/book.scss</title>
+  <link rel="stylesheet" type="text/css" href="../../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../../index.html">top level</a> - <a href="index.html">books/statistics</a> - book.scss<span style="font-size: 80%;"> (source / <a href="book.scss.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">statistics-baked.html.lcov</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">86</td>
+            <td class="headerCovTableEntry">90</td>
+            <td class="headerCovTableEntryHi">95.6 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2017-02-18 12:22:30</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntryHi">-</td>
+          </tr>
+          <tr><td><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : // This is the ROOT of the output CSS file that is generated.</a>
+<span class="lineNum">       2 </span>            : 
+<span class="lineNum">       3 </span>            : @import '../../mixins/_all';
+<span class="lineNum">       4 </span>            : 
+<span class="lineNum">       5 </span>            : // Import the book-specific config file
+<span class="lineNum">       6 </span>            : @import './_config';
+<span class="lineNum">       7 </span>            : 
+<span class="lineNum">       8 </span>            : 
+<span class="lineNum">       9 </span>            : // HACK
+<span class="lineNum">      10 </span>            : // SASS has a bug where it allows you to write `:not(.foo)` but not the following:
+<span class="lineNum">      11 </span>            : // `:not(:has(foo))` , `:not(a, b)`
+<span class="lineNum">      12 </span>            : //
+<span class="lineNum">      13 </span>            : // So to get around that, there is code below that looks like this: `&amp;:not(:not(SASS_HACK):has(`
+<span class="lineNum">      14 </span>            : 
+<span class="lineNum">      15 </span>            : 
+<span class="lineNum">      16 </span>            : 
+<span class="lineNum">      17 </span>            : @mixin sectionNumber() {
+<span class="lineNum">      18 </span><span class="lineCov">        336 :   content: ancestor-context('body', count-of-type('[data-type=&quot;chapter&quot;]')) '.' ancestor-context('[data-type=&quot;chapter&quot;]', count-of-type('[data-type=&quot;page&quot;]:not(:has(cnx-pi[data-type=&quot;cnx.flag.introduction&quot;]))')) ' ';</span>
+<span class="lineNum">      19 </span>            : }
+<span class="lineNum">      20 </span>            : 
+<span class="lineNum">      21 </span>            : @mixin sectionTitleAndLink() {
+<span class="lineNum">      22 </span>            :   // x-assert: x-is('[data-type=&quot;page&quot;]');
+<span class="lineNum">      23 </span>            : 
+<span class="lineNum">      24 </span>            :   &amp;:has(&gt; [data-type=&quot;metadata&quot;] &gt; [data-type=&quot;document-title&quot;]) {
+<span class="lineNum">      25 </span><span class="lineCov">         64 :     &amp;:not(:not(SASS_HACK):has(cnx-pi[data-type=&quot;cnx.flag.introduction&quot;])) {</span>
+<span class="lineNum">      26 </span>            :       /* Number the non-Introduction Pages */
+<span class="lineNum">      27 </span><span class="lineCov">         64 :       &amp;::before {</span>
+<span class="lineNum">      28 </span><span class="lineCov">        256 :         tag-name-set: &quot;h3&quot;;</span>
+<span class="lineNum">      29 </span><span class="lineCov">        256 :         class-add: &quot;section-title&quot;;</span>
+<span class="lineNum">      30 </span><span class="lineCov">        256 :         content: descendant-context('&gt; [data-type=&quot;metadata&quot;] &gt; [data-type=&quot;document-title&quot;]', text-contents());</span>
+<span class="lineNum">      31 </span>            : 
+<span class="lineNum">      32 </span><span class="lineCov">         64 :         &amp;::before {</span>
+<span class="lineNum">      33 </span>            :           /* Section Numbering */
+<span class="lineNum">      34 </span><span class="lineCov">        256 :           tag-name-set: &quot;a&quot;;</span>
+<span class="lineNum">      35 </span><span class="lineCov">        256 :           attrs-add: &quot;href&quot; &quot;#&quot; attr(id);</span>
+<span class="lineNum">      36 </span>            :           @include sectionNumber();
+<span class="lineNum">      37 </span>            :         }
+<span class="lineNum">      38 </span>            :       }
+<span class="lineNum">      39 </span>            :     }
+<span class="lineNum">      40 </span><span class="lineCov">         64 :     &amp;:has(cnx-pi[data-type=&quot;cnx.flag.introduction&quot;]) {</span>
+<span class="lineNum">      41 </span>            :       /* Add a title but do not number the Introduction modules */
+<span class="lineNum">      42 </span><span class="lineCov">         64 :       &amp;::before {</span>
+<span class="lineNum">      43 </span><span class="lineCov">          1 :         tag-name-set: &quot;h3&quot;;</span>
+<span class="lineNum">      44 </span><span class="lineCov">          1 :         class-add: &quot;section-title&quot;;</span>
+<span class="lineNum">      45 </span><span class="lineCov">          1 :         content: descendant-context('&gt; [data-type=&quot;metadata&quot;] &gt; [data-type=&quot;document-title&quot;]', text-contents());</span>
+<span class="lineNum">      46 </span>            :       }
+<span class="lineNum">      47 </span>            :     }
+<span class="lineNum">      48 </span>            : 
+<span class="lineNum">      49 </span>            :   }
+<span class="lineNum">      50 </span>            :   // &amp;:not(:not(SASS_HACK):has(&gt; [data-type=&quot;metadata&quot;] &gt; [data-type=&quot;document-title&quot;])) {
+<span class="lineNum">      51 </span>            :   //   &amp;::before {
+<span class="lineNum">      52 </span>            :   //     class-add: &quot;section-title&quot;;
+<span class="lineNum">      53 </span>            :   //     x-log: &quot;ERROR: mangled HTML&quot;;
+<span class="lineNum">      54 </span>            :   //   }
+<span class="lineNum">      55 </span>            :   // }
+<span class="lineNum">      56 </span>            : }
+<span class="lineNum">      57 </span>            : 
+<span class="lineNum">      58 </span>            : // /* Just for testing memory/processing limits */
+<span class="lineNum">      59 </span>            : // * { tag-name-set: none; }
+<span class="lineNum">      60 </span>            : 
+<span class="lineNum">      61 </span>            : $selectorsToAddForCountingAccumulator: ();
+<span class="lineNum">      62 </span>            : $exerciseSolutionSelectorAccumulator: ();
+<span class="lineNum">      63 </span>            : 
+<span class="lineNum">      64 </span>            : @for $index from 1 through length($Config_ChapterCompositePages) {
+<span class="lineNum">      65 </span>            :   $item: nth($Config_ChapterCompositePages, $index);
+<span class="lineNum">      66 </span>            : 
+<span class="lineNum">      67 </span>            :   $name: map-get($item, name);
+<span class="lineNum">      68 </span>            :   $source: map-get($item, source);
+<span class="lineNum">      69 </span>            :   $isGlossary: map-get($item, isGlossary);
+<span class="lineNum">      70 </span>            :   // $sortBy: map-get($item, sortBy);
+<span class="lineNum">      71 </span>            :   $sectionSeparated: map-get($item, sectionSeparated);
+<span class="lineNum">      72 </span>            :   // $hasSolutions: map-get($item, hasSolutions);
+<span class="lineNum">      73 </span>            :   // $compoundComposite: map-get($item, compoundComposite);
+<span class="lineNum">      74 </span>            :   // $moveSolutionsTo: map-get($item, moveSolutionsTo);
+<span class="lineNum">      75 </span>            : 
+<span class="lineNum">      76 </span>            :   $selector: &quot;section.#{$source}&quot;;
+<span class="lineNum">      77 </span>            :   $selectorChildren: '#{$selector} &gt; *:not([data-type=&quot;title&quot;])'; // For moving, we want to move all the children in the collated section
+<span class="lineNum">      78 </span>            :   $exerciseSelector: '#{$selector} [data-type=&quot;exercise&quot;]';
+<span class="lineNum">      79 </span>            :   $selectorsToAddForCounting: $selectorsToAddForCountingAccumulator;
+<span class="lineNum">      80 </span>            :   $selectorsToAddForCountingAccumulator: append($selectorsToAddForCountingAccumulator, $exerciseSelector, comma);
+<span class="lineNum">      81 </span>            : 
+<span class="lineNum">      82 </span>            :   // Remember all exercise types that have solutions that need to be moved to the end of the book
+<span class="lineNum">      83 </span>            :   $exerciseSolutionSelector: '#{$exerciseSelector} [data-type=&quot;solution&quot;]';
+<span class="lineNum">      84 </span>            :   $exerciseSolutionSelectorAccumulator: append($exerciseSolutionSelectorAccumulator, $exerciseSolutionSelector, comma);
+<span class="lineNum">      85 </span>            : 
+<span class="lineNum">      86 </span>            : 
+<span class="lineNum">      87 </span>            :   /* End-of-chapter page for #{$selector} */
+<span class="lineNum">      88 </span><span class="lineCov">        117 :   [data-type=&quot;chapter&quot;] {</span>
+<span class="lineNum">      89 </span>            : 
+<span class="lineNum">      90 </span>            :     /* Number the exercises for each section */
+<span class="lineNum">      91 </span><span class="lineCov">        267 :     #{$selector} {</span>
+<span class="lineNum">      92 </span>            :       /* discard the section since the contents (not this section) is collated to the end-of-chapter */
+<span class="lineNum">      93 </span><span class="lineCov">        267 :       display: none;</span>
+<span class="lineNum">      94 </span>            : 
+<span class="lineNum">      95 </span>            :       // Number the Solutions and exercises the same way
+<span class="lineNum">      96 </span>            :       // TODO: sass does not show sourcemap info when selectors have a comma GRRRRR, hence copy-pasta
+<span class="lineNum">      97 </span><span class="lineCov">       1451 :       [data-type=&quot;exercise&quot;]::before,</span>
+<span class="lineNum">      98 </span>            :       [data-type=&quot;exercise&quot;] [data-type=&quot;solution&quot;]::before {
+<span class="lineNum">      99 </span>            :         @if length($selectorsToAddForCounting) &gt;= 1 {
+<span class="lineNum">     100 </span><span class="lineCov">       2167 :           content: ancestor-context('[data-type=&quot;chapter&quot;]', add(count-all-of-type(&quot;#{$selectorsToAddForCounting}&quot;), count-of-type($exerciseSelector)));</span>
+<span class="lineNum">     101 </span>            :         } @else {
+<span class="lineNum">     102 </span>            :           content: ancestor-context('[data-type=&quot;chapter&quot;]', count-of-type($exerciseSelector));
+<span class="lineNum">     103 </span>            :         }
+<span class="lineNum">     104 </span>            :       }
+<span class="lineNum">     105 </span>            : 
+<span class="lineNum">     106 </span>            :       /* Make links from exercise to solution and from solution to exercise */
+<span class="lineNum">     107 </span><span class="lineCov">        723 :       [data-type=&quot;exercise&quot;]:not(:not(SASS_HACK):has([data-type=&quot;solution&quot;]))::before {</span>
+<span class="lineNum">     108 </span>            :         /* Make the number for an exercise without solution bold */
+<span class="lineNum">     109 </span><span class="lineCov">        719 :         tag-name-set: &quot;strong&quot;;</span>
+<span class="lineNum">     110 </span>            :       }
+<span class="lineNum">     111 </span><span class="lineCov">        728 :       [data-type=&quot;exercise&quot;]:has([data-type=&quot;solution&quot;])::before {</span>
+<span class="lineNum">     112 </span><span class="lineCov">        724 :         tag-name-set: &quot;a&quot;;</span>
+<span class="lineNum">     113 </span><span class="lineCov">        724 :         attrs-add: &quot;href&quot; &quot;#&quot; descendant-context('[data-type=&quot;solution&quot;]', attr(id));</span>
+<span class="lineNum">     114 </span>            :       }
+<span class="lineNum">     115 </span><span class="lineCov">        728 :       [data-type=&quot;exercise&quot;] [data-type=&quot;solution&quot;]::before {</span>
+<span class="lineNum">     116 </span><span class="lineCov">        724 :         tag-name-set: &quot;a&quot;;</span>
+<span class="lineNum">     117 </span><span class="lineCov">        724 :         attrs-add: &quot;href&quot; &quot;#&quot; parent-context(attr(id));</span>
+<span class="lineNum">     118 </span>            :       }
+<span class="lineNum">     119 </span>            : 
+<span class="lineNum">     120 </span>            :     }
+<span class="lineNum">     121 </span>            : 
+<span class="lineNum">     122 </span>            :     @if $isGlossary {
+<span class="lineNum">     123 </span><span class="lineCov">         13 :       &amp;:has([data-type=&quot;glossary&quot;] &gt; dl &gt; dt) {</span>
+<span class="lineNum">     124 </span>            :         /* Only generate a glossary if there are terms in this chapter */
+<span class="lineNum">     125 </span>            :         /* Discard the old section-level glossary element */
+<span class="lineNum">     126 </span><span class="lineCov">         45 :         [data-type=&quot;glossary&quot;] {</span>
+<span class="lineNum">     127 </span><span class="lineCov">         45 :           display: none;</span>
+<span class="lineNum">     128 </span>            :         }
+<span class="lineNum">     129 </span>            :         &amp;::after(#{$index}) {
+<span class="lineNum">     130 </span><span class="lineCov">         13 :           &amp;::before {</span>
+<span class="lineNum">     131 </span><span class="lineCov">         13 :             tag-name-set: &quot;h2&quot;;</span>
+<span class="lineNum">     132 </span><span class="lineCov">         13 :             content: $name;</span>
+<span class="lineNum">     133 </span>            :           }
+<span class="lineNum">     134 </span>            : 
+<span class="lineNum">     135 </span>            :           // TODO: Make this a &lt;dl&gt; and make it sorted
+<span class="lineNum">     136 </span><span class="lineCov">         13 :           &amp;::after {</span>
+<span class="lineNum">     137 </span><span class="lineCov">         13 :             tag-name-set: &quot;ul&quot;;</span>
+<span class="lineNum">     138 </span>            : 
+<span class="lineNum">     139 </span><span class="lineCov">         13 :             &amp;::for-each-descendant(1, '[data-type=&quot;glossary&quot;] &gt; dl &gt; dt') {</span>
+<span class="lineNum">     140 </span><span class="lineCov">        150 :               tag-name-set: &quot;li&quot;;</span>
+<span class="lineNum">     141 </span>            : 
+<span class="lineNum">     142 </span>            :               // Add the term
+<span class="lineNum">     143 </span><span class="lineCov">         13 :               &amp;::after(1) {</span>
+<span class="lineNum">     144 </span><span class="lineCov">        150 :                 tag-name-set: &quot;strong&quot;;</span>
+<span class="lineNum">     145 </span><span class="lineCov">        150 :                 class-add: &quot;term&quot;;</span>
+<span class="lineNum">     146 </span>            :                 // TODO: use contents() instead of text-contents()
+<span class="lineNum">     147 </span><span class="lineCov">        150 :                 content: text-contents();</span>
+<span class="lineNum">     148 </span>            :               }
+<span class="lineNum">     149 </span><span class="lineCov">         13 :               &amp;::after(2) {</span>
+<span class="lineNum">     150 </span><span class="lineCov">        150 :                 tag-name-set: &quot;span&quot;;</span>
+<span class="lineNum">     151 </span><span class="lineCov">        150 :                 class-add: &quot;separator&quot;;</span>
+<span class="lineNum">     152 </span><span class="lineCov">        150 :                 content: &quot;: &quot;;</span>
+<span class="lineNum">     153 </span>            :               }
+<span class="lineNum">     154 </span><span class="lineCov">         13 :               &amp;::after(3) {</span>
+<span class="lineNum">     155 </span><span class="lineCov">        150 :                 class-add: &quot;definition&quot;;</span>
+<span class="lineNum">     156 </span>            :                 // TODO: use contents() instead of text-contents()
+<span class="lineNum">     157 </span><span class="lineCov">        150 :                 content: next-sibling-context('dd:first', text-contents());</span>
+<span class="lineNum">     158 </span>            :               }
+<span class="lineNum">     159 </span>            :             }
+<span class="lineNum">     160 </span>            :           }
+<span class="lineNum">     161 </span>            :         }
+<span class="lineNum">     162 </span>            : 
+<span class="lineNum">     163 </span>            : 
+<span class="lineNum">     164 </span>            :       }
+<span class="lineNum">     165 </span>            : 
+<span class="lineNum">     166 </span>            :     } @else {
+<span class="lineNum">     167 </span>            :       // Some end-of-chapter items do not have any elements to move.
+<span class="lineNum">     168 </span>            :       // In that case, do not bother adding the title.
+<span class="lineNum">     169 </span>            :       &amp;:has(#{$selector}) { // Added `section` to speed up the :has lookup
+<span class="lineNum">     170 </span>            : 
+<span class="lineNum">     171 </span><span class="lineCov">         71 :         &amp;::after(#{$index}) {</span>
+<span class="lineNum">     172 </span>            :           /* Title */
+<span class="lineNum">     173 </span><span class="lineCov">         71 :           &amp;::before {</span>
+<span class="lineNum">     174 </span><span class="lineCov">         71 :             tag-name-set: &quot;h2&quot;;</span>
+<span class="lineNum">     175 </span><span class="lineCov">         71 :             content: $name;</span>
+<span class="lineNum">     176 </span>            :           }
+<span class="lineNum">     177 </span>            : 
+<span class="lineNum">     178 </span>            :           // add a section separator
+<span class="lineNum">     179 </span>            :           @if $sectionSeparated {
+<span class="lineNum">     180 </span>            :             /* Is sectionSeparated */
+<span class="lineNum">     181 </span>            :             &amp;::for-each-descendant(1, '&gt; [data-type=&quot;page&quot;]') {
+<span class="lineNum">     182 </span><span class="lineCov">         64 :               &amp;:has(#{$selector}) {</span>
+<span class="lineNum">     183 </span>            :                 @include sectionTitleAndLink();
+<span class="lineNum">     184 </span><span class="lineCov">        257 :                 class-add: &quot;eoc-section&quot;;</span>
+<span class="lineNum">     185 </span>            : 
+<span class="lineNum">     186 </span><span class="lineCov">        257 :                 content: move-here($selectorChildren);</span>
+<span class="lineNum">     187 </span>            :               }
+<span class="lineNum">     188 </span>            :             }
+<span class="lineNum">     189 </span>            : 
+<span class="lineNum">     190 </span>            :           } @else {
+<span class="lineNum">     191 </span>            :             /* Not sectionSeparated */
+<span class="lineNum">     192 </span><span class="lineCov">          7 :             content: ancestor-context('[data-type=&quot;chapter&quot;]', move-here($selectorChildren));</span>
+<span class="lineNum">     193 </span>            :           }
+<span class="lineNum">     194 </span>            :           // x-log: &quot;INFO: Generating end-of-chapter page for .#{$source} for chapter &quot; ancestor-context('body', count-of-type('[data-type=&quot;chapter&quot;]'));
+<span class="lineNum">     195 </span>            :         }
+<span class="lineNum">     196 </span>            :       }
+<span class="lineNum">     197 </span>            :       // // Example of Logging when a end-of-chapter page was not generated
+<span class="lineNum">     198 </span>            :       // &amp;:not(:not(SASS_HACK):has(.#{$source})) {
+<span class="lineNum">     199 </span>            :       //   x-log: &quot;WARNING: Skipping end-of-chapter page for .#{$source} for chapter &quot; ancestor-context('body', count-of-type('[data-type=&quot;chapter&quot;]')) &quot; because no items were found&quot;;
+<span class="lineNum">     200 </span>            :       // }
+<span class="lineNum">     201 </span>            :     }
+<span class="lineNum">     202 </span>            :   }
+<span class="lineNum">     203 </span>            : }
+<span class="lineNum">     204 </span>            : 
+<span class="lineNum">     205 </span>            : 
+<span class="lineNum">     206 </span><span class="lineCov">         13 : [data-type=&quot;chapter&quot;] {</span>
+<span class="lineNum">     207 </span>            : 
+<span class="lineNum">     208 </span>            :   /* Numbers on chapters and sections */
+<span class="lineNum">     209 </span><span class="lineCov">         13 :   &gt; [data-type=&quot;document-title&quot;]::before {</span>
+<span class="lineNum">     210 </span><span class="lineCov">         13 :     tag-name-set: &quot;span&quot;;</span>
+<span class="lineNum">     211 </span><span class="lineCov">         13 :     content: ancestor-context('body', count-of-type('[data-type=&quot;chapter&quot;]')) '. ';</span>
+<span class="lineNum">     212 </span>            :   }
+<span class="lineNum">     213 </span>            : 
+<span class="lineNum">     214 </span>            :   /* Discard Page metadata but keep the title (and add its number) */
+<span class="lineNum">     215 </span><span class="lineCov">         93 :   [data-type=&quot;page&quot;] {</span>
+<span class="lineNum">     216 </span><span class="lineCov">         93 :     &gt; [data-type=&quot;metadata&quot;] {</span>
+<span class="lineNum">     217 </span>            :       /* TODO: Move this to an attribution section at the end of the book */
+<span class="lineNum">     218 </span><span class="lineCov">         93 :       display: none;</span>
+<span class="lineNum">     219 </span>            :     }
+<span class="lineNum">     220 </span>            :     &amp;:not(:not(SASS_HACK):has(cnx-pi[data-type=&quot;cnx.flag.introduction&quot;])) {
+<span class="lineNum">     221 </span>            :       &amp;:has(&gt; [data-type=&quot;metadata&quot;] &gt; [data-type=&quot;document-title&quot;]) {
+<span class="lineNum">     222 </span><span class="lineCov">         80 :         &amp;::before {</span>
+<span class="lineNum">     223 </span><span class="lineCov">         80 :           tag-name-set: &quot;h2&quot;;</span>
+<span class="lineNum">     224 </span><span class="lineCov">         80 :           content: descendant-context('&gt; [data-type=&quot;metadata&quot;] &gt; [data-type=&quot;document-title&quot;]', text-contents());</span>
+<span class="lineNum">     225 </span>            : 
+<span class="lineNum">     226 </span><span class="lineCov">         80 :           &amp;::before {</span>
+<span class="lineNum">     227 </span><span class="lineCov">         80 :             tag-name-set: &quot;span&quot;;</span>
+<span class="lineNum">     228 </span>            :             @include sectionNumber();
+<span class="lineNum">     229 </span>            :           }
+<span class="lineNum">     230 </span>            :         }
+<span class="lineNum">     231 </span>            :       }
+<span class="lineNum">     232 </span>            :     }
+<span class="lineNum">     233 </span>            :     &amp;:has(cnx-pi[data-type=&quot;cnx.flag.introduction&quot;]) {
+<span class="lineNum">     234 </span>            :       &amp;:has(&gt; [data-type=&quot;metadata&quot;] &gt; [data-type=&quot;document-title&quot;]) {
+<span class="lineNum">     235 </span><span class="lineCov">         13 :         &amp;::before {</span>
+<span class="lineNum">     236 </span>            :           /* Label the Introduction but do not add a number */
+<span class="lineNum">     237 </span><span class="lineCov">         13 :           tag-name-set: &quot;h2&quot;;</span>
+<span class="lineNum">     238 </span><span class="lineCov">         13 :           content: descendant-context('&gt; [data-type=&quot;metadata&quot;] &gt; [data-type=&quot;document-title&quot;]', text-contents());</span>
+<span class="lineNum">     239 </span>            :         }
+<span class="lineNum">     240 </span>            :       }
+<span class="lineNum">     241 </span>            :     }
+<span class="lineNum">     242 </span>            : 
+<span class="lineNum">     243 </span>            :     /* The following are hacks for the styleguide since they are missing metadata */
+<span class="lineNum">     244 </span>            :     &amp;:not(:not(SASS_HACK):has(&gt; [data-type=&quot;metadata&quot;] &gt; [data-type=&quot;document-title&quot;])) {
+<span class="lineNum">     245 </span>            :       // x-log: &quot;Probably generating a styleguide so there is no metadata element&quot;;
+<span class="lineNum">     246 </span>            :       &amp;:has(&gt; [data-type=&quot;document-title&quot;]) {
+<span class="lineNum">     247 </span><span class="lineNoCov">          0 :         &amp;::before {</span>
+<span class="lineNum">     248 </span>            :           tag-name-set: &quot;h2&quot;;
+<span class="lineNum">     249 </span>            :           content: descendant-context('&gt; [data-type=&quot;document-title&quot;]', text-contents());
+<span class="lineNum">     250 </span><span class="lineNoCov">          0 :           &amp;::before {</span>
+<span class="lineNum">     251 </span>            :             tag-name-set: &quot;span&quot;;
+<span class="lineNum">     252 </span>            :             @include sectionNumber();
+<span class="lineNum">     253 </span>            :           }
+<span class="lineNum">     254 </span>            :         }
+<span class="lineNum">     255 </span>            :       }
+<span class="lineNum">     256 </span>            :       &amp;:not(:not(SASS_HACK):has(&gt; [data-type=&quot;document-title&quot;])) {
+<span class="lineNum">     257 </span><span class="lineNoCov">          0 :         &amp;::before {</span>
+<span class="lineNum">     258 </span>            :           tag-name-set: &quot;h2&quot;;
+<span class="lineNum">     259 </span>            :           content: &quot;STYLEGUIDE_TITLE_PLACEHOLDER&quot;;
+<span class="lineNum">     260 </span><span class="lineNoCov">          0 :           &amp;::before {</span>
+<span class="lineNum">     261 </span>            :             tag-name-set: &quot;span&quot;;
+<span class="lineNum">     262 </span>            :             @include sectionNumber();
+<span class="lineNum">     263 </span>            :           }
+<span class="lineNum">     264 </span>            :         }
+<span class="lineNum">     265 </span>            :       }
+<span class="lineNum">     266 </span>            :     }
+<span class="lineNum">     267 </span>            :   }
+<span class="lineNum">     268 </span>            : }
+<span class="lineNum">     269 </span>            : 
+<span class="lineNum">     270 </span>            : body {
+<span class="lineNum">     271 </span>            :   &amp;:has([data-type=&quot;chapter&quot;]:has(#{$exerciseSolutionSelectorAccumulator})) {
+<span class="lineNum">     272 </span>            :     &amp;::after(1) {
+<span class="lineNum">     273 </span><span class="lineCov">          1 :       &amp;::before {</span>
+<span class="lineNum">     274 </span><span class="lineCov">          1 :         tag-name-set: &quot;h1&quot;;</span>
+<span class="lineNum">     275 </span><span class="lineCov">          1 :         content: &quot;Answer Key&quot;;</span>
+<span class="lineNum">     276 </span>            :       }
+<span class="lineNum">     277 </span><span class="lineCov">          1 :       &amp;::for-each-descendant(1, '[data-type=&quot;chapter&quot;]'):has(#{$exerciseSolutionSelectorAccumulator}) {</span>
+<span class="lineNum">     278 </span>            :         /* Chapter title */
+<span class="lineNum">     279 </span><span class="lineCov">          1 :         &amp;:has([data-type=&quot;page&quot;]:has(cnx-pi[data-type=&quot;cnx.flag.introduction&quot;])) { /* This guard is just for the styleguide */</span>
+<span class="lineNum">     280 </span><span class="lineCov">          1 :           &amp;::before {</span>
+<span class="lineNum">     281 </span><span class="lineCov">          1 :             &amp;::before {</span>
+<span class="lineNum">     282 </span><span class="lineCov">         13 :               content: ancestor-context('body', count-of-type('[data-type=&quot;chapter&quot;]')) '. ';</span>
+<span class="lineNum">     283 </span>            :               // tag-name-set: &quot;span&quot;;
+<span class="lineNum">     284 </span>            :               // Link to the introduction module (TODO: when subcollections have id's then this will not be necessary)
+<span class="lineNum">     285 </span><span class="lineCov">         13 :               tag-name-set: &quot;a&quot;;</span>
+<span class="lineNum">     286 </span><span class="lineCov">         13 :               attrs-add: &quot;href&quot; &quot;#&quot; descendant-context('[data-type=&quot;page&quot;]:has(cnx-pi[data-type=&quot;cnx.flag.introduction&quot;])', attr(id));</span>
+<span class="lineNum">     287 </span>            :             }
+<span class="lineNum">     288 </span><span class="lineCov">         13 :             tag-name-set: &quot;h2&quot;;</span>
+<span class="lineNum">     289 </span><span class="lineCov">         13 :             content: descendant-context('&gt; [data-type=&quot;document-title&quot;]', text-contents());</span>
+<span class="lineNum">     290 </span>            :           }
+<span class="lineNum">     291 </span>            :           /* Chapter Answers */
+<span class="lineNum">     292 </span><span class="lineCov">         13 :           content: move-here('#{$exerciseSolutionSelectorAccumulator}');</span>
+<span class="lineNum">     293 </span>            :         }
+<span class="lineNum">     294 </span>            :       }
+<span class="lineNum">     295 </span>            :     }
+<span class="lineNum">     296 </span>            :   }
+<span class="lineNum">     297 </span>            : }
+<span class="lineNum">     298 </span>            : /* Discard all processing instructions */
+<span class="lineNum">     299 </span>            : [data-type=&quot;page&quot;] {
+<span class="lineNum">     300 </span><span class="lineCov">         92 :   cnx-pi {</span>
+<span class="lineNum">     301 </span><span class="lineCov">         92 :     display: none;</span>
+<span class="lineNum">     302 </span>            :   }
+<span class="lineNum">     303 </span>            : }
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.13</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

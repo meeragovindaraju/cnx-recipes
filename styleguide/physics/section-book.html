@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Openstax HTML Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="./guide.css">
+
+
+  <style>
+  .-hidden-checkbox-for-choosing-output-type { display: none; }
+  .-toggle-hidden { display: none; }
+  .kss-markup .-kss-autogen-guide-markup::before { font-size: 150%; font-weight: bold; }
+  .kss-markup .-kss-autogen-guide-markup[data-kss-format="html-raw"]::before { content: 'Raw HTML:'; }
+  .kss-markup .-kss-autogen-guide-markup[data-kss-format="html-baked"]::before { content: 'Baked HTML:'; }
+
+  /* Only show the rendered "baked" HTML */
+  .kss-modifier__example > .-kss-autogen-guide-markup:not([data-kss-format="html-baked"]) { display: none; }
+  </style>
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">Openstax HTML Guide</h1>
+  </header>
+
+  <select id="choose-which-format-to-look-at">
+    <option value="html-baked">Show Baked HTML</option>
+    <option value="html-raw">Show Raw HTML</option>
+    <option value="-all">Show All Formats</option>
+    <option value="-none">Show No Formats</option>
+  </select>
+
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-book.html">
+          <span class="kss-nav__ref">1</span
+          ><span class="kss-nav__name">book</span>
+        </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-book.html#kssref-book-chapter">
+                <span class="kss-nav__ref ">1.1</span
+                ><span class="kss-nav__name">Chapter</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-book.html#kssref-book-composite">
+                <span class="kss-nav__ref ">1.2</span
+                ><span class="kss-nav__name">Composite Page</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-book.html#kssref-book-composite-conceptual">
+                <span class="kss-nav__ref kss-nav__ref-child">1.2.1</span
+                ><span class="kss-nav__name">Conceptual Questions</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-book.html#kssref-book-composite-problems">
+                <span class="kss-nav__ref kss-nav__ref-child">1.2.2</span
+                ><span class="kss-nav__name">Problems and Exercises</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-book.html#kssref-book-composite-summary">
+                <span class="kss-nav__ref kss-nav__ref-child">1.2.3</span
+                ><span class="kss-nav__name">Section Review</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-book.html#kssref-book-glossary">
+                <span class="kss-nav__ref ">1.3</span
+                ><span class="kss-nav__name">Glossary</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-book.html#kssref-book-index">
+                <span class="kss-nav__ref ">1.4</span
+                ><span class="kss-nav__name">Book Index</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-book.html#kssref-book-page">
+                <span class="kss-nav__ref ">1.5</span
+                ><span class="kss-nav__name">Book Page</span>
+              </a>
+            </li>
+        </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-page.html">
+          <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Page Elements</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+
+      <div     id="kssref-book" class="kss-section kss-section--depth-1">
+
+    <div class="kss-style">
+      <h1 class="kss-title kss-title--level-1">
+        <a class="kss-title__permalink" href="#kssref-book">
+          <span class="kss-title__ref">
+              1
+            <span class="kss-title__permalink-hash">
+                #book
+            </span>
+          </span>
+          book
+        </a>
+      </h1>
+
+
+    </div>
+
+
+      </div>
+      <section id="kssref-book-chapter" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-book-chapter">
+          <span class="kss-title__ref">
+              1.1
+            <span class="kss-title__permalink-hash">
+                #book.chapter
+            </span>
+          </span>
+          Chapter
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>A Chapter contains a title and multiple Pages, one of which may be a <code>.introduction</code> Page.</p>
+<p>The introduction page typically contains a splash image, a chapter outline and an introductory paragraph.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <h1 data-type="document-title">Kinematics</h1>
+  <div data-type="page" class="introduction">
+    <div data-type="document-title">Introduction</div>
+    ...
+  </div>
+  <div data-type="page">
+    <div data-type="document-title">Kinematics in One Dimension</div>
+    ...
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter">
+  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-text">Kinematics</span></h1>
+  <div data-type="page" class="introduction"><div class="os-chapter-outline"><h3 class="os-title">Chapter Outline</h3><div class="os-chapter-objective"><h4 data-type="document-title"><span class="os-number">1.1</span><span class="os-text">Kinematics in One Dimension</span></h4></div></div>
+    <h2 data-type="document-title"><span class="os-text">Introduction</span></h2>
+    ...
+  </div>
+  <div data-type="page">
+    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-text">Kinematics in One Dimension</span></h2>
+    ...
+  </div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;h1 data-type=&quot;document-title&quot;&gt;Kinematics&lt;/h1&gt;
+  &lt;div data-type=&quot;page&quot; class=&quot;introduction&quot;&gt;
+    &lt;div data-type=&quot;document-title&quot;&gt;Introduction&lt;/div&gt;
+    ...
+  &lt;/div&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;div data-type=&quot;document-title&quot;&gt;Kinematics in One Dimension&lt;/div&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Kinematics&lt;/span&gt;&lt;/h1&gt;
+  &lt;div data-type=&quot;page&quot; class=&quot;introduction&quot;&gt;&lt;div class=&quot;os-chapter-outline&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;Chapter Outline&lt;/h3&gt;&lt;div class=&quot;os-chapter-objective&quot;&gt;&lt;h4 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Kinematics in One Dimension&lt;/span&gt;&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Introduction&lt;/span&gt;&lt;/h2&gt;
+    ...
+  &lt;/div&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Kinematics in One Dimension&lt;/span&gt;&lt;/h2&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-book-composite" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-book-composite">
+          <span class="kss-title__ref">
+              1.2
+            <span class="kss-title__permalink-hash">
+                #book.composite
+            </span>
+          </span>
+          Composite Page
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>These are end-of-book or end-of-chapter Pages.</p>
+<p>A Composite Page is one that is automatically generated by moving/copying content from the raw pages.
+Examples include the end-of-chapter exercises, end-of-book solutions, end-of-chapter glossary, index.</p>
+<p>They:</p>
+<ul>
+<li>must use data-type=&quot;composite-page&quot;.</li>
+<li>must have a unique identifier (class) for styling purposes.</li>
+<li>usually contain content separated by section(pages) or by chapter.</li>
+<li>now appear in the TOC (currently not the case in the PDF).</li>
+<li>aren&#39;t numbered in the content and in the TOC (the chapters and sections are)</li>
+<li>follow the same rules as a regular data-type=&quot;page&quot; (header hierarchy, metadata, etc.)</li>
+</ul>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-book-composite-conceptual" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-book-composite-conceptual">
+          <span class="kss-title__ref">
+              1.2.1
+            <span class="kss-title__permalink-hash">
+                #book.composite.conceptual
+            </span>
+          </span>
+          Conceptual Questions
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>These should be collated at the end of a chapter.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <h1 data-type="document-title">Chapter Title</h1>
+  <div data-type="page">
+    <div data-type="document-title">Page Title</div>
+    Normal book content goes here
+
+    <!-- Markup starts here -->
+    <section class="conceptual-questions">
+      <h3 data-type="title">Conceptual Questions</h3>
+      <div data-type="exercise" class="exercise">
+        <div data-type="problem">
+          <p>What is 2+2?</p>
+        </div>
+        <div data-type="solution" class="solution">4</div>
+      </div>
+    </section>
+    <!-- Markup ends here -->
+
+  </div>
+
+  <div data-type="page">
+    <div data-type="document-title">Another Page Title</div>
+    Normal book content goes here
+
+    <!-- Markup starts here -->
+    <section class="conceptual-questions">
+      <h3 data-type="title">Conceptual Questions</h3>
+      <div data-type="exercise" class="exercise">
+        <div data-type="problem">
+          <p>What is 3+3?</p>
+        </div>
+        <div data-type="solution" class="solution">6</div>
+      </div>
+    </section>
+    <!-- Markup ends here -->
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter"><div class="os-chapter-outline"><h3 class="os-title">Chapter Outline</h3><div class="os-chapter-objective"><h4 data-type="document-title"><span class="os-number">1.1</span><span class="os-text">Page Title</span></h4></div><div class="os-chapter-objective"><h4 data-type="document-title"><span class="os-number">1.2</span><span class="os-text">Another Page Title</span></h4></div></div>
+  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-text">Chapter Title</span></h1>
+  <div data-type="page">
+    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-text">Page Title</span></h2>
+    Normal book content goes here
+
+    <!-- Markup starts here -->
+    
+    <!-- Markup ends here -->
+
+  </div>
+
+  <div data-type="page">
+    <h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-text">Another Page Title</span></h2>
+    Normal book content goes here
+
+    <!-- Markup starts here -->
+    
+    <!-- Markup ends here -->
+
+  </div>
+<div class="os-eoc os-conceptual-questions-container" data-type="composite-page" id="autobaked-1@1"><h1 data-type="document-title"><span class="os-text">Conceptual Questions</span></h1><section class="conceptual-questions"><h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-text">Page Title</span></h2>
+      
+      <div data-type="exercise" class="exercise">
+        <div data-type="problem"><span class="os-number">1</span>
+          <p>What is 2+2?</p>
+        </div>
+        
+      </div>
+    </section><section class="conceptual-questions"><h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-text">Another Page Title</span></h2>
+      
+      <div data-type="exercise" class="exercise">
+        <div data-type="problem"><span class="os-number">2</span>
+          <p>What is 3+3?</p>
+        </div>
+        
+      </div>
+    </section></div></div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;h1 data-type=&quot;document-title&quot;&gt;Chapter Title&lt;/h1&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;div data-type=&quot;document-title&quot;&gt;Page Title&lt;/div&gt;
+    Normal book content goes here
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;section class=&quot;conceptual-questions&quot;&gt;
+      &lt;h3 data-type=&quot;title&quot;&gt;Conceptual Questions&lt;/h3&gt;
+      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise&quot;&gt;
+        &lt;div data-type=&quot;problem&quot;&gt;
+          &lt;p&gt;What is 2+2?&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;4&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;!-- Markup ends here --&gt;
+
+  &lt;/div&gt;
+
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;div data-type=&quot;document-title&quot;&gt;Another Page Title&lt;/div&gt;
+    Normal book content goes here
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;section class=&quot;conceptual-questions&quot;&gt;
+      &lt;h3 data-type=&quot;title&quot;&gt;Conceptual Questions&lt;/h3&gt;
+      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise&quot;&gt;
+        &lt;div data-type=&quot;problem&quot;&gt;
+          &lt;p&gt;What is 3+3?&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;6&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;!-- Markup ends here --&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;&lt;div class=&quot;os-chapter-outline&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;Chapter Outline&lt;/h3&gt;&lt;div class=&quot;os-chapter-objective&quot;&gt;&lt;h4 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h4&gt;&lt;/div&gt;&lt;div class=&quot;os-chapter-objective&quot;&gt;&lt;h4 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
+    Normal book content goes here
+
+    &lt;!-- Markup starts here --&gt;
+    
+    &lt;!-- Markup ends here --&gt;
+
+  &lt;/div&gt;
+
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h2&gt;
+    Normal book content goes here
+
+    &lt;!-- Markup starts here --&gt;
+    
+    &lt;!-- Markup ends here --&gt;
+
+  &lt;/div&gt;
+&lt;div class=&quot;os-eoc os-conceptual-questions-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-1@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Conceptual Questions&lt;/span&gt;&lt;/h1&gt;&lt;section class=&quot;conceptual-questions&quot;&gt;&lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
+      
+      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise&quot;&gt;
+        &lt;div data-type=&quot;problem&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;
+          &lt;p&gt;What is 2+2?&lt;/p&gt;
+        &lt;/div&gt;
+        
+      &lt;/div&gt;
+    &lt;/section&gt;&lt;section class=&quot;conceptual-questions&quot;&gt;&lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h2&gt;
+      
+      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise&quot;&gt;
+        &lt;div data-type=&quot;problem&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;2&lt;/span&gt;
+          &lt;p&gt;What is 3+3?&lt;/p&gt;
+        &lt;/div&gt;
+        
+      &lt;/div&gt;
+    &lt;/section&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-book-composite-problems" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-book-composite-problems">
+          <span class="kss-title__ref">
+              1.2.2
+            <span class="kss-title__permalink-hash">
+                #book.composite.problems
+            </span>
+          </span>
+          Problems and Exercises
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>These should be collated at the end of a chapter.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <h1 data-type="document-title">Chapter Title</h1>
+  <div data-type="page">
+    <div data-type="document-title">Page Title</div>
+    Normal book content goes here
+
+    <!-- Markup starts here -->
+    <section class="problems">
+      <h3 data-type="title">Problems & Exercises</h3>
+      <div data-type="exercise" class="exercise">
+        <div data-type="problem">
+          <p>What is 2+2?</p>
+        </div>
+        <div data-type="solution" class="solution">4</div>
+      </div>
+    </section>
+    <!-- Markup ends here -->
+
+  </div>
+
+  <div data-type="page">
+    <div data-type="document-title">Another Page Title</div>
+    Normal book content goes here
+
+    <!-- Markup starts here -->
+    <section class="problems">
+      <h3 data-type="title">Problems & Exercises</h3>
+      <div data-type="exercise" class="exercise">
+        <div data-type="problem">
+          <p>What is 3+3?</p>
+        </div>
+        <div data-type="solution" class="solution">6</div>
+      </div>
+    </section>
+    <!-- Markup ends here -->
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter"><div class="os-chapter-outline"><h3 class="os-title">Chapter Outline</h3><div class="os-chapter-objective"><h4 data-type="document-title"><span class="os-number">1.1</span><span class="os-text">Page Title</span></h4></div><div class="os-chapter-objective"><h4 data-type="document-title"><span class="os-number">1.2</span><span class="os-text">Another Page Title</span></h4></div></div>
+  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-text">Chapter Title</span></h1>
+  <div data-type="page">
+    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-text">Page Title</span></h2>
+    Normal book content goes here
+
+    <!-- Markup starts here -->
+    <section class="problems">
+      <h3 data-type="title">Problems &amp; Exercises</h3>
+      <div data-type="exercise" class="exercise">
+        <div data-type="problem"><span class="os-title-label">Exercise</span><span class="os-number">1</span>
+          <p>What is 2+2?</p>
+        </div>
+        <div data-type="solution" class="solution">4</div>
+      </div>
+    </section>
+    <!-- Markup ends here -->
+
+  </div>
+
+  <div data-type="page">
+    <h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-text">Another Page Title</span></h2>
+    Normal book content goes here
+
+    <!-- Markup starts here -->
+    <section class="problems">
+      <h3 data-type="title">Problems &amp; Exercises</h3>
+      <div data-type="exercise" class="exercise">
+        <div data-type="problem"><span class="os-title-label">Exercise</span><span class="os-number">2</span>
+          <p>What is 3+3?</p>
+        </div>
+        <div data-type="solution" class="solution">6</div>
+      </div>
+    </section>
+    <!-- Markup ends here -->
+
+  </div>
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;h1 data-type=&quot;document-title&quot;&gt;Chapter Title&lt;/h1&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;div data-type=&quot;document-title&quot;&gt;Page Title&lt;/div&gt;
+    Normal book content goes here
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;section class=&quot;problems&quot;&gt;
+      &lt;h3 data-type=&quot;title&quot;&gt;Problems &amp; Exercises&lt;/h3&gt;
+      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise&quot;&gt;
+        &lt;div data-type=&quot;problem&quot;&gt;
+          &lt;p&gt;What is 2+2?&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;4&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;!-- Markup ends here --&gt;
+
+  &lt;/div&gt;
+
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;div data-type=&quot;document-title&quot;&gt;Another Page Title&lt;/div&gt;
+    Normal book content goes here
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;section class=&quot;problems&quot;&gt;
+      &lt;h3 data-type=&quot;title&quot;&gt;Problems &amp; Exercises&lt;/h3&gt;
+      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise&quot;&gt;
+        &lt;div data-type=&quot;problem&quot;&gt;
+          &lt;p&gt;What is 3+3?&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;6&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;!-- Markup ends here --&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;&lt;div class=&quot;os-chapter-outline&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;Chapter Outline&lt;/h3&gt;&lt;div class=&quot;os-chapter-objective&quot;&gt;&lt;h4 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h4&gt;&lt;/div&gt;&lt;div class=&quot;os-chapter-objective&quot;&gt;&lt;h4 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
+    Normal book content goes here
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;section class=&quot;problems&quot;&gt;
+      &lt;h3 data-type=&quot;title&quot;&gt;Problems &amp;amp; Exercises&lt;/h3&gt;
+      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise&quot;&gt;
+        &lt;div data-type=&quot;problem&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Exercise&lt;/span&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;
+          &lt;p&gt;What is 2+2?&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;4&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;!-- Markup ends here --&gt;
+
+  &lt;/div&gt;
+
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h2&gt;
+    Normal book content goes here
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;section class=&quot;problems&quot;&gt;
+      &lt;h3 data-type=&quot;title&quot;&gt;Problems &amp;amp; Exercises&lt;/h3&gt;
+      &lt;div data-type=&quot;exercise&quot; class=&quot;exercise&quot;&gt;
+        &lt;div data-type=&quot;problem&quot;&gt;&lt;span class=&quot;os-title-label&quot;&gt;Exercise&lt;/span&gt;&lt;span class=&quot;os-number&quot;&gt;2&lt;/span&gt;
+          &lt;p&gt;What is 3+3?&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div data-type=&quot;solution&quot; class=&quot;solution&quot;&gt;6&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;!-- Markup ends here --&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-book-composite-summary" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-book-composite-summary">
+          <span class="kss-title__ref">
+              1.2.3
+            <span class="kss-title__permalink-hash">
+                #book.composite.summary
+            </span>
+          </span>
+          Section Review
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>These should be collated at the end of a chapter.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <h1 data-type="document-title">Chapter Title</h1>
+  <div data-type="page">
+    <div data-type="document-title">Page Title</div>
+    Normal book content goes here
+
+    <!-- Markup starts here -->
+    <section class="section-summary">
+      <h3 data-type="title">Section Review</h3>
+      <p>CONCEPT 1</p>
+    </section>
+    <!-- Markup ends here -->
+
+  </div>
+
+  <div data-type="page">
+    <div data-type="document-title">Another Page Title</div>
+    Normal book content goes here
+
+    <!-- Markup starts here -->
+    <section class="section-summary">
+      <h3 data-type="title">Section Review</h3>
+      <p>CONCEPT 2</p>
+    </section>
+    <!-- Markup ends here -->
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter"><div class="os-chapter-outline"><h3 class="os-title">Chapter Outline</h3><div class="os-chapter-objective"><h4 data-type="document-title"><span class="os-number">1.1</span><span class="os-text">Page Title</span></h4></div><div class="os-chapter-objective"><h4 data-type="document-title"><span class="os-number">1.2</span><span class="os-text">Another Page Title</span></h4></div></div>
+  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-text">Chapter Title</span></h1>
+  <div data-type="page">
+    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-text">Page Title</span></h2>
+    Normal book content goes here
+
+    <!-- Markup starts here -->
+    
+    <!-- Markup ends here -->
+
+  </div>
+
+  <div data-type="page">
+    <h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-text">Another Page Title</span></h2>
+    Normal book content goes here
+
+    <!-- Markup starts here -->
+    
+    <!-- Markup ends here -->
+
+  </div>
+<div class="os-eoc os-section-summary-container" data-type="composite-page" id="autobaked-1@1"><h1 data-type="document-title"><span class="os-text">Section Review</span></h1><section class="section-summary"><h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-text">Page Title</span></h2>
+      
+      <p>CONCEPT 1</p>
+    </section><section class="section-summary"><h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-text">Another Page Title</span></h2>
+      
+      <p>CONCEPT 2</p>
+    </section></div></div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;h1 data-type=&quot;document-title&quot;&gt;Chapter Title&lt;/h1&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;div data-type=&quot;document-title&quot;&gt;Page Title&lt;/div&gt;
+    Normal book content goes here
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;section class=&quot;section-summary&quot;&gt;
+      &lt;h3 data-type=&quot;title&quot;&gt;Section Review&lt;/h3&gt;
+      &lt;p&gt;CONCEPT 1&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;!-- Markup ends here --&gt;
+
+  &lt;/div&gt;
+
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;div data-type=&quot;document-title&quot;&gt;Another Page Title&lt;/div&gt;
+    Normal book content goes here
+
+    &lt;!-- Markup starts here --&gt;
+    &lt;section class=&quot;section-summary&quot;&gt;
+      &lt;h3 data-type=&quot;title&quot;&gt;Section Review&lt;/h3&gt;
+      &lt;p&gt;CONCEPT 2&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;!-- Markup ends here --&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;&lt;div class=&quot;os-chapter-outline&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;Chapter Outline&lt;/h3&gt;&lt;div class=&quot;os-chapter-objective&quot;&gt;&lt;h4 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h4&gt;&lt;/div&gt;&lt;div class=&quot;os-chapter-objective&quot;&gt;&lt;h4 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
+    Normal book content goes here
+
+    &lt;!-- Markup starts here --&gt;
+    
+    &lt;!-- Markup ends here --&gt;
+
+  &lt;/div&gt;
+
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h2&gt;
+    Normal book content goes here
+
+    &lt;!-- Markup starts here --&gt;
+    
+    &lt;!-- Markup ends here --&gt;
+
+  &lt;/div&gt;
+&lt;div class=&quot;os-eoc os-section-summary-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-1@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Section Review&lt;/span&gt;&lt;/h1&gt;&lt;section class=&quot;section-summary&quot;&gt;&lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Page Title&lt;/span&gt;&lt;/h2&gt;
+      
+      &lt;p&gt;CONCEPT 1&lt;/p&gt;
+    &lt;/section&gt;&lt;section class=&quot;section-summary&quot;&gt;&lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Another Page Title&lt;/span&gt;&lt;/h2&gt;
+      
+      &lt;p&gt;CONCEPT 2&lt;/p&gt;
+    &lt;/section&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-book-glossary" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-book-glossary">
+          <span class="kss-title__ref">
+              1.3
+            <span class="kss-title__permalink-hash">
+                #book.glossary
+            </span>
+          </span>
+          Glossary
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>This element is often referred to as Key Terms in the textbook.
+It is collated as a separate Page at the end of a Chapter or a Book.
+Also, it is collected from individual glossary elements in each raw Page.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <h1 data-type="document-title">Chapter Title</h1>
+  <div data-type="page">
+    <div data-type="document-title">Velocity Page</div>
+    Normal book content goes here
+    <!-- Start of glossary markup -->
+    <div data-type="glossary">
+      <h3 data-type="glossary-title">Glossary</h3>
+      <dl>
+        <dt>velocity</dt>
+        <dd>Speed with a direction</dd>
+      </dl>
+    </div>
+  </div>
+
+  <div data-type="page">
+    <div data-type="document-title">Acceleration Page</div>
+    Normal book content goes here
+    <!-- Start of glossary markup -->
+    <div data-type="glossary">
+      <h3 data-type="glossary-title">Glossary</h3>
+      <dl>
+        <dt>acceleration</dt>
+        <dd>Change in velocity over time</dd>
+      </dl>
+    </div>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter"><div class="os-chapter-outline"><h3 class="os-title">Chapter Outline</h3><div class="os-chapter-objective"><h4 data-type="document-title"><span class="os-number">1.1</span><span class="os-text">Velocity Page</span></h4></div><div class="os-chapter-objective"><h4 data-type="document-title"><span class="os-number">1.2</span><span class="os-text">Acceleration Page</span></h4></div></div>
+  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-text">Chapter Title</span></h1>
+  <div data-type="page">
+    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-text">Velocity Page</span></h2>
+    Normal book content goes here
+    <!-- Start of glossary markup -->
+    
+  </div>
+
+  <div data-type="page">
+    <h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-text">Acceleration Page</span></h2>
+    Normal book content goes here
+    <!-- Start of glossary markup -->
+    
+
+  </div>
+<div class="os-eoc os-glossary-container" data-type="composite-page" id="autobaked-1@1"><h1 data-type="document-title"><span class="os-text">Glossary</span></h1><dl>
+        <dt>acceleration</dt>
+        <dd>Change in velocity over time</dd>
+      </dl><dl>
+        <dt>velocity</dt>
+        <dd>Speed with a direction</dd>
+      </dl></div></div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;h1 data-type=&quot;document-title&quot;&gt;Chapter Title&lt;/h1&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;div data-type=&quot;document-title&quot;&gt;Velocity Page&lt;/div&gt;
+    Normal book content goes here
+    &lt;!-- Start of glossary markup --&gt;
+    &lt;div data-type=&quot;glossary&quot;&gt;
+      &lt;h3 data-type=&quot;glossary-title&quot;&gt;Glossary&lt;/h3&gt;
+      &lt;dl&gt;
+        &lt;dt&gt;velocity&lt;/dt&gt;
+        &lt;dd&gt;Speed with a direction&lt;/dd&gt;
+      &lt;/dl&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;div data-type=&quot;document-title&quot;&gt;Acceleration Page&lt;/div&gt;
+    Normal book content goes here
+    &lt;!-- Start of glossary markup --&gt;
+    &lt;div data-type=&quot;glossary&quot;&gt;
+      &lt;h3 data-type=&quot;glossary-title&quot;&gt;Glossary&lt;/h3&gt;
+      &lt;dl&gt;
+        &lt;dt&gt;acceleration&lt;/dt&gt;
+        &lt;dd&gt;Change in velocity over time&lt;/dd&gt;
+      &lt;/dl&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;&lt;div class=&quot;os-chapter-outline&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;Chapter Outline&lt;/h3&gt;&lt;div class=&quot;os-chapter-objective&quot;&gt;&lt;h4 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Velocity Page&lt;/span&gt;&lt;/h4&gt;&lt;/div&gt;&lt;div class=&quot;os-chapter-objective&quot;&gt;&lt;h4 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Acceleration Page&lt;/span&gt;&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Velocity Page&lt;/span&gt;&lt;/h2&gt;
+    Normal book content goes here
+    &lt;!-- Start of glossary markup --&gt;
+    
+  &lt;/div&gt;
+
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Acceleration Page&lt;/span&gt;&lt;/h2&gt;
+    Normal book content goes here
+    &lt;!-- Start of glossary markup --&gt;
+    
+
+  &lt;/div&gt;
+&lt;div class=&quot;os-eoc os-glossary-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-1@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Glossary&lt;/span&gt;&lt;/h1&gt;&lt;dl&gt;
+        &lt;dt&gt;acceleration&lt;/dt&gt;
+        &lt;dd&gt;Change in velocity over time&lt;/dd&gt;
+      &lt;/dl&gt;&lt;dl&gt;
+        &lt;dt&gt;velocity&lt;/dt&gt;
+        &lt;dd&gt;Speed with a direction&lt;/dd&gt;
+      &lt;/dl&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-book-index" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-book-index">
+          <span class="kss-title__ref">
+              1.4
+            <span class="kss-title__permalink-hash">
+                #book.index
+            </span>
+          </span>
+          Book Index
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>The book Index contains terms and links to their occurences in the book.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+  <h1 data-type="document-title">Chapter Title</h1>
+  <div data-type="page">
+    <div data-type="document-title">Velocity Page</div>
+    Normal book content goes here with a <span data-type="term">Term1</span> and
+    <span data-type="term">Term2</span>
+
+  </div>
+
+  <div data-type="page">
+    <div data-type="document-title">Acceleration Page</div>
+    Normal book content goes here with a <span data-type="term">Term1</span>
+
+  </div>
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter"><div class="os-chapter-outline"><h3 class="os-title">Chapter Outline</h3><div class="os-chapter-objective"><h4 data-type="document-title"><span class="os-number">1.1</span><span class="os-text">Velocity Page</span></h4></div><div class="os-chapter-objective"><h4 data-type="document-title"><span class="os-number">1.2</span><span class="os-text">Acceleration Page</span></h4></div></div>
+  <h1 data-type="document-title" id="chapTitle1"><span class="os-number">1</span><span class="os-text">Chapter Title</span></h1>
+  <div data-type="page">
+    <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-text">Velocity Page</span></h2>
+    Normal book content goes here with a <span data-type="term" id="auto__term1" group-by="T">Term1</span> and
+    <span data-type="term" id="auto__term2" group-by="T">Term2</span>
+
+  </div>
+
+  <div data-type="page">
+    <h2 data-type="document-title"><span class="os-number">1.2</span><span class="os-text">Acceleration Page</span></h2>
+    Normal book content goes here with a <span data-type="term" id="auto__term3" group-by="T">Term1</span>
+
+  </div>
+</div>
+<div class="os-eob os-index-container" data-type="composite-page" id="autobaked-1@1"><h1 data-type="document-title"><span class="os-text">Index</span></h1><div class="group-by"><span class="group-label">Symbols</span><div class="os-index-item"><span group-by="T" class="os-term">Term1</span><a href="#auto__term1" class="os-term-section-link"><span class="os-term-section">1.1Velocity Page</span></a><span class="os-index-link-separator">, </span><a href="#auto__term3" class="os-term-section-link"><span class="os-term-section">1.2Acceleration Page</span></a></div><div class="os-index-item"><span group-by="T" class="os-term">Term2</span><a href="#auto__term2" class="os-term-section-link"><span class="os-term-section">1.1Velocity Page</span></a></div></div></div></body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+  &lt;h1 data-type=&quot;document-title&quot;&gt;Chapter Title&lt;/h1&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;div data-type=&quot;document-title&quot;&gt;Velocity Page&lt;/div&gt;
+    Normal book content goes here with a &lt;span data-type=&quot;term&quot;&gt;Term1&lt;/span&gt; and
+    &lt;span data-type=&quot;term&quot;&gt;Term2&lt;/span&gt;
+
+  &lt;/div&gt;
+
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;div data-type=&quot;document-title&quot;&gt;Acceleration Page&lt;/div&gt;
+    Normal book content goes here with a &lt;span data-type=&quot;term&quot;&gt;Term1&lt;/span&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;&lt;div class=&quot;os-chapter-outline&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;Chapter Outline&lt;/h3&gt;&lt;div class=&quot;os-chapter-objective&quot;&gt;&lt;h4 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Velocity Page&lt;/span&gt;&lt;/h4&gt;&lt;/div&gt;&lt;div class=&quot;os-chapter-objective&quot;&gt;&lt;h4 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Acceleration Page&lt;/span&gt;&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;h1 data-type=&quot;document-title&quot; id=&quot;chapTitle1&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Chapter Title&lt;/span&gt;&lt;/h1&gt;
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Velocity Page&lt;/span&gt;&lt;/h2&gt;
+    Normal book content goes here with a &lt;span data-type=&quot;term&quot; id=&quot;auto__term1&quot; group-by=&quot;T&quot;&gt;Term1&lt;/span&gt; and
+    &lt;span data-type=&quot;term&quot; id=&quot;auto__term2&quot; group-by=&quot;T&quot;&gt;Term2&lt;/span&gt;
+
+  &lt;/div&gt;
+
+  &lt;div data-type=&quot;page&quot;&gt;
+    &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Acceleration Page&lt;/span&gt;&lt;/h2&gt;
+    Normal book content goes here with a &lt;span data-type=&quot;term&quot; id=&quot;auto__term3&quot; group-by=&quot;T&quot;&gt;Term1&lt;/span&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;os-eob os-index-container&quot; data-type=&quot;composite-page&quot; id=&quot;autobaked-1@1&quot;&gt;&lt;h1 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-text&quot;&gt;Index&lt;/span&gt;&lt;/h1&gt;&lt;div class=&quot;group-by&quot;&gt;&lt;span class=&quot;group-label&quot;&gt;Symbols&lt;/span&gt;&lt;div class=&quot;os-index-item&quot;&gt;&lt;span group-by=&quot;T&quot; class=&quot;os-term&quot;&gt;Term1&lt;/span&gt;&lt;a href=&quot;#auto__term1&quot; class=&quot;os-term-section-link&quot;&gt;&lt;span class=&quot;os-term-section&quot;&gt;1.1Velocity Page&lt;/span&gt;&lt;/a&gt;&lt;span class=&quot;os-index-link-separator&quot;&gt;, &lt;/span&gt;&lt;a href=&quot;#auto__term3&quot; class=&quot;os-term-section-link&quot;&gt;&lt;span class=&quot;os-term-section&quot;&gt;1.2Acceleration Page&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;os-index-item&quot;&gt;&lt;span group-by=&quot;T&quot; class=&quot;os-term&quot;&gt;Term2&lt;/span&gt;&lt;a href=&quot;#auto__term2&quot; class=&quot;os-term-section-link&quot;&gt;&lt;span class=&quot;os-term-section&quot;&gt;1.1Velocity Page&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-book-page" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-book-page">
+          <span class="kss-title__ref">
+              1.5
+            <span class="kss-title__permalink-hash">
+                #book.page
+            </span>
+          </span>
+          Book Page
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>A Page is usually a section inside a chapter. It contains:</p>
+<ul>
+<li><code>[data-type=&#39;metadata&#39;]</code> The attribution information for this Page</li>
+<li><code>[data-type=&#39;document-title&#39;]</code> The title of the Page</li>
+</ul>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <section class="-kss-autogen-guide-markup" data-kss-format="html-raw">
+<div data-type="chapter">
+
+<div data-type="page">
+  <div data-type="document-title">Kinematics in One Dimension</div>
+  <div data-type="metadata">...</div>
+  <p>This is the contents of the section (aka Page)</p>
+  <p>It can contain multiple paragraphs, notes, exercises, etc</p>
+</div>
+
+</div>
+</section>
+<section class="-kss-autogen-guide-markup" data-kss-format="html-baked">
+<html><body><div data-type="chapter"><div class="os-chapter-outline"><h3 class="os-title">Chapter Outline</h3><div class="os-chapter-objective"><h4 data-type="document-title"><span class="os-number">1.1</span><span class="os-text">Kinematics in One Dimension</span></h4></div></div>
+
+<div data-type="page">
+  <h2 data-type="document-title"><span class="os-number">1.1</span><span class="os-text">Kinematics in One Dimension</span></h2>
+  <div data-type="metadata">...</div>
+  <p>This is the contents of the section (aka Page)</p>
+  <p>It can contain multiple paragraphs, notes, exercises, etc</p>
+</div>
+
+</div>
+</body></html>
+</section>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-raw&quot;&gt;
+&lt;div data-type=&quot;chapter&quot;&gt;
+
+&lt;div data-type=&quot;page&quot;&gt;
+  &lt;div data-type=&quot;document-title&quot;&gt;Kinematics in One Dimension&lt;/div&gt;
+  &lt;div data-type=&quot;metadata&quot;&gt;...&lt;/div&gt;
+  &lt;p&gt;This is the contents of the section (aka Page)&lt;/p&gt;
+  &lt;p&gt;It can contain multiple paragraphs, notes, exercises, etc&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;-kss-autogen-guide-markup&quot; data-kss-format=&quot;html-baked&quot;&gt;
+&lt;html&gt;&lt;body&gt;&lt;div data-type=&quot;chapter&quot;&gt;&lt;div class=&quot;os-chapter-outline&quot;&gt;&lt;h3 class=&quot;os-title&quot;&gt;Chapter Outline&lt;/h3&gt;&lt;div class=&quot;os-chapter-objective&quot;&gt;&lt;h4 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Kinematics in One Dimension&lt;/span&gt;&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div data-type=&quot;page&quot;&gt;
+  &lt;h2 data-type=&quot;document-title&quot;&gt;&lt;span class=&quot;os-number&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;os-text&quot;&gt;Kinematics in One Dimension&lt;/span&gt;&lt;/h2&gt;
+  &lt;div data-type=&quot;metadata&quot;&gt;...&lt;/div&gt;
+  &lt;p&gt;This is the contents of the section (aka Page)&lt;/p&gt;
+  &lt;p&gt;It can contain multiple paragraphs, notes, exercises, etc&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+&lt;/section&gt;
+</code></pre>
+      </div>
+
+      </section>
+</article>
+
+<!-- SCRIPTS -->
+<script src="public/prettify.js"></script>
+<script src="public/kss.js"></script>
+
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>
