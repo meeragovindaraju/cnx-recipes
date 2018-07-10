@@ -1,0 +1,20 @@
+@mixin script($script, $top, $bottom) {
+  @if ($script == sub) {
+      bottom: $bottom;
+  } 
+  @else if ($script == sup) {
+      top: $top;
+  } 
+  @else {
+    @error '#{$script} is not a valid script type. Please choose from "sub" (subscript) or "sup" (superscript)';
+  }
+}
+
+@mixin scripts($script,  $font-size: 75%, $top:-0.5em, $bottom: -0.25em) {
+  font-size: $font-size;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  @include script($script, $top, $bottom);
+}
+

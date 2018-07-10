@@ -50,6 +50,6 @@
   }
   
   @else {
-    @error '#{$captionType} is not a valid caption type. Please choose from figure or table'
+    @error '#{$captionType} is not a valid caption type. Please choose from figure or table';
   }
 }
