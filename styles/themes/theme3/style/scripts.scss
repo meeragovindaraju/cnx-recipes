@@ -1,9 +1,9 @@
 sub {
-  @include scripts (sub);
+  @include scripts(sub);
 }
 
 sup {
-  @include scripts (sup);
+  @include scripts(sup);
 }
 
 .titlepage sup {

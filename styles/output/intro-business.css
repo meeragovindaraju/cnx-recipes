@@ -525,6 +525,67 @@ img {
   bookmark-level: 5;
   page-break-after: avoid; }
 
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  bottom: -0.25em; }
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em; }
+
+.titlepage sup {
+  vertical-align: super;
+  line-height: inherit;
+  font-size: smaller;
+  position: static;
+  top: auto; }
+
+/* ---------------------------------------------------
+ * Citations
+ * ---------------------------------------------------
+ */
+[data-type="chapter"] a[data-type="cite"] {
+  border-bottom: 0px !important;
+  content: target-counter(attr(href), references);
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+  text-decoration: underline;
+  font-weight: 100; }
+
+div.os-reference-container {
+  margin-left: 0;
+  text-indent: 0;
+  text-align: left;
+  display: inline; }
+  div.os-reference-container > .os-chapter-area {
+    counter-reset: references;
+    margin-bottom: 10px; }
+    div.os-reference-container > .os-chapter-area > [data-type="document-title"] {
+      display: none; }
+    div.os-reference-container > .os-chapter-area .os-section-area {
+      margin-bottom: 10px;
+      color: #344456;
+      font-weight: bold; }
+      div.os-reference-container > .os-chapter-area .os-section-area sup {
+        display: none; }
+    div.os-reference-container > .os-chapter-area > .reference {
+      margin-top: 1.5em;
+      margin-bottom: 8px;
+      padding: 0;
+      counter-increment: references; }
+      div.os-reference-container > .os-chapter-area > .reference > .os-reference-number {
+        content: counter(references) ".";
+        padding-right: 6px; }
+
 /* -------------------------
  * Intro to Business Notes
  * ------------------------
@@ -734,3 +795,5 @@ img {
       letter-spacing: 4px;
       page-break-after: avoid;
       padding: 0; }
+
+/*# sourceMappingURL=intro-business.css.map */

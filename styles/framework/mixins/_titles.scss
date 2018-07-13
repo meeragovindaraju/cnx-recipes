@@ -42,7 +42,7 @@
   }
 
   @else if  $format != default {
-    @error '#{$format} is not a valid title type. Please choose from icon, numbered or default'
+    @error '#{$format} is not a valid title type. Please choose from icon, numbered or default';
   }
 }
 
@@ -76,6 +76,7 @@
   bookmark-level: 1;
   page-break-after: avoid;
 }
+
 @mixin titles-h1-style-numbered($font: font-map(serif), $title-color: color-map(h1-title), $number-border: $h1-number-border, $number-color: $h1-number-color, $noMargin: false) {
   @include titles-h1-style();
   span.os-number {
